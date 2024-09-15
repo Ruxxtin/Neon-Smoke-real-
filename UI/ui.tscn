@@ -1,106 +1,39 @@
-[gd_scene load_steps=7 format=3 uid="uid://qp1fouvcqi2t"]
+[gd_scene load_steps=5 format=3 uid="uid://qp1fouvcqi2t"]
 
 [ext_resource type="Script" path="res://UI/ui.gd" id="1_4ppam"]
 [ext_resource type="Texture2D" uid="uid://ddu1sb4fe5xfo" path="res://sprites/i beam.png" id="1_ccrjl"]
 [ext_resource type="FontFile" uid="uid://ctm6158scsahw" path="res://fonts/PixelifySans-VariableFont_wght.ttf" id="2_kccqt"]
 [ext_resource type="Texture2D" uid="uid://b733ynlta6pvk" path="res://sprites/batterycylinder.png" id="3_x4gu5"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0mh46"]
-bg_color = Color(0.0156863, 0, 0.156863, 1)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color(0, 0, 0, 1)
-corner_radius_top_left = 2
-corner_radius_top_right = 2
-corner_radius_bottom_right = 2
-corner_radius_bottom_left = 2
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r2qjj"]
-bg_color = Color(0.74902, 0, 0.184314, 1)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-border_color = Color(0, 0, 0, 1)
-corner_radius_top_left = 2
-corner_radius_top_right = 2
-corner_radius_bottom_right = 2
-corner_radius_bottom_left = 2
-
 [node name="ui" type="CanvasLayer"]
 script = ExtResource("1_4ppam")
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-mouse_filter = 2
-theme_override_constants/margin_left = 30
-theme_override_constants/margin_top = 30
-theme_override_constants/margin_right = 30
-theme_override_constants/margin_bottom = -20
-
-[node name="rows" type="VBoxContainer" parent="MarginContainer"]
-layout_mode = 2
-mouse_filter = 2
-
-[node name="top row" type="HBoxContainer" parent="MarginContainer/rows"]
-layout_mode = 2
-size_flags_vertical = 3
-mouse_filter = 2
-
-[node name="Health Bar" type="ProgressBar" parent="MarginContainer/rows/top row"]
-custom_minimum_size = Vector2(200, 30)
-layout_mode = 2
-mouse_filter = 2
-theme_override_styles/background = SubResource("StyleBoxFlat_0mh46")
-theme_override_styles/fill = SubResource("StyleBoxFlat_r2qjj")
-value = 80.0
-show_percentage = false
-
-[node name="iron ui" type="Sprite2D" parent="MarginContainer/rows/top row"]
-position = Vector2(338, 26)
+[node name="iron ui" type="Sprite2D" parent="."]
+position = Vector2(148, 56)
 scale = Vector2(3, 3)
 texture = ExtResource("1_ccrjl")
 
-[node name="battery ui" type="Sprite2D" parent="MarginContainer/rows/top row"]
-position = Vector2(249, 26)
+[node name="current_iron" type="Label" parent="iron ui"]
+offset_left = 2.0
+offset_top = 2.66667
+offset_right = 20.0
+offset_bottom = 39.6667
+theme_override_fonts/font = ExtResource("2_kccqt")
+theme_override_font_sizes/font_size = 12
+text = "0"
+metadata/_edit_use_anchors_ = true
+
+[node name="battery ui" type="Sprite2D" parent="."]
+position = Vector2(59, 56)
 scale = Vector2(3, 3)
 texture = ExtResource("3_x4gu5")
 
-[node name="VSeparator2" type="VSeparator" parent="MarginContainer/rows/top row"]
-modulate = Color(1, 1, 1, 0)
-layout_mode = 2
-mouse_filter = 2
-theme_override_constants/separation = 48
-
-[node name="current_battery" type="Label" parent="MarginContainer/rows/top row"]
-layout_mode = 2
+[node name="current_battery" type="Label" parent="battery ui"]
+offset_left = 2.33334
+offset_top = 2.66667
+offset_right = 20.3333
+offset_bottom = 39.6667
 theme_override_fonts/font = ExtResource("2_kccqt")
-theme_override_font_sizes/font_size = 30
+theme_override_font_sizes/font_size = 12
 text = "0"
-
-[node name="VSeparator" type="VSeparator" parent="MarginContainer/rows/top row"]
-modulate = Color(1, 1, 1, 0)
-layout_mode = 2
-mouse_filter = 2
-theme_override_constants/separation = 50
-
-[node name="current_iron" type="Label" parent="MarginContainer/rows/top row"]
-layout_mode = 2
-theme_override_fonts/font = ExtResource("2_kccqt")
-theme_override_font_sizes/font_size = 30
-text = "0"
-
-[node name="middle row" type="HBoxContainer" parent="MarginContainer/rows"]
-layout_mode = 2
-size_flags_vertical = 3
-size_flags_stretch_ratio = 4.0
-
-[node name="bottom row" type="HBoxContainer" parent="MarginContainer/rows"]
-layout_mode = 2
-size_flags_vertical = 3
+metadata/_edit_use_anchors_ = true

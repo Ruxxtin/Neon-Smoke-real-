@@ -1,8 +1,7 @@
 extends CanvasLayer
 
-@onready var health_bar = $"MarginContainer/rows/top row/Health Bar"
-@onready var current_iron = $"MarginContainer/rows/top row/current_iron"
-@onready var current_battery = $"MarginContainer/rows/top row/current_battery"
+@onready var current_iron = $"iron ui/current_iron"
+@onready var current_battery = $"battery ui/current_battery"
 
 var new_iron = 0
 var new_battery = 0
