@@ -5,13 +5,7 @@ res://scenes/start_menu.tscn
 res://scenes/crafting_table.tscn
 res://UI/ui.tscn
 res://scenes/iron_pickup.tscn
-res://scenes/battery_pickup.tscn
-res://scenes/textbox.tscn
 res://scenes/cryolab.tscn
-res://scripts/character_body_2d.gd
-res://scripts/main.gd
-res://UI/ui.gd
-res://scripts/interaction_thing.gd
 res://scenes/collision_object.tscn
 res://scenes/engineers_notebook.tscn
-res://scripts/battery_pickup.gd
+res://scenes/battery_pickup.tscn

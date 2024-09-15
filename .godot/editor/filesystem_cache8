@@ -1,30 +1,30 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1726370475
+::res://::1726408639
 icon.svg::CompressedTexture2D::246418271870288165::1724618994::1724619005::1::::<><>::
 ::res://fonts/::1725847019
 font_game.fnt::FontFile::4744211684029739087::1725847018::1725847019::1::::<><>::
 PixelifySans-VariableFont_wght.ttf::FontFile::6133132214475090484::1724907593::1724907594::1::::<><>::
-::res://scenes/::1726370670
-battery_pickup.tscn::PackedScene::2424334496647818243::1726282507::0::1::::<><>::res://scripts/battery_pickup.gd<>uid://b733ynlta6pvk::::res://sprites/batterycylinder.png
-collision_object.tscn::PackedScene::5581635735433745741::1726370670::0::1::::<><>::
-crafting_table.tscn::PackedScene::5084896862321298231::1726370669::0::1::::<><>::uid://dvdu4v5bvqwjf::::res://sprites/crafting table.png
-cryolab.tscn::PackedScene::1766636327152678289::1726370670::0::1::::<><>::uid://f2ia5ue6cp3u::::res://scenes/Player.tscn<>uid://b4uje8g1isp6h::::res://sprites/tilesets/labfloor.png<>uid://mioem0qh7iij::::res://sprites/tilesets/cryowall.png<>uid://b3jnmcsjvnnvq::::res://sprites/tilesets/labfloortiles.png<>uid://cfe5kocqihd2u::::res://scenes/textbox.tscn<>uid://b22t5g1342hsh::::res://sprites/tilesets/asphaltsprsheetdone_extraspace.png<>uid://dcmpv2yw7qevx::::res://sprites/stairsetv3.png<>uid://clr1ywgmmsxxt::::res://scenes/collision_object.tscn<>uid://c1r26w3fqwe25::::res://sprites/tilesets/blackset.png<>uid://c5afugn4x2c3p::::res://sprites/cryostasischamb.png
-engineers_notebook.tscn::PackedScene::9093800330802713700::1725836441::0::1::::<><>::uid://p1cce5au4tl4::::res://sprites/bigguy.png
-game.tscn::PackedScene::6235576742813576956::1726370669::0::1::::<><>::res://scripts/main.gd<>uid://f2ia5ue6cp3u::::res://scenes/Player.tscn<>uid://b22t5g1342hsh::::res://sprites/tilesets/asphaltsprsheetdone_extraspace.png<>uid://mgryjee0nrh5::::res://sprites/tilesets/asphaltspritedoneee.png<>uid://bjso1sta1m7js::::res://sprites/cementside.png<>uid://b75dkny0pgvqt::::res://scenes/interaction_thing.tscn<>uid://6driscbf3tdv::::res://sprites/tilesets/asphaltsprsheetdone.png<>uid://cfe5kocqihd2u::::res://scenes/textbox.tscn<>uid://c5jyy4qnepfya::::res://sprites/tilesets/asphaltsprsheetdonecrosswalk.png<>uid://qp1fouvcqi2t::::res://UI/ui.tscn<>uid://cjh3ufydqtpvg::::res://sprites/tilesets/grassetdone.png<>uid://basmo12w274od::::res://scenes/battery_pickup.tscn<>uid://d2tdtevmuq4ou::::res://scenes/engineers_notebook.tscn
-interaction_thing.tscn::PackedScene::4694595742684328135::1726370669::0::1::::<><>::res://scripts/interaction_thing.gd
-iron_pickup.tscn::PackedScene::8041664809419678606::1726370670::0::1::::<><>::uid://ddu1sb4fe5xfo::::res://sprites/i beam.png<>res://scripts/iron_pickup.gd
-Player.tscn::PackedScene::407169760311765256::1726370669::0::1::::<><>::res://scripts/character_body_2d.gd<>uid://5lplmop55edk::::res://sprites/spritweshe.png<>uid://dokd43ysn0l03::::res://sprites/protagwalk.png<>uid://ys3k6pych8fe::::res://sprites/protagsidewalk.png
-start_menu.tscn::PackedScene::1452437088003764432::1726370669::0::1::::<><>::uid://bk3ou2msmmns4::::res://sprites/titlescreen.png
+::res://scenes/::1726408633
+battery_pickup.tscn::PackedScene::2424334496647818243::1726408633::0::1::::<><>::res://scripts/battery_pickup.gd<>uid://b733ynlta6pvk::::res://sprites/batterycylinder.png
+collision_object.tscn::PackedScene::5581635735433745741::1726408633::0::1::::<><>::
+crafting_table.tscn::PackedScene::5084896862321298231::1726408632::0::1::::<><>::uid://dvdu4v5bvqwjf::::res://sprites/crafting table.png
+cryolab.tscn::PackedScene::1766636327152678289::1726408633::0::1::::<><>::uid://f2ia5ue6cp3u::::res://scenes/Player.tscn<>uid://b4uje8g1isp6h::::res://sprites/tilesets/labfloor.png<>uid://mioem0qh7iij::::res://sprites/tilesets/cryowall.png<>uid://b3jnmcsjvnnvq::::res://sprites/tilesets/labfloortiles.png<>uid://cfe5kocqihd2u::::res://scenes/textbox.tscn<>uid://b22t5g1342hsh::::res://sprites/tilesets/asphaltsprsheetdone_extraspace.png<>uid://dcmpv2yw7qevx::::res://sprites/stairsetv3.png<>uid://clr1ywgmmsxxt::::res://scenes/collision_object.tscn<>uid://c1r26w3fqwe25::::res://sprites/tilesets/blackset.png<>uid://bq647bqdubwir::::res://sprites/arel.png<>uid://c5afugn4x2c3p::::res://sprites/cryostasischamb.png
+engineers_notebook.tscn::PackedScene::9093800330802713700::1726408633::0::1::::<><>::uid://p1cce5au4tl4::::res://sprites/bigguy.png
+game.tscn::PackedScene::6235576742813576956::1726408632::0::1::::<><>::res://scripts/main.gd<>uid://f2ia5ue6cp3u::::res://scenes/Player.tscn<>uid://b22t5g1342hsh::::res://sprites/tilesets/asphaltsprsheetdone_extraspace.png<>uid://mgryjee0nrh5::::res://sprites/tilesets/asphaltspritedoneee.png<>uid://bjso1sta1m7js::::res://sprites/cementside.png<>uid://b75dkny0pgvqt::::res://scenes/interaction_thing.tscn<>uid://6driscbf3tdv::::res://sprites/tilesets/asphaltsprsheetdone.png<>uid://cfe5kocqihd2u::::res://scenes/textbox.tscn<>uid://c5jyy4qnepfya::::res://sprites/tilesets/asphaltsprsheetdonecrosswalk.png<>uid://qp1fouvcqi2t::::res://UI/ui.tscn<>uid://cjh3ufydqtpvg::::res://sprites/tilesets/grassetdone.png<>uid://basmo12w274od::::res://scenes/battery_pickup.tscn<>uid://clr1ywgmmsxxt::::res://scenes/collision_object.tscn<>uid://d2tdtevmuq4ou::::res://scenes/engineers_notebook.tscn
+interaction_thing.tscn::PackedScene::4694595742684328135::1726408632::0::1::::<><>::res://scripts/interaction_thing.gd
+iron_pickup.tscn::PackedScene::8041664809419678606::1726408633::0::1::::<><>::uid://ddu1sb4fe5xfo::::res://sprites/i beam.png<>res://scripts/iron_pickup.gd
+Player.tscn::PackedScene::407169760311765256::1726408632::0::1::::<><>::res://scripts/character_body_2d.gd<>uid://5lplmop55edk::::res://sprites/spritweshe.png<>uid://dokd43ysn0l03::::res://sprites/protagwalk.png<>uid://ys3k6pych8fe::::res://sprites/protagsidewalk.png
+start_menu.tscn::PackedScene::1452437088003764432::1726408632::0::1::::<><>::uid://bk3ou2msmmns4::::res://sprites/titlescreen.png
 textbox.tscn::PackedScene::5133883203469093870::1726279398::0::1::::<><>::uid://ctm6158scsahw::::res://fonts/PixelifySans-VariableFont_wght.ttf<>uid://d233s3avpe76v::::res://sprites/dialogue box.png
-::res://scripts/::1726325623
-battery_pickup.gd::GDScript::-1::1725836842::0::1::::<>Area2D<>::
+::res://scripts/::1726373906
+battery_pickup.gd::GDScript::-1::1726373906::0::1::::<>Area2D<>::
 character_body_2d.gd::GDScript::-1::1726325623::0::1::::<>CharacterBody2D<>::
 engineers_notebook.gd::GDScript::-1::1725836576::0::1::::<>Area2D<>::
 interaction_thing.gd::GDScript::-1::1726279398::0::1::::<>Area2D<>::
 iron_pickup.gd::GDScript::-1::1725808901::0::1::::<>Area2D<>::
 main.gd::GDScript::-1::1726278861::0::1::::<>Node2D<>::
 ::res://sounds/::1724619099
-::res://sprites/::1726370887
+::res://sprites/::1726370888
 arel.png::CompressedTexture2D::3575255907875975201::1726370887::1726370888::1::::<><>::
 batterycylinder.png::CompressedTexture2D::4692009892735899560::1725836507::1725836507::1::::<><>::
 bigguy.png::CompressedTexture2D::1106631738214804615::1725814592::1725814593::1::::<><>::
@@ -59,6 +59,6 @@ grasset.png::CompressedTexture2D::6158786096572718749::1725809721::1726283420::1
 grassetdone.png::CompressedTexture2D::5420727695932980100::1725811176::1726283423::1::::<><>::
 labfloor.png::CompressedTexture2D::4463740044119872305::1725925525::1726283427::1::::<><>::
 labfloortiles.png::CompressedTexture2D::4371098589068056934::1726368579::1726368579::1::::<><>::
-::res://UI/::1726370669
-ui.gd::GDScript::-1::1726278852::0::1::::<>CanvasLayer<>::
-ui.tscn::PackedScene::1155575502481313289::1726370669::0::1::::<><>::res://UI/ui.gd<>uid://ddu1sb4fe5xfo::::res://sprites/i beam.png<>uid://ctm6158scsahw::::res://fonts/PixelifySans-VariableFont_wght.ttf<>uid://b733ynlta6pvk::::res://sprites/batterycylinder.png
+::res://UI/::1726408632
+ui.gd::GDScript::-1::1726376267::0::1::::<>CanvasLayer<>::
+ui.tscn::PackedScene::1155575502481313289::1726408632::0::1::::<><>::res://UI/ui.gd<>uid://ddu1sb4fe5xfo::::res://sprites/i beam.png<>uid://ctm6158scsahw::::res://fonts/PixelifySans-VariableFont_wght.ttf<>uid://b733ynlta6pvk::::res://sprites/batterycylinder.png
