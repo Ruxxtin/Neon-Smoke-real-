@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://cfe5kocqihd2u"]
+
+[ext_resource type="FontFile" uid="uid://ctm6158scsahw" path="res://fonts/PixelifySans-VariableFont_wght.ttf" id="1_6empk"]
+[ext_resource type="Texture2D" uid="uid://d233s3avpe76v" path="res://sprites/dialogue box.png" id="1_scukv"]
+
+[node name="textbox" type="Label"]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_fonts/font = ExtResource("1_6empk")
+theme_override_font_sizes/font_size = 11
+visible_characters = 0
+visible_ratio = 0.0
+
+[node name="textbox_box" type="Sprite2D" parent="."]
+z_index = -1
+position = Vector2(120, 23)
+scale = Vector2(2, 2)
+texture = ExtResource("1_scukv")

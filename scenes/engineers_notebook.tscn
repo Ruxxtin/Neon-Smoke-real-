@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2tdtevmuq4ou"]
+
+[ext_resource type="Texture2D" uid="uid://p1cce5au4tl4" path="res://sprites/bigguy.png" id="1_4vc5i"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2pwqo"]
+
+[node name="engineers_notebook" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_4vc5i")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_2pwqo")

@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://dmtpbrpni2pxm"]
+
+[ext_resource type="Texture2D" uid="uid://ddu1sb4fe5xfo" path="res://sprites/i beam.png" id="1_3d8ir"]
+[ext_resource type="Script" path="res://scripts/iron_pickup.gd" id="2_gl6q1"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8xti2"]
+
+[node name="iron_pickup" type="Area2D"]
+script = ExtResource("2_gl6q1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_3d8ir")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 1)
+shape = SubResource("CircleShape2D_8xti2")

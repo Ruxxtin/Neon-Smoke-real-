@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://b75dkny0pgvqt"]
+
+[ext_resource type="Script" path="res://scripts/interaction_thing.gd" id="1_abfpx"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_smrjr"]
+radius = 5.0
+
+[node name="pokedeck_dialogue" type="Area2D"]
+script = ExtResource("1_abfpx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_smrjr")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.05
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

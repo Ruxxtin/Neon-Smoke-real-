@@ -1,0 +1,76 @@
+[gd_scene load_steps=11 format=3 uid="uid://uxtorgqwjkd1"]
+
+[ext_resource type="Texture2D" uid="uid://bk3ou2msmmns4" path="res://sprites/titlescreen.png" id="1_4affc"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vvmj4"]
+atlas = ExtResource("1_4affc")
+region = Rect2(0, 0, 320, 180)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6fjj8"]
+atlas = ExtResource("1_4affc")
+region = Rect2(320, 0, 320, 180)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fnel0"]
+atlas = ExtResource("1_4affc")
+region = Rect2(640, 0, 320, 180)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4wfa6"]
+atlas = ExtResource("1_4affc")
+region = Rect2(0, 180, 320, 180)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_orufl"]
+atlas = ExtResource("1_4affc")
+region = Rect2(320, 180, 320, 180)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jn625"]
+atlas = ExtResource("1_4affc")
+region = Rect2(640, 180, 320, 180)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0dt3q"]
+atlas = ExtResource("1_4affc")
+region = Rect2(0, 360, 320, 180)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_87tii"]
+atlas = ExtResource("1_4affc")
+region = Rect2(320, 360, 320, 180)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_gsqjy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vvmj4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6fjj8")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fnel0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4wfa6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_orufl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jn625")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0dt3q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_87tii")
+}],
+"loop": true,
+"name": &"default",
+"speed": 7.0
+}]
+
+[node name="Start menu" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(3.6, 3.6)
+sprite_frames = SubResource("SpriteFrames_gsqjy")
+autoplay = "default"
+frame_progress = 0.825513
