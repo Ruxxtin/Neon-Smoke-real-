@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddu1sb4fe5xfo"
-path="res://.godot/imported/i beam.png-64e366be1b7c2da66e359eb5152731ca.ctex"
+uid="uid://b78t8ww03u44h"
+path="res://.godot/imported/free_building.png-3a85f1fb8856a3de9c09acb68a3a11c8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/i beam.png"
-dest_files=["res://.godot/imported/i beam.png-64e366be1b7c2da66e359eb5152731ca.ctex"]
+source_file="res://sprites/free_building.png"
+dest_files=["res://.godot/imported/free_building.png-3a85f1fb8856a3de9c09acb68a3a11c8.ctex"]
 
 [params]
 

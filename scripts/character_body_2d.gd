@@ -9,8 +9,6 @@ var speed = 125.0
 const JUMP_VELOCITY = -400.0
 var sprinting = false
 
-var resource_amount_iron = 0
-var resource_amount_battery = 0
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -64,6 +62,3 @@ func _physics_process(delta):
 	move_and_slide()
 
 
-func _on_collision_object_body_entered(body):
-	velocity.y = 0
-	velocity.x = 0

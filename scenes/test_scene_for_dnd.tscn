@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://blwpg1jl4cytl"]
+
+[ext_resource type="PackedScene" uid="uid://bu88dd6akxs80" path="res://scenes/object.tscn" id="1_7kr0m"]
+[ext_resource type="PackedScene" uid="uid://bxu5ce3yr8s7x" path="res://scenes/slot.tscn" id="2_lkett"]
+
+[node name="test_scene_for_dnd" type="Node2D"]
+
+[node name="platform" parent="." instance=ExtResource("2_lkett")]
+position = Vector2(846, 493)
+
+[node name="platform2" parent="." instance=ExtResource("2_lkett")]
+position = Vector2(906, 118)
+
+[node name="object2" parent="." instance=ExtResource("1_7kr0m")]
+position = Vector2(233, 468)
+
+[node name="object" parent="." instance=ExtResource("1_7kr0m")]
+position = Vector2(160, 116)

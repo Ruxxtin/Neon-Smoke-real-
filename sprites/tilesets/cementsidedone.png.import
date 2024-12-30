@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b733ynlta6pvk"
-path="res://.godot/imported/batterycylinder.png-099832865d8e50569ffe2c7f3e9dda00.ctex"
+uid="uid://7qdj2ki13dqg"
+path="res://.godot/imported/cementsidedone.png-aa3809da1158ddee1ba7d64455d8699a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/batterycylinder.png"
-dest_files=["res://.godot/imported/batterycylinder.png-099832865d8e50569ffe2c7f3e9dda00.ctex"]
+source_file="res://sprites/tilesets/cementsidedone.png"
+dest_files=["res://.godot/imported/cementsidedone.png-aa3809da1158ddee1ba7d64455d8699a.ctex"]
 
 [params]
 

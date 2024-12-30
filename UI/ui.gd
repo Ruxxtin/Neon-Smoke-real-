@@ -1,19 +1,16 @@
 extends CanvasLayer
 
-@onready var current_iron = $"iron ui/current_iron"
-@onready var current_battery = $"battery ui/current_battery"
+@onready var current_iron = $current_iron
+@onready var current_battery = $current_battery
 
-var new_iron = 0
-var new_battery = 0
+var start_checking = false
 
-func _physics_process(delta):
-	current_iron.text = str(new_iron)
-	current_battery.text = str(new_battery)
-
-
-func set_new_health_value(new_health: int):
-	pass
+func _physics_process(_delta):
+	if start_checking == true:
+		current_iron.text = str(ResourceManager.iron_amount)
+		current_battery.text = str(ResourceManager.battery_amount)
 
 
-func set_current_iron(new_iron: int):
-	pass
+
+func _on_timer_timeout():
+	start_checking = true

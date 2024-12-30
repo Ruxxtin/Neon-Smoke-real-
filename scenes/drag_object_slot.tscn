@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://c2cbn5ad2pli6"]
+
+[ext_resource type="Texture2D" uid="uid://r8q240aoym4s" path="res://sprites/stuff_in_crafting_table/empty_crafting_slot.png" id="1_18dwp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vf80v"]
+size = Vector2(18, 18)
+
+[node name="drag_object_slot" type="Sprite2D" groups=["drag_object_slot"]]
+scale = Vector2(5, 5)
+texture = ExtResource("1_18dwp")
+
+[node name="Area2D" type="Area2D" parent="." groups=["drag_object_slot"]]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_vf80v")

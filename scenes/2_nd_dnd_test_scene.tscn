@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bgs7smu16tv1d"]
+
+[ext_resource type="PackedScene" uid="uid://dlb6ksfdt7rbl" path="res://scenes/draggable_item.tscn" id="1_laand"]
+[ext_resource type="PackedScene" uid="uid://dfpth6knqksaq" path="res://scenes/slot_item_box_holder.tscn" id="2_jhhvy"]
+
+[node name="2nd_dnd_test_scene" type="Node2D"]
+
+[node name="slot_item_box_holder2" parent="." instance=ExtResource("2_jhhvy")]
+position = Vector2(516, 473)
+
+[node name="slot_item_box_holder3" parent="." instance=ExtResource("2_jhhvy")]
+position = Vector2(997, 272)
+
+[node name="draggable_item" parent="." instance=ExtResource("1_laand")]
+position = Vector2(217, 125)
+
+[node name="draggable_item2" parent="." instance=ExtResource("1_laand")]
+position = Vector2(590, 114)

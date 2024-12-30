@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0jfbbrxo2w8c"]
+
+[ext_resource type="PackedScene" uid="uid://bgjwj8rr8i72h" path="res://scenes/drag_object_iron.tscn" id="1_6mt2p"]
+[ext_resource type="PackedScene" uid="uid://c2cbn5ad2pli6" path="res://scenes/drag_object_slot.tscn" id="2_q5sdf"]
+
+[node name="dragtestscene" type="Node2D"]
+
+[node name="drag_object_slot" parent="." instance=ExtResource("2_q5sdf")]
+position = Vector2(859, 416)
+
+[node name="drag_object" parent="." instance=ExtResource("1_6mt2p")]
+position = Vector2(140, 79)
+
+[node name="drag_object2" parent="." instance=ExtResource("1_6mt2p")]
+position = Vector2(541, 119)

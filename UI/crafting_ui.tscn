@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://c137m0mgdi1tj"]
+
+[ext_resource type="Script" path="res://UI/ummcraftingui.gd" id="1_08mj7"]
+[ext_resource type="Texture2D" uid="uid://d02sugjmab2ni" path="res://sprites/bench full mostly.png" id="2_5puft"]
+[ext_resource type="PackedScene" uid="uid://dcnheswaxqa5f" path="res://scenes/crafting_iron_spawner.tscn" id="4_nxw8b"]
+[ext_resource type="PackedScene" uid="uid://c2cbn5ad2pli6" path="res://scenes/drag_object_slot.tscn" id="4_scek0"]
+
+[node name="crafting_ui" type="CanvasLayer"]
+script = ExtResource("1_08mj7")
+
+[node name="bg_sprite" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(8, 8)
+texture = ExtResource("2_5puft")
+
+[node name="drag_object_slot" parent="." instance=ExtResource("4_scek0")]
+position = Vector2(305, 343)
+
+[node name="drag_object_slot2" parent="." instance=ExtResource("4_scek0")]
+position = Vector2(401, 343)
+
+[node name="drag_object_slot3" parent="." instance=ExtResource("4_scek0")]
+position = Vector2(557, 340)
+
+[node name="crafting_iron_spawner" parent="." instance=ExtResource("4_nxw8b")]
+position = Vector2(319, 112)

@@ -14,22 +14,21 @@ func _ready():
 func _on_body_entered(body):
 	touching_player = true
 
-
 func _on_body_exited(body):
 	touching_player = false
 
 
 func _physics_process(delta):
 	if touching_player == true:
-		if Input.is_action_just_pressed("ui_accept"):
+		if Input.is_action_just_pressed("interact"):
 			if player_cant_move == false:
 				textbox.visible_characters = 0
 				timer.start()
 				player_cant_move = true
-				if player.resource_amount_battery < 2:
-					textbox.text = "Dead batteries."
-				elif player.resource_amount_battery >= 2:
-					textbox.text = "*Thank you for replacing my batteries. My name is _____. Nice to meet you, human."
+				if ResourceManager.battery_amount < 2:
+					textbox.text = "DEAD BATTERIES."
+				elif ResourceManager.battery_amount >= 2:
+					textbox.text = "*THANK YOU FOR REPLACING MY BATTERIES. MY NAME IS _____. NICE TO MEET YOU, HUMAN."
 				textbox_box.visible = true
 			elif textbox.visible_ratio >= 1:
 				player_cant_move = false
@@ -44,3 +43,6 @@ func _physics_process(delta):
 
 func _on_timer_timeout():
 	textbox.visible_characters += 1
+
+
+
