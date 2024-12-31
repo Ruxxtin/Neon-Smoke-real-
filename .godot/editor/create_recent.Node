@@ -1,6 +1,9 @@
-Label
 CollisionShape2D
+Node2D
 Area2D
+Camera2D
+TileMapLayer
+Label
 Sprite2D
 Button
 NinePatchRect
@@ -8,7 +11,4 @@ Panel
 TextureRect
 ColorRect
 StaticBody2D
-Node2D
 AudioStreamPlayer2D
-Timer
-CollisionPolygon2D

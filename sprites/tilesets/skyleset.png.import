@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b73wv8hpcpc4n"
-path="res://.godot/imported/ui.png-c7a7e6a5569b747e9ec03d5c0bcdc21f.ctex"
+uid="uid://4h3gow8562ga"
+path="res://.godot/imported/skyleset.png-57d7602363afe7231e98bce436e205c8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/ui.png"
-dest_files=["res://.godot/imported/ui.png-c7a7e6a5569b747e9ec03d5c0bcdc21f.ctex"]
+source_file="res://sprites/tilesets/skyleset.png"
+dest_files=["res://.godot/imported/skyleset.png-57d7602363afe7231e98bce436e205c8.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bb466h7hkas6k"
-path="res://.godot/imported/bench full kinda.png-f669f285f988c3deb0897b1ab218421a.ctex"
+uid="uid://d02sugjmab2ni"
+path="res://.godot/imported/bench full mostly.png-3add34d1accb27e6a1582b5b5b6b77bc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/bench full kinda.png"
-dest_files=["res://.godot/imported/bench full kinda.png-f669f285f988c3deb0897b1ab218421a.ctex"]
+source_file="res://sprites/stuff_in_crafting_table/bench full mostly.png"
+dest_files=["res://.godot/imported/bench full mostly.png-3add34d1accb27e6a1582b5b5b6b77bc.ctex"]
 
 [params]
 

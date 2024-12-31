@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d02sugjmab2ni"
-path="res://.godot/imported/bench full mostly.png-6a5e849c4810fcd6c10dee154011a179.ctex"
+uid="uid://c0nsvuxpxufad"
+path="res://.godot/imported/tiki_tower.png-c8e525b49dfa17bb185a0b20662d084b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/bench full mostly.png"
-dest_files=["res://.godot/imported/bench full mostly.png-6a5e849c4810fcd6c10dee154011a179.ctex"]
+source_file="res://sprites/tilesets/tiki_tower.png"
+dest_files=["res://.godot/imported/tiki_tower.png-c8e525b49dfa17bb185a0b20662d084b.ctex"]
 
 [params]
 

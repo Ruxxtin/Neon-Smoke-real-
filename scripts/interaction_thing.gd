@@ -43,6 +43,3 @@ func _physics_process(delta):
 
 func _on_timer_timeout():
 	textbox.visible_characters += 1
-
-
-
