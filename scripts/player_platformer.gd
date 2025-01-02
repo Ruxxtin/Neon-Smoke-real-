@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
-const SPEED = 200.0
-const JUMP_VELOCITY = -410.0
-const GRAVITY = 1330
+const SPEED = 180.0
+const JUMP_VELOCITY = -380.0
+const GRAVITY = 1200
 var coyote_time = false
 
 @onready var coyote_timer = $CoyoteTimer

@@ -9,3 +9,5 @@ max_distance = 1e+06
 panning_strength = 0.0
 bus = &"Music"
 script = ExtResource("2_gm403")
+
+[connection signal="tree_entered" from="." to="." method="_on_tree_entered"]
