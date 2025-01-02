@@ -31,13 +31,19 @@ func _physics_process(delta):
 		velocity.x = direction * SPEED
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
-
+	
+	# Max fall speed
+	if velocity.y > 400:
+		velocity.y = 400
+	
 	move_and_slide()
 
 
 func _on_area_2d_area_entered(area):
-	if area.is_in_group("glitch_portal"):
+	if area.is_in_group("glitch_portal_to_internal"):
 		get_tree().change_scene_to_file("res://scenes/arcade_game_1_internal.tscn")
+	if area.is_in_group("glitch_portal_to_rl"):
+		get_tree().change_scene_to_file("res://scenes/game.tscn")
 
 
 func _on_coyote_timer_timeout():

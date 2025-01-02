@@ -25,6 +25,11 @@ ArcadeTetracity="*res://scenes/arcade_tetracity.tscn"
 
 window/stretch/mode="canvas_items"
 
+[global_group]
+
+glitch_portal_to_internal=""
+glitch_portal_to_rl=""
+
 [input]
 
 sprint={
