@@ -8,3 +8,8 @@ res://scenes/player_platformer.tscn
 res://scripts/player_platformer.gd
 res://scripts/character_body_2d.gd
 res://scenes/Player.tscn
+res://scripts/elec_spike.gd
+res://scenes/elec_spike.tscn
+res://default_bus_layout.tres
+res://scenes/arcade_tetracity.tscn
+res://scripts/arcade_tetracity.gd

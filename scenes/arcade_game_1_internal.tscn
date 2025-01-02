@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=4 uid="uid://bh835hii73twv"]
+[gd_scene load_steps=18 format=4 uid="uid://bh835hii73twv"]
 
 [ext_resource type="Texture2D" uid="uid://4h3gow8562ga" path="res://sprites/tilesets/skyleset.png" id="1_wya14"]
 [ext_resource type="Texture2D" uid="uid://c4cyycc2t1i1x" path="res://sprites/tilesets/thick circuit board.png" id="2_fi2la"]
@@ -7,7 +7,7 @@
 [ext_resource type="PackedScene" uid="uid://0w6ot6i7tlbu" path="res://scenes/player_platformer.tscn" id="3_kdd52"]
 [ext_resource type="Texture2D" uid="uid://1lem5mlvu2i7" path="res://sprites/tilesets/thick circuit board better.png" id="4_3did1"]
 [ext_resource type="PackedScene" uid="uid://bsx7coh4krkpn" path="res://scenes/killzone.tscn" id="4_425lg"]
-[ext_resource type="Texture2D" uid="uid://bd42nknq5shfn" path="res://sprites/1spike elec sprsheet.png" id="5_jeec6"]
+[ext_resource type="PackedScene" uid="uid://mnuuih584hkh" path="res://scenes/elec_spike.tscn" id="8_iuvvh"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_agv7t"]
 texture = ExtResource("1_wya14")
@@ -73,38 +73,6 @@ sources/1 = SubResource("TileSetAtlasSource_gx1px")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_36m1q"]
 size = Vector2(2113, 21)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_fjtya"]
-atlas = ExtResource("5_jeec6")
-region = Rect2(0, 0, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_w03kq"]
-atlas = ExtResource("5_jeec6")
-region = Rect2(16, 0, 16, 16)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_5tagl"]
-atlas = ExtResource("5_jeec6")
-region = Rect2(0, 16, 16, 16)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_fp4cc"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_fjtya")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_w03kq")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_5tagl")
-}],
-"loop": true,
-"name": &"default",
-"speed": 10.0
-}]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_1pr4j"]
-size = Vector2(16, 11)
-
 [node name="arcade_game_1_internal" type="Node2D"]
 
 [node name="tilemaps" type="Node2D" parent="."]
@@ -122,7 +90,7 @@ tile_map_data = PackedByteArray("AAD//wAAAQAAAAAAAAD//wEAAQAAAAAAAAAAAAAAAQAAAAA
 tile_set = SubResource("TileSet_ga2pb")
 
 [node name="Player" parent="." instance=ExtResource("3_kdd52")]
-position = Vector2(8, -220)
+position = Vector2(8, -204)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 zoom = Vector2(3.12, 3.12)
@@ -140,57 +108,14 @@ shape = SubResource("RectangleShape2D_36m1q")
 
 [node name="elec_spikes" type="Node2D" parent="."]
 
-[node name="elec_spike" type="AnimatedSprite2D" parent="elec_spikes"]
-position = Vector2(104, 24)
-sprite_frames = SubResource("SpriteFrames_fp4cc")
-autoplay = "default"
-
-[node name="Area2D" type="Area2D" parent="elec_spikes/elec_spike"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="elec_spikes/elec_spike/Area2D"]
-position = Vector2(0, 2.5)
-shape = SubResource("RectangleShape2D_1pr4j")
-
-[node name="elec_spike2" type="AnimatedSprite2D" parent="elec_spikes"]
+[node name="elec_spike" parent="." instance=ExtResource("8_iuvvh")]
 position = Vector2(616, -56)
-sprite_frames = SubResource("SpriteFrames_fp4cc")
-autoplay = "default"
 
-[node name="Area2D" type="Area2D" parent="elec_spikes/elec_spike2"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="elec_spikes/elec_spike2/Area2D"]
-position = Vector2(0, 2.5)
-shape = SubResource("RectangleShape2D_1pr4j")
-
-[node name="elec_spike3" type="AnimatedSprite2D" parent="elec_spikes"]
+[node name="elec_spike2" parent="." instance=ExtResource("8_iuvvh")]
 position = Vector2(632, -56)
-sprite_frames = SubResource("SpriteFrames_fp4cc")
-autoplay = "default"
 
-[node name="Area2D" type="Area2D" parent="elec_spikes/elec_spike3"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="elec_spikes/elec_spike3/Area2D"]
-position = Vector2(0, 2.5)
-shape = SubResource("RectangleShape2D_1pr4j")
-
-[node name="elec_spike4" type="AnimatedSprite2D" parent="elec_spikes"]
+[node name="elec_spike3" parent="." instance=ExtResource("8_iuvvh")]
 position = Vector2(648, -56)
-sprite_frames = SubResource("SpriteFrames_fp4cc")
-autoplay = "default"
 
-[node name="Area2D" type="Area2D" parent="elec_spikes/elec_spike4"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="elec_spikes/elec_spike4/Area2D"]
-position = Vector2(0, 2.5)
-shape = SubResource("RectangleShape2D_1pr4j")
-
-[node name="elec_spike5" type="AnimatedSprite2D" parent="elec_spikes"]
+[node name="elec_spike4" parent="." instance=ExtResource("8_iuvvh")]
 position = Vector2(664, -56)
-sprite_frames = SubResource("SpriteFrames_fp4cc")
-autoplay = "default"
-
-[node name="Area2D" type="Area2D" parent="elec_spikes/elec_spike5"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="elec_spikes/elec_spike5/Area2D"]
-position = Vector2(0, 2.5)
-shape = SubResource("RectangleShape2D_1pr4j")
