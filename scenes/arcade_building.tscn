@@ -108,7 +108,7 @@ position = Vector2(295, 239)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(0, -1)
-zoom = Vector2(3.2, 3.2)
+zoom = Vector2(2.5, 2.5)
 limit_bottom = 512
 
 [node name="textbox" parent="Player/Camera2D" instance=ExtResource("5_7g5y1")]

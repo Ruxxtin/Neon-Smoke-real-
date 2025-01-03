@@ -1,14 +1,9 @@
 res://scenes/start_menu.tscn
-res://scripts/arcade_tetracity.gd
 res://scenes/cryolab.tscn
 res://scenes/game.tscn
-res://scenes/dragtestscene.tscn
-res://scenes/player_platformer.tscn
 res://scenes/arcade_game_1.tscn
 res://scenes/arcade_game_1_internal.tscn
-res://scenes/elec_spike.tscn
-res://scenes/arcade_tetracity.tscn
-res://scripts/scene_changer.gd
-res://scripts/player_platformer.gd
-res://scripts/scene_changer_to_arcade.gd
 res://scenes/arcade_building.tscn
+res://scripts/player_platformer.gd
+res://scenes/Player.tscn
+res://scenes/player_platformer.tscn

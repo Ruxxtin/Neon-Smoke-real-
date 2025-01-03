@@ -4,8 +4,10 @@ const SPEED = 180.0
 const JUMP_VELOCITY = -380.0
 const GRAVITY = 1200
 var coyote_time = false
+var is_playing_idle = true
 
 @onready var coyote_timer = $CoyoteTimer
+@onready var animated_sprite_2d = $AnimatedSprite2D
 
 func _physics_process(delta):
 	# Add the gravity.
@@ -35,6 +37,33 @@ func _physics_process(delta):
 	# Max fall speed
 	if velocity.y > 400:
 		velocity.y = 400
+	
+	# Change sprite
+	if velocity.y != 0:
+		animated_sprite_2d.play("jump")
+		is_playing_idle = false
+	#if velocity.y > 0:
+	#	animated_sprite_2d.play("fall")
+	#	is_playing_idle = false
+	if  velocity.x != 0 and velocity.y == 0:
+		animated_sprite_2d.play("walk_side")
+		is_playing_idle = false
+	if velocity.x == 0:
+		animated_sprite_2d.play("idle")
+		is_playing_idle = true
+	if velocity.x < 0:
+		animated_sprite_2d.flip_h = true
+	if velocity.x > 0:
+		animated_sprite_2d.flip_h = false
+	if velocity.y == 0 and is_on_floor() == false:
+		if velocity.x != 0:
+			animated_sprite_2d.play("jump")
+			is_playing_idle = false
+		elif velocity.x == 0:
+			if is_playing_idle == false:
+				animated_sprite_2d.play("idle")
+				is_playing_idle = true
+	
 	
 	move_and_slide()
 

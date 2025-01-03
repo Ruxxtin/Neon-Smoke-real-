@@ -1,4 +1,4 @@
-[gd_scene load_steps=39 format=4 uid="uid://cu3tbj3urmlgu"]
+[gd_scene load_steps=40 format=4 uid="uid://cu3tbj3urmlgu"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_3msjn"]
 [ext_resource type="PackedScene" uid="uid://f2ia5ue6cp3u" path="res://scenes/Player.tscn" id="1_rrelb"]
@@ -24,6 +24,7 @@
 [ext_resource type="PackedScene" uid="uid://c137m0mgdi1tj" path="res://UI/crafting_ui.tscn" id="20_pbppm"]
 [ext_resource type="Texture2D" uid="uid://d3wsj1sk6ppbk" path="res://sprites/arcade.png" id="22_u8vop"]
 [ext_resource type="Script" path="res://scripts/scene_changer_to_arcade.gd" id="23_ent50"]
+[ext_resource type="Texture2D" uid="uid://dcn5yjxs5dfa8" path="res://sprites/building4 real.png" id="25_tcrpt"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yubo0"]
 texture = ExtResource("2_snj1s")
@@ -326,30 +327,36 @@ position = Vector2(200, 65)
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="collision object"]
 polygon = PackedVector2Array(-2, 8, -8, 2, 2, -8, 8, -2)
 
-[node name="sykul_building" type="Sprite2D" parent="."]
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="sykul_building" type="Sprite2D" parent="Node2D"]
 position = Vector2(16, -128)
 texture = ExtResource("11_t5phd")
 
-[node name="free_buildindg" type="Sprite2D" parent="."]
+[node name="free_buildindg" type="Sprite2D" parent="Node2D"]
 position = Vector2(-240, -128)
 texture = ExtResource("20_bn7mj")
 
-[node name="Arcade" type="Sprite2D" parent="."]
+[node name="Arcade" type="Sprite2D" parent="Node2D"]
 position = Vector2(176, -592)
 texture = ExtResource("22_u8vop")
 
-[node name="scene_changer" type="Area2D" parent="Arcade"]
+[node name="scene_changer" type="Area2D" parent="Node2D/Arcade"]
 position = Vector2(106, 116)
 collision_mask = 2
 script = ExtResource("23_ent50")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Arcade/scene_changer"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Arcade/scene_changer"]
 position = Vector2(-0.5, -11.5)
 shape = SubResource("RectangleShape2D_0iiog")
 
-[node name="Building3" type="Sprite2D" parent="."]
+[node name="Building3" type="Sprite2D" parent="Node2D"]
 position = Vector2(432, -592)
 texture = ExtResource("17_n5jht")
+
+[node name="Building4Real" type="Sprite2D" parent="Node2D"]
+position = Vector2(208, -128)
+texture = ExtResource("25_tcrpt")
 
 [node name="crafting_table" parent="." instance=ExtResource("19_unqf0")]
 position = Vector2(315, 66)
@@ -398,5 +405,5 @@ visible = false
 
 [connection signal="body_entered" from="Interaction_thing" to="Interaction_thing" method="_on_body_entered"]
 [connection signal="body_exited" from="Interaction_thing" to="Interaction_thing" method="_on_body_exited"]
-[connection signal="body_entered" from="Arcade/scene_changer" to="Arcade/scene_changer" method="_on_body_entered"]
+[connection signal="body_entered" from="Node2D/Arcade/scene_changer" to="Node2D/Arcade/scene_changer" method="_on_body_entered"]
 [connection signal="timeout" from="ui/Timer" to="ui" method="_on_timer_timeout"]

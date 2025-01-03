@@ -23,6 +23,7 @@ ArcadeTetracity="*res://scenes/arcade_tetracity.tscn"
 
 [display]
 
+window/size/mode=3
 window/stretch/mode="canvas_items"
 
 [global_group]
