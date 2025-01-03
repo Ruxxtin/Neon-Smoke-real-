@@ -7,3 +7,11 @@ res://scenes/arcade_building.tscn
 res://scripts/player_platformer.gd
 res://scenes/Player.tscn
 res://scenes/player_platformer.tscn
+res://scripts/character_body_2d.gd
+res://scripts/scene_changer_in_arcade.gd
+res://global.gd
+res://global.tscn
+res://scenes/arcade_tetracity.tscn
+res://scenes/arcade_building_tetracity.tscn
+res://scripts/tetracity_player.gd
+res://scripts/main.gd

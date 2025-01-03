@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://buinso8tybdjf"
+path="res://.godot/imported/Tetracity shortend.mp3-04da52d9027630d5e51d572db4936e0f.mp3str"
+
+[deps]
+
+source_file="res://sounds/Tetracity shortend.mp3"
+dest_files=["res://.godot/imported/Tetracity shortend.mp3-04da52d9027630d5e51d572db4936e0f.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

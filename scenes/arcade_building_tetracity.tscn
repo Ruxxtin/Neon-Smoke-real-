@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://d1q6vytxl6lup"]
+
+[ext_resource type="AudioStream" uid="uid://buinso8tybdjf" path="res://sounds/Tetracity shortend.mp3" id="1_v6dll"]
+[ext_resource type="Script" path="res://scripts/tetracity_player.gd" id="2_5pueb"]
+
+[node name="tetracity_player" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_v6dll")
+max_distance = 1e+06
+panning_strength = 0.0
+bus = &"Music"
+script = ExtResource("2_5pueb")
+
+[connection signal="tree_entered" from="." to="." method="_on_tree_entered"]
