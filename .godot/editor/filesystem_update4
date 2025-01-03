@@ -10,3 +10,5 @@ res://scenes/elec_spike.tscn
 res://scenes/arcade_tetracity.tscn
 res://scripts/scene_changer.gd
 res://scripts/player_platformer.gd
+res://scripts/scene_changer_to_arcade.gd
+res://scenes/arcade_building.tscn
