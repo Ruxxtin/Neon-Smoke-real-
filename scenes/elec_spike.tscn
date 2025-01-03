@@ -33,7 +33,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q7iwe"]
-size = Vector2(16, 11)
+size = Vector2(14, 11)
 
 [node name="elec_spike" type="AnimatedSprite2D"]
 sprite_frames = SubResource("SpriteFrames_1gpyb")

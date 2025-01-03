@@ -161,7 +161,7 @@ tile_set = SubResource("TileSet_ga2pb")
 position = Vector2(2528, -144)
 sprite_frames = SubResource("SpriteFrames_2204n")
 autoplay = "default"
-frame_progress = 0.0299706
+frame_progress = 0.739437
 
 [node name="Area2D" type="Area2D" parent="AnimatedSprite2D" groups=["glitch_portal_to_rl"]]
 collision_mask = 2
