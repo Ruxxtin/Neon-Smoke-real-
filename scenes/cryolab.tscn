@@ -1,7 +1,8 @@
-[gd_scene load_steps=26 format=4 uid="uid://0f1ih8n10pth"]
+[gd_scene load_steps=27 format=4 uid="uid://0f1ih8n10pth"]
 
 [ext_resource type="PackedScene" uid="uid://f2ia5ue6cp3u" path="res://scenes/Player.tscn" id="1_cnkv6"]
 [ext_resource type="Texture2D" uid="uid://b4uje8g1isp6h" path="res://sprites/tilesets/labfloor.png" id="1_hqlnm"]
+[ext_resource type="Script" path="res://scripts/cryolab.gd" id="1_ku55i"]
 [ext_resource type="Texture2D" uid="uid://mioem0qh7iij" path="res://sprites/tilesets/cryowall.png" id="2_3tb5u"]
 [ext_resource type="Texture2D" uid="uid://b3jnmcsjvnnvq" path="res://sprites/tilesets/labfloortiles.png" id="2_sb6vy"]
 [ext_resource type="PackedScene" uid="uid://cfe5kocqihd2u" path="res://scenes/textbox.tscn" id="3_u77l0"]
@@ -14,14 +15,14 @@
 [ext_resource type="Script" path="res://scripts/scene_changer.gd" id="9_mh7tu"]
 [ext_resource type="PackedScene" uid="uid://qp1fouvcqi2t" path="res://UI/ui.tscn" id="13_vgf16"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w75pj"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_f7pd6"]
 texture = ExtResource("1_hqlnm")
 0:0/0 = 0
 1:0/0 = 0
 0:1/0 = 0
 1:1/0 = 0
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2bh2b"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lwynt"]
 texture = ExtResource("2_sb6vy")
 0:0/0 = 0
 1:0/0 = 0
@@ -29,10 +30,10 @@ texture = ExtResource("2_sb6vy")
 1:1/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_dgg7y"]
-sources/0 = SubResource("TileSetAtlasSource_w75pj")
-sources/1 = SubResource("TileSetAtlasSource_2bh2b")
+sources/0 = SubResource("TileSetAtlasSource_f7pd6")
+sources/1 = SubResource("TileSetAtlasSource_lwynt")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ov1l2"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s33ev"]
 texture = ExtResource("2_3tb5u")
 0:0/0 = 0
 1:0/0 = 0
@@ -40,7 +41,7 @@ texture = ExtResource("2_3tb5u")
 1:1/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_unkfc"]
-sources/0 = SubResource("TileSetAtlasSource_ov1l2")
+sources/0 = SubResource("TileSetAtlasSource_s33ev")
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_57tuj"]
 texture = ExtResource("3_ys1xg")
@@ -78,7 +79,7 @@ texture = ExtResource("3_ys1xg")
 physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_57tuj")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_pjoba"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_63x68"]
 texture = ExtResource("4_gol7x")
 0:0/0 = 0
 1:0/0 = 0
@@ -102,9 +103,9 @@ texture = ExtResource("4_gol7x")
 6:2/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_kd7e0"]
-sources/3 = SubResource("TileSetAtlasSource_pjoba")
+sources/3 = SubResource("TileSetAtlasSource_63x68")
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_j1vqc"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_eqo0n"]
 texture = ExtResource("6_u53r7")
 0:0/0 = 0
 1:0/0 = 0
@@ -121,12 +122,13 @@ texture = ExtResource("6_u53r7")
 3:3/0 = 0
 
 [sub_resource type="TileSet" id="TileSet_uj2q3"]
-sources/0 = SubResource("TileSetAtlasSource_j1vqc")
+sources/0 = SubResource("TileSetAtlasSource_eqo0n")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b201y"]
 size = Vector2(32, 24)
 
 [node name="cryolab" type="Node2D"]
+script = ExtResource("1_ku55i")
 
 [node name="TileMap_cryofloor" type="Node2D" parent="."]
 

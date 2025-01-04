@@ -15,3 +15,17 @@ res://scenes/arcade_tetracity.tscn
 res://scenes/arcade_building_tetracity.tscn
 res://scripts/tetracity_player.gd
 res://scripts/main.gd
+res://scripts/arcade_building.gd
+res://scripts/scene_changer_to_arcade.gd
+res://scripts/sykulenterance.gd
+res://scripts/scene_changer.gd
+res://scenes/sykul_g_floor.tscn
+res://scripts/sykul_g_floor.gd
+res://scripts/back_to_basement.gd
+res://scripts/cryolab.gd
+res://scripts/cryolab_cutscene_manager.gd
+res://scenes/actionable.tscn
+res://scripts/actionable.gd
+res://scenes/engineers_notebook.tscn
+res://addons/dialogue_manager/example_balloon/example_balloon.gd
+res://dialogue/balloon.tscn

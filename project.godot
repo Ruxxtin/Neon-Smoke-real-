@@ -20,16 +20,26 @@ config/icon="res://icon.svg"
 ResourceManager="*res://scripts/resource_manager.gd"
 Global="*res://global.gd"
 ArcadeTetracity="*res://scenes/arcade_tetracity.tscn"
+DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
+
+[dialogue_manager]
+
+general/balloon_path="res://dialogue/balloon.tscn"
 
 [display]
 
 window/size/mode=3
 window/stretch/mode="canvas_items"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
+
 [global_group]
 
 glitch_portal_to_internal=""
 glitch_portal_to_rl=""
+Player=""
 
 [input]
 
@@ -89,6 +99,10 @@ jump={
 , Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"button_index":1,"pressure":0.0,"pressed":false,"script":null)
 ]
 }
+
+[internationalization]
+
+locale/translations_pot_files=PackedStringArray("res://dialogue/main.dialogue")
 
 [rendering]
 
