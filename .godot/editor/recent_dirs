@@ -1,8 +1,8 @@
-res://dialogic/timelines
-res://scripts
-res://sprites/characters
-res://scenes
 res://dialogic/characters
+res://scripts
+res://scenes
+res://dialogic/timelines
+res://sprites/characters
 res://dialogue
 res://
 res://sprites

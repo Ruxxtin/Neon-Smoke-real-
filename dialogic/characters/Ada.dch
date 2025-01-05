@@ -10,14 +10,23 @@
 "style": "",
 "suffix": ""
 },
-"default_portrait": "determined",
+"default_portrait": "determined_right",
 "description": "Ada",
 "display_name": "Ada",
 "mirror": true,
 "nicknames": [""],
 "offset": Vector2(0, 0),
 "portraits": {
-"determined": {
+"determined_left": {
+"export_overrides": {
+"image": "\"res://dialogic/characters/adda_ya-removebg-preview.png\""
+},
+"mirror": true,
+"offset": Vector2(0, -128),
+"scale": 0.3,
+"scene": ""
+},
+"determined_right": {
 "export_overrides": {
 "image": "\"res://dialogic/characters/adda_ya-removebg-preview.png\""
 },

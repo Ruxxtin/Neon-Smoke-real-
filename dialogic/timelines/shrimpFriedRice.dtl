@@ -1,21 +1,20 @@
-join Ada left
+join Ada (determined_left) left
 Ada: So, remember the plan. We get in, we get out, and whatever we do, we don’t climb higher than floor ten.
-leave --All-- 
+leave --All--
 join Neeko right
 Neeko: Alrighty. Got the stuff?
-leave --All-- 
-join Ada left
+leave --All--
+join Ada (determined_left) left
 Ada: Yep. Lamp oil, check. Rope, uh, check–
-leave --All-- 
+leave --All--
 join Neeko right
 Neeko: I still don’t get why we need the lamp oil.
-leave --All-- 
-join Ada left
+leave --All--
+join Ada (determined_left) left
 Ada: Lamp oil is great for cybermods when they get all janky. Something about the way it’s composed--
-leave --All-- 
+leave --All--
 [signal arg="player_enter"]
-leave --All-- 
-leave --All-- 
-leave --All-- 
-leave --All-- 
-
+leave --All--
+leave --All--
+leave --All--
+leave --All--

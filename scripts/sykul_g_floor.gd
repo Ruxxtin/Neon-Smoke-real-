@@ -3,7 +3,7 @@ extends Node2D
 @onready var cutscene_timer = $cutscene_timer
 @onready var neeko_cutscene = $Neeko_cutscene
 
-var player_scene = preload("res://scenes/player.tscn")
+var player_scene = preload("res://scenes/player_cutscene.tscn")
 
 func _ready():
 	
@@ -24,7 +24,7 @@ func DialogueSignal(arg: String):
 		
 		cutscene_timer.start()
 		var player_scene: Node = player_scene.instantiate()
-		get_tree().current_scene.add_child(player_scene)
+		spawn_player(Vector2(15,84))
 
 
 func _on_cutscene_timer_timeout():
@@ -32,3 +32,14 @@ func _on_cutscene_timer_timeout():
 
 func run_dialogue(dialogue_timeline):
 	Dialogic.start(dialogue_timeline)
+
+func spawn_player(location: Vector2):
+	# Instantiate the player scene
+	var player_instance = player_scene.instantiate()
+
+	# Set the player's position
+	if player_instance is Node2D:
+		player_instance.position = location
+
+	# Add the player instance to the current scene
+	get_tree().current_scene.add_child(player_instance)

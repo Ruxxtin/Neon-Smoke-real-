@@ -1,13 +1,13 @@
 join Neeko right
 Neeko: And here I thought we were the only ones brave enough to loot Sykul Tower.
-leave --All-- 
-join Ada right
+leave --All--
+join Ada (determined_right) right
 Ada: Stupid enough. You mean stupid enough.
-leave --All-- 
+leave --All--
 join Neeko right
 Neeko: Tsk. Whatever. Bravery is just a well-respected form of stupidity.
 Neeko: Hey, kid! Are you good?
-leave --All-- 
+leave --All--
 join Ada right
 Ada: Hey, what were you doing down there?
 leave --All--
@@ -17,7 +17,7 @@ update Player (worried)
 	leave --All--
 	join Neeko right
 	Neeko: What do you mean you “don’t know”?
-	leave --All-- 
+	leave --All--
 	join Player left
 	Player: I walked out of some sort of tube… thing.
 	leave --All--

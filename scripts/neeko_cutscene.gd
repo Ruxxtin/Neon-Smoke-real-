@@ -18,6 +18,3 @@ func _physics_process(delta):
 
 func run_dialogue(dialogue_timeline):
 	Dialogic.start(dialogue_timeline)
-
-func DialogueSignal():
-	pass
