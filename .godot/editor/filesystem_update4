@@ -15,3 +15,16 @@ res://scenes/crafting_iron_spawner.tscn
 res://dialogic/characters/Neeko.dch
 res://dialogic/characters/Ada.dch
 res://dialogic/timelines/shrimpFriedRice.dtl
+res://dialogic/styles/style_1.tres
+res://dialogic/styles/style_2.tres
+res://dialogic/characters/Player.dch
+res://dialogic/styles/TextboxWithPortrait/custom_textbox_with_portrait_.tscn
+res://dialogic/styles/TextboxWithPortrait/speaker_portrait_textbox_layer.gd
+res://dialogic/styles/TextboxWithPortrait/TextboxWithPortrait/custom_textbox_with_portrait_.tscn
+res://dialogic/styles/TextboxWithPortrait/CustomStyle1/custom_style_1.tscn
+res://dialogic/styles/TextboxWithPortrait/CustomStyle1/default_layout_base.gd
+res://addons/dialogic/Modules/DefaultLayoutParts/Layer_SpeakerPortraitTextbox/textbox_with_speaker_portrait.tscn
+res://dialogic/styles/style_3.tres
+res://addons/dialogic/Modules/DefaultLayoutParts/Base_Default/default_layout_base.tscn
+res://dialogic/styles/custom_1.tres
+res://dialogic/styles/VisualNovelTextbox/custom_visual_novel_textbox.tscn

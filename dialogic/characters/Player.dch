@@ -7,7 +7,7 @@
 "prefix": "",
 "sound_mood_default": "",
 "sound_moods": {},
-"style": "",
+"style": "style_1",
 "suffix": ""
 },
 "default_portrait": "worried",
@@ -23,7 +23,7 @@
 },
 "ignore_char_scale": false,
 "mirror": false,
-"offset": Vector2(0, -128),
+"offset": Vector2(0, 0),
 "scale": 0.3,
 "scene": ""
 },

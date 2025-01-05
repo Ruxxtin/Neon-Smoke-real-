@@ -1,7 +1,8 @@
-[gd_scene load_steps=7 format=3 uid="uid://by6waso0mjpjp"]
+[gd_scene load_steps=8 format=3 uid="uid://by6waso0mjpjp"]
 
 [ext_resource type="Script" path="res://addons/dialogic/Modules/Character/node_portrait_container.gd" id="1_4jxq7"]
 [ext_resource type="Script" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_SpeakerPortraitTextbox/speaker_portrait_textbox_layer.gd" id="1_7jt4d"]
+[ext_resource type="Texture2D" uid="uid://ch1k6dgvl0kei" path="res://dialogic/styles/dialogue_box_ns.png" id="2_v2t3r"]
 [ext_resource type="Script" path="res://addons/dialogic/Modules/Text/node_name_label.gd" id="2_y0h34"]
 [ext_resource type="Script" path="res://addons/dialogic/Modules/Text/node_dialog_text.gd" id="3_11puy"]
 [ext_resource type="Script" path="res://addons/dialogic/Modules/Text/node_type_sound.gd" id="5_sr2qw"]
@@ -45,13 +46,17 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -250.0
+offset_left = -300.0
 offset_top = -200.0
-offset_right = 250.0
-offset_bottom = -50.0
+offset_right = 300.0
+offset_bottom = -40.0
 grow_horizontal = 2
 grow_vertical = 0
 mouse_filter = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="Anchor/Panel"]
+position = Vector2(300, 80)
+texture = ExtResource("2_v2t3r")
 
 [node name="HBox" type="HBoxContainer" parent="Anchor/Panel"]
 layout_mode = 2
@@ -61,6 +66,7 @@ theme_override_constants/separation = 15
 [node name="PortraitPanel" type="Panel" parent="Anchor/Panel/HBox"]
 unique_name_in_owner = true
 clip_children = 1
+clip_contents = true
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.3
@@ -69,14 +75,12 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_dmg1w")
 
 [node name="PortraitBackgroundColor" type="ColorRect" parent="Anchor/Panel/HBox/PortraitPanel"]
 unique_name_in_owner = true
+self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -7.0
-offset_top = -3.0
-offset_right = 7.0
-offset_bottom = 3.0
+offset_right = 25.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
@@ -87,7 +91,7 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = 4.0
+offset_bottom = -4.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
