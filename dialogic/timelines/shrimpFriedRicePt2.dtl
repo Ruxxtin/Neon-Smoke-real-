@@ -1,0 +1,68 @@
+join Neeko right
+Neeko: And here I thought we were the only ones brave enough to loot Sykul Tower.
+leave --All-- 
+join Ada right
+Ada: Stupid enough. You mean stupid enough.
+leave --All-- 
+join Neeko right
+Neeko: Tsk. Whatever. Bravery is just a well-respected form of stupidity.
+Neeko: Hey, kid! Are you good?
+leave --All-- 
+join Ada right
+Ada: Hey, what were you doing down there?
+leave --All--
+join Player left
+update Player (worried)
+- Player: I don't... know?
+	leave --All--
+	join Neeko right
+	Neeko: What do you mean you “don’t know”?
+	leave --All-- 
+	join Player left
+	Player: I walked out of some sort of tube… thing.
+	leave --All--
+	join Ada right
+	Ada: An elevator?
+	leave --All--
+	join Player left
+	Player: No, no–
+	leave --All--
+	join Neeko right
+	Neeko: A subway car?
+	leave --All--
+	join Player left
+	Player: We’re not in england. Wait. Are we?
+	leave --All--
+	join Ada right
+	Ada: Whatever. The real question is what you got.
+	leave --All--
+	join Player left
+	Player: What I... got?
+- Player: Uhh... not tax fraud?
+	leave --All--
+	join Ada right
+	Ada: That... hm.
+	leave --All--
+	join Neeko right
+	Neeko: Ada, they looked to the right. As a private eye who has studied psychology, that means... they’re lying. (or was it the left?)
+	leave --All--
+	join Ada right
+	Ada: Yeah, something gives me that impression, too, Sherlock.
+	leave --All--
+	join Player left
+	Player: If it helps, I also wasn’t committing vandalism or destruction of property.
+	leave --All--
+	join Ada right
+	Ada: Wait, what are taxes– nevermind. What I really want to know is what you found down there.
+	leave --All--
+	join Player left
+	Player: I’m sorry... what I found?
+leave --All--
+join Ada right
+Ada: Yeah, you went in there to get stuff, right?
+leave --All--
+join Neeko right
+Neeko: So it’s only logical that you’d bring something back out.
+leave --All--
+join Ada right
+Ada: Psst! Commence maneuver Battery Resuscitation!

@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=4 uid="uid://jcxwi2jsvln6"]
+[gd_scene load_steps=28 format=4 uid="uid://jcxwi2jsvln6"]
 
 [ext_resource type="Texture2D" uid="uid://b4uje8g1isp6h" path="res://sprites/tilesets/labfloor.png" id="1_1sfxq"]
 [ext_resource type="Script" path="res://scripts/sykul_g_floor.gd" id="1_yriam"]
@@ -10,9 +10,9 @@
 [ext_resource type="Texture2D" uid="uid://dfy1rkao8evit" path="res://sprites/stair darker.png" id="7_00lnj"]
 [ext_resource type="Texture2D" uid="uid://bq647bqdubwir" path="res://sprites/arel.png" id="8_fw60d"]
 [ext_resource type="PackedScene" uid="uid://clr1ywgmmsxxt" path="res://scenes/collision_object.tscn" id="9_airx7"]
-[ext_resource type="PackedScene" uid="uid://f2ia5ue6cp3u" path="res://scenes/Player.tscn" id="10_0rvke"]
 [ext_resource type="Script" path="res://scripts/back_to_basement.gd" id="11_gd05c"]
-[ext_resource type="Script" path="res://scripts/cryolab_cutscene_manager.gd" id="13_luy4f"]
+[ext_resource type="PackedScene" uid="uid://ytaulxxgm8k4" path="res://scenes/ada.tscn" id="12_ut40g"]
+[ext_resource type="PackedScene" uid="uid://b6xpavopktolo" path="res://scenes/neeko.tscn" id="13_7mw1f"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qvxhq"]
 texture = ExtResource("1_1sfxq")
@@ -107,9 +107,6 @@ size = Vector2(2, 38)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_abhe1"]
 size = Vector2(31, 7)
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_p3u5v"]
-size = Vector2(32, 16)
-
 [node name="sykul_g_floor" type="Node2D"]
 script = ExtResource("1_yriam")
 
@@ -193,29 +190,28 @@ position = Vector2(33, 78)
 position = Vector2(-1, -1)
 shape = SubResource("RectangleShape2D_d2lb3")
 
-[node name="Player" parent="." instance=ExtResource("10_0rvke")]
-position = Vector2(15, 70)
-
-[node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2(0, -1)
-zoom = Vector2(3.2, 3.2)
-
-[node name="Area2D" type="Area2D" parent="."]
+[node name="go_to_basement" type="Area2D" parent="."]
 position = Vector2(17, 91)
 collision_mask = 2
 script = ExtResource("11_gd05c")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="go_to_basement"]
 position = Vector2(-1.5, 1.5)
 shape = SubResource("RectangleShape2D_abhe1")
 
-[node name="cutscene starter" type="Area2D" parent="."]
-position = Vector2(16, 40)
-collision_mask = 2
-script = ExtResource("13_luy4f")
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(104, 56)
+zoom = Vector2(2.5, 2.5)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="cutscene starter"]
-shape = SubResource("RectangleShape2D_p3u5v")
+[node name="Ada_cutscene" parent="." instance=ExtResource("12_ut40g")]
+position = Vector2(136, 224.5)
 
-[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]
-[connection signal="body_entered" from="cutscene starter" to="cutscene starter" method="_on_body_entered"]
+[node name="Neeko_cutscene" parent="." instance=ExtResource("13_7mw1f")]
+position = Vector2(168, 225)
+
+[node name="cutscene_timer" type="Timer" parent="."]
+wait_time = 2.0
+one_shot = true
+
+[connection signal="body_entered" from="go_to_basement" to="go_to_basement" method="_on_body_entered"]
+[connection signal="timeout" from="cutscene_timer" to="." method="_on_cutscene_timer_timeout"]

@@ -4,8 +4,9 @@ Ada: So, remember the plan. We get in, we get out, and whatever we do, we don’
 Neeko: Alrighty. Got the stuff?
 Ada: Yep. Lamp oil, check. Rope, uh, check–
 Neeko: I still don’t get why we need the lamp oil.
-Ada: Lamp oil is great for cybermods when they get all janky. Something about the way it’s composed–-
-(they both see you)
+Ada: Lamp oil is great for cybermods when they get all janky. Something about the way it’s composed--
+do emit("player_enter_cutscene", "player entering")
+do wait(3)
 Neeko: And here I thought we were the only ones brave enough to loot Sykul Tower.
 Ada: Stupid enough. You mean stupid enough.
 Neeko: Tsk. Whatever. Bravery is just a well-respected form of stupidity.
@@ -20,13 +21,13 @@ Ada: Hey, what were you doing down there?
 	Player: We’re not in england. Wait. Are we?
 	Ada: Whatever. The real question is what you got.
 	Player: What I... got?
-- Player: Uhh… not tax fraud?
-	Ada: That… hm.
+- Player: Uhh... not tax fraud?
+	Ada: That... hm.
 	Neeko: Ada, they looked to the right. As a private eye who has studied psychology, that means... they’re lying. (or was it the left?)
 	Ada: Yeah, something gives me that impression, too, Sherlock.
 	Player: If it helps, I also wasn’t committing vandalism or destruction of property.
 	Ada: Wait, what are taxes– nevermind. What I really want to know is what you found down there.
-	Player: I’m sorry… what I found?
+	Player: I’m sorry... what I found?
 Ada: Yeah, you went in there to get stuff, right?
 Neeko: So it’s only logical that you’d bring something back out.
 Ada, to Neeko: Psst! Commence maneuver Battery Resuscitation!

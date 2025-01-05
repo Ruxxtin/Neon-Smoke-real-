@@ -18,27 +18,27 @@ lines = {
 "type": &"title"
 },
 "10": {
-"character": "Ada",
+"character": "Neeko",
 "character_replacements": Array[Dictionary]([]),
 "id": "10",
 "next_id": "11",
 "notes": "",
 "tags": PackedStringArray(),
-"text": "Stupid enough. You mean stupid enough.",
+"text": "And here I thought we were the only ones brave enough to loot Sykul Tower.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Stupid enough. You mean stupid enough.",
+"translation_key": "And here I thought we were the only ones brave enough to loot Sykul Tower.",
 "type": &"dialogue"
 },
 "11": {
-"character": "Neeko",
+"character": "Ada",
 "character_replacements": Array[Dictionary]([]),
 "id": "11",
 "next_id": "12",
 "notes": "",
 "tags": PackedStringArray(),
-"text": "Tsk. Whatever. Bravery is just a well-respected form of stupidity.",
+"text": "Stupid enough. You mean stupid enough.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Tsk. Whatever. Bravery is just a well-respected form of stupidity.",
+"translation_key": "Stupid enough. You mean stupid enough.",
 "type": &"dialogue"
 },
 "12": {
@@ -48,16 +48,28 @@ lines = {
 "next_id": "13",
 "notes": "",
 "tags": PackedStringArray(),
+"text": "Tsk. Whatever. Bravery is just a well-respected form of stupidity.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Tsk. Whatever. Bravery is just a well-respected form of stupidity.",
+"type": &"dialogue"
+},
+"13": {
+"character": "Neeko",
+"character_replacements": Array[Dictionary]([]),
+"id": "13",
+"next_id": "14",
+"notes": "",
+"tags": PackedStringArray(),
 "text": "Hey, kid! Are you good?",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Hey, kid! Are you good?",
 "type": &"dialogue"
 },
-"13": {
+"14": {
 "character": "Ada",
 "character_replacements": Array[Dictionary]([]),
-"id": "13",
-"next_id": "14",
+"id": "14",
+"next_id": "15",
 "notes": "",
 "tags": PackedStringArray(),
 "text": "Hey, what were you doing down there?",
@@ -65,235 +77,222 @@ lines = {
 "translation_key": "Hey, what were you doing down there?",
 "type": &"dialogue"
 },
-"14": {
+"15": {
 "character": "Player",
 "character_replacements": Array[Dictionary]([]),
-"id": "14",
-"next_id": "14.2",
-"next_id_after": "30",
+"id": "15",
+"next_id": "15.2",
+"next_id_after": "31",
 "notes": "",
-"responses": PackedStringArray("14", "23"),
+"responses": PackedStringArray("15", "24"),
 "tags": PackedStringArray(),
 "text": "I don't... know?",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "I don't... know?",
 "type": &"response"
 },
-"14.2": {
+"15.2": {
 "character": "Player",
 "character_replacements": Array[Dictionary]([]),
-"next_id": "15",
-"next_id_after": "30",
+"next_id": "16",
+"next_id_after": "31",
 "tags": PackedStringArray(),
 "text": "I don't... know?",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "I don't... know?",
 "type": &"dialogue"
 },
-"15": {
+"16": {
 "character": "Neeko",
 "character_replacements": Array[Dictionary]([]),
-"id": "15",
-"next_id": "16",
+"id": "16",
+"next_id": "17",
 "notes": "",
-"parent_id": "14",
+"parent_id": "15",
 "tags": PackedStringArray(),
 "text": "What do you mean you “don’t know”?",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "What do you mean you “don’t know”?",
 "type": &"dialogue"
 },
-"16": {
+"17": {
 "character": "Player",
 "character_replacements": Array[Dictionary]([]),
-"id": "16",
-"next_id": "17",
+"id": "17",
+"next_id": "18",
 "notes": "",
-"parent_id": "14",
+"parent_id": "15",
 "tags": PackedStringArray(),
 "text": "I walked out of some sort of tube… thing.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "I walked out of some sort of tube… thing.",
 "type": &"dialogue"
 },
-"17": {
+"18": {
 "character": "Ada",
 "character_replacements": Array[Dictionary]([]),
-"id": "17",
-"next_id": "18",
+"id": "18",
+"next_id": "19",
 "notes": "",
-"parent_id": "14",
+"parent_id": "15",
 "tags": PackedStringArray(),
 "text": "An elevator?",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "An elevator?",
 "type": &"dialogue"
 },
-"18": {
+"19": {
 "character": "Player",
 "character_replacements": Array[Dictionary]([]),
-"id": "18",
-"next_id": "19",
+"id": "19",
+"next_id": "20",
 "notes": "",
-"parent_id": "14",
+"parent_id": "15",
 "tags": PackedStringArray(),
 "text": "No, no–",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "No, no–",
 "type": &"dialogue"
 },
-"19": {
+"20": {
 "character": "Neeko",
 "character_replacements": Array[Dictionary]([]),
-"id": "19",
-"next_id": "20",
+"id": "20",
+"next_id": "21",
 "notes": "",
-"parent_id": "14",
+"parent_id": "15",
 "tags": PackedStringArray(),
 "text": "A subway car?",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "A subway car?",
 "type": &"dialogue"
 },
-"20": {
+"21": {
 "character": "Player",
 "character_replacements": Array[Dictionary]([]),
-"id": "20",
-"next_id": "21",
+"id": "21",
+"next_id": "22",
 "notes": "",
-"parent_id": "14",
+"parent_id": "15",
 "tags": PackedStringArray(),
 "text": "We’re not in england. Wait. Are we?",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "We’re not in england. Wait. Are we?",
 "type": &"dialogue"
 },
-"21": {
+"22": {
 "character": "Ada",
 "character_replacements": Array[Dictionary]([]),
-"id": "21",
-"next_id": "22",
+"id": "22",
+"next_id": "23",
 "notes": "",
-"parent_id": "14",
+"parent_id": "15",
 "tags": PackedStringArray(),
 "text": "Whatever. The real question is what you got.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Whatever. The real question is what you got.",
 "type": &"dialogue"
 },
-"22": {
+"23": {
 "character": "Player",
 "character_replacements": Array[Dictionary]([]),
-"id": "22",
-"next_id": "30",
+"id": "23",
+"next_id": "31",
 "notes": "",
-"parent_id": "14",
+"parent_id": "15",
 "tags": PackedStringArray(),
 "text": "What I... got?",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "What I... got?",
 "type": &"dialogue"
 },
-"23": {
-"character": "Player",
-"character_replacements": Array[Dictionary]([]),
-"id": "23",
-"next_id": "23.2",
-"next_id_after": "30",
-"notes": "",
-"tags": PackedStringArray(),
-"text": "Uhh… not tax fraud?",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Uhh… not tax fraud?",
-"type": &"response"
-},
-"23.2": {
-"character": "Player",
-"character_replacements": Array[Dictionary]([]),
-"next_id": "24",
-"next_id_after": "30",
-"tags": PackedStringArray(),
-"text": "Uhh… not tax fraud?",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Uhh… not tax fraud?",
-"type": &"dialogue"
-},
 "24": {
-"character": "Ada",
+"character": "Player",
 "character_replacements": Array[Dictionary]([]),
 "id": "24",
-"next_id": "25",
+"next_id": "24.2",
+"next_id_after": "31",
 "notes": "",
-"parent_id": "23",
 "tags": PackedStringArray(),
-"text": "That… hm.",
+"text": "Uhh... not tax fraud?",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "That… hm.",
+"translation_key": "Uhh... not tax fraud?",
+"type": &"response"
+},
+"24.2": {
+"character": "Player",
+"character_replacements": Array[Dictionary]([]),
+"next_id": "25",
+"next_id_after": "31",
+"tags": PackedStringArray(),
+"text": "Uhh... not tax fraud?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "Uhh... not tax fraud?",
 "type": &"dialogue"
 },
 "25": {
-"character": "Neeko",
+"character": "Ada",
 "character_replacements": Array[Dictionary]([]),
 "id": "25",
 "next_id": "26",
 "notes": "",
-"parent_id": "23",
+"parent_id": "24",
+"tags": PackedStringArray(),
+"text": "That... hm.",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "That... hm.",
+"type": &"dialogue"
+},
+"26": {
+"character": "Neeko",
+"character_replacements": Array[Dictionary]([]),
+"id": "26",
+"next_id": "27",
+"notes": "",
+"parent_id": "24",
 "tags": PackedStringArray(),
 "text": "Ada, they looked to the right. As a private eye who has studied psychology, that means... they’re lying. (or was it the left?)",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Ada, they looked to the right. As a private eye who has studied psychology, that means... they’re lying. (or was it the left?)",
 "type": &"dialogue"
 },
-"26": {
+"27": {
 "character": "Ada",
 "character_replacements": Array[Dictionary]([]),
-"id": "26",
-"next_id": "27",
+"id": "27",
+"next_id": "28",
 "notes": "",
-"parent_id": "23",
+"parent_id": "24",
 "tags": PackedStringArray(),
 "text": "Yeah, something gives me that impression, too, Sherlock.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "Yeah, something gives me that impression, too, Sherlock.",
 "type": &"dialogue"
 },
-"27": {
+"28": {
 "character": "Player",
 "character_replacements": Array[Dictionary]([]),
-"id": "27",
-"next_id": "28",
+"id": "28",
+"next_id": "29",
 "notes": "",
-"parent_id": "23",
+"parent_id": "24",
 "tags": PackedStringArray(),
 "text": "If it helps, I also wasn’t committing vandalism or destruction of property.",
 "text_replacements": Array[Dictionary]([]),
 "translation_key": "If it helps, I also wasn’t committing vandalism or destruction of property.",
 "type": &"dialogue"
 },
-"28": {
-"character": "Ada",
-"character_replacements": Array[Dictionary]([]),
-"id": "28",
-"next_id": "29",
-"notes": "",
-"parent_id": "23",
-"tags": PackedStringArray(),
-"text": "Wait, what are taxes– nevermind. What I really want to know is what you found down there.",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "Wait, what are taxes– nevermind. What I really want to know is what you found down there.",
-"type": &"dialogue"
-},
 "29": {
-"character": "Player",
+"character": "Ada",
 "character_replacements": Array[Dictionary]([]),
 "id": "29",
 "next_id": "30",
 "notes": "",
-"parent_id": "23",
+"parent_id": "24",
 "tags": PackedStringArray(),
-"text": "I’m sorry… what I found?",
+"text": "Wait, what are taxes– nevermind. What I really want to know is what you found down there.",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "I’m sorry… what I found?",
+"translation_key": "Wait, what are taxes– nevermind. What I really want to know is what you found down there.",
 "type": &"dialogue"
 },
 "3": {
@@ -309,10 +308,23 @@ lines = {
 "type": &"dialogue"
 },
 "30": {
-"character": "Ada",
+"character": "Player",
 "character_replacements": Array[Dictionary]([]),
 "id": "30",
 "next_id": "31",
+"notes": "",
+"parent_id": "24",
+"tags": PackedStringArray(),
+"text": "I’m sorry... what I found?",
+"text_replacements": Array[Dictionary]([]),
+"translation_key": "I’m sorry... what I found?",
+"type": &"dialogue"
+},
+"31": {
+"character": "Ada",
+"character_replacements": Array[Dictionary]([]),
+"id": "31",
+"next_id": "32",
 "notes": "",
 "tags": PackedStringArray(),
 "text": "Yeah, you went in there to get stuff, right?",
@@ -320,11 +332,11 @@ lines = {
 "translation_key": "Yeah, you went in there to get stuff, right?",
 "type": &"dialogue"
 },
-"31": {
+"32": {
 "character": "Neeko",
 "character_replacements": Array[Dictionary]([]),
-"id": "31",
-"next_id": "32",
+"id": "32",
+"next_id": "33",
 "notes": "",
 "tags": PackedStringArray(),
 "text": "So it’s only logical that you’d bring something back out.",
@@ -332,11 +344,11 @@ lines = {
 "translation_key": "So it’s only logical that you’d bring something back out.",
 "type": &"dialogue"
 },
-"32": {
+"33": {
 "character": "Ada, to Neeko",
 "character_replacements": Array[Dictionary]([]),
-"id": "32",
-"next_id": "35",
+"id": "33",
+"next_id": "36",
 "notes": "",
 "tags": PackedStringArray(),
 "text": "Psst! Commence maneuver Battery Resuscitation!",
@@ -344,8 +356,8 @@ lines = {
 "translation_key": "Psst! Commence maneuver Battery Resuscitation!",
 "type": &"dialogue"
 },
-"35": {
-"id": "35",
+"36": {
+"id": "36",
 "is_snippet": false,
 "next_id": "end",
 "type": &"goto"
@@ -393,34 +405,45 @@ lines = {
 "next_id": "8",
 "notes": "",
 "tags": PackedStringArray(),
-"text": "Lamp oil is great for cybermods when they get all janky. Something about the way it’s composed–-",
+"text": "Lamp oil is great for cybermods when they get all janky. Something about the way it’s composed--",
 "text_replacements": Array[Dictionary]([]),
-"translation_key": "Lamp oil is great for cybermods when they get all janky. Something about the way it’s composed–-",
+"translation_key": "Lamp oil is great for cybermods when they get all janky. Something about the way it’s composed--",
 "type": &"dialogue"
 },
 "8": {
-"character": "",
-"character_replacements": Array[Dictionary]([]),
 "id": "8",
+"mutation": {
+"expression": Array[Dictionary]([{
+"function": "emit",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "string",
+"value": "player_enter_cutscene"
+}]), Array[Dictionary]([{
+"type": "string",
+"value": "player entering"
+}])])
+}]),
+"is_blocking": true
+},
 "next_id": "9",
-"notes": "",
-"tags": PackedStringArray(),
-"text": "(they both see you)",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "(they both see you)",
-"type": &"dialogue"
+"type": &"mutation"
 },
 "9": {
-"character": "Neeko",
-"character_replacements": Array[Dictionary]([]),
 "id": "9",
+"mutation": {
+"expression": Array[Dictionary]([{
+"function": "wait",
+"type": &"function",
+"value": Array[Array]([Array[Dictionary]([{
+"type": "number",
+"value": 3
+}])])
+}]),
+"is_blocking": true
+},
 "next_id": "10",
-"notes": "",
-"tags": PackedStringArray(),
-"text": "And here I thought we were the only ones brave enough to loot Sykul Tower.",
-"text_replacements": Array[Dictionary]([]),
-"translation_key": "And here I thought we were the only ones brave enough to loot Sykul Tower.",
-"type": &"dialogue"
+"type": &"mutation"
 }
 }
 raw_text = "~ cryolab_cutscene
@@ -429,8 +452,9 @@ Ada: So, remember the plan. We get in, we get out, and whatever we do, we don’
 Neeko: Alrighty. Got the stuff?
 Ada: Yep. Lamp oil, check. Rope, uh, check–
 Neeko: I still don’t get why we need the lamp oil.
-Ada: Lamp oil is great for cybermods when they get all janky. Something about the way it’s composed–-
-(they both see you)
+Ada: Lamp oil is great for cybermods when they get all janky. Something about the way it’s composed--
+do emit(\"player_enter_cutscene\", \"player entering\")
+do wait(3)
 Neeko: And here I thought we were the only ones brave enough to loot Sykul Tower.
 Ada: Stupid enough. You mean stupid enough.
 Neeko: Tsk. Whatever. Bravery is just a well-respected form of stupidity.
@@ -445,13 +469,13 @@ Ada: Hey, what were you doing down there?
 	Player: We’re not in england. Wait. Are we?
 	Ada: Whatever. The real question is what you got.
 	Player: What I... got?
-- Player: Uhh… not tax fraud?
-	Ada: That… hm.
+- Player: Uhh... not tax fraud?
+	Ada: That... hm.
 	Neeko: Ada, they looked to the right. As a private eye who has studied psychology, that means... they’re lying. (or was it the left?)
 	Ada: Yeah, something gives me that impression, too, Sherlock.
 	Player: If it helps, I also wasn’t committing vandalism or destruction of property.
 	Ada: Wait, what are taxes– nevermind. What I really want to know is what you found down there.
-	Player: I’m sorry… what I found?
+	Player: I’m sorry... what I found?
 Ada: Yeah, you went in there to get stuff, right?
 Neeko: So it’s only logical that you’d bring something back out.
 Ada, to Neeko: Psst! Commence maneuver Battery Resuscitation!

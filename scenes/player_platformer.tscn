@@ -1,10 +1,10 @@
 [gd_scene load_steps=19 format=3 uid="uid://0w6ot6i7tlbu"]
 
 [ext_resource type="Script" path="res://scripts/player_platformer.gd" id="1_ms8ba"]
-[ext_resource type="Texture2D" uid="uid://5lplmop55edk" path="res://sprites/spritweshe.png" id="2_5dk4k"]
-[ext_resource type="Texture2D" uid="uid://cpnoimmr287yw" path="res://sprites/protag fall.png" id="2_dtc3t"]
-[ext_resource type="Texture2D" uid="uid://clamtsa5183bo" path="res://sprites/protag jump up.png" id="4_6b267"]
-[ext_resource type="Texture2D" uid="uid://ys3k6pych8fe" path="res://sprites/protagsidewalk.png" id="4_w2ujp"]
+[ext_resource type="Texture2D" uid="uid://5lplmop55edk" path="res://sprites/characters/spritweshe.png" id="2_5dk4k"]
+[ext_resource type="Texture2D" uid="uid://cpnoimmr287yw" path="res://sprites/characters/protag fall.png" id="2_dtc3t"]
+[ext_resource type="Texture2D" uid="uid://clamtsa5183bo" path="res://sprites/characters/protag jump up.png" id="4_6b267"]
+[ext_resource type="Texture2D" uid="uid://ys3k6pych8fe" path="res://sprites/characters/protagsidewalk.png" id="4_w2ujp"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0bl4g"]
 atlas = ExtResource("2_dtc3t")
