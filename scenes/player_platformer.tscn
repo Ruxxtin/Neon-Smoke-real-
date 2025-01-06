@@ -107,7 +107,7 @@ animations = [{
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_fd43f"]
-radius = 6.0
+radius = 4.0
 height = 20.0
 
 [node name="Player" type="CharacterBody2D"]
@@ -117,7 +117,7 @@ script = ExtResource("1_ms8ba")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_oo1yr")
-animation = &"walk_side"
+animation = &"idle"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
