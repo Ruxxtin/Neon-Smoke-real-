@@ -1,8 +1,8 @@
+res://dialogic/styles
 res://dialogic/timelines
 res://scenes
 res://scripts
 res://sprites
-res://dialogic/styles
 res://addons/dialogic/Modules/DefaultLayoutParts/Layer_SpeakerPortraitTextbox
 res://dialogic/styles/TextboxWithPortrait
 res://fonts

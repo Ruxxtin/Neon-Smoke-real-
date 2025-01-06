@@ -70,11 +70,12 @@ script = ExtResource("1_6y2qj")
 
 [node name="bg" type="AnimatedSprite2D" parent="."]
 position = Vector2(156, 96)
+scale = Vector2(1.12281, 1.125)
 sprite_frames = SubResource("SpriteFrames_lmtp0")
 autoplay = "appear"
 
 [node name="Camera2D" type="Camera2D" parent="bg"]
-zoom = Vector2(3.375, 3.375)
+zoom = Vector2(3, 3)
 
 [node name="Timers" type="Node2D" parent="."]
 
