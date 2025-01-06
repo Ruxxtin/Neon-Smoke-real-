@@ -3,6 +3,7 @@ extends Node2D
 @onready var bg = $bg
 @onready var bg_timer = $Timers/bg_timer
 @onready var player_spawn = $Timers/player_spawn
+@onready var start_dialogue = $Timers/start_dialogue
 
 var player_scene = preload("res://scenes/player_fight.tscn")
 var neeko_scene = preload("res://scenes/neeko_fight.tscn")
@@ -12,9 +13,12 @@ var neeko_scene = preload("res://scenes/neeko_fight.tscn")
 func _on_bg_timer_timeout():
 	bg.play("default")
 	player_spawn.start()
+	start_dialogue.start()
 
 func _on_player_spawn_timeout():
 	spawn_fellas(Vector2(107,96),Vector2(207,96))
+
+func _on_start_dialogue_timeout():
 	Dialogic.start("starting_fight")
 
 func spawn_fellas(player_location: Vector2, neeko_location: Vector2):

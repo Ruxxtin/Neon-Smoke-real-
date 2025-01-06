@@ -1,6 +1,7 @@
 extends CharacterBody2D
 
 var speed = 30
+var max_speed = 90
 var player_chase = false
 var player = null
 var target_node_name = "Player_fight"
@@ -16,10 +17,10 @@ func _ready():
 	stamina_decrease.start()
 
 func _physics_process(delta):
-	if can_speed_increase == true:
-		speed += 0.02
-	if speed >= 80:
-		speed = 80
+	if can_speed_increase == true and player_chase == true:
+		speed += 0.1
+	if speed >= max_speed:
+		speed = max_speed
 		can_speed_increase = false
 	
 	var bodies = detection_zone.get_overlapping_bodies()
@@ -40,10 +41,10 @@ func DialogueSignal(arg: String):
 
 func _on_stamina_decrease_timeout():
 	if player_chase == true:
+		if stamina_bar.value == 45:
+			Dialogic.start("stamina75")
+			player.can_move = false
+			player_chase = false
 		stamina_bar.value -= 1
 	if stamina_bar.value < 50:
 		speed -= 1
-	if stamina_bar.value == 45:
-		Dialogic.start("stamina75")
-		player.can_move = false
-		player_chase = false
