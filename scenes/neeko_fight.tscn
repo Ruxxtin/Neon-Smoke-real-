@@ -1,0 +1,170 @@
+[gd_scene load_steps=23 format=3 uid="uid://cy10eqtphsmmm"]
+
+[ext_resource type="Script" path="res://scripts/neeko_fight.gd" id="1_2oca1"]
+[ext_resource type="Texture2D" uid="uid://b07ji6teig1mj" path="res://sprites/characters/neeekoidle.png" id="2_1jjno"]
+[ext_resource type="Texture2D" uid="uid://dokd43ysn0l03" path="res://sprites/characters/protagwalk.png" id="3_1k38i"]
+[ext_resource type="Texture2D" uid="uid://ys3k6pych8fe" path="res://sprites/characters/protagsidewalk.png" id="4_r72lu"]
+[ext_resource type="Texture2D" uid="uid://bgkts0noim3ch" path="res://sprites/stamina_beneath.png" id="5_0oelo"]
+[ext_resource type="Texture2D" uid="uid://u35rsemv2p1o" path="res://sprites/stamina_progress.png" id="6_wvupq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_clqsq"]
+atlas = ExtResource("2_1jjno")
+region = Rect2(0, 0, 14, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bb143"]
+atlas = ExtResource("2_1jjno")
+region = Rect2(14, 0, 14, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7sdkd"]
+atlas = ExtResource("2_1jjno")
+region = Rect2(0, 29, 14, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0q0qp"]
+atlas = ExtResource("2_1jjno")
+region = Rect2(14, 29, 14, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bt74o"]
+atlas = ExtResource("3_1k38i")
+region = Rect2(16, 0, 16, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d2yxo"]
+atlas = ExtResource("3_1k38i")
+region = Rect2(0, 24, 16, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cgm4b"]
+atlas = ExtResource("3_1k38i")
+region = Rect2(16, 24, 16, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_01gum"]
+atlas = ExtResource("3_1k38i")
+region = Rect2(0, 0, 16, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lod45"]
+atlas = ExtResource("4_r72lu")
+region = Rect2(16, 0, 16, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fx2ol"]
+atlas = ExtResource("4_r72lu")
+region = Rect2(0, 26, 16, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fk2ms"]
+atlas = ExtResource("4_r72lu")
+region = Rect2(16, 26, 16, 26)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wxbw7"]
+atlas = ExtResource("4_r72lu")
+region = Rect2(0, 0, 16, 26)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_iqap2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_clqsq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bb143")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7sdkd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0q0qp")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bt74o")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d2yxo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cgm4b")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_01gum")
+}],
+"loop": true,
+"name": &"walk_forward",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lod45")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fx2ol")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fk2ms")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wxbw7")
+}],
+"loop": true,
+"name": &"walk_side",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_01nhg"]
+radius = 6.0
+height = 24.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_bmdnw"]
+radius = 7.0
+height = 24.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_31byx"]
+radius = 531.0
+
+[node name="Neeko_fight" type="CharacterBody2D"]
+collision_layer = 3
+collision_mask = 3
+script = ExtResource("1_2oca1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_iqap2")
+animation = &"idle"
+autoplay = "idle"
+frame = 2
+frame_progress = 0.352183
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 2.5)
+shape = SubResource("CapsuleShape2D_01nhg")
+
+[node name="pickpocket_zone" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="pickpocket_zone"]
+position = Vector2(0, 3)
+shape = SubResource("CapsuleShape2D_bmdnw")
+
+[node name="detection zone" type="Area2D" parent="."]
+collision_layer = 3
+collision_mask = 3
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="detection zone"]
+shape = SubResource("CircleShape2D_31byx")
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="."]
+offset_left = -16.0
+offset_top = -24.0
+offset_right = 16.0
+offset_bottom = -16.0
+max_value = 60.0
+value = 60.0
+nine_patch_stretch = true
+stretch_margin_left = 1
+stretch_margin_top = 1
+stretch_margin_right = 1
+stretch_margin_bottom = 1
+texture_under = ExtResource("5_0oelo")
+texture_progress = ExtResource("6_wvupq")
+
+[node name="stamina_decrease" type="Timer" parent="."]
+
+[connection signal="body_entered" from="detection zone" to="." method="_on_detection_zone_body_entered"]
+[connection signal="timeout" from="stamina_decrease" to="." method="_on_stamina_decrease_timeout"]

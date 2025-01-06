@@ -1,0 +1,12 @@
+join Player left
+Player: What– uh– huh??? Are you two trying to rob me?
+leave --All--
+join Ada right
+Ada: Listen, kiddo, we could do this the easy way or the hard way.
+leave --All--
+join Player left
+Player: I think you guys have already chosen the hard way, haven’t you?
+leave --All--
+join Neeko right
+Neeko: Yeah, I guess. I mean, it’s usually the hard way with stuff like this.
+[signal arg="start_fight"]
