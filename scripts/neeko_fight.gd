@@ -37,6 +37,8 @@ func _physics_process(delta):
 func DialogueSignal(arg: String):
 	if arg == "start_fight":
 		player_chase = true
+	if arg == "resume_fight":
+		player_chase = true
 
 
 func _on_stamina_decrease_timeout():

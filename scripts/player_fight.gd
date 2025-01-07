@@ -58,3 +58,5 @@ func _physics_process(delta):
 func DialogueSignal(arg: String):
 	if arg == "start_fight":
 		can_move = true
+	if arg == "resume_fight":
+		can_move = true

@@ -1,11 +1,10 @@
-[gd_scene load_steps=18 format=3 uid="uid://voiqsy27hfg4"]
+[gd_scene load_steps=17 format=3 uid="uid://voiqsy27hfg4"]
 
 [ext_resource type="Script" path="res://dialogic/styles/VisualNovelTextbox/vn_textbox_layer.gd" id="1_bpydr"]
 [ext_resource type="Script" path="res://dialogic/styles/VisualNovelTextbox/animations.gd" id="2_xy7a2"]
 [ext_resource type="Script" path="res://addons/dialogic/Modules/Text/node_dialog_text.gd" id="3_4634k"]
 [ext_resource type="StyleBox" uid="uid://dkv1pl1c1dq6" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Textbox/vn_textbox_default_panel.tres" id="3_ssa84"]
 [ext_resource type="Script" path="res://addons/dialogic/Modules/Text/node_type_sound.gd" id="4_ma5mw"]
-[ext_resource type="Texture2D" uid="uid://ch1k6dgvl0kei" path="res://dialogic/styles/dialogue_box_ns.png" id="4_ualbd"]
 [ext_resource type="Script" path="res://addons/dialogic/Modules/Text/node_next_indicator.gd" id="5_40a50"]
 [ext_resource type="Script" path="res://dialogic/styles/VisualNovelTextbox/autoadvance_indicator.gd" id="6_07xym"]
 [ext_resource type="Texture2D" uid="uid://b0rpqfg4fhebk" path="res://addons/dialogic/Modules/DefaultLayoutParts/Layer_VN_Textbox/next.svg" id="6_uch03"]
@@ -84,7 +83,7 @@ tracks/0/path = NodePath("Anchor/AnimationParent/Sizer/DialogTextPanel:rotation"
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"handle_modes": PackedInt32Array(3, 3, 3, 3, 3),
+"handle_modes": PackedInt32Array(0, 0, 0, 0, 0),
 "points": PackedFloat32Array(0, -0.025, 0, 0.025, 0, 0.005, -0.025, 0, 0.025, 0, -0.005, -0.025, 0, 0.025, 0, 0.005, -0.025, 0, 0.025, 0, 0, -0.025, 0, 0.025, 0),
 "times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4)
 }
@@ -268,19 +267,11 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -150.0
-offset_top = -122.0
-offset_right = 150.0
-offset_bottom = -12.0
 grow_horizontal = 2
 grow_vertical = 2
 mouse_filter = 2
 theme_override_styles/panel = ExtResource("3_ssa84")
 metadata/_edit_layout_mode = 1
-
-[node name="Sprite2D" type="Sprite2D" parent="Anchor/AnimationParent/Sizer/DialogTextPanel"]
-position = Vector2(300, 80)
-texture = ExtResource("4_ualbd")
 
 [node name="DialogicNode_DialogText" type="RichTextLabel" parent="Anchor/AnimationParent/Sizer/DialogTextPanel" node_paths=PackedStringArray("textbox_root")]
 unique_name_in_owner = true
@@ -334,15 +325,13 @@ mouse_filter = 2
 unique_name_in_owner = true
 self_modulate = Color(0.00784314, 0.00784314, 0.00784314, 0.843137)
 layout_mode = 1
-offset_left = 260.0
 offset_top = -50.0
-offset_right = 289.0
-offset_bottom = -18.0
+offset_right = 9.0
+offset_bottom = -25.0
 mouse_filter = 2
 theme_override_styles/panel = ExtResource("9_yg8ig")
 metadata/_edit_layout_mode = 1
 metadata/_edit_use_custom_anchors = true
-metadata/_edit_group_ = true
 
 [node name="DialogicNode_NameLabel" type="Label" parent="Anchor/AnimationParent/Sizer/DialogTextPanel/NameLabelHolder/NameLabelPanel" node_paths=PackedStringArray("name_label_root")]
 unique_name_in_owner = true

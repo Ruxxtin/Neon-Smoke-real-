@@ -33,12 +33,13 @@ directories/dch_directory={
 directories/dtl_directory={
 "shrimpFriedRice": "res://dialogic/timelines/shrimpFriedRice.dtl",
 "shrimpFriedRicePt2": "res://dialogic/timelines/shrimpFriedRicePt2.dtl",
+"stamina50": "res://sounds/stamina50.dtl",
 "stamina75": "res://dialogic/timelines/stamina75.dtl",
 "starting_fight": "res://dialogic/timelines/starting_fight.dtl"
 }
 glossary/default_case_sensitive=true
-layout/style_list=["res://dialogic/styles/style_yes.tres"]
-layout/default_style="res://dialogic/styles/style_yes.tres"
+layout/style_list=[]
+layout/default_style=""
 extensions_folder="res://addons/dialogic_additions"
 text/letter_speed=0.01
 text/initial_text_reveal_skippable=true
@@ -58,9 +59,14 @@ choices/reveal_delay=0
 choices/reveal_by_input=false
 save/autosave_delay=60.0
 save/encryption_on_exports_only=true
-text/autopauses={}
+text/autopauses={
+".?!": 0.2,
+":;,": 0.1
+}
 animations/join_default="Fade In Up"
 animations/leave_default="Fade Out Down"
+text/input_action="dialogic_default_action"
+text/absolute_autopauses=false
 
 [dialogue_manager]
 

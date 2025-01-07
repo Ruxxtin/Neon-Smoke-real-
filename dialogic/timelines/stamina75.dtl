@@ -1,7 +1,21 @@
 join Neeko right
 Neeko: Won’t you just– give up? It’s very obvious you’ve never been in a fight before.
-leave --All-- 
+leave --All--
 join Player left
 Player: If I give up, I'll get injured!
-leave --All-- 
-
+leave --All--
+join Ada right
+Ada: Not if you give us your haul.
+leave --All--
+join Player left
+Player: But I–
+leave --All--
+join Neeko right
+Neeko: “oH bUt I dIdN’t GeT aNyThInG~~~!”
+Neeko: Yeah, sure. You went into the abandoned, untouched-for-75-years, creepy science tower that probably has equipment that’s worth literal TERAbytes if you converted it at Dale’s Datacenter.
+join Player left
+Player: Terabytes? Conversion–? I’m sorry, I don’t understand–
+leave --All--
+join Ada right
+Don’t play dumb with us, it never works!
+[signal arg="resume_fight"]

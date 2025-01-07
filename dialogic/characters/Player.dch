@@ -23,7 +23,7 @@
 },
 "ignore_char_scale": false,
 "mirror": false,
-"offset": Vector2(0, 0),
+"offset": Vector2(-64, -160),
 "scale": 0.3,
 "scene": ""
 },
@@ -33,7 +33,7 @@
 },
 "ignore_char_scale": false,
 "mirror": false,
-"offset": Vector2(0, -128),
+"offset": Vector2(-64, -160),
 "scale": 0.3,
 "scene": ""
 }
