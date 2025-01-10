@@ -16,7 +16,7 @@ func _on_bg_timer_timeout():
 	start_dialogue.start()
 
 func _on_player_spawn_timeout():
-	spawn_fellas(Vector2(107,96),Vector2(207,96))
+	spawn_fellas(Vector2(54,56),Vector2(154,56))
 
 func _on_start_dialogue_timeout():
 	Dialogic.start("starting_fight")

@@ -1,5 +1,4 @@
 res://scenes/neeko_and_ada_fight.tscn
-res://dialogic/timelines/stamina75.dtl
 res://scenes/start_menu.tscn
 res://scenes/cryolab.tscn
 res://scenes/sykul_g_floor.tscn
@@ -9,15 +8,6 @@ res://scenes/Player.tscn
 res://scenes/neeko_fight.tscn
 res://scenes/player_fight.tscn
 res://scenes/arcade_game_1.tscn
-res://scenes/player_platformer.tscn
-res://UI/ui.tscn
-res://dialogic/styles/style_yes.tres
-res://dialogic/timelines/starting_fight.dtl
+res://scripts/sykul_g_floor.gd
+res://scripts/neeko_and_ada_fight.gd
 res://sounds/stamina50.dtl
-res://scripts/neeko_fight.gd
-res://scripts/player_fight.gd
-res://dialogic/characters/Ada.dch
-res://dialogic/characters/Player.dch
-res://dialogic/styles/fake_style.tres
-res://dialogic/styles/VisualNovelTextbox/custom_visual_novel_textbox.tscn
-res://dialogic/styles/New_File.tres
