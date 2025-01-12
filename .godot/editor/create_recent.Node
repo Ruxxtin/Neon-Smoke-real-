@@ -1,7 +1,7 @@
+Timer
 AudioStreamPlayer2D
 AudioStreamPlayer
 Label
-Timer
 TextureProgressBar
 CollisionShape2D
 Area2D
@@ -12,4 +12,3 @@ Node2D
 AnimatedSprite2D
 PanelContainer
 Panel
-VBoxContainer
