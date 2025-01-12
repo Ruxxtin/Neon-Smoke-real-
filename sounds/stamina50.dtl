@@ -1,7 +1,7 @@
 join Player left
 Player: I’m not playing dumb, I AM dumb!
 Player: I have no clue where I am, how I got here, or really anything else!
-leave --All-- 
-join Ada right 
+leave --All--
+join Ada right
 Ada: Listen, kid. Cut. The. Dramatics.
-
+[signal arg="resume_fight"]

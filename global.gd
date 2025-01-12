@@ -12,5 +12,8 @@ signal player_enter_cutscene()
 func _ready():
 	player_enter_cutscene.connect(player_enter)
 
+func _process(delta):
+	player_name = Dialogic.VAR.playername
+
 func player_enter():
 	pass

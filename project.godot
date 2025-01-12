@@ -28,11 +28,13 @@ Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 directories/dch_directory={
 "Ada": "res://dialogic/characters/Ada.dch",
 "Neeko": "res://dialogic/characters/Neeko.dch",
-"Player": "res://dialogic/characters/Player.dch"
+"Player": "res://dialogic/characters/Player.dch",
+"placeholder": "res://placeholder.dch"
 }
 directories/dtl_directory={
 "shrimpFriedRice": "res://dialogic/timelines/shrimpFriedRice.dtl",
 "shrimpFriedRicePt2": "res://dialogic/timelines/shrimpFriedRicePt2.dtl",
+"stamina25": "res://stamina25.dtl",
 "stamina50": "res://sounds/stamina50.dtl",
 "stamina75": "res://dialogic/timelines/stamina75.dtl",
 "starting_fight": "res://dialogic/timelines/starting_fight.dtl"
@@ -67,6 +69,9 @@ animations/join_default="Fade In Up"
 animations/leave_default="Fade Out Down"
 text/input_action="dialogic_default_action"
 text/absolute_autopauses=false
+variables={
+"playername": ""
+}
 
 [dialogue_manager]
 

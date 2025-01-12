@@ -47,6 +47,20 @@ func _on_stamina_decrease_timeout():
 			Dialogic.start("stamina75")
 			player.can_move = false
 			player_chase = false
+			speed = 70
+			max_speed = 85
+		if stamina_bar.value == 30:
+			Dialogic.start("stamina50")
+			player.can_move = false
+			player_chase = false
+			speed = 70
+			max_speed = 80
+		if stamina_bar.value == 15:
+			Dialogic.start("stamina25")
+			player.can_move = false
+			player_chase = false
+			speed = 0
+			max_speed = 0
 		stamina_bar.value -= 1
 	if stamina_bar.value < 50:
 		speed -= 1

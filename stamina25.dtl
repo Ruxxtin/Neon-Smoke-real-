@@ -1,0 +1,39 @@
+join Player left
+Player: What’ll it take for you to believe me? Who are you people– no, WHAT are you people? What is this place? The last thing I remember, I was in my dorm looking at inter– my dorm? Where do I even go to college? Oh my gosh, who AM I?
+leave --All--
+[signal arg="stop_music"]
+join Ada right
+Ada: ...
+Ada: Uh… let’s stop there, Neeko.
+leave --All--
+join Neeko right
+Neeko: Hey, kid…
+Neeko: I have to stop calling you that, you’re an adult.
+Neeko: So, uh…
+Neeko: What’s your name?
+leave --All--
+join Player left
+Player: I don’t know… all I remember are various science facts and a few stray memories and that’s it.
+leave --All--
+join Ada right
+Ada: Well, what’s a name you’ve always wanted to have?
+[text_input text="Choose Name:" var="playername"]
+leave --All--
+join Neeko right
+Neeko: Huh. “{playername}”.
+Neeko: Interesting choice…
+leave --All--
+join Ada right
+Ada: Not as “interesting” as “Neeko”.
+leave --All--
+join Neeko right
+Neeko: *scoff*
+leave --All--
+join Ada right
+Ada: Welcome to the team, {playername}.
+leave --All--
+join Player left
+placeholder: The... team?
+leave --All--
+join Neeko right
+Neeko: Wow, you’re REALLY out of the loop, aren’t you?
