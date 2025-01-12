@@ -74,12 +74,12 @@ join Player left
 placeholder: I’m sorry, did you say 50 or so years ago?
 leave --All--
 join Ada right
-Ada: Yeah…? They died out in around 2070 or 2090 after brain chips became a thing. 
+Ada: Yeah…? They died out in around 2070 or 2090 after brain chips became a thing.
 leave --All--
 join Neeko right
 Neeko: Oh.
-Neeko: So you’re a mod rejector, hm. 
-Neeko: *snap* That's why you looked at me so weirdly before. 
+Neeko: So you’re a mod rejector, hm.
+Neeko: *snap* That's why you looked at me so weirdly before.
 Neeko: Relax, I got my biomods before they were illegal. I have the card to prove–
 leave --All--
 join Ada right
@@ -95,7 +95,8 @@ leave --All--
 join Neeko right
 Neeko: 2138. Why?
 leave --All--
-join Neeko right
-leave --All--
-join Neeko right
-
+join Player left
+placeholder: ...
+placeholder: I think…
+placeholder: I think I need some fresh air.
+[signal arg="leave_tower"]

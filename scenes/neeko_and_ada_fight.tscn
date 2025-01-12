@@ -91,6 +91,8 @@ one_shot = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+
 [connection signal="timeout" from="Timers/bg_timer" to="." method="_on_bg_timer_timeout"]
 [connection signal="timeout" from="Timers/player_spawn" to="." method="_on_player_spawn_timeout"]
 [connection signal="timeout" from="Timers/start_dialogue" to="." method="_on_start_dialogue_timeout"]

@@ -1,3 +1,4 @@
+AudioStreamPlayer2D
 AudioStreamPlayer
 Label
 Timer
@@ -12,4 +13,3 @@ AnimatedSprite2D
 PanelContainer
 Panel
 VBoxContainer
-HBoxContainer

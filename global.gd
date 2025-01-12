@@ -4,7 +4,7 @@ var crafting_dragging = false
 var last_building = ""  # Tracks the last building
 var player_position = Vector2()  # Tracks the player's position when changing scenes
 var player_name = "Player"
-
+var fight_instance = null
 var start_cutscene_played = false
 
 signal player_enter_cutscene()

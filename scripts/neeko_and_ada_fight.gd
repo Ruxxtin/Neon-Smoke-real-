@@ -8,7 +8,12 @@ extends Node2D
 var player_scene = preload("res://scenes/player_fight.tscn")
 var neeko_scene = preload("res://scenes/neeko_fight.tscn")
 
+func _ready():
+	Dialogic.signal_event.connect(DialogueSignal)
 
+func DialogueSignal(arg: String):
+	if arg == "stop_music":
+		queue_free()
 
 func _on_bg_timer_timeout():
 	bg.play("default")
