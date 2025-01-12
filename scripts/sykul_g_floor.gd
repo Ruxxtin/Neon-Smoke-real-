@@ -56,6 +56,7 @@ func start_fight(location: Vector2):
 	if fight_instance is Node2D:
 		fight_instance.position = location
 	
+	
 	# Add the fight instance to the current scene
 	get_tree().current_scene.add_child(fight_instance)
 	

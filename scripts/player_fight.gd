@@ -10,6 +10,10 @@ func _ready():
 	Dialogic.signal_event.connect(DialogueSignal)
 
 func _physics_process(delta):
+	
+	if Global.fight_over == true:
+		queue_free()
+	
 	# Sprinting
 	if Input.is_action_pressed("sprint"):
 		speed = 120

@@ -1,9 +1,8 @@
-[gd_scene load_steps=13 format=3 uid="uid://bbg2dajv3grh6"]
+[gd_scene load_steps=12 format=3 uid="uid://bbg2dajv3grh6"]
 
 [ext_resource type="Script" path="res://scripts/neeko_and_ada_fight.gd" id="1_6y2qj"]
 [ext_resource type="Texture2D" uid="uid://c27jo62u8rhwt" path="res://sprites/fight_box_appear.png" id="2_ag1q1"]
-[ext_resource type="AudioStream" uid="uid://h85ofdaomp5q" path="res://sounds/warming_up_intro.mp3" id="3_f6rrp"]
-[ext_resource type="AudioStream" uid="uid://nf5gj8s54gqs" path="res://sounds/warming_up_loop.mp3" id="4_2dch8"]
+[ext_resource type="AudioStream" uid="uid://5ivohmyi4vql" path="res://sounds/warm ig.mp3" id="3_877jv"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wefnj"]
 atlas = ExtResource("2_ag1q1")
@@ -93,19 +92,12 @@ one_shot = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 
-[node name="warmup_intro" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("3_f6rrp")
-
-[node name="warmup_loop" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("4_2dch8")
+[node name="warmup" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_877jv")
+autoplay = true
 parameters/looping = true
-
-[node name="intro_timer" type="Timer" parent="."]
-wait_time = 31.66
 
 [connection signal="timeout" from="Timers/bg_timer" to="." method="_on_bg_timer_timeout"]
 [connection signal="timeout" from="Timers/player_spawn" to="." method="_on_player_spawn_timeout"]
 [connection signal="timeout" from="Timers/start_dialogue" to="." method="_on_start_dialogue_timeout"]
-[connection signal="finished" from="warmup_intro" to="." method="_on_warmup_intro_finished"]
-[connection signal="finished" from="warmup_loop" to="." method="_on_warmup_loop_finished"]
-[connection signal="timeout" from="intro_timer" to="." method="_on_intro_timer_timeout"]
+[connection signal="finished" from="warmup" to="." method="_on_warmup_intro_finished"]

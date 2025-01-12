@@ -17,6 +17,10 @@ func _ready():
 	stamina_decrease.start()
 
 func _physics_process(delta):
+	
+	if Global.fight_over == true:
+		queue_free()
+	
 	if can_speed_increase == true and player_chase == true:
 		speed += 0.1
 	if speed >= max_speed:

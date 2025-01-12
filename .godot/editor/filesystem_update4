@@ -13,3 +13,8 @@ res://scenes/player_fight.tscn
 res://scenes/arcade_game_1.tscn
 res://global.gd
 res://scripts/neeko_and_ada_fight.gd
+res://scripts/warmup.gd
+res://scripts/neeko_fight.gd
+res://scripts/player_fight.gd
+res://scripts/player_cutscene.gd
+res://scenes/player_cutscene.tscn

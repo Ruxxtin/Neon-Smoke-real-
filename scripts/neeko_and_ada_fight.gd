@@ -4,21 +4,25 @@ extends Node2D
 @onready var bg_timer = $Timers/bg_timer
 @onready var player_spawn = $Timers/player_spawn
 @onready var start_dialogue = $Timers/start_dialogue
-@onready var warmup_loop = $warmup_loop
-@onready var warmup_intro = $warmup_intro
-@onready var intro_timer = $intro_timer
+@onready var warmup = $warmup
 
 var player_scene = preload("res://scenes/player_fight.tscn")
 var neeko_scene = preload("res://scenes/neeko_fight.tscn")
+var stop_music = false
 
 func _ready():
 	Dialogic.signal_event.connect(DialogueSignal)
-	warmup_intro.play()
-	intro_timer.start()
+
+func _process(delta):
+	if stop_music == true:
+		warmup.volume_db -= 0.2
+	if warmup.volume_db < -15:
+		Global.fight_over = true
+		queue_free()
 
 func DialogueSignal(arg: String):
 	if arg == "stop_music":
-		queue_free()
+		stop_music = true
 
 func _on_bg_timer_timeout():
 	bg.play("default")
@@ -45,7 +49,3 @@ func spawn_fellas(player_location: Vector2, neeko_location: Vector2):
 	# Add the player instance to the current scene
 	get_tree().current_scene.add_child(player_instance)
 	get_tree().current_scene.add_child(neeko_instance)
-
-
-func _on_intro_timer_timeout():
-	warmup_loop.play()
