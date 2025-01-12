@@ -1,5 +1,5 @@
 c693a20e708c4e09bfa9edf12a750cf8
-::res://::1736713155
+::res://::1736713165
 default_bus_layout.tres::AudioBusLayout::5054479567780529502::1735782047::0::1::::<><>::
 global.gd::GDScript::-1::1736708638::0::1::::<>Node2D<>::
 global.tscn::PackedScene::3857127387108029212::1736708776::0::1::::<><>::res://global.gd
@@ -813,7 +813,7 @@ start_menu.gd::GDScript::-1::1727394531::0::1::::<>Node2D<>::
 sykulenterance.gd::GDScript::-1::1736205323::0::1::::<>Area2D<>::
 sykul_g_floor.gd::GDScript::-1::1736430009::0::1::::<>Node2D<>::
 tetracity_player.gd::GDScript::-1::1735938318::0::1::::<>AudioStreamPlayer2D<>::
-::res://sounds/::1736713119
+::res://sounds/::1736713512
 ada.mp3::AudioStreamMP3::4899232206601089000::1736211386::1736211387::1::::<><>::
 neeko.mp3::AudioStreamMP3::1377334705213820804::1736211386::1736211387::1::::<><>::
 player (mp3cut.net).mp3::AudioStreamMP3::7449920478722255307::1736211657::1736211658::1::::<><>::
@@ -821,7 +821,9 @@ Sirens..mp3::AudioStreamMP3::5373708332205558052::1731190859::1731190859::1::::<
 stamina50.dtl::Resource/DialogicTimeline::-1::1736471914::0::1::::<><>::
 Tetracity shortend.mp3::AudioStreamMP3::3807534830883315051::1735937534::1735937562::1::::<><>::
 TetracityArcadeTime.mp3::AudioStreamMP3::5026889537193283467::1735782550::1735838465::1::::<><>::
-warming_up.mp3::AudioStreamMP3::4921784013198800991::1736713115::1736713119::1::::<><>::
+warming_up(1).mp3::AudioStreamMP3::6640241264922405532::1736713359::1736713360::1::::<><>::
+warming_up_intro.mp3::AudioStreamMP3::561293149518224456::1736713418::1736713418::1::::<><>::
+warming_up_loop.mp3::AudioStreamMP3::924609605158915218::1736713512::1736713513::1::::<><>::
 ::res://sprites/::1736130802
 1spike elec sprsheet.png::CompressedTexture2D::2658517289684121347::1735772919::1735772919::1::::<><>::
 arel.png::CompressedTexture2D::3575255907875975201::1726367287::1726367288::1::::<><>::
