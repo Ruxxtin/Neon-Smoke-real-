@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://bbg2dajv3grh6"]
+[gd_scene load_steps=14 format=3 uid="uid://bbg2dajv3grh6"]
 
 [ext_resource type="Script" path="res://scripts/neeko_and_ada_fight.gd" id="1_6y2qj"]
 [ext_resource type="Texture2D" uid="uid://c27jo62u8rhwt" path="res://sprites/fight_box_appear.png" id="2_ag1q1"]
@@ -66,6 +66,12 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kve8s"]
+size = Vector2(462, 6)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ubqve"]
+size = Vector2(7, 246)
+
 [node name="neeko and ada fight" type="Node2D"]
 script = ExtResource("1_6y2qj")
 
@@ -96,6 +102,43 @@ one_shot = true
 stream = ExtResource("3_877jv")
 autoplay = true
 parameters/looping = true
+
+[node name="collisions" type="Node2D" parent="."]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="collisions"]
+collision_layer = 16
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="collisions/StaticBody2D"]
+position = Vector2(104, -70)
+shape = SubResource("RectangleShape2D_kve8s")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="collisions"]
+position = Vector2(0, 248)
+collision_layer = 16
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="collisions/StaticBody2D2"]
+position = Vector2(104, -66)
+shape = SubResource("RectangleShape2D_kve8s")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="collisions"]
+position = Vector2(0, 248)
+collision_layer = 16
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="collisions/StaticBody2D3"]
+position = Vector2(-123.5, -192)
+shape = SubResource("RectangleShape2D_ubqve")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="collisions"]
+position = Vector2(455, 248)
+collision_layer = 16
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="collisions/StaticBody2D4"]
+position = Vector2(-123.5, -192)
+shape = SubResource("RectangleShape2D_ubqve")
 
 [connection signal="timeout" from="Timers/bg_timer" to="." method="_on_bg_timer_timeout"]
 [connection signal="timeout" from="Timers/player_spawn" to="." method="_on_player_spawn_timeout"]

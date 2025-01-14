@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 var speed = 30
-var max_speed = 95
+var max_speed = 85
 var player_chase = false
 var player = null
 var target_node_name = "Player_fight"
@@ -22,7 +22,7 @@ func _physics_process(delta):
 		queue_free()
 	
 	if can_speed_increase == true and player_chase == true:
-		speed += 0.1
+		speed += 0.2
 	if speed >= max_speed:
 		speed = max_speed
 		can_speed_increase = false
@@ -50,20 +50,14 @@ func DialogueSignal(arg: String):
 func _on_stamina_decrease_timeout():
 	if player_chase == true:
 		if stamina_bar.value == 45:
-			Dialogic.start("stamina75")
-			player.can_move = false
 			player_chase = false
 			speed = 70
-			max_speed = 90
+			max_speed = 80
 		if stamina_bar.value == 30:
-			Dialogic.start("stamina50")
-			player.can_move = false
 			player_chase = false
-			speed = 70
-			max_speed = 85
+			speed = 65
+			max_speed = 75
 		if stamina_bar.value == 15:
-			Dialogic.start("stamina25")
-			player.can_move = false
 			player_chase = false
 			speed = 0
 			max_speed = 0

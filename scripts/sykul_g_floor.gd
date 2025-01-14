@@ -7,6 +7,7 @@ extends Node2D
 var player_scene = preload("res://scenes/player_cutscene.tscn")
 var started_fight = false
 var fight_scene = preload("res://scenes/neeko_and_ada_fight.tscn")
+var camera_go_down = false
 
 func _ready():
 	
@@ -22,6 +23,10 @@ func _ready():
 			_:
 				player.position = Vector2(0, 0)  # Default position
 
+func _physics_process(delta):
+	if camera_go_down == true:
+		camera_2d.position.y += 0.7
+
 func DialogueSignal(arg: String):
 	if arg == "player_enter":
 		cutscene_timer.start()
@@ -30,6 +35,8 @@ func DialogueSignal(arg: String):
 	if arg == "start_fight" and started_fight == false:
 		start_fight(Vector2(0,0))
 		started_fight = true
+	if arg == "leave_tower":
+		camera_go_down = true
 
 
 func _on_cutscene_timer_timeout():
