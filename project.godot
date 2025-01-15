@@ -22,6 +22,7 @@ Global="*res://global.gd"
 ArcadeTetracity="*res://scenes/arcade_tetracity.tscn"
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
+TransitionScreen="*res://scenes/transition_screen.tscn"
 
 [dialogic]
 

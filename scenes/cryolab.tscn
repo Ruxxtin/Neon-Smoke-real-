@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=4 uid="uid://0f1ih8n10pth"]
+[gd_scene load_steps=28 format=4 uid="uid://0f1ih8n10pth"]
 
 [ext_resource type="PackedScene" uid="uid://f2ia5ue6cp3u" path="res://scenes/Player.tscn" id="1_cnkv6"]
 [ext_resource type="Texture2D" uid="uid://b4uje8g1isp6h" path="res://sprites/tilesets/labfloor.png" id="1_hqlnm"]
@@ -14,6 +14,7 @@
 [ext_resource type="Texture2D" uid="uid://c5afugn4x2c3p" path="res://sprites/cryostasischamb.png" id="8_ucetl"]
 [ext_resource type="Script" path="res://scripts/scene_changer.gd" id="9_mh7tu"]
 [ext_resource type="PackedScene" uid="uid://qp1fouvcqi2t" path="res://UI/ui.tscn" id="13_vgf16"]
+[ext_resource type="Texture2D" uid="uid://beaf7pc5s2yg" path="res://sprites/cryostasis_transparent.png" id="15_y6626"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_f7pd6"]
 texture = ExtResource("1_hqlnm")
@@ -198,8 +199,12 @@ script = ExtResource("9_mh7tu")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="scene_changer"]
 shape = SubResource("RectangleShape2D_b201y")
 
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-18, -3)
+texture = ExtResource("8_ucetl")
+
 [node name="Player" parent="." instance=ExtResource("1_cnkv6")]
-position = Vector2(33, -2)
+position = Vector2(-18, -2)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(0, -1)
@@ -214,10 +219,10 @@ offset_bottom = 92.0
 autowrap_mode = 2
 metadata/_edit_use_anchors_ = true
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-18, -3)
-texture = ExtResource("8_ucetl")
-
 [node name="ui" parent="." instance=ExtResource("13_vgf16")]
+
+[node name="CryostasisTransparent" type="Sprite2D" parent="."]
+position = Vector2(-18, -3)
+texture = ExtResource("15_y6626")
 
 [connection signal="body_entered" from="scene_changer" to="scene_changer" method="_on_body_entered"]

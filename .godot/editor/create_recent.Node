@@ -1,3 +1,6 @@
+AnimationPlayer
+ColorRect
+CanvasLayer
 CollisionShape2D
 CollisionPolygon2D
 StaticBody2D
@@ -8,7 +11,5 @@ AudioStreamPlayer
 Label
 TextureProgressBar
 Area2D
-ColorRect
 Sprite2D
 Camera2D
-AnimatedSprite2D

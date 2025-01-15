@@ -1,22 +1,24 @@
-[gd_scene load_steps=5 format=3 uid="uid://qp1fouvcqi2t"]
+[gd_scene load_steps=7 format=3 uid="uid://qp1fouvcqi2t"]
 
 [ext_resource type="Script" path="res://UI/ui.gd" id="1_4ppam"]
-[ext_resource type="Texture2D" uid="uid://ddu1sb4fe5xfo" path="res://sprites/stuff_in_crafting_table/i beam.png" id="2_m2evk"]
+[ext_resource type="Texture2D" uid="uid://xlynbt4oqpnj" path="res://sprites/stuff_in_crafting_table/ironbeamm.png" id="2_4bodk"]
 [ext_resource type="FontFile" uid="uid://ibnq1e5i467k" path="res://fonts/ByteBounce.ttf" id="3_guukq"]
 [ext_resource type="Texture2D" uid="uid://b733ynlta6pvk" path="res://sprites/stuff_in_crafting_table/batterycylinder.png" id="4_klbce"]
+[ext_resource type="Texture2D" uid="uid://cpnigfm833q1o" path="res://sprites/stuff_in_crafting_table/wire resource.png" id="5_0kfyq"]
+[ext_resource type="Texture2D" uid="uid://b5hrh8gnd3is" path="res://sprites/stuff_in_crafting_table/carbon fiber.png" id="6_2layh"]
 
 [node name="ui" type="CanvasLayer"]
 script = ExtResource("1_4ppam")
 
 [node name="iron ui" type="Sprite2D" parent="."]
-position = Vector2(148, 56)
+position = Vector2(147, 56)
 scale = Vector2(3, 3)
-texture = ExtResource("2_m2evk")
+texture = ExtResource("2_4bodk")
 
 [node name="current_iron" type="Label" parent="."]
-offset_left = 151.0
+offset_left = 150.0
 offset_top = 67.0
-offset_right = 172.0
+offset_right = 171.0
 offset_bottom = 112.0
 theme_override_fonts/font = ExtResource("3_guukq")
 theme_override_font_sizes/font_size = 48
@@ -31,6 +33,34 @@ texture = ExtResource("4_klbce")
 offset_left = 62.0
 offset_top = 67.0
 offset_right = 83.0
+offset_bottom = 112.0
+theme_override_fonts/font = ExtResource("3_guukq")
+theme_override_font_sizes/font_size = 48
+text = "0"
+
+[node name="wire ui" type="Sprite2D" parent="."]
+position = Vector2(323, 56)
+scale = Vector2(3, 3)
+texture = ExtResource("5_0kfyq")
+
+[node name="current_wire" type="Label" parent="."]
+offset_left = 326.0
+offset_top = 67.0
+offset_right = 347.0
+offset_bottom = 112.0
+theme_override_fonts/font = ExtResource("3_guukq")
+theme_override_font_sizes/font_size = 48
+text = "0"
+
+[node name="carbonfiber ui" type="Sprite2D" parent="."]
+position = Vector2(235, 56)
+scale = Vector2(3, 3)
+texture = ExtResource("6_2layh")
+
+[node name="current_carbonfiber" type="Label" parent="."]
+offset_left = 238.0
+offset_top = 67.0
+offset_right = 259.0
 offset_bottom = 112.0
 theme_override_fonts/font = ExtResource("3_guukq")
 theme_override_font_sizes/font_size = 48

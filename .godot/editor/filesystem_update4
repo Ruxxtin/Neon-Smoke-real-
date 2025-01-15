@@ -16,3 +16,8 @@ res://scripts/ada_cutscene.gd
 res://scenes/neeko_cutscene.tscn
 res://scenes/ada_cutscene.tscn
 res://scripts/sykul_g_floor.gd
+res://scripts/transition_screen.gd
+res://scenes/transition_screen.tscn
+res://scripts/scene_changer.gd
+res://UI/ui.tscn
+res://scripts/cryolab.gd
