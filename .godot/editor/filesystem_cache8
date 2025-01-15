@@ -1,5 +1,5 @@
 c693a20e708c4e09bfa9edf12a750cf8
-::res://::1736910412
+::res://::1736912116
 default_bus_layout.tres::AudioBusLayout::5054479567780529502::1735782047::0::1::::<><>::
 global.gd::GDScript::-1::1736720723::0::1::::<>Node2D<>::
 global.tscn::PackedScene::3857127387108029212::1736910411::0::1::::<><>::res://global.gd
@@ -873,12 +873,14 @@ protag jump up.png::CompressedTexture2D::5545682128221388424::1735917988::173605
 protagsidewalk.png::CompressedTexture2D::1723410633111720138::1725811753::1736050979::1::::<><>::
 protagwalk.png::CompressedTexture2D::8162785087119211890::1725807845::1736050979::1::::<><>::
 spritweshe.png::CompressedTexture2D::2129304515690348720::1724894059::1736050979::1::::<><>::
-::res://sprites/stuff_in_crafting_table/::1736910835
+::res://sprites/stuff_in_crafting_table/::1736913562
 batterycylinder.png::CompressedTexture2D::4692009892735899560::1725832907::1731205946::1::::<><>::
 bench full almost background.png::CompressedTexture2D::6237471356658747659::1731205259::1735669036::1::::<><>::
 bench full kinda.png::CompressedTexture2D::2518414486014304624::1731122512::1735669036::1::::<><>::
 bench full mostly.png::CompressedTexture2D::8970850292726257654::1731190478::1735669036::1::::<><>::
 carbon fiber.png::CompressedTexture2D::132575972637706362::1736905749::1736905750::1::::<><>::
+circuit board resource.png::CompressedTexture2D::4344196781973641485::1736913562::1736913563::1::::<><>::
+electromagnet.png::CompressedTexture2D::8458476017098941756::1736912990::1736912991::1::::<><>::
 empty_crafting_slot.png::CompressedTexture2D::1262356057867150204::1732243900::1732243901::1::::<><>::
 i beam.png::CompressedTexture2D::7412727020733218596::1724897994::1731205946::1::::<><>::
 ironbeamm.png::CompressedTexture2D::1638532065328177855::1732244082::1732244082::1::::<><>::
@@ -912,10 +914,10 @@ thick circuit board.png::CompressedTexture2D::6813946764666861451::1735683539::1
 thick.png::CompressedTexture2D::7282069798271842236::1735669011::1735669045::1::::<><>::
 thin.png::CompressedTexture2D::7705254040785141140::1735670855::1735670855::1::::<><>::
 tiki_tower.png::CompressedTexture2D::6555530863392151367::1724616199::1735669062::1::::<><>::
-::res://UI/::1736910411
+::res://UI/::1736912115
 battery_craftable.gd::GDScript::-1::1731264409::0::1::::<>Area2D<>::
 crafting_ui.tscn::PackedScene::6657519584282476711::1735669036::0::1::::<><>::res://UI/ummcraftingui.gd<>uid://d02sugjmab2ni::::res://sprites/stuff_in_crafting_table/bench full mostly.png<>uid://dcnheswaxqa5f::::res://scenes/crafting_iron_spawner.tscn<>uid://c2cbn5ad2pli6::::res://scenes/drag_object_slot.tscn
 iron_craftable.gd::GDScript::-1::1731263604::0::1::::<>Area2D<>::
 ui.gd::GDScript::-1::1730604864::0::1::::<>CanvasLayer<>::
-ui.tscn::PackedScene::1155575502481313289::1736910411::0::1::::<><>::res://UI/ui.gd<>uid://xlynbt4oqpnj::::res://sprites/stuff_in_crafting_table/ironbeamm.png<>uid://ibnq1e5i467k::::res://fonts/ByteBounce.ttf<>uid://b733ynlta6pvk::::res://sprites/stuff_in_crafting_table/batterycylinder.png<>uid://cpnigfm833q1o::::res://sprites/stuff_in_crafting_table/wire resource.png<>uid://b5hrh8gnd3is::::res://sprites/stuff_in_crafting_table/carbon fiber.png
+ui.tscn::PackedScene::1155575502481313289::1736912115::0::1::::<><>::res://UI/ui.gd<>uid://xlynbt4oqpnj::::res://sprites/stuff_in_crafting_table/ironbeamm.png<>uid://ibnq1e5i467k::::res://fonts/ByteBounce.ttf<>uid://b733ynlta6pvk::::res://sprites/stuff_in_crafting_table/batterycylinder.png<>uid://cpnigfm833q1o::::res://sprites/stuff_in_crafting_table/wire resource.png<>uid://b5hrh8gnd3is::::res://sprites/stuff_in_crafting_table/carbon fiber.png
 ummcraftingui.gd::GDScript::-1::1735274303::0::1::::<>CanvasLayer<>::

@@ -79,10 +79,10 @@ autoplay = "default"
 [node name="start_button" type="Button" parent="."]
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
-offset_left = 685.0
-offset_top = 134.0
-offset_right = 949.0
-offset_bottom = 330.0
-rotation = -6.28319
+offset_left = 683.0
+offset_top = 151.0
+offset_right = 947.0
+offset_bottom = 316.0
+rotation = -0.0872665
 
 [connection signal="pressed" from="start_button" to="." method="_on_start_button_pressed"]
