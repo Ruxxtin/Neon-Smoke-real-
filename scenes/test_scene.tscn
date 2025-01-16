@@ -1,0 +1,54 @@
+[gd_scene load_steps=6 format=3 uid="uid://crhvturqfk3sn"]
+
+[ext_resource type="Script" path="res://scripts/inventory.gd" id="1_c1u08"]
+[ext_resource type="PackedScene" uid="uid://cowg30y7r1vxo" path="res://scenes/resource_slot.tscn" id="1_utbtd"]
+[ext_resource type="Resource" uid="uid://bfxetyfnfm6qs" path="res://Resources/iron.tres" id="2_nthal"]
+[ext_resource type="Resource" uid="uid://xncli1voeuqi" path="res://Resources/battery.tres" id="3_pjyhe"]
+[ext_resource type="PackedScene" uid="uid://c2jbtoc34yow" path="res://scenes/recipe.tscn" id="5_1as1o"]
+
+[node name="TestScene" type="Node2D"]
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Inventory" type="GridContainer" parent="UI"]
+offset_left = 378.0
+offset_top = 101.0
+offset_right = 726.0
+offset_bottom = 141.0
+columns = 8
+script = ExtResource("1_c1u08")
+ITEM = ExtResource("2_nthal")
+ITEM2 = ExtResource("3_pjyhe")
+
+[node name="slot" parent="UI/Inventory" instance=ExtResource("1_utbtd")]
+layout_mode = 2
+
+[node name="slot2" parent="UI/Inventory" instance=ExtResource("1_utbtd")]
+layout_mode = 2
+
+[node name="slot3" parent="UI/Inventory" instance=ExtResource("1_utbtd")]
+layout_mode = 2
+
+[node name="slot4" parent="UI/Inventory" instance=ExtResource("1_utbtd")]
+layout_mode = 2
+
+[node name="slot5" parent="UI/Inventory" instance=ExtResource("1_utbtd")]
+layout_mode = 2
+
+[node name="slot6" parent="UI/Inventory" instance=ExtResource("1_utbtd")]
+layout_mode = 2
+
+[node name="slot7" parent="UI/Inventory" instance=ExtResource("1_utbtd")]
+layout_mode = 2
+
+[node name="slot8" parent="UI/Inventory" instance=ExtResource("1_utbtd")]
+layout_mode = 2
+
+[node name="Recipes" type="VBoxContainer" parent="UI"]
+offset_left = 400.0
+offset_top = 192.0
+offset_right = 528.0
+offset_bottom = 232.0
+
+[node name="Recipe" parent="UI/Recipes" instance=ExtResource("5_1as1o")]
+layout_mode = 2

@@ -1,10 +1,34 @@
-extends TextureRect
+extends PanelContainer
+class_name Slot
 
+@onready var texture_rect = $TextureRect
 
-func _can_drop_data(at_position: Vector2, data: Variant) -> bool:
-	return true
-	return false
+@export var item : Item = null:
+	set(value):
+		item = value
+		
+		if value != null:
+			$TextureRect.texture = value.icon
+		else:
+			$TextureRect.texture = null
 
-func _drop_data(at_position: Vector2, data: Variant) -> void:
-	data.get_parent().remove_child(data)
-	add_child(data)
+func get_preview():
+	var preview_texture = TextureRect.new()
+	preview_texture.texture = texture_rect.texture
+	
+	var preview = Control.new()
+	preview.add_child(preview_texture)
+	
+	return preview
+
+func _get_drag_data(at_position):
+	set_drag_preview(get_preview())
+	return self
+
+func _can_drop_data(at_position, data):
+	return data is Slot
+
+func _drop_data(at_position, data):
+	var temp = item
+	item = data.item
+	data.item = temp

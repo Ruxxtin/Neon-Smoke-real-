@@ -89,6 +89,21 @@ window/stretch/mode="canvas_items"
 
 enabled=PackedStringArray("res://addons/dialogic/plugin.cfg", "res://addons/dialogue_manager/plugin.cfg")
 
+[file_customization]
+
+folder_colors={
+"res://Resources/": "red",
+"res://UI/": "gray",
+"res://addons/": "green",
+"res://dialogic/": "purple",
+"res://dialogue/": "purple",
+"res://fonts/": "yellow",
+"res://scenes/": "teal",
+"res://scripts/": "orange",
+"res://sounds/": "blue",
+"res://sprites/": "pink"
+}
+
 [global_group]
 
 glitch_portal_to_internal=""

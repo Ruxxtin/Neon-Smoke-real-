@@ -6,11 +6,11 @@ var able_to_spawn = true
 
 @onready var label = $Label
 
-@export var iron_scene: PackedScene
+@export var iron_scene = preload("res://scenes/drag_object_iron.tscn")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	var iron_amount = ResourceManager.iron_amount
+	iron_amount = ResourceManager.iron_amount
 	label.text = str(iron_amount)
 	
 	if Input.is_action_just_pressed("click") and iron_amount >= 1 and touching_mouse == true:

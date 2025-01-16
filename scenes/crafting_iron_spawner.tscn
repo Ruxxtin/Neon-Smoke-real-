@@ -1,9 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://dcnheswaxqa5f"]
+[gd_scene load_steps=5 format=3 uid="uid://dcnheswaxqa5f"]
 
 [ext_resource type="Texture2D" uid="uid://xlynbt4oqpnj" path="res://sprites/stuff_in_crafting_table/ironbeamm.png" id="1_3j7yg"]
 [ext_resource type="Script" path="res://scripts/crafting_iron_spawner.gd" id="2_cfy61"]
 [ext_resource type="FontFile" uid="uid://ctm6158scsahw" path="res://fonts/PixelifySans-VariableFont_wght.ttf" id="3_0uf25"]
-[ext_resource type="PackedScene" uid="uid://bgjwj8rr8i72h" path="res://scenes/drag_object_iron.tscn" id="3_ewe70"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ggpfq"]
 size = Vector2(15, 14)
@@ -12,7 +11,6 @@ size = Vector2(15, 14)
 scale = Vector2(5, 5)
 texture = ExtResource("1_3j7yg")
 script = ExtResource("2_cfy61")
-iron_scene = ExtResource("3_ewe70")
 
 [node name="Area2D" type="Area2D" parent="."]
 

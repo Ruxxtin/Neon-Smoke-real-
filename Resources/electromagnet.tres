@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Item" load_steps=5 format=3 uid="uid://wdidn6fq43i8"]
+
+[ext_resource type="Texture2D" uid="uid://dsrl4navk8i33" path="res://sprites/stuff_in_crafting_table/electromagnet.png" id="1_ng4dk"]
+[ext_resource type="Script" path="res://item.gd" id="2_jyqr8"]
+[ext_resource type="Resource" uid="uid://bfxetyfnfm6qs" path="res://Resources/iron.tres" id="3_6cdeu"]
+[ext_resource type="Resource" uid="uid://xncli1voeuqi" path="res://Resources/battery.tres" id="4_ryhac"]
+
+[resource]
+script = ExtResource("2_jyqr8")
+icon = ExtResource("1_ng4dk")
+name = "Electromagnet"
+recipe = Array[ExtResource("2_jyqr8")]([ExtResource("3_6cdeu"), ExtResource("4_ryhac")])
+type = "Invention"
+description = "Complex material used in crafting."
