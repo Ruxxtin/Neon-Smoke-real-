@@ -1,8 +1,98 @@
-[gd_scene load_steps=2 format=3 uid="uid://gkr6qc80i6ow"]
+[gd_scene load_steps=4 format=3 uid="uid://gkr6qc80i6ow"]
 
 [ext_resource type="Script" path="res://scripts/crafting.gd" id="1_g7xjy"]
+[ext_resource type="Script" path="res://scripts/button.gd" id="2_3sjkg"]
+[ext_resource type="Script" path="res://scripts/table.gd" id="2_riute"]
 
 [node name="Crafting" type="Node2D"]
 script = ExtResource("1_g7xjy")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="table" type="Node2D" parent="."]
+script = ExtResource("2_riute")
+
+[node name="0" type="Button" parent="table"]
+custom_minimum_size = Vector2(40, 40)
+offset_right = 8.0
+offset_bottom = 8.0
+text = "0"
+script = ExtResource("2_3sjkg")
+
+[node name="1" type="Button" parent="table"]
+custom_minimum_size = Vector2(40, 40)
+offset_left = 40.0
+offset_right = 80.0
+offset_bottom = 40.0
+text = "0"
+script = ExtResource("2_3sjkg")
+
+[node name="2" type="Button" parent="table"]
+custom_minimum_size = Vector2(40, 40)
+offset_left = 80.0
+offset_right = 120.0
+offset_bottom = 40.0
+text = "0"
+script = ExtResource("2_3sjkg")
+
+[node name="3" type="Button" parent="table"]
+custom_minimum_size = Vector2(40, 40)
+offset_top = 40.0
+offset_right = 40.0
+offset_bottom = 80.0
+text = "0"
+script = ExtResource("2_3sjkg")
+
+[node name="4" type="Button" parent="table"]
+custom_minimum_size = Vector2(40, 40)
+offset_left = 40.0
+offset_top = 40.0
+offset_right = 80.0
+offset_bottom = 80.0
+text = "0"
+script = ExtResource("2_3sjkg")
+
+[node name="5" type="Button" parent="table"]
+custom_minimum_size = Vector2(40, 40)
+offset_left = 80.0
+offset_top = 40.0
+offset_right = 120.0
+offset_bottom = 80.0
+text = "0"
+script = ExtResource("2_3sjkg")
+
+[node name="6" type="Button" parent="table"]
+custom_minimum_size = Vector2(40, 40)
+offset_top = 80.0
+offset_right = 40.0
+offset_bottom = 120.0
+text = "0"
+script = ExtResource("2_3sjkg")
+
+[node name="7" type="Button" parent="table"]
+custom_minimum_size = Vector2(40, 40)
+offset_left = 40.0
+offset_top = 80.0
+offset_right = 80.0
+offset_bottom = 120.0
+text = "0"
+script = ExtResource("2_3sjkg")
+
+[node name="8" type="Button" parent="table"]
+custom_minimum_size = Vector2(40, 40)
+offset_left = 80.0
+offset_top = 80.0
+offset_right = 120.0
+offset_bottom = 120.0
+text = "0"
+script = ExtResource("2_3sjkg")
+
+[connection signal="pressed" from="table/0" to="table/0" method="_on_pressed"]
+[connection signal="pressed" from="table/1" to="table/1" method="_on_pressed"]
+[connection signal="pressed" from="table/2" to="table/2" method="_on_pressed"]
+[connection signal="pressed" from="table/3" to="table/3" method="_on_pressed"]
+[connection signal="pressed" from="table/4" to="table/4" method="_on_pressed"]
+[connection signal="pressed" from="table/5" to="table/5" method="_on_pressed"]
+[connection signal="pressed" from="table/6" to="table/6" method="_on_pressed"]
+[connection signal="pressed" from="table/7" to="table/7" method="_on_pressed"]
+[connection signal="pressed" from="table/8" to="table/8" method="_on_pressed"]

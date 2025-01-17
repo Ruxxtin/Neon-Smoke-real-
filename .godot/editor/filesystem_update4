@@ -45,3 +45,4 @@ res://Resources/electromagnet.tres
 res://scripts/recipes.gd
 res://scripts/crafting.gd
 res://scenes/crafting.tscn
+res://scripts/button.gd
