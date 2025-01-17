@@ -40,3 +40,8 @@ res://scenes/drag_object_electomagnet.tscn
 res://scripts/recipe_slot.gd
 res://scenes/recipe_slot.tscn
 res://scenes/recipe.tscn
+res://scripts/recipe.gd
+res://Resources/electromagnet.tres
+res://scripts/recipes.gd
+res://scripts/crafting.gd
+res://scenes/crafting.tscn

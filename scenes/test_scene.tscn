@@ -1,10 +1,12 @@
-[gd_scene load_steps=6 format=3 uid="uid://crhvturqfk3sn"]
+[gd_scene load_steps=8 format=3 uid="uid://crhvturqfk3sn"]
 
 [ext_resource type="Script" path="res://scripts/inventory.gd" id="1_c1u08"]
 [ext_resource type="PackedScene" uid="uid://cowg30y7r1vxo" path="res://scenes/resource_slot.tscn" id="1_utbtd"]
 [ext_resource type="Resource" uid="uid://bfxetyfnfm6qs" path="res://Resources/iron.tres" id="2_nthal"]
 [ext_resource type="Resource" uid="uid://xncli1voeuqi" path="res://Resources/battery.tres" id="3_pjyhe"]
 [ext_resource type="PackedScene" uid="uid://c2jbtoc34yow" path="res://scenes/recipe.tscn" id="5_1as1o"]
+[ext_resource type="Script" path="res://scripts/recipes.gd" id="5_dishp"]
+[ext_resource type="Resource" uid="uid://wdidn6fq43i8" path="res://Resources/electromagnet.tres" id="6_3f0eq"]
 
 [node name="TestScene" type="Node2D"]
 
@@ -49,6 +51,10 @@ offset_left = 400.0
 offset_top = 192.0
 offset_right = 528.0
 offset_bottom = 232.0
+script = ExtResource("5_dishp")
 
 [node name="Recipe" parent="UI/Recipes" instance=ExtResource("5_1as1o")]
 layout_mode = 2
+item = ExtResource("6_3f0eq")
+
+[connection signal="item_changed" from="UI/Inventory" to="UI/Recipes" method="_on_inventory_item_changed"]

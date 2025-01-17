@@ -1,5 +1,7 @@
 extends GridContainer
 
+signal item_changed
+
 #region Testing
 @export var ITEM : Item
 @export var ITEM2 : Item
@@ -14,10 +16,18 @@ func add_item(item):
 	for i in get_children():
 		if i.item == null:
 			i.item = item
+			item_changed.emit()
 			return
 
 func remove_item(item):
 	for i in get_children():
 		if i.item == item:
 			i.item = null
+			item_changed.emit()
 			return
+
+func is_available(item):
+	for i in get_children():
+		if i.item == Item:
+			return true
+	return false

@@ -1,3 +1,4 @@
+Camera2D
 VBoxContainer
 Label
 Button
@@ -12,4 +13,3 @@ ColorRect
 CollisionShape2D
 CollisionPolygon2D
 StaticBody2D
-Node2D

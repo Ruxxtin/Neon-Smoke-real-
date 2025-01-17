@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://gkr6qc80i6ow"]
+
+[ext_resource type="Script" path="res://scripts/crafting.gd" id="1_g7xjy"]
+
+[node name="Crafting" type="Node2D"]
+script = ExtResource("1_g7xjy")
+
+[node name="Camera2D" type="Camera2D" parent="."]
