@@ -6,11 +6,11 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vf80v"]
 size = Vector2(18, 18)
 
-[node name="drag_object_slot" type="Sprite2D" groups=["drag_object_slot"]]
+[node name="drag_object_slot" type="Sprite2D" groups=["drag_object_slot_1"]]
 scale = Vector2(5, 5)
 texture = ExtResource("1_18dwp")
 
-[node name="Area2D" type="Area2D" parent="." groups=["drag_object_slot"]]
+[node name="Area2D" type="Area2D" parent="." groups=["drag_object_slot_1"]]
 script = ExtResource("2_yc3bw")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]

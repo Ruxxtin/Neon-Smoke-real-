@@ -23,6 +23,7 @@ ArcadeTetracity="*res://scenes/arcade_tetracity.tscn"
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 Dialogic="*res://addons/dialogic/Core/DialogicGameHandler.gd"
 TransitionScreen="*res://scenes/transition_screen.tscn"
+GlobalCrafting="*res://global_crafting.gd"
 
 [dialogic]
 
@@ -111,6 +112,9 @@ glitch_portal_to_rl=""
 Player=""
 drag_iron=""
 drag_object=""
+drag_object_slot_1=""
+drag_object_slot_2=""
+drag_battery=""
 
 [input]
 

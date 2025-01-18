@@ -3,8 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://xlynbt4oqpnj" path="res://sprites/stuff_in_crafting_table/ironbeamm.png" id="1_oagde"]
 [ext_resource type="Script" path="res://scripts/drag_object.gd" id="2_eacqw"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_m3lu4"]
-size = Vector2(17, 16)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ficgj"]
+size = Vector2(26, 23.8)
 
 [node name="drag_object_iron" type="Area2D" groups=["drag_iron", "drag_object"]]
 position = Vector2(0, -5)
@@ -21,11 +21,11 @@ offset_bottom = 8.0
 [node name="Sprite2D" type="Sprite2D" parent="." groups=["drag_object"]]
 texture = ExtResource("1_oagde")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
 z_index = 10
-position = Vector2(0.5, 1)
+position = Vector2(0, 1)
 scale = Vector2(1, 1)
-shape = SubResource("RectangleShape2D_m3lu4")
+shape = SubResource("RectangleShape2D_ficgj")
 
 [connection signal="area_entered" from="." to="." method="_on_area_entered"]
 [connection signal="area_exited" from="." to="." method="_on_area_exited"]

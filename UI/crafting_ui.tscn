@@ -21,9 +21,6 @@ position = Vector2(307, 344)
 [node name="drag_object_slot2" parent="." instance=ExtResource("4_o6y8c")]
 position = Vector2(417, 344)
 
-[node name="drag_object_slot3" parent="." instance=ExtResource("4_scek0")]
-position = Vector2(557, 341)
-
 [node name="crafting_iron_spawner" parent="." instance=ExtResource("4_nxw8b")]
 position = Vector2(319, 112)
 

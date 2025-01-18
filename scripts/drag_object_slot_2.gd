@@ -24,11 +24,11 @@ func _process(delta):
 			object_holding = "none"
 	
 	if is_occupied == true:
-		if object_ref.is_in_group("drag_iron") and object_ref.slot_num == 1:
+		if object_ref.is_in_group("drag_iron") and object_ref.slot_num == 2:
 			object_holding = "iron"
-		if object_ref.is_in_group("drag_battery") and object_ref.slot_num == 1:
+		if object_ref.is_in_group("drag_battery") and object_ref.slot_num == 2:
 			object_holding = "battery"
-		GlobalCrafting.slot_one_item = object_holding
+		GlobalCrafting.slot_two_item = object_holding
 	else:
-		GlobalCrafting.slot_one_item = "none"
+		GlobalCrafting.slot_two_item = "none"
 	

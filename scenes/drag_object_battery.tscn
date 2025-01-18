@@ -1,16 +1,15 @@
 [gd_scene load_steps=4 format=3 uid="uid://bo7xe7mdjtb3q"]
 
+[ext_resource type="Script" path="res://scripts/drag_object_battery.gd" id="1_a8v0j"]
 [ext_resource type="Texture2D" uid="uid://b733ynlta6pvk" path="res://sprites/stuff_in_crafting_table/batterycylinder.png" id="1_a84kg"]
-[ext_resource type="Script" path="res://scripts/drag_object.gd" id="2_pox5b"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_m3lu4"]
-size = Vector2(17, 16)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ulu03"]
+size = Vector2(26, 23.8)
 
-[node name="drag_object_battery" type="Sprite2D"]
+[node name="drag_object_battery" type="Area2D" groups=["drag_battery", "drag_object"]]
 position = Vector2(0, -5)
 scale = Vector2(5, 5)
-texture = ExtResource("1_a84kg")
-script = ExtResource("2_pox5b")
+script = ExtResource("1_a8v0j")
 
 [node name="Button" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0)
@@ -19,15 +18,15 @@ offset_top = -6.0
 offset_right = 8.0
 offset_bottom = 8.0
 
-[node name="Area2D" type="Area2D" parent="." groups=["drag_object"]]
+[node name="Sprite2D" type="Sprite2D" parent="." groups=["drag_object"]]
+texture = ExtResource("1_a84kg")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
 z_index = 10
-position = Vector2(0.5, 1)
-shape = SubResource("RectangleShape2D_m3lu4")
+position = Vector2(0, 1)
+scale = Vector2(1, 1)
+shape = SubResource("RectangleShape2D_ulu03")
 
-[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
-[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_exited" from="." to="." method="_on_area_exited"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
-[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
-[connection signal="area_exited" from="Area2D" to="." method="_on_area_2d_area_exited"]
