@@ -1,3 +1,5 @@
+Sprite2D
+Area2D
 Button
 Node2D
 Camera2D
@@ -11,4 +13,3 @@ GridContainer
 CanvasLayer
 AnimationPlayer
 ColorRect
-CollisionShape2D

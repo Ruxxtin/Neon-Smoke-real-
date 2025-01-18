@@ -109,6 +109,8 @@ folder_colors={
 glitch_portal_to_internal=""
 glitch_portal_to_rl=""
 Player=""
+drag_iron=""
+drag_object=""
 
 [input]
 

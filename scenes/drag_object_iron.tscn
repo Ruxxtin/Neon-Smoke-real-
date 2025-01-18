@@ -6,10 +6,9 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m3lu4"]
 size = Vector2(17, 16)
 
-[node name="drag_object_iron" type="Sprite2D" groups=["drag_iron", "drag_object"]]
+[node name="drag_object_iron" type="Area2D" groups=["drag_iron", "drag_object"]]
 position = Vector2(0, -5)
 scale = Vector2(5, 5)
-texture = ExtResource("1_oagde")
 script = ExtResource("2_eacqw")
 
 [node name="Button" type="Button" parent="."]
@@ -19,15 +18,15 @@ offset_top = -6.0
 offset_right = 8.0
 offset_bottom = 8.0
 
-[node name="Area2D" type="Area2D" parent="." groups=["drag_object"]]
+[node name="Sprite2D" type="Sprite2D" parent="." groups=["drag_object"]]
+texture = ExtResource("1_oagde")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 z_index = 10
 position = Vector2(0.5, 1)
+scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_m3lu4")
 
-[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
-[connection signal="button_up" from="Button" to="." method="_on_button_button_up"]
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="area_exited" from="." to="." method="_on_area_exited"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
-[connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]
-[connection signal="area_exited" from="Area2D" to="." method="_on_area_2d_area_exited"]

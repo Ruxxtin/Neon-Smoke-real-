@@ -1,4 +1,4 @@
-extends Sprite2D
+extends Area2D
 
 var dragging = true
 var off = Vector2(0,0)
@@ -27,7 +27,7 @@ func _process(delta):
 
 
 
-func _on_area_2d_area_entered(area):
+func _on_area_entered(area):
 	if area.is_in_group("drag_object"):
 		dropable = false
 	if area.is_in_group("drag_object_slot") and not area.is_in_group("drag_object"):
@@ -39,7 +39,7 @@ func _on_area_2d_area_entered(area):
 		in_return_slot = true
 
 
-func _on_area_2d_area_exited(area):
+func _on_area_exited(area):
 	if area.is_in_group("drag_object_slot"):
 		dropable = false
 		in_return_slot = false
@@ -56,4 +56,3 @@ func _on_button_pressed():
 			position = arearef.global_position
 			in_slot = true
 			dragging = false
-			print("is_true")
