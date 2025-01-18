@@ -6,7 +6,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_m3lu4"]
 size = Vector2(17, 16)
 
-[node name="drag_object_iron" type="Sprite2D"]
+[node name="drag_object_iron" type="Sprite2D" groups=["drag_iron", "drag_object"]]
 position = Vector2(0, -5)
 scale = Vector2(5, 5)
 texture = ExtResource("1_oagde")

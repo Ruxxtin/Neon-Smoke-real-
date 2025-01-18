@@ -49,8 +49,11 @@ func _on_button_pressed():
 	if dragging == false:
 		dragging = true
 		off = get_global_mouse_position() - global_position
+		if in_slot == true:
+			in_slot = false
 	elif dragging == true:
 		if dropable == true:
 			position = arearef.global_position
 			in_slot = true
 			dragging = false
+			print("is_true")
