@@ -1,6 +1,6 @@
 extends Area2D
 
-var dragging = true
+var dragging = false
 var off = Vector2(0,0)
 var dropable = false
 var arearef
@@ -47,6 +47,8 @@ func _on_area_entered(area):
 			arearef = area
 		if area.is_occupied == true:
 			dropable = false
+		elif area.is_occupied == false:
+			dropable = true
 		else:
 			touching_other_drag = true
 	if area.is_in_group("return_slot"):
@@ -63,17 +65,17 @@ func _on_area_exited(area):
 
 func _on_button_pressed():
 	if dragging == false:
-		if touching_other_drag == false:
-			dragging = true
-			off = get_global_mouse_position() - global_position
-			if in_slot == true:
-				in_slot = false
+		dragging = true
+		off = get_global_mouse_position() - global_position
+		if in_slot == true:
+			in_slot = false
 	elif dragging == true:
 		if dropable == true:
-			position = arearef.global_position
-			in_slot = true
-			dragging = false
-			if arearef.is_in_group("drag_object_slot_1"):
-				slot_num = 1
-			if arearef.is_in_group("drag_object_slot_2"):
-				slot_num = 2
+			if touching_other_drag == false:
+				position = arearef.global_position
+				in_slot = true
+				dragging = false
+				if arearef.is_in_group("drag_object_slot_1"):
+					slot_num = 1
+				if arearef.is_in_group("drag_object_slot_2"):
+					slot_num = 2

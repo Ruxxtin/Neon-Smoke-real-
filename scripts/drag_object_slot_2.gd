@@ -6,6 +6,7 @@ var object_ref
 var is_drag_object = false
 
 func _process(delta):
+	
 	var areas = get_overlapping_areas()
 	
 	for area in areas:

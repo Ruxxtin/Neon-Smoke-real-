@@ -1,6 +1,6 @@
 extends Area2D
 
-var dragging = true
+var dragging = false
 var off = Vector2(0,0)
 var dropable = false
 var arearef
@@ -47,6 +47,8 @@ func _on_area_entered(area):
 			arearef = area
 		if area.is_occupied == true:
 			dropable = false
+		elif area.is_occupied == false:
+			dropable = true
 		else:
 			touching_other_drag = true
 	if area.is_in_group("return_slot"):

@@ -14,3 +14,5 @@ res://scripts/drag_object.gd
 res://scripts/drag_object_slot_2.gd
 res://scenes/drag_object_battery.tscn
 res://scripts/drag_object_battery.gd
+res://UI/electromagnet_craft.gd
+res://UI/ummcraftingui.gd
