@@ -12,6 +12,7 @@ var able_to_spawn = true
 func _process(delta):
 	electromagnet_amount = ResourceManager.electormagnet_amount
 	label.text = str(electromagnet_amount)
+	print(str(ResourceManager.electormagnet_amount))
 	
 	if Input.is_action_just_pressed("click") and electromagnet_amount >= 1 and touching_mouse == true:
 		if able_to_spawn:

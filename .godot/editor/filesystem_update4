@@ -5,3 +5,9 @@ res://UI/output_slot.gd
 res://scripts/resource_manager.gd
 res://UI/electromagnet_craft.gd
 res://scripts/crafting_electromagnet_spawner.gd
+res://scenes/crafting_electromagnet_spawner.tscn
+res://scenes/cryolab.tscn
+res://scenes/sykul_g_floor.tscn
+res://scenes/drag_object_iron.tscn
+res://scenes/drag_object_electomagnet.tscn
+res://scenes/drag_object_slot.tscn
