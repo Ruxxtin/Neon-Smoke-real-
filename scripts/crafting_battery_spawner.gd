@@ -30,12 +30,13 @@ func _on_area_2d_mouse_exited():
 	touching_mouse = false
 
 func spawn():
-	if touching_mouse == true:
+	"if touching_mouse == true:
 		var inst = battery_scene.instantiate()
 		owner.add_child(inst)
 		inst.position = position
 		touching_mouse = false
-		ResourceManager.battery_amount -= 1
+		ResourceManager.battery_amount -= 1"
+	pass
 
 
 func _on_area_2d_area_entered(area):
