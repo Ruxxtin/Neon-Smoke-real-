@@ -1,11 +1,11 @@
 extends Area2D
 
 var is_occupied = false
-
-func _physics_process(delta):
-	if 
-	
-
+var occupied_with = "none"
 
 func _on_button_pressed():
-	pass # Replace with function body.
+	if is_occupied == true:
+		if occupied_with == "electromagnet":
+			ResourceManager.add_electromagnet()
+		if occupied_with == "circuit_board":
+			ResourceManager.add_circuitboard()

@@ -8,4 +8,5 @@ func _on_button_pressed():
 		crafting_ui.put_in_output("electromagnet")
 		ResourceManager.iron_amount -= 1
 		ResourceManager.battery_amount -= 1
+		output_slot.occupied_with = "electromagnet"
 		

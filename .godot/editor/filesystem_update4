@@ -1,14 +1,7 @@
 res://scenes/game.tscn
 res://stamina25.dtl
-res://scenes/cryolab.tscn
-res://scenes/sykul_g_floor.tscn
-res://scenes/drag_object_iron.tscn
-res://scenes/drag_object_electomagnet.tscn
 res://UI/crafting_ui.tscn
-res://scenes/drag_object_slot.tscn
-res://scenes/drag_object_slot2.tscn
-res://UI/ummcraftingui.gd
-res://scenes/crafting_iron_spawner.tscn
-res://scenes/crafting_battery_spawner.tscn
-res://UI/electromagnet_craft.gd
 res://UI/output_slot.gd
+res://scripts/resource_manager.gd
+res://UI/electromagnet_craft.gd
+res://scripts/crafting_electromagnet_spawner.gd
