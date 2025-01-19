@@ -7,8 +7,8 @@ res://scenes/drag_object_electomagnet.tscn
 res://UI/crafting_ui.tscn
 res://scenes/drag_object_slot.tscn
 res://scenes/drag_object_slot2.tscn
-res://scenes/drag_object_battery.tscn
-res://scripts/crafting_battery_spawner.gd
-res://scripts/crafting_iron_spawner.gd
 res://UI/ummcraftingui.gd
+res://scenes/crafting_iron_spawner.tscn
+res://scenes/crafting_battery_spawner.tscn
 res://UI/electromagnet_craft.gd
+res://UI/output_slot.gd

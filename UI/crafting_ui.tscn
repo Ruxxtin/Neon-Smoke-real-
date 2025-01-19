@@ -1,12 +1,14 @@
-[gd_scene load_steps=18 format=3 uid="uid://c137m0mgdi1tj"]
+[gd_scene load_steps=22 format=3 uid="uid://c137m0mgdi1tj"]
 
 [ext_resource type="Script" path="res://UI/ummcraftingui.gd" id="1_08mj7"]
 [ext_resource type="Texture2D" uid="uid://d02sugjmab2ni" path="res://sprites/stuff_in_crafting_table/bench full mostly.png" id="2_5puft"]
+[ext_resource type="Script" path="res://UI/output_slot.gd" id="3_gqkgl"]
 [ext_resource type="Texture2D" uid="uid://r8q240aoym4s" path="res://sprites/stuff_in_crafting_table/empty_crafting_slot.png" id="3_xw1ac"]
 [ext_resource type="PackedScene" uid="uid://dcnheswaxqa5f" path="res://scenes/crafting_iron_spawner.tscn" id="4_nxw8b"]
 [ext_resource type="PackedScene" uid="uid://dac51gy0tlpdg" path="res://scenes/crafting_battery_spawner.tscn" id="5_ohk10"]
 [ext_resource type="Texture2D" uid="uid://rc3672ia1gcj" path="res://sprites/stuff_in_crafting_table/box.png" id="7_moyyd"]
 [ext_resource type="Texture2D" uid="uid://cwmhsngy0fnpw" path="res://sprites/stuff_in_crafting_table/croll_bars_v.png" id="7_p6xii"]
+[ext_resource type="FontFile" uid="uid://ibnq1e5i467k" path="res://fonts/ByteBounce.ttf" id="8_8h8fy"]
 [ext_resource type="Script" path="res://UI/electromagnet_craft.gd" id="9_scl74"]
 [ext_resource type="Texture2D" uid="uid://dsrl4navk8i33" path="res://sprites/stuff_in_crafting_table/electromagnet.png" id="10_vxh0o"]
 
@@ -36,6 +38,16 @@ VScrollBar/styles/scroll_focus = SubResource("StyleBoxEmpty_da05a")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6dj3p"]
 size = Vector2(1152, 1152)
 
+[sub_resource type="Theme" id="Theme_q1k3l"]
+default_font = ExtResource("8_8h8fy")
+default_font_size = 32
+TooltipLabel/font_sizes/font_size = 32
+TooltipLabel/fonts/font = ExtResource("8_8h8fy")
+
+[sub_resource type="Theme" id="Theme_t5bh5"]
+default_font = ExtResource("8_8h8fy")
+default_font_size = 32
+
 [node name="crafting_ui" type="CanvasLayer"]
 script = ExtResource("1_08mj7")
 
@@ -46,22 +58,29 @@ texture = ExtResource("2_5puft")
 
 [node name="output_slot" type="Area2D" parent="."]
 position = Vector2(443, 342)
+script = ExtResource("3_gqkgl")
 
 [node name="slot" type="Sprite2D" parent="output_slot"]
 position = Vector2(85, 2)
 scale = Vector2(8, 8)
 texture = ExtResource("3_xw1ac")
 
-[node name="item" type="TextureRect" parent="output_slot"]
-offset_left = 13.0
-offset_top = -70.0
-offset_right = 31.0
-offset_bottom = -52.0
-scale = Vector2(8, 8)
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="output_slot"]
 position = Vector2(85, 2)
 shape = SubResource("RectangleShape2D_g1k3y")
+
+[node name="item" type="TextureRect" parent="output_slot"]
+offset_left = 40.0
+offset_top = -42.0
+offset_right = 58.0
+offset_bottom = -24.0
+scale = Vector2(5, 5)
+
+[node name="Button" type="Button" parent="output_slot"]
+offset_left = 13.0
+offset_top = -70.0
+offset_right = 157.0
+offset_bottom = 74.0
 
 [node name="ScrollContainer" type="ScrollContainer" parent="."]
 offset_left = 640.0
@@ -95,7 +114,7 @@ shape = SubResource("RectangleShape2D_6dj3p")
 
 [node name="Sprite2D" type="Sprite2D" parent="ScrollContainer/VBoxContainer/TextureRect"]
 position = Vector2(72, 72)
-scale = Vector2(6, 6)
+scale = Vector2(5, 5)
 texture = ExtResource("10_vxh0o")
 
 [node name="Button" type="Button" parent="ScrollContainer/VBoxContainer/TextureRect"]
@@ -105,6 +124,12 @@ offset_left = 8.0
 offset_top = 8.0
 offset_right = 136.0
 offset_bottom = 136.0
+tooltip_text = "ELECTROMAGNET
+1 IRON
+1 BATTERY"
+theme = SubResource("Theme_q1k3l")
+theme_override_fonts/font = ExtResource("8_8h8fy")
+theme_override_font_sizes/font_size = 16
 
 [node name="TextureRect2" type="TextureRect" parent="ScrollContainer/VBoxContainer"]
 custom_minimum_size = Vector2(144, 144)
@@ -151,7 +176,16 @@ size_flags_vertical = 4
 texture = ExtResource("7_moyyd")
 
 [node name="crafting_iron_spawner" parent="ScrollContainer2/HBoxContainer/TextureRect" instance=ExtResource("4_nxw8b")]
-position = Vector2(63, 56)
+position = Vector2(73, 56)
+
+[node name="Button" type="Button" parent="ScrollContainer2/HBoxContainer/TextureRect/crafting_iron_spawner"]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -7.0
+offset_top = -6.0
+offset_right = 8.0
+offset_bottom = 8.0
+tooltip_text = "IRON"
+theme = SubResource("Theme_t5bh5")
 
 [node name="TextureRect2" type="TextureRect" parent="ScrollContainer2/HBoxContainer"]
 custom_minimum_size = Vector2(144, 144)
@@ -160,6 +194,15 @@ size_flags_vertical = 4
 texture = ExtResource("7_moyyd")
 
 [node name="crafting_battery_spawner2" parent="ScrollContainer2/HBoxContainer/TextureRect2" instance=ExtResource("5_ohk10")]
-position = Vector2(63, 56)
+position = Vector2(73, 56)
+
+[node name="Button" type="Button" parent="ScrollContainer2/HBoxContainer/TextureRect2/crafting_battery_spawner2"]
+self_modulate = Color(1, 1, 1, 0)
+offset_left = -7.0
+offset_top = -6.0
+offset_right = 8.0
+offset_bottom = 8.0
+tooltip_text = "BATTERY"
+theme = SubResource("Theme_t5bh5")
 
 [connection signal="pressed" from="ScrollContainer/VBoxContainer/TextureRect/Button" to="ScrollContainer/VBoxContainer/TextureRect/Area2D" method="_on_button_pressed"]
