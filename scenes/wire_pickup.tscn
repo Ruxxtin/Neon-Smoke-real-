@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dwgacl7lmmqoq"]
+
+[ext_resource type="Script" path="res://scripts/wire_pickup.gd" id="1_qcv02"]
+[ext_resource type="Texture2D" uid="uid://cpnigfm833q1o" path="res://sprites/stuff_in_crafting_table/wire resource.png" id="2_a6ffm"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1oykv"]
+radius = 11.0
+
+[node name="wire_pickup" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_qcv02")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_a6ffm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_1oykv")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

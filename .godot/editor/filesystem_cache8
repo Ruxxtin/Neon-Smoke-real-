@@ -1,12 +1,12 @@
 c693a20e708c4e09bfa9edf12a750cf8
-::res://::1737319614
+::res://::1737493213
 default_bus_layout.tres::AudioBusLayout::5054479567780529502::1735782047::0::1::::<><>::
 global.gd::GDScript::-1::1736720723::0::1::::<>Node2D<>::
 global.tscn::PackedScene::3857127387108029212::1737076185::0::1::::<><>::res://global.gd
 global_crafting.gd::GDScript::-1::1737241986::0::1::::<>Node<>::
 icon.svg::CompressedTexture2D::246418271870288165::1724615394::1724615405::1::::<><>::
 item.gd::GDScript::-1::1736989372::0::1::::Item<>Resource<>::
-placeholder.dch::Resource/DialogicCharacter::-1::1736714260::0::1::::<><>::
+placeholder.dch::Resource/DialogicCharacter::-1::1737430010::0::1::::<><>::
 stamina25.dtl::Resource/DialogicTimeline::-1::1736714992::0::1::::<><>::
 ::res://addons/::1736038845
 ::res://addons/dialogic/::1736038115
@@ -687,13 +687,13 @@ main_view.tscn::PackedScene::4884668666408697448::1736013282::0::1::::<><>::res:
 settings_view.gd::GDScript::-1::1736013282::0::1::::<>TabContainer<>::
 settings_view.tscn::PackedScene::5839841081119266502::1736013282::0::1::::<><>::res://addons/dialogue_manager/views/settings_view.gd
 ::res://dialogic/::1736107685
-::res://dialogic/characters/::1736707918
-Ada.dch::Resource/DialogicCharacter::-1::1736212610::0::1::::<><>::
+::res://dialogic/characters/::1737430220
+Ada.dch::Resource/DialogicCharacter::-1::1737430114::0::1::::<><>::
 adda_ya-removebg-preview.png::CompressedTexture2D::3153340927811795713::1736044597::1736044598::1::::<><>::
 main_char_talksprites.png::CompressedTexture2D::5537110493276645293::1736032134::1736044589::1::::<><>::
-Neeko.dch::Resource/DialogicCharacter::-1::1736114687::0::1::::<><>::
+Neeko.dch::Resource/DialogicCharacter::-1::1737430112::0::1::::<><>::
 neeko_cheat-removebg-preview.png::CompressedTexture2D::6900831743229448907::1736045792::1736045792::1::::<><>::
-Player.dch::Resource/DialogicCharacter::-1::1736707918::0::1::::<><>::
+Player.dch::Resource/DialogicCharacter::-1::1737430220::0::1::::<><>::
 player_worried_tlksprt.png::CompressedTexture2D::765620934919118065::1736045056::1736045057::1::::<><>::
 talksprite_1.png::CompressedTexture2D::4637540461348913214::1736032575::1736044589::1::::<><>::
 ::res://dialogic/styles/::1736214124
@@ -719,11 +719,13 @@ next.svg::CompressedTexture2D::5750543350952232107::1736213693::1736377132::1:::
 vn_textbox_default_panel.tres::StyleBoxFlat::-1::1736213693::0::1::::<><>::
 vn_textbox_layer.gd::GDScript::-1::1736213693::0::1::::<>DialogicLayoutLayer<>::
 vn_textbox_name_label_panel.tres::StyleBoxFlat::-1::1736213693::0::1::::<><>::
-::res://dialogic/timelines/::1736297850
+::res://dialogic/timelines/::1737435430
+lil fella.dch::Resource/DialogicCharacter::-1::1737433817::0::1::::<><>::
 shrimpFriedRice.dtl::Resource/DialogicTimeline::-1::1736090741::0::1::::<><>::
 shrimpFriedRicePt2.dtl::Resource/DialogicTimeline::-1::1736297850::0::1::::<><>::
 stamina75.dtl::Resource/DialogicTimeline::-1::1736212500::0::1::::<><>::
 starting_fight.dtl::Resource/DialogicTimeline::-1::1736212105::0::1::::<><>::
+wake up little fella.dtl::Resource/DialogicTimeline::-1::1737435430::0::1::::<><>::
 ::res://dialogue/::1736044579
 main.dialogue::Resource::2905811153629007331::1736037738::1736037738::1::::<><>::res://addons/dialogue_manager/dialogue_resource.gd
 ::res://dialogue/addons/::1736038845
@@ -736,7 +738,7 @@ PixelifySans-VariableFont_wght.ttf::FontFile::6133132214475090484::1724903993::1
 battery.tres::Resource/Item::1641321853520758168::1736989605::0::1::::<><>::uid://b733ynlta6pvk::::res://sprites/stuff_in_crafting_table/batterycylinder.png<>res://item.gd
 electromagnet.tres::Resource/Item::1550839517564957929::1737037106::0::1::::<><>::uid://dsrl4navk8i33::::res://sprites/stuff_in_crafting_table/electromagnet.png<>res://item.gd<>uid://bfxetyfnfm6qs::::res://Resources/iron.tres<>uid://xncli1voeuqi::::res://Resources/battery.tres
 iron.tres::Resource/Item::2785123657164172478::1736989453::0::1::::<><>::uid://xlynbt4oqpnj::::res://sprites/stuff_in_crafting_table/ironbeamm.png<>res://item.gd
-::res://scenes/::1737318969
+::res://scenes/::1737493469
 2_nd_dnd_test_scene.tscn::PackedScene::2846688295552995731::1735012055::0::1::::<><>::uid://dlb6ksfdt7rbl::::res://scenes/draggable_item.tscn<>uid://dfpth6knqksaq::::res://scenes/slot_item_box_holder.tscn
 actionable.tscn::PackedScene::5910250014145289472::1736050729::0::1::::<><>::res://scripts/actionable.gd
 ada_cutscene.tscn::PackedScene::1723791754858906965::1736819983::0::1::::<><>::res://scripts/ada_cutscene.gd<>uid://d1ro41snohfxh::::res://sprites/characters/adaidle.png<>uid://dokd43ysn0l03::::res://sprites/characters/protagwalk.png<>uid://ys3k6pych8fe::::res://sprites/characters/protagsidewalk.png
@@ -746,27 +748,32 @@ arcade_building_tetracity.tscn::PackedScene::9019123049153498411::1736007642::0:
 arcade_game_1.tscn::PackedScene::6595725991706252882::1736721216::0::1::::<><>::uid://4h3gow8562ga::::res://sprites/tilesets/skyleset.png<>res://scripts/arcade_game_1.gd<>uid://db0qvjixy2j4g::::res://sprites/tilesets/thick.png<>uid://cuvjrk42a46mb::::res://sprites/tilesets/4spikes.png<>uid://7vyqyjjj27sv::::res://sprites/glitchy sky.png<>uid://dh1qn483a37wi::::res://sprites/tilesets/thin.png<>uid://bsx7coh4krkpn::::res://scenes/killzone.tscn<>uid://0w6ot6i7tlbu::::res://scenes/player_platformer.tscn
 arcade_game_1_internal.tscn::PackedScene::2947621085087163949::1736050728::0::1::::<><>::uid://4h3gow8562ga::::res://sprites/tilesets/skyleset.png<>uid://c4cyycc2t1i1x::::res://sprites/tilesets/thick circuit board.png<>uid://b1x870dee84j6::::res://sprites/tilesets/skyleset darker.png<>uid://c8mu33ph5dndv::::res://sprites/tilesets/thick circuit board behind.png<>uid://0w6ot6i7tlbu::::res://scenes/player_platformer.tscn<>uid://1lem5mlvu2i7::::res://sprites/tilesets/thick circuit board better.png<>uid://bsx7coh4krkpn::::res://scenes/killzone.tscn<>uid://di0q7ft6rdvj1::::res://sprites/glitch_portal_to_rl_sprsheet.png<>uid://mnuuih584hkh::::res://scenes/elec_spike.tscn
 arcade_tetracity.tscn::PackedScene::765405964973473576::1736007642::0::1::::<><>::uid://cdvcevq1gal3h::::res://sounds/TetracityArcadeTime.mp3<>res://scripts/arcade_tetracity.gd
+B-13.tscn::PackedScene::4694595742684328135::1737481195::0::1::::<><>::uid://p1cce5au4tl4::::res://sprites/bigguy.png<>res://scripts/b_13.gd<>uid://clr1ywgmmsxxt::::res://scenes/collision_object.tscn
 battery_pickup.tscn::PackedScene::2424334496647818243::1732421147::0::1::::<><>::res://scripts/battery_pickup.gd<>uid://b733ynlta6pvk::::res://sprites/stuff_in_crafting_table/batterycylinder.png
+carbonfiber_pickup.tscn::PackedScene::6278735118641188868::1737489181::0::1::::<><>::res://scripts/carbonfiber_pickup.gd<>uid://b5hrh8gnd3is::::res://sprites/stuff_in_crafting_table/carbon fiber.png
 collision_object.tscn::PackedScene::5581635735433745741::1726438552::0::1::::<><>::
 crafting.tscn::PackedScene::442865232853213022::1737085299::0::1::::<><>::res://scripts/crafting.gd<>res://scripts/button.gd<>res://scripts/table.gd
-crafting_battery_spawner.tscn::PackedScene::7165259100389076560::1737306503::0::1::::<><>::uid://b733ynlta6pvk::::res://sprites/stuff_in_crafting_table/batterycylinder.png<>res://scripts/crafting_battery_spawner.gd<>uid://ctm6158scsahw::::res://fonts/PixelifySans-VariableFont_wght.ttf
-crafting_electromagnet_spawner.tscn::PackedScene::5290519115337223894::1737318969::0::1::::<><>::uid://dsrl4navk8i33::::res://sprites/stuff_in_crafting_table/electromagnet.png<>res://scripts/crafting_electromagnet_spawner.gd<>uid://ibnq1e5i467k::::res://fonts/ByteBounce.ttf
-crafting_iron_spawner.tscn::PackedScene::7326909790720495217::1737306385::0::1::::<><>::uid://xlynbt4oqpnj::::res://sprites/stuff_in_crafting_table/ironbeamm.png<>res://scripts/crafting_iron_spawner.gd<>uid://ctm6158scsahw::::res://fonts/PixelifySans-VariableFont_wght.ttf
-crafting_table.tscn::PackedScene::5084896862321298231::1732421147::0::1::::<><>::uid://dvdu4v5bvqwjf::::res://sprites/crafting table.png<>res://scripts/crafting_table.gd
-cryolab.tscn::PackedScene::1766636327152678289::1737318967::0::1::::<><>::uid://f2ia5ue6cp3u::::res://scenes/Player.tscn<>uid://b4uje8g1isp6h::::res://sprites/tilesets/labfloor.png<>res://scripts/cryolab.gd<>uid://mioem0qh7iij::::res://sprites/tilesets/cryowall.png<>uid://b3jnmcsjvnnvq::::res://sprites/tilesets/labfloortiles.png<>uid://cfe5kocqihd2u::::res://scenes/textbox.tscn<>uid://b22t5g1342hsh::::res://sprites/tilesets/asphaltsprsheetdone_extraspace.png<>uid://dcmpv2yw7qevx::::res://sprites/stairsetv3.png<>uid://clr1ywgmmsxxt::::res://scenes/collision_object.tscn<>uid://c1r26w3fqwe25::::res://sprites/tilesets/blackset.png<>uid://bq647bqdubwir::::res://sprites/arel.png<>uid://c5afugn4x2c3p::::res://sprites/cryostasischamb.png<>res://scripts/scene_changer.gd<>uid://qp1fouvcqi2t::::res://UI/ui.tscn<>uid://beaf7pc5s2yg::::res://sprites/cryostasis_transparent.png
+crafting_battery_spawner.tscn::PackedScene::7165259100389076560::1737419672::0::1::::<><>::uid://b733ynlta6pvk::::res://sprites/stuff_in_crafting_table/batterycylinder.png<>res://scripts/crafting_battery_spawner.gd<>uid://ibnq1e5i467k::::res://fonts/ByteBounce.ttf
+crafting_carbonfiber_spawner.tscn::PackedScene::3142858624955371353::1737419399::0::1::::<><>::uid://b5hrh8gnd3is::::res://sprites/stuff_in_crafting_table/carbon fiber.png<>res://scripts/crafting_carbonfiber_spawner.gd<>uid://ibnq1e5i467k::::res://fonts/ByteBounce.ttf
+crafting_circuitboard_spawner.tscn::PackedScene::1229047571897874992::1737427076::0::1::::<><>::uid://b25mjy75mhk2x::::res://sprites/stuff_in_crafting_table/circuit board resource.png<>res://scripts/crafting_circuitboard_spawner.gd<>uid://ibnq1e5i467k::::res://fonts/ByteBounce.ttf
+crafting_electromagnet_spawner.tscn::PackedScene::5290519115337223894::1737492628::0::1::::<><>::uid://dsrl4navk8i33::::res://sprites/stuff_in_crafting_table/electromagnet.png<>res://scripts/crafting_electromagnet_spawner.gd<>uid://ibnq1e5i467k::::res://fonts/ByteBounce.ttf
+crafting_hoverboard_spawner.tscn::PackedScene::5340471341795827698::1737493469::0::1::::<><>::uid://b25mjy75mhk2x::::res://sprites/stuff_in_crafting_table/circuit board resource.png<>res://scripts/crafting_circuitboard_spawner.gd<>uid://ibnq1e5i467k::::res://fonts/ByteBounce.ttf
+crafting_iron_spawner.tscn::PackedScene::7326909790720495217::1737417618::0::1::::<><>::uid://xlynbt4oqpnj::::res://sprites/stuff_in_crafting_table/ironbeamm.png<>res://scripts/crafting_iron_spawner.gd<>uid://ibnq1e5i467k::::res://fonts/ByteBounce.ttf
+crafting_table.tscn::PackedScene::5084896862321298231::1737481195::0::1::::<><>::uid://dvdu4v5bvqwjf::::res://sprites/crafting table.png<>res://scripts/crafting_table.gd
+crafting_wire_spawner.tscn::PackedScene::7319543465841385462::1737417364::0::1::::<><>::uid://cpnigfm833q1o::::res://sprites/stuff_in_crafting_table/wire resource.png<>res://scripts/crafting_wire_spawner.gd<>uid://ibnq1e5i467k::::res://fonts/ByteBounce.ttf
+cryolab.tscn::PackedScene::1766636327152678289::1737492628::0::1::::<><>::uid://f2ia5ue6cp3u::::res://scenes/Player.tscn<>uid://b4uje8g1isp6h::::res://sprites/tilesets/labfloor.png<>res://scripts/cryolab.gd<>uid://mioem0qh7iij::::res://sprites/tilesets/cryowall.png<>uid://b3jnmcsjvnnvq::::res://sprites/tilesets/labfloortiles.png<>uid://cfe5kocqihd2u::::res://scenes/textbox.tscn<>uid://b22t5g1342hsh::::res://sprites/tilesets/asphaltsprsheetdone_extraspace.png<>uid://dcmpv2yw7qevx::::res://sprites/stairsetv3.png<>uid://clr1ywgmmsxxt::::res://scenes/collision_object.tscn<>uid://c1r26w3fqwe25::::res://sprites/tilesets/blackset.png<>uid://bq647bqdubwir::::res://sprites/arel.png<>uid://c5afugn4x2c3p::::res://sprites/cryostasischamb.png<>res://scripts/scene_changer.gd<>uid://qp1fouvcqi2t::::res://UI/ui.tscn<>uid://beaf7pc5s2yg::::res://sprites/cryostasis_transparent.png
 draggable_item.tscn::PackedScene::7935304746873827265::1735012055::0::1::::<><>::res://scripts/draggable_item.gd<>uid://drmqcyi17f4x::::res://icon.svg
 dragtestscene.tscn::PackedScene::4160026625038022292::1735867761::0::1::::<><>::uid://bgjwj8rr8i72h::::res://scenes/drag_object_iron.tscn<>uid://c2cbn5ad2pli6::::res://scenes/drag_object_slot.tscn
 drag_object_battery.tscn::PackedScene::3436529916198655316::1737261593::0::1::::<><>::res://scripts/drag_object_battery.gd<>uid://b733ynlta6pvk::::res://sprites/stuff_in_crafting_table/batterycylinder.png
-drag_object_electomagnet.tscn::PackedScene::7047554514349493631::1737318968::0::1::::<><>::uid://dsrl4navk8i33::::res://sprites/stuff_in_crafting_table/electromagnet.png<>res://scripts/drag_object_electomagnet.gd
-drag_object_iron.tscn::PackedScene::2827486751642923085::1737318968::0::1::::<><>::uid://xlynbt4oqpnj::::res://sprites/stuff_in_crafting_table/ironbeamm.png<>res://scripts/drag_object.gd
+drag_object_electomagnet.tscn::PackedScene::7047554514349493631::1737492627::0::1::::<><>::uid://dsrl4navk8i33::::res://sprites/stuff_in_crafting_table/electromagnet.png<>res://scripts/drag_object_electomagnet.gd
+drag_object_iron.tscn::PackedScene::2827486751642923085::1737492627::0::1::::<><>::uid://xlynbt4oqpnj::::res://sprites/stuff_in_crafting_table/ironbeamm.png<>res://scripts/drag_object.gd
 drag_object_return_slot.tscn::PackedScene::4869607665513340307::1735509059::0::1::::<><>::uid://r8q240aoym4s::::res://sprites/stuff_in_crafting_table/empty_crafting_slot.png<>res://scripts/Area2D.gd
 drag_object_slot2.tscn::PackedScene::8866575133649420479::1737306995::0::1::::<><>::uid://r8q240aoym4s::::res://sprites/stuff_in_crafting_table/empty_crafting_slot.png<>res://scripts/drag_object_slot_2.gd
-drag_object_slot.tscn::PackedScene::6672154409308220387::1737318969::0::1::::<><>::uid://r8q240aoym4s::::res://sprites/stuff_in_crafting_table/empty_crafting_slot.png<>res://scripts/drag_object_slot.gd
+drag_object_slot.tscn::PackedScene::6672154409308220387::1737416414::0::1::::<><>::uid://r8q240aoym4s::::res://sprites/stuff_in_crafting_table/empty_crafting_slot.png<>res://scripts/drag_object_slot.gd
 elec_spike.tscn::PackedScene::870353522601335023::1735867761::0::1::::<><>::uid://bd42nknq5shfn::::res://sprites/1spike elec sprsheet.png<>res://scripts/elec_spike.gd
 engineers_notebook.tscn::PackedScene::9093800330802713700::1736015511::0::1::::<><>::uid://p1cce5au4tl4::::res://sprites/bigguy.png
-game.tscn::PackedScene::6235576742813576956::1737318968::0::1::::<><>::res://scripts/main.gd<>uid://f2ia5ue6cp3u::::res://scenes/Player.tscn<>uid://b22t5g1342hsh::::res://sprites/tilesets/asphaltsprsheetdone_extraspace.png<>uid://mgryjee0nrh5::::res://sprites/tilesets/asphaltspritedoneee.png<>uid://bjso1sta1m7js::::res://sprites/cementside.png<>uid://6driscbf3tdv::::res://sprites/tilesets/asphaltsprsheetdone.png<>uid://cfe5kocqihd2u::::res://scenes/textbox.tscn<>uid://c5jyy4qnepfya::::res://sprites/tilesets/asphaltsprsheetdonecrosswalk.png<>uid://de86s8cjnbf5v::::res://sprites/tilesets/asphaltsprsheetdonecrosswalkwithforks.png<>uid://qp1fouvcqi2t::::res://UI/ui.tscn<>uid://7qdj2ki13dqg::::res://sprites/tilesets/cementsidedone.png<>uid://cjh3ufydqtpvg::::res://sprites/tilesets/grassetdone.png<>uid://clr1ywgmmsxxt::::res://scenes/collision_object.tscn<>uid://c53v7tx5rw876::::res://sprites/buildings/sykulbuild4.png<>uid://cqg77pdidoqoe::::res://scenes/actionable.tscn<>uid://bhnujxv1fmhtr::::res://dialogue/main.dialogue<>res://scripts/sykulenterance.gd<>uid://d2tdtevmuq4ou::::res://scenes/engineers_notebook.tscn<>uid://deoyow0olyabh::::res://scenes/iron_pickup.tscn<>uid://basmo12w274od::::res://scenes/battery_pickup.tscn<>uid://dn2g0dcmodtv3::::res://sprites/buildings/building3.png<>uid://cepfrjysgn1nn::::res://scenes/crafting_table.tscn<>uid://b78t8ww03u44h::::res://sprites/buildings/free_building.png<>uid://c137m0mgdi1tj::::res://UI/crafting_ui.tscn<>uid://d3wsj1sk6ppbk::::res://sprites/buildings/arcade.png<>res://scripts/scene_changer_to_arcade.gd<>uid://dcn5yjxs5dfa8::::res://sprites/buildings/building4 real.png
-interaction_thing.tscn::PackedScene::4694595742684328135::1732421147::0::1::::<><>::res://scripts/interaction_thing.gd
-iron_pickup.tscn::PackedScene::7470402117914885785::1732421147::0::1::::<><>::res://scripts/iron_pickup.gd<>uid://ddu1sb4fe5xfo::::res://sprites/stuff_in_crafting_table/i beam.png
+game.tscn::PackedScene::6235576742813576956::1737492627::0::1::::<><>::res://scripts/main.gd<>uid://f2ia5ue6cp3u::::res://scenes/Player.tscn<>uid://b22t5g1342hsh::::res://sprites/tilesets/asphaltsprsheetdone_extraspace.png<>uid://mgryjee0nrh5::::res://sprites/tilesets/asphaltspritedoneee.png<>uid://bjso1sta1m7js::::res://sprites/cementside.png<>uid://6driscbf3tdv::::res://sprites/tilesets/asphaltsprsheetdone.png<>uid://cfe5kocqihd2u::::res://scenes/textbox.tscn<>uid://c5jyy4qnepfya::::res://sprites/tilesets/asphaltsprsheetdonecrosswalk.png<>uid://de86s8cjnbf5v::::res://sprites/tilesets/asphaltsprsheetdonecrosswalkwithforks.png<>uid://qp1fouvcqi2t::::res://UI/ui.tscn<>uid://7qdj2ki13dqg::::res://sprites/tilesets/cementsidedone.png<>uid://cjh3ufydqtpvg::::res://sprites/tilesets/grassetdone.png<>uid://b75dkny0pgvqt::::res://scenes/B-13.tscn<>uid://c53v7tx5rw876::::res://sprites/buildings/sykulbuild4.png<>res://scripts/sykulenterance.gd<>uid://deoyow0olyabh::::res://scenes/iron_pickup.tscn<>uid://basmo12w274od::::res://scenes/battery_pickup.tscn<>uid://dn2g0dcmodtv3::::res://sprites/buildings/building3.png<>uid://cepfrjysgn1nn::::res://scenes/crafting_table.tscn<>uid://b78t8ww03u44h::::res://sprites/buildings/free_building.png<>uid://c137m0mgdi1tj::::res://UI/crafting_ui.tscn<>uid://f4f8210nnfpd::::res://sprites/buildings/noentry.png<>uid://dwgacl7lmmqoq::::res://scenes/wire_pickup.tscn<>uid://d3wsj1sk6ppbk::::res://sprites/buildings/arcade.png<>res://scripts/scene_changer_to_arcade.gd<>uid://cvpp35xei37gy::::res://scenes/carbonfiber_pickup.tscn<>uid://dcn5yjxs5dfa8::::res://sprites/buildings/building4 real.png
+iron_pickup.tscn::PackedScene::7470402117914885785::1737488871::0::1::::<><>::uid://xlynbt4oqpnj::::res://sprites/stuff_in_crafting_table/ironbeamm.png<>res://scripts/iron_pickup.gd
 killzone.tscn::PackedScene::3699247820349599291::1735680243::0::1::::<><>::res://scripts/killzone.gd
 neeko_and_ada_fight.tscn::PackedScene::2470640524936958113::1736819982::0::1::::<><>::res://scripts/neeko_and_ada_fight.gd<>uid://c27jo62u8rhwt::::res://sprites/fight_box_appear.png<>uid://5ivohmyi4vql::::res://sounds/warm ig.mp3
 neeko_cutscene.tscn::PackedScene::4610667405020249684::1736819983::0::1::::<><>::res://scripts/neeko_cutscene.gd<>uid://b07ji6teig1mj::::res://sprites/characters/neeekoidle.png<>uid://dokd43ysn0l03::::res://sprites/characters/protagwalk.png<>uid://ys3k6pych8fe::::res://sprites/characters/protagsidewalk.png
@@ -784,13 +791,14 @@ scene_changer_inside_arcade.gd::GDScript::-1::1735931723::0::1::::<>Area2D<>::
 slot.tscn::PackedScene::4043876978282256183::1733418654::0::1::::<><>::res://scripts/platform.gd
 slot_item_box_holder.tscn::PackedScene::7542339703284613192::1735508684::0::1::::<><>::res://scripts/slot_item_box_holder.gd<>res://scripts/slots_area_2d.gd
 slot_item_box_holder_2nd.tscn::PackedScene::8136240738748360025::1735012055::0::1::::<><>::res://scripts/slot_item_box_holder_2nd.gd
-start_menu.tscn::PackedScene::1452437088003764432::1737173986::0::1::::<><>::uid://bk3ou2msmmns4::::res://sprites/titlescreen.png<>res://scripts/start_menu.gd
-sykul_g_floor.tscn::PackedScene::637264588880279213::1737318967::0::1::::<><>::uid://b4uje8g1isp6h::::res://sprites/tilesets/labfloor.png<>res://scripts/sykul_g_floor.gd<>uid://b3jnmcsjvnnvq::::res://sprites/tilesets/labfloortiles.png<>uid://dcmpv2yw7qevx::::res://sprites/stairsetv3.png<>uid://c1r26w3fqwe25::::res://sprites/tilesets/blackset.png<>uid://mioem0qh7iij::::res://sprites/tilesets/cryowall.png<>uid://xpfk37pe3y55::::res://sprites/collision tlsls.png<>uid://dfy1rkao8evit::::res://sprites/stair darker.png<>uid://bq647bqdubwir::::res://sprites/arel.png<>uid://clr1ywgmmsxxt::::res://scenes/collision_object.tscn<>res://scripts/back_to_basement.gd<>uid://ytaulxxgm8k4::::res://scenes/ada_cutscene.tscn<>uid://b6xpavopktolo::::res://scenes/neeko_cutscene.tscn
+start_menu.tscn::PackedScene::1452437088003764432::1737481620::0::1::::<><>::uid://bk3ou2msmmns4::::res://sprites/titlescreen.png<>res://scripts/start_menu.gd
+sykul_g_floor.tscn::PackedScene::637264588880279213::1737492628::0::1::::<><>::uid://b4uje8g1isp6h::::res://sprites/tilesets/labfloor.png<>res://scripts/sykul_g_floor.gd<>uid://b3jnmcsjvnnvq::::res://sprites/tilesets/labfloortiles.png<>uid://dcmpv2yw7qevx::::res://sprites/stairsetv3.png<>uid://c1r26w3fqwe25::::res://sprites/tilesets/blackset.png<>uid://mioem0qh7iij::::res://sprites/tilesets/cryowall.png<>uid://xpfk37pe3y55::::res://sprites/collision tlsls.png<>uid://dfy1rkao8evit::::res://sprites/stair darker.png<>uid://bq647bqdubwir::::res://sprites/arel.png<>uid://clr1ywgmmsxxt::::res://scenes/collision_object.tscn<>res://scripts/back_to_basement.gd<>uid://ytaulxxgm8k4::::res://scenes/ada_cutscene.tscn<>uid://b6xpavopktolo::::res://scenes/neeko_cutscene.tscn
 test_scene.tscn::PackedScene::5981812417906212289::1737079066::0::1::::<><>::res://scripts/inventory.gd<>uid://cowg30y7r1vxo::::res://scenes/resource_slot.tscn<>uid://bfxetyfnfm6qs::::res://Resources/iron.tres<>uid://xncli1voeuqi::::res://Resources/battery.tres<>uid://c2jbtoc34yow::::res://scenes/recipe.tscn<>res://scripts/recipes.gd<>uid://wdidn6fq43i8::::res://Resources/electromagnet.tres
 test_scene_for_dnd.tscn::PackedScene::3204837124004692593::1733418654::0::1::::<><>::uid://bu88dd6akxs80::::res://scenes/object.tscn<>uid://bxu5ce3yr8s7x::::res://scenes/slot.tscn
 textbox.tscn::PackedScene::5133883203469093870::1728868324::0::1::::<><>::uid://dtcfipjssqf0k::::res://fonts/neonlanguagenew.ttf<>uid://d233s3avpe76v::::res://sprites/dialogue box.png
-transition_screen.tscn::PackedScene::1457186022964134471::1736987364::0::1::::<><>::res://scripts/transition_screen.gd
-::res://scripts/::1737313780
+transition_screen.tscn::PackedScene::1457186022964134471::1737481621::0::1::::<><>::res://scripts/transition_screen.gd
+wire_pickup.tscn::PackedScene::8715807076935093292::1737489042::0::1::::<><>::res://scripts/wire_pickup.gd<>uid://cpnigfm833q1o::::res://sprites/stuff_in_crafting_table/wire resource.png
+::res://scripts/::1737493206
 actionable.gd::GDScript::-1::1736030577::0::1::::<>Area2D<>::
 ada_cutscene.gd::GDScript::-1::1736819241::0::1::::<>CharacterBody2D<>::
 ada_fight.gd::GDScript::-1::1736816648::0::1::::<>CharacterBody2D<>::
@@ -800,12 +808,17 @@ Area2D.gd::GDScript::-1::1735669036::0::1::::<>Area2D<>::
 back_to_basement.gd::GDScript::-1::1736012606::0::1::::<>Area2D<>::
 battery_pickup.gd::GDScript::-1::1730604864::0::1::::<>Area2D<>::
 button.gd::GDScript::-1::1737085240::0::1::::<>Button<>::
+b_13.gd::GDScript::-1::1737435578::0::1::::<>Area2D<>::
+carbonfiber_pickup.gd::GDScript::-1::1737489182::0::1::::<>Area2D<>::
 character_body_2d.gd::GDScript::-1::1735939672::0::1::::<>CharacterBody2D<>::
 crafting.gd::GDScript::-1::1737084658::0::1::::<>Node2D<>::
 crafting_battery_spawner.gd::GDScript::-1::1737263856::0::1::::<>Sprite2D<>::
+crafting_carbonfiber_spawner.gd::GDScript::-1::1737417959::0::1::::<>Sprite2D<>::
+crafting_circuitboard_spawner.gd::GDScript::-1::1737490148::0::1::::<>Sprite2D<>::
 crafting_electromagnet_spawner.gd::GDScript::-1::1737313780::0::1::::<>Sprite2D<>::
 crafting_iron_spawner.gd::GDScript::-1::1737263856::0::1::::<>Sprite2D<>::
-crafting_table.gd::GDScript::-1::1731122213::0::1::::<>Area2D<>::
+crafting_table.gd::GDScript::-1::1737428625::0::1::::<>Area2D<>::
+crafting_wire_spawner.gd::GDScript::-1::1737417364::0::1::::<>Sprite2D<>::
 cryolab.gd::GDScript::-1::1736910196::0::1::::<>Node2D<>::
 cryolab_cutscene_manager.gd::GDScript::-1::1736050229::0::1::::<>Area2D<>::
 draggable_item.gd::GDScript::-1::1734045217::0::1::::<>Node2D<>::
@@ -820,7 +833,7 @@ interaction_thing.gd::GDScript::-1::1735669036::0::1::::<>Area2D<>::
 inventory.gd::GDScript::-1::1737076183::0::1::::<>GridContainer<>::
 iron_pickup.gd::GDScript::-1::1730595533::0::1::::<>Area2D<>::
 killzone.gd::GDScript::-1::1735675605::0::1::::<>Area2D<>::
-main.gd::GDScript::-1::1737218922::0::1::::<>Node2D<>::
+main.gd::GDScript::-1::1737490583::0::1::::<>Node2D<>::
 neeko_and_ada_fight.gd::GDScript::-1::1736815302::0::1::::<>Node2D<>::
 neeko_cutscene.gd::GDScript::-1::1736819242::0::1::::<>CharacterBody2D<>::
 neeko_fight.gd::GDScript::-1::1736816648::0::1::::<>CharacterBody2D<>::
@@ -832,21 +845,22 @@ player_platformer.gd::GDScript::-1::1735918055::0::1::::<>CharacterBody2D<>::
 recipe.gd::GDScript::-1::1737079062::0::1::::<>HBoxContainer<>::
 recipes.gd::GDScript::-1::1737075738::0::1::::<>VBoxContainer<>::
 recipe_slot.gd::GDScript::-1::1737075739::0::1::::<>PanelContainer<>::
-resource_manager.gd::GDScript::-1::1737312802::0::1::::<>Node<>::
+resource_manager.gd::GDScript::-1::1737493206::0::1::::<>Node<>::
 scene_changer.gd::GDScript::-1::1736908695::0::1::::<>Area2D<>::
 scene_changer_in_arcade.gd::GDScript::-1::1735940133::0::1::::<>Area2D<>::
-scene_changer_to_arcade.gd::GDScript::-1::1735940133::0::1::::<>Area2D<>::
+scene_changer_to_arcade.gd::GDScript::-1::1737487610::0::1::::<>Area2D<>::
 slot.gd::GDScript::-1::1736993034::0::1::::Slot<>PanelContainer<>::
 slots_area_2d.gd::GDScript::-1::1734045308::0::1::::<>Area2D<>::
 slot_item_box_holder.gd::GDScript::-1::1734045135::0::1::::<>StaticBody2D<>::
 slot_item_box_holder_2nd.gd::GDScript::-1::1733418936::0::1::::<>StaticBody2D<>::
-start_menu.gd::GDScript::-1::1727394531::0::1::::<>Node2D<>::
-sykulenterance.gd::GDScript::-1::1736205323::0::1::::<>Area2D<>::
+start_menu.gd::GDScript::-1::1737481418::0::1::::<>Node2D<>::
+sykulenterance.gd::GDScript::-1::1737487610::0::1::::<>Area2D<>::
 sykul_g_floor.gd::GDScript::-1::1736819979::0::1::::<>Node2D<>::
 table.gd::GDScript::-1::1737085286::0::1::::<>Node2D<>::
 tetracity_player.gd::GDScript::-1::1735938318::0::1::::<>AudioStreamPlayer2D<>::
 transition_screen.gd::GDScript::-1::1736908285::0::1::::<>CanvasLayer<>::
 warmup.gd::GDScript::-1::1736718997::0::1::::<>AudioStreamPlayer2D<>::
+wire_pickup.gd::GDScript::-1::1737489042::0::1::::<>Area2D<>::
 ::res://sounds/::1736732500
 ada.mp3::AudioStreamMP3::4899232206601089000::1736211386::1736211387::1::::<><>::
 neeko.mp3::AudioStreamMP3::1377334705213820804::1736211386::1736211387::1::::<><>::
@@ -860,7 +874,7 @@ warming_up(1).mp3::AudioStreamMP3::6640241264922405532::1736713359::1736719764::
 warming_up_intro.mp3::AudioStreamMP3::561293149518224456::1736713418::1736713418::1::::<><>::
 warming_up_loop.mp3::AudioStreamMP3::924609605158915218::1736713512::1736715976::1::::<><>::
 warmup i guess(1).mp3::AudioStreamMP3::4634896219650969722::1736719747::1736719748::1::::<><>::
-::res://sprites/::1737319614
+::res://sprites/::1737484127
 1spike elec sprsheet.png::CompressedTexture2D::2658517289684121347::1735772919::1735772919::1::::<><>::
 arel.png::CompressedTexture2D::3575255907875975201::1726367287::1726367288::1::::<><>::
 bigguy.png::CompressedTexture2D::1106631738214804615::1725810992::1725810993::1::::<><>::
@@ -871,6 +885,8 @@ collision tlsls.png::CompressedTexture2D::1645632033664074106::1724942682::17249
 collision_tls.png::CompressedTexture2D::6992462790473383144::1724942111::1724942111::1::::<><>::
 crafting table.png::CompressedTexture2D::8640688178027372415::1724893437::1724893437::1::::<><>::
 croll_bars_v.png::CompressedTexture2D::6051053490621736526::1737319605::1737319615::1::::<><>::
+cryoshattered transparent.png::CompressedTexture2D::7352959481501495133::1737484126::1737484127::1::::<><>::
+cryostasisbroke transparent.png::CompressedTexture2D::7535252000351079009::1737484126::1737484127::1::::<><>::
 cryostasisbroke.png::CompressedTexture2D::2933639470420118452::1726321176::1726321177::1::::<><>::
 cryostasischamb.png::CompressedTexture2D::6878846313941089655::1726321176::1726321177::1::::<><>::
 cryostasis_transparent.png::CompressedTexture2D::78456987674767250::1736909886::1736909887::1::::<><>::
@@ -889,11 +905,12 @@ stamina_beneath.png::CompressedTexture2D::2829384624028245787::1736130690::17361
 stamina_progress.png::CompressedTexture2D::1463432270327586406::1736130801::1736130802::1::::<><>::
 temp_char.png::CompressedTexture2D::7404776307679828012::1724615781::1724615787::1::::<><>::
 titlescreen.png::CompressedTexture2D::3146998888466394901::1724864885::1724864886::1::::<><>::
-::res://sprites/buildings/::1736051014
+::res://sprites/buildings/::1737428735
 arcade.png::CompressedTexture2D::9171076355458436240::1735869549::1736051014::1::::<><>::
 building3.png::CompressedTexture2D::8127864325761292970::1735877500::1736051014::1::::<><>::
 building4 real.png::CompressedTexture2D::7328341527093560749::1735920645::1736051014::1::::<><>::
 free_building.png::CompressedTexture2D::4701801890729058261::1731204364::1736051014::1::::<><>::
+noentry.png::CompressedTexture2D::411175148669733229::1737428734::1737428735::1::::<><>::
 sykulbuild4.png::CompressedTexture2D::6937642490754738467::1726429213::1736051014::1::::<><>::
 ::res://sprites/characters/::1736051040
 adaidle.png::CompressedTexture2D::9020169627432367969::1736051039::1736051040::1::::<><>::
@@ -903,7 +920,7 @@ protag jump up.png::CompressedTexture2D::5545682128221388424::1735917988::173605
 protagsidewalk.png::CompressedTexture2D::1723410633111720138::1725811753::1736050979::1::::<><>::
 protagwalk.png::CompressedTexture2D::8162785087119211890::1725807845::1736050979::1::::<><>::
 spritweshe.png::CompressedTexture2D::2129304515690348720::1724894059::1736050979::1::::<><>::
-::res://sprites/stuff_in_crafting_table/::1737238644
+::res://sprites/stuff_in_crafting_table/::1737493004
 batterycylinder.png::CompressedTexture2D::4692009892735899560::1725832907::1731205946::1::::<><>::
 bench full almost background.png::CompressedTexture2D::6237471356658747659::1731205259::1735669036::1::::<><>::
 bench full kinda.png::CompressedTexture2D::2518414486014304624::1731122512::1735669036::1::::<><>::
@@ -912,9 +929,11 @@ box.png::CompressedTexture2D::1199096255584618997::1737237850::1737237851::1::::
 carbon fiber.png::CompressedTexture2D::132575972637706362::1736905749::1736905750::1::::<><>::
 circuit board resource.png::CompressedTexture2D::4344196781973641485::1736913562::1736913563::1::::<><>::
 croll_bars.png::CompressedTexture2D::7334224188405700562::1737238558::1737238559::1::::<><>::
+croll_bars_h.png::CompressedTexture2D::1118607113950995896::1737419597::1737419598::1::::<><>::
 croll_bars_v.png::CompressedTexture2D::6342226316907734272::1737238643::1737238644::1::::<><>::
 electromagnet.png::CompressedTexture2D::8458476017098941756::1736912990::1736912991::1::::<><>::
 empty_crafting_slot.png::CompressedTexture2D::1262356057867150204::1732243900::1732243901::1::::<><>::
+hoverboard.png::CompressedTexture2D::6260814249342757709::1737493003::1737493004::1::::<><>::
 i beam.png::CompressedTexture2D::7412727020733218596::1724897994::1731205946::1::::<><>::
 ironbeamm.png::CompressedTexture2D::1638532065328177855::1732244082::1732244082::1::::<><>::
 new battery.png::CompressedTexture2D::5233013513512568784::1724897970::1731205946::1::::<><>::
@@ -947,12 +966,13 @@ thick circuit board.png::CompressedTexture2D::6813946764666861451::1735683539::1
 thick.png::CompressedTexture2D::7282069798271842236::1735669011::1735669045::1::::<><>::
 thin.png::CompressedTexture2D::7705254040785141140::1735670855::1735670855::1::::<><>::
 tiki_tower.png::CompressedTexture2D::6555530863392151367::1724616199::1735669062::1::::<><>::
-::res://UI/::1737318968
+::res://UI/::1737493213
 battery_craftable.gd::GDScript::-1::1731264409::0::1::::<>Area2D<>::
-crafting_ui.tscn::PackedScene::6657519584282476711::1737318968::0::1::::<><>::res://UI/ummcraftingui.gd<>uid://d02sugjmab2ni::::res://sprites/stuff_in_crafting_table/bench full mostly.png<>res://UI/output_slot.gd<>uid://r8q240aoym4s::::res://sprites/stuff_in_crafting_table/empty_crafting_slot.png<>uid://dcnheswaxqa5f::::res://scenes/crafting_iron_spawner.tscn<>uid://dac51gy0tlpdg::::res://scenes/crafting_battery_spawner.tscn<>uid://rc3672ia1gcj::::res://sprites/stuff_in_crafting_table/box.png<>uid://cwmhsngy0fnpw::::res://sprites/stuff_in_crafting_table/croll_bars_v.png<>uid://ibnq1e5i467k::::res://fonts/ByteBounce.ttf<>res://UI/electromagnet_craft.gd<>uid://dsrl4navk8i33::::res://sprites/stuff_in_crafting_table/electromagnet.png<>uid://chm1cu4q7hd0a::::res://scenes/crafting_electromagnet_spawner.tscn
-electromagnet_craft.gd::GDScript::-1::1737317920::0::1::::<>Area2D<>::
+circuitbard_craft.gd::GDScript::-1::1737490894::0::1::::<>Area2D<>::
+crafting_ui.tscn::PackedScene::6657519584282476711::1737492771::0::1::::<><>::res://UI/ummcraftingui.gd<>uid://d02sugjmab2ni::::res://sprites/stuff_in_crafting_table/bench full mostly.png<>res://UI/output_slot.gd<>uid://r8q240aoym4s::::res://sprites/stuff_in_crafting_table/empty_crafting_slot.png<>uid://dcnheswaxqa5f::::res://scenes/crafting_iron_spawner.tscn<>uid://dac51gy0tlpdg::::res://scenes/crafting_battery_spawner.tscn<>uid://p64kb4u76lcq::::res://sprites/stuff_in_crafting_table/croll_bars_h.png<>uid://rc3672ia1gcj::::res://sprites/stuff_in_crafting_table/box.png<>uid://cwmhsngy0fnpw::::res://sprites/stuff_in_crafting_table/croll_bars_v.png<>uid://ibnq1e5i467k::::res://fonts/ByteBounce.ttf<>res://UI/electromagnet_craft.gd<>uid://dcjv2ucs6b6u1::::res://scenes/crafting_wire_spawner.tscn<>uid://dsrl4navk8i33::::res://sprites/stuff_in_crafting_table/electromagnet.png<>uid://bk1oomjb0san6::::res://scenes/crafting_carbonfiber_spawner.tscn<>uid://chm1cu4q7hd0a::::res://scenes/crafting_electromagnet_spawner.tscn<>uid://rrmh7o5se6fk::::res://scenes/crafting_circuitboard_spawner.tscn<>res://UI/circuitbard_craft.gd<>uid://b25mjy75mhk2x::::res://sprites/stuff_in_crafting_table/circuit board resource.png
+electromagnet_craft.gd::GDScript::-1::1737488785::0::1::::<>Area2D<>::
 iron_craftable.gd::GDScript::-1::1731263604::0::1::::<>Area2D<>::
-output_slot.gd::GDScript::-1::1737317992::0::1::::<>Area2D<>::
-ui.gd::GDScript::-1::1730604864::0::1::::<>CanvasLayer<>::
-ui.tscn::PackedScene::1155575502481313289::1736987364::0::1::::<><>::res://UI/ui.gd<>uid://xlynbt4oqpnj::::res://sprites/stuff_in_crafting_table/ironbeamm.png<>uid://ibnq1e5i467k::::res://fonts/ByteBounce.ttf<>uid://b733ynlta6pvk::::res://sprites/stuff_in_crafting_table/batterycylinder.png<>uid://cpnigfm833q1o::::res://sprites/stuff_in_crafting_table/wire resource.png<>uid://b5hrh8gnd3is::::res://sprites/stuff_in_crafting_table/carbon fiber.png
-ummcraftingui.gd::GDScript::-1::1737305434::0::1::::<>CanvasLayer<>::
+output_slot.gd::GDScript::-1::1737490048::0::1::::<>Area2D<>::
+ui.gd::GDScript::-1::1737493213::0::1::::<>CanvasLayer<>::
+ui.tscn::PackedScene::1155575502481313289::1737493213::0::1::::<><>::res://UI/ui.gd<>uid://xlynbt4oqpnj::::res://sprites/stuff_in_crafting_table/ironbeamm.png<>uid://ibnq1e5i467k::::res://fonts/ByteBounce.ttf<>uid://b733ynlta6pvk::::res://sprites/stuff_in_crafting_table/batterycylinder.png<>uid://cpnigfm833q1o::::res://sprites/stuff_in_crafting_table/wire resource.png<>uid://b5hrh8gnd3is::::res://sprites/stuff_in_crafting_table/carbon fiber.png<>uid://b25mjy75mhk2x::::res://sprites/stuff_in_crafting_table/circuit board resource.png<>uid://dsrl4navk8i33::::res://sprites/stuff_in_crafting_table/electromagnet.png
+ummcraftingui.gd::GDScript::-1::1737490030::0::1::::<>CanvasLayer<>::

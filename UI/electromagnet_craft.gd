@@ -3,7 +3,8 @@ extends Area2D
 @onready var crafting_ui = $"../../../../.."
 @onready var output_slot = $"../../../../../output_slot"
 
-func _on_button_pressed():
+
+func _on_electro_button_pressed():
 	if ResourceManager.iron_amount >= 1 and ResourceManager.battery_amount >= 1:
 		if output_slot.is_occupied == false:
 			crafting_ui.put_in_output("electromagnet")
@@ -20,4 +21,12 @@ func _on_button_pressed():
 				ResourceManager.battery_amount -= 1
 				output_slot.is_occupied = true
 				output_slot.occupied_with = "electromagnet"
-		
+			
+			if output_slot.occupied_with == "hoverboard":
+				crafting_ui.put_in_output("electromagnet")
+				ResourceManager.electormagnet_amount += 1
+				ResourceManager.circuitboard_amount += 1
+				ResourceManager.iron_amount -= 1
+				ResourceManager.battery_amount -= 1
+				output_slot.is_occupied = true
+				output_slot.occupied_with = "electromagnet"

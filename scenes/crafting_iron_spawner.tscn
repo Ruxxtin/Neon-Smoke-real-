@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://xlynbt4oqpnj" path="res://sprites/stuff_in_crafting_table/ironbeamm.png" id="1_3j7yg"]
 [ext_resource type="Script" path="res://scripts/crafting_iron_spawner.gd" id="2_cfy61"]
-[ext_resource type="FontFile" uid="uid://ctm6158scsahw" path="res://fonts/PixelifySans-VariableFont_wght.ttf" id="3_0uf25"]
+[ext_resource type="FontFile" uid="uid://ibnq1e5i467k" path="res://fonts/ByteBounce.ttf" id="3_mtgnm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ggpfq"]
 size = Vector2(15, 14)
@@ -20,11 +20,11 @@ shape = SubResource("RectangleShape2D_ggpfq")
 
 [node name="Label" type="Label" parent="."]
 offset_left = -11.6
-offset_top = 3.6
+offset_top = 5.6
 offset_right = -2.60001
-offset_bottom = 19.6
-theme_override_fonts/font = ExtResource("3_0uf25")
-theme_override_font_sizes/font_size = 12
+offset_bottom = 21.6
+theme_override_fonts/font = ExtResource("3_mtgnm")
+theme_override_font_sizes/font_size = 16
 text = "0"
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://b75dkny0pgvqt"]
+
+[ext_resource type="Texture2D" uid="uid://p1cce5au4tl4" path="res://sprites/bigguy.png" id="1_gnye3"]
+[ext_resource type="Script" path="res://scripts/b_13.gd" id="1_lrdjh"]
+[ext_resource type="PackedScene" uid="uid://clr1ywgmmsxxt" path="res://scenes/collision_object.tscn" id="2_y7745"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2pwqo"]
+
+[node name="B-13" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_lrdjh")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_gnye3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_2pwqo")
+
+[node name="collision object" parent="." instance=ExtResource("2_y7745")]
+collision_mask = 2
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="collision object"]
+polygon = PackedVector2Array(-2, 8, -8, 2, 2, -8, 8, -2)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

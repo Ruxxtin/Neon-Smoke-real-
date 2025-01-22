@@ -8,6 +8,7 @@ var carbonfiber_amount := 0
 var wire_amount := 0
 var electormagnet_amount := 0
 var circuitboard_amount := 0
+var hoverboard_amount := 0
 
 func add_iron():
 	iron_amount += 1
@@ -15,8 +16,17 @@ func add_iron():
 func add_battery():
 	battery_amount += 1
 
+func add_wire():
+	wire_amount += 1
+
+func add_carbonfiber():
+	carbonfiber_amount += 1
+
 func add_electromagnet():
 	electormagnet_amount += 1
 
 func add_circuitboard():
 	circuitboard_amount += 1
+
+func add_hoverboard():
+	hoverboard_amount += 1

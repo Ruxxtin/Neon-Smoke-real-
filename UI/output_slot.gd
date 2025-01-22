@@ -10,5 +10,7 @@ func _on_button_pressed():
 			ResourceManager.add_electromagnet()
 		if occupied_with == "circuit_board":
 			ResourceManager.add_circuitboard()
+		if occupied_with == "hoverboard":
+			ResourceManager.add_hoverboard()
 		is_occupied = false
 		item.texture = null

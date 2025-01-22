@@ -18,6 +18,8 @@ func _physics_process(delta):
 		if Input.is_action_just_pressed("interact"):
 			if ui_is_open == false:
 				ui_is_open = true
+				player.can_move = false
 			elif ui_is_open == true:
 				ui_is_open = false
+				player.can_move = true
 	

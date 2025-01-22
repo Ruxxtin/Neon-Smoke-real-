@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://qp1fouvcqi2t"]
+[gd_scene load_steps=10 format=3 uid="uid://qp1fouvcqi2t"]
 
 [ext_resource type="Script" path="res://UI/ui.gd" id="1_4ppam"]
 [ext_resource type="Texture2D" uid="uid://xlynbt4oqpnj" path="res://sprites/stuff_in_crafting_table/ironbeamm.png" id="2_4bodk"]
@@ -6,50 +6,39 @@
 [ext_resource type="Texture2D" uid="uid://b733ynlta6pvk" path="res://sprites/stuff_in_crafting_table/batterycylinder.png" id="4_klbce"]
 [ext_resource type="Texture2D" uid="uid://cpnigfm833q1o" path="res://sprites/stuff_in_crafting_table/wire resource.png" id="5_0kfyq"]
 [ext_resource type="Texture2D" uid="uid://b5hrh8gnd3is" path="res://sprites/stuff_in_crafting_table/carbon fiber.png" id="6_2layh"]
+[ext_resource type="Texture2D" uid="uid://b25mjy75mhk2x" path="res://sprites/stuff_in_crafting_table/circuit board resource.png" id="7_1dtpg"]
+[ext_resource type="Texture2D" uid="uid://dsrl4navk8i33" path="res://sprites/stuff_in_crafting_table/electromagnet.png" id="8_ukldo"]
+[ext_resource type="Texture2D" uid="uid://cvg1xwsoed4yr" path="res://sprites/stuff_in_crafting_table/hoverboard.png" id="9_pqmdv"]
 
 [node name="ui" type="CanvasLayer"]
 script = ExtResource("1_4ppam")
 
 [node name="iron ui" type="Sprite2D" parent="."]
-position = Vector2(147, 56)
+position = Vector2(59, 56)
 scale = Vector2(3, 3)
 texture = ExtResource("2_4bodk")
 
-[node name="current_iron" type="Label" parent="."]
-offset_left = 150.0
-offset_top = 68.0
-offset_right = 171.0
-offset_bottom = 113.0
+[node name="current_iron" type="Label" parent="iron ui"]
+offset_left = 1.0
+offset_top = 4.0
+offset_right = 8.0
+offset_bottom = 15.0
 theme_override_fonts/font = ExtResource("3_guukq")
-theme_override_font_sizes/font_size = 48
+theme_override_font_sizes/font_size = 16
 text = "0"
 
 [node name="battery ui" type="Sprite2D" parent="."]
-position = Vector2(59, 56)
+position = Vector2(147, 56)
 scale = Vector2(3, 3)
 texture = ExtResource("4_klbce")
 
-[node name="current_battery" type="Label" parent="."]
-offset_left = 62.0
-offset_top = 68.0
-offset_right = 83.0
-offset_bottom = 113.0
+[node name="current_battery" type="Label" parent="battery ui"]
+offset_left = 1.0
+offset_top = 4.0
+offset_right = 8.0
+offset_bottom = 15.0
 theme_override_fonts/font = ExtResource("3_guukq")
-theme_override_font_sizes/font_size = 48
-text = "0"
-
-[node name="wire ui" type="Sprite2D" parent="."]
-position = Vector2(323, 56)
-scale = Vector2(3, 3)
-texture = ExtResource("5_0kfyq")
-
-[node name="current_wire" type="Label" parent="."]
-offset_left = 326.0
-offset_top = 68.0
-offset_right = 347.0
-offset_bottom = 113.0
-theme_override_fonts/font = ExtResource("3_guukq")
-theme_override_font_sizes/font_size = 48
+theme_override_font_sizes/font_size = 16
 text = "0"
 
 [node name="carbonfiber ui" type="Sprite2D" parent="."]
@@ -57,11 +46,66 @@ position = Vector2(235, 56)
 scale = Vector2(3, 3)
 texture = ExtResource("6_2layh")
 
-[node name="current_carbonfiber" type="Label" parent="."]
-offset_left = 238.0
-offset_top = 68.0
-offset_right = 259.0
-offset_bottom = 113.0
+[node name="current_carbonfiber" type="Label" parent="carbonfiber ui"]
+offset_left = 1.0
+offset_top = 4.0
+offset_right = 8.0
+offset_bottom = 15.0
 theme_override_fonts/font = ExtResource("3_guukq")
-theme_override_font_sizes/font_size = 48
+theme_override_font_sizes/font_size = 16
+text = "0"
+
+[node name="wire ui" type="Sprite2D" parent="."]
+position = Vector2(323, 56)
+scale = Vector2(3, 3)
+texture = ExtResource("5_0kfyq")
+
+[node name="current_wire" type="Label" parent="wire ui"]
+offset_left = 1.0
+offset_top = 4.0
+offset_right = 8.0
+offset_bottom = 15.0
+theme_override_fonts/font = ExtResource("3_guukq")
+theme_override_font_sizes/font_size = 16
+text = "0"
+
+[node name="electromagnet ui" type="Sprite2D" parent="wire ui"]
+position = Vector2(264, 66.6667)
+texture = ExtResource("8_ukldo")
+
+[node name="current_electromagnet" type="Label" parent="wire ui/electromagnet ui"]
+offset_left = 1.0
+offset_top = 4.0
+offset_right = 8.0
+offset_bottom = 15.0
+theme_override_fonts/font = ExtResource("3_guukq")
+theme_override_font_sizes/font_size = 16
+text = "0"
+
+[node name="circuitboard ui" type="Sprite2D" parent="."]
+position = Vector2(1115, 336)
+scale = Vector2(3, 3)
+texture = ExtResource("7_1dtpg")
+
+[node name="current_circuitboard" type="Label" parent="circuitboard ui"]
+offset_left = 1.0
+offset_top = 4.0
+offset_right = 8.0
+offset_bottom = 15.0
+theme_override_fonts/font = ExtResource("3_guukq")
+theme_override_font_sizes/font_size = 16
+text = "0"
+
+[node name="hoverboard ui" type="Sprite2D" parent="."]
+position = Vector2(1115, 416)
+scale = Vector2(3, 3)
+texture = ExtResource("9_pqmdv")
+
+[node name="current_hoverboard" type="Label" parent="hoverboard ui"]
+offset_left = 1.0
+offset_top = 4.0
+offset_right = 8.0
+offset_bottom = 15.0
+theme_override_fonts/font = ExtResource("3_guukq")
+theme_override_font_sizes/font_size = 16
 text = "0"

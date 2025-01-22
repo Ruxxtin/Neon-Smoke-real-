@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://b733ynlta6pvk" path="res://sprites/stuff_in_crafting_table/batterycylinder.png" id="1_amlgh"]
 [ext_resource type="Script" path="res://scripts/crafting_battery_spawner.gd" id="2_hlx18"]
-[ext_resource type="FontFile" uid="uid://ctm6158scsahw" path="res://fonts/PixelifySans-VariableFont_wght.ttf" id="4_7we42"]
+[ext_resource type="FontFile" uid="uid://ibnq1e5i467k" path="res://fonts/ByteBounce.ttf" id="3_cfsan"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ggpfq"]
 size = Vector2(15, 15)
@@ -16,16 +16,15 @@ script = ExtResource("2_hlx18")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2(-0.500001, 0.5)
-scale = Vector2(1, 1)
 shape = SubResource("RectangleShape2D_ggpfq")
 
 [node name="Label" type="Label" parent="."]
 offset_left = -11.6
-offset_top = 3.6
+offset_top = 5.6
 offset_right = -2.60001
-offset_bottom = 19.6
-theme_override_fonts/font = ExtResource("4_7we42")
-theme_override_font_sizes/font_size = 12
+offset_bottom = 21.6
+theme_override_fonts/font = ExtResource("3_cfsan")
+theme_override_font_sizes/font_size = 16
 text = "0"
 
 [connection signal="area_entered" from="Area2D" to="." method="_on_area_2d_area_entered"]

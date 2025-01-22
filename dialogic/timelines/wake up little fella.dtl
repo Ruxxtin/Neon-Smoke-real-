@@ -1,0 +1,30 @@
+join Player left
+placeholder: Huh? Whats this thing?
+leave --All--
+There seems to be a small display with a dead battery icon.
+leave --All--
+if ResourceManager.battery_amount >= 2:
+	- Use batteries
+		The batteries fit in perfectly.
+		join "lil fella" right
+		"lil fella": *BZZT* Hello, I am your personal robot companion. How may I assist you today?
+		leave --All--
+		join Player left
+		placeholder: I'm sorry...?
+		leave --All--
+		join "lil fella" right
+		"lil fella": Sorry, I have to say that every time. *BZZT* So, what's the occasion for waking me--
+		"lil fella": Wait, huh? What happened to this place?
+		"lil fella": It used to be one of the most populated cities in the province, and now everything is boarded up and crumbling apart!
+		leave --All--
+		join Player left
+		placeholder: Well don't ask me, I woke up from a cryochamber literally 10 minutes ago, I have no idea what happened.
+		placeholder: But I am trying to get to the city, and I need to find some parts for a hover board. Do you know if there's any scraps nearby?
+		leave --All--
+		join "lil fella" right
+		"lil fella": Hmmm, scraps... scraps...
+		"lil fella": If I remember correctly, theres usually a lot of spare parts on the north side of town, and theres that arcade. Come on, follow me!
+		leave --All--
+	- Don't use batteries
+		You were always the selfish one, weren't you?
+[signal arg="end_of_convo"]
