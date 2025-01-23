@@ -1,11 +1,11 @@
 join Neeko right
-Neeko: Won’t you just– give up? It’s very obvious you’ve never been in a fight before.
+Neeko: Won’t you just– give up? It’s very obvious you dont't know how to handle yourself.
 leave --All--
 join Player left
-Player: If I give up, I'll get injured!
+Player: Can you just leave me alone?
 leave --All--
 join Ada right
-Ada: Not if you give us your haul.
+Ada: We will if you give us your haul.
 leave --All--
 join Player left
 Player: But I–

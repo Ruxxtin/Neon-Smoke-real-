@@ -24,8 +24,9 @@ func _ready():
 				player.position = Vector2(0, 0)  # Default position
 
 func _physics_process(delta):
-	if camera_go_down == true:
-		camera_2d.position.y += 0.7
+	if Global.start_cutscene_played == false:
+		if camera_go_down == true:
+			camera_2d.position.y += 0.7
 
 func DialogueSignal(arg: String):
 	if arg == "player_enter":

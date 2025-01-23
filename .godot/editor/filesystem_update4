@@ -52,3 +52,7 @@ res://scripts/scene_changer.gd
 res://scripts/go_out_of_sykul.gd
 res://dialogic/timelines/shrimpFriedRice.dtl
 res://dialogic/timelines/shrimpFriedRicePt2.dtl
+res://dialogic/timelines/starting_fight.dtl
+res://dialogic/timelines/stamina75.dtl
+res://sounds/stamina50.dtl
+res://scripts/sykul_g_floor.gd
