@@ -5,4 +5,4 @@ func _on_body_entered(body):
 		TransitionScreen.transition()
 		await TransitionScreen.on_transition_finished
 		Global.last_building = "outside"
-		get_tree().change_scene_to_file("res://scenes/sykul_g_floor.tscn")
+		get_tree().change_scene_to_file("res://scenes/sykul_ground_floor.tscn")
