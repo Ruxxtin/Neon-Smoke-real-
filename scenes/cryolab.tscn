@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=4 uid="uid://0f1ih8n10pth"]
+[gd_scene load_steps=34 format=4 uid="uid://0f1ih8n10pth"]
 
 [ext_resource type="PackedScene" uid="uid://f2ia5ue6cp3u" path="res://scenes/Player.tscn" id="1_cnkv6"]
 [ext_resource type="Texture2D" uid="uid://b4uje8g1isp6h" path="res://sprites/tilesets/labfloor.png" id="1_hqlnm"]
@@ -12,9 +12,11 @@
 [ext_resource type="Texture2D" uid="uid://bq647bqdubwir" path="res://sprites/arel.png" id="8_o4mku"]
 [ext_resource type="Texture2D" uid="uid://c5afugn4x2c3p" path="res://sprites/cryostasischamb.png" id="8_ucetl"]
 [ext_resource type="Script" path="res://scripts/scene_changer.gd" id="9_mh7tu"]
+[ext_resource type="Texture2D" uid="uid://qbjtmvs3ddea" path="res://sprites/cryostasischamb_back.png" id="11_lixcr"]
 [ext_resource type="Texture2D" uid="uid://datri6edacvcc" path="res://sprites/brokencryo.png" id="12_el2wn"]
 [ext_resource type="Texture2D" uid="uid://bh2cu4f0amky3" path="res://sprites/cryostasisbroke.png" id="13_55l44"]
 [ext_resource type="PackedScene" uid="uid://qp1fouvcqi2t" path="res://UI/ui.tscn" id="13_vgf16"]
+[ext_resource type="Texture2D" uid="uid://dghmpnoqgjxgh" path="res://sprites/press_space.png" id="15_nh12n"]
 [ext_resource type="Texture2D" uid="uid://beaf7pc5s2yg" path="res://sprites/cryostasis_transparent.png" id="15_y6626"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_f7pd6"]
@@ -126,6 +128,15 @@ texture = ExtResource("6_u53r7")
 [sub_resource type="TileSet" id="TileSet_uj2q3"]
 sources/0 = SubResource("TileSetAtlasSource_eqo0n")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7gpmo"]
+size = Vector2(20, 18)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hsb8q"]
+size = Vector2(22, 5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y4stl"]
+size = Vector2(22, 34)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_b201y"]
 size = Vector2(32, 24)
 
@@ -147,7 +158,7 @@ tile_set = SubResource("TileSet_unkfc")
 [node name="Layer_collisions" type="TileMapLayer" parent="TileMap_cryofloor"]
 visible = false
 use_parent_material = true
-tile_map_data = PackedByteArray("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")
+tile_map_data = PackedByteArray("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AAAIABAAAAAEAAAAAAAIABEAAAAEAAAAAAAIABIAAAAEAAAAAAAIABMAAAAEAAAAAAAIABQAAAAEAAAAAAAIABUAAAAEAAAAAAAIABYAAAAEAAAAAADW//7/AAAEAAAAAADW////AAAEAAAAAADW/wAAAAAEAAAAAADX/wAAAAAEAAAAAADY/wAAAAAEAAAAAADY////AAAEAAAAAADY//7/AAAEAAAAAADX//7/AAAEAAAAAADX////AAAEAAAAAADY//3/AAAEAAAAAADX//3/AAAEAAAAAADW//3/AAAEAAAAAADV//3/AAAEAAAAAADV//7/AAAEAAAAAADV////AAAEAAAAAADV/wAAAAAEAAAAAADV/wEAAAAEAAAAAADW/wEAAAAEAAAAAADX/wEAAAAEAAAAAADY/wEAAAAEAAAAAADZ/wEAAAAEAAAAAADZ/wAAAAAEAAAAAADZ////AAAEAAAAAADZ//7/AAAEAAAAAADZ//3/AAAEAAAAAADZ//z/AAAEAAAAAADY//z/AAAEAAAAAADX//z/AAAEAAAAAADW//z/AAAEAAAAAADV//z/AAAEAAAAAADU//z/AAAEAAAAAADU//3/AAAEAAAAAADU//7/AAAEAAAAAADU////AAAEAAAAAADU/wAAAAAEAAAAAADU/wEAAAAEAAAAAADU/wIAAAAEAAAAAADV/wIAAAAEAAAAAADW/wIAAAAEAAAAAADX/wIAAAAEAAAAAADY/wIAAAAEAAAAAADZ/wIAAAAEAAAAAADa/wIAAAAEAAAAAADa/wEAAAAEAAAAAADa/wAAAAAEAAAAAADa////AAAEAAAAAADa//7/AAAEAAAAAADa//3/AAAEAAAAAADa//z/AAAEAAAAAAA=")
 tile_set = SubResource("TileSet_4grxi")
 
 [node name="Layer_stairs" type="TileMapLayer" parent="TileMap_cryofloor"]
@@ -174,23 +185,137 @@ texture = ExtResource("8_o4mku")
 position = Vector2(-5, 253)
 texture = ExtResource("8_o4mku")
 
-[node name="StaticBody2D" parent="." instance=ExtResource("5_xroue")]
+[node name="static bodies" type="Node2D" parent="."]
+
+[node name="StaticBody2D" parent="static bodies" instance=ExtResource("5_xroue")]
 position = Vector2(399, 133)
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="static bodies/StaticBody2D"]
 polygon = PackedVector2Array(32, 11, 85, -14, 85, 11, 109, 11, 109, -16, 113, -18, 113, -25, 90, -25, 47, -4)
 
-[node name="StaticBody2D2" parent="." instance=ExtResource("5_xroue")]
+[node name="StaticBody2D2" parent="static bodies" instance=ExtResource("5_xroue")]
 position = Vector2(483, 64)
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D2"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="static bodies/StaticBody2D2"]
 polygon = PackedVector2Array(-3, 15, -3, -96, -4, -96, -4, 21, -51, 45, -48, 45, -3, 22)
 
-[node name="collision object" parent="." instance=ExtResource("5_xroue")]
+[node name="collision object" parent="static bodies" instance=ExtResource("5_xroue")]
 position = Vector2(0, 248)
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="collision object"]
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="static bodies/collision object"]
 polygon = PackedVector2Array(3, 19, 0, 21, -10, 21, -13, 19, -13, -17, -10, -19, 0, -19, 3, -17, 3, -13, 13, -13, 16, -11, 16, 9, 13, 11, 4, 11)
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="static bodies"]
+position = Vector2(-24, -8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="static bodies/StaticBody2D3"]
+position = Vector2(0, -3)
+shape = SubResource("RectangleShape2D_7gpmo")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="static bodies"]
+position = Vector2(-24, -8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="static bodies/StaticBody2D4"]
+position = Vector2(0, 19.5)
+shape = SubResource("RectangleShape2D_hsb8q")
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="static bodies"]
+position = Vector2(-56, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="static bodies/StaticBody2D5"]
+position = Vector2(0, -3)
+shape = SubResource("RectangleShape2D_y4stl")
+
+[node name="StaticBody2D6" type="StaticBody2D" parent="static bodies"]
+position = Vector2(-88, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="static bodies/StaticBody2D6"]
+position = Vector2(0, -3)
+shape = SubResource("RectangleShape2D_y4stl")
+
+[node name="StaticBody2D7" type="StaticBody2D" parent="static bodies"]
+position = Vector2(-88, 48)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="static bodies/StaticBody2D7"]
+position = Vector2(0, -3)
+shape = SubResource("RectangleShape2D_y4stl")
+
+[node name="StaticBody2D8" type="StaticBody2D" parent="static bodies"]
+position = Vector2(-56, 48)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="static bodies/StaticBody2D8"]
+position = Vector2(0, -3)
+shape = SubResource("RectangleShape2D_y4stl")
+
+[node name="StaticBody2D9" type="StaticBody2D" parent="static bodies"]
+position = Vector2(8, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="static bodies/StaticBody2D9"]
+position = Vector2(0, -3)
+shape = SubResource("RectangleShape2D_y4stl")
+
+[node name="StaticBody2D10" type="StaticBody2D" parent="static bodies"]
+position = Vector2(40, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="static bodies/StaticBody2D10"]
+position = Vector2(0, -3)
+shape = SubResource("RectangleShape2D_y4stl")
+
+[node name="StaticBody2D11" type="StaticBody2D" parent="static bodies"]
+position = Vector2(34, 52)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="static bodies/StaticBody2D11"]
+position = Vector2(0, -3)
+shape = SubResource("RectangleShape2D_y4stl")
+
+[node name="StaticBody2D12" type="StaticBody2D" parent="static bodies"]
+position = Vector2(84, 52)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="static bodies/StaticBody2D12"]
+position = Vector2(0, -3)
+shape = SubResource("RectangleShape2D_y4stl")
+
+[node name="StaticBody2D13" type="StaticBody2D" parent="static bodies"]
+position = Vector2(112, 48)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="static bodies/StaticBody2D13"]
+position = Vector2(0, -3)
+shape = SubResource("RectangleShape2D_y4stl")
+
+[node name="StaticBody2D14" type="StaticBody2D" parent="static bodies"]
+position = Vector2(136, 48)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="static bodies/StaticBody2D14"]
+position = Vector2(0, -3)
+shape = SubResource("RectangleShape2D_y4stl")
+
+[node name="StaticBody2D15" type="StaticBody2D" parent="static bodies"]
+position = Vector2(168, 48)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="static bodies/StaticBody2D15"]
+position = Vector2(0, -3)
+shape = SubResource("RectangleShape2D_y4stl")
+
+[node name="StaticBody2D16" type="StaticBody2D" parent="static bodies"]
+position = Vector2(168, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="static bodies/StaticBody2D16"]
+position = Vector2(0, -3)
+shape = SubResource("RectangleShape2D_y4stl")
+
+[node name="StaticBody2D17" type="StaticBody2D" parent="static bodies"]
+position = Vector2(136, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="static bodies/StaticBody2D17"]
+position = Vector2(0, -3)
+shape = SubResource("RectangleShape2D_y4stl")
+
+[node name="StaticBody2D18" type="StaticBody2D" parent="static bodies"]
+position = Vector2(112, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="static bodies/StaticBody2D18"]
+position = Vector2(0, -3)
+shape = SubResource("RectangleShape2D_y4stl")
 
 [node name="scene_changer" type="Area2D" parent="."]
 position = Vector2(496, -52)
@@ -204,7 +329,7 @@ shape = SubResource("RectangleShape2D_b201y")
 
 [node name="cryo_tube" type="Sprite2D" parent="cryotubes"]
 position = Vector2(-24, -3)
-texture = ExtResource("8_ucetl")
+texture = ExtResource("11_lixcr")
 
 [node name="cryo_tube2" type="Sprite2D" parent="cryotubes"]
 position = Vector2(-88, -3)
@@ -273,7 +398,8 @@ position = Vector2(112, 45)
 texture = ExtResource("13_55l44")
 
 [node name="Player" parent="." instance=ExtResource("1_cnkv6")]
-position = Vector2(-24, -2)
+visible = false
+position = Vector2(-648, -2)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(0, -1)
@@ -287,10 +413,20 @@ script = null
 position = Vector2(0, -1)
 zoom = Vector2(3.2, 3.2)
 
+[node name="space_button" type="Sprite2D" parent="Player_stuck/Camera2D"]
+visible = false
+position = Vector2(0, 75)
+texture = ExtResource("15_nh12n")
+
 [node name="ui" parent="." instance=ExtResource("13_vgf16")]
 
 [node name="CryostasisTransparent" type="Sprite2D" parent="."]
 position = Vector2(-24, -3)
 texture = ExtResource("15_y6626")
 
+[node name="dialogue_timer" type="Timer" parent="."]
+one_shot = true
+autostart = true
+
 [connection signal="body_entered" from="scene_changer" to="scene_changer" method="_on_body_entered"]
+[connection signal="timeout" from="dialogue_timer" to="." method="_on_dialogue_timer_timeout"]

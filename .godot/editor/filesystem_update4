@@ -6,3 +6,5 @@ res://scenes/drag_object_iron.tscn
 res://UI/crafting_ui.tscn
 res://scenes/sykul_ground_floor.tscn
 res://scripts/cryolab.gd
+res://dialogic/timelines/what the.dtl
+res://dialogic/timelines/shrimpFriedRice.dtl
