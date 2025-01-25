@@ -6,4 +6,4 @@ func _ready():
 		"stairs_to_cryolab":
 			player.position = Vector2(497, -20)  # Spawn location for Building A
 		_:
-			player.position = Vector2(-18, -2)  # Default position
+			player.position = Vector2(-24, -2)  # Default position

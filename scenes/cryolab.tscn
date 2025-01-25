@@ -1,11 +1,10 @@
-[gd_scene load_steps=28 format=4 uid="uid://0f1ih8n10pth"]
+[gd_scene load_steps=29 format=4 uid="uid://0f1ih8n10pth"]
 
 [ext_resource type="PackedScene" uid="uid://f2ia5ue6cp3u" path="res://scenes/Player.tscn" id="1_cnkv6"]
 [ext_resource type="Texture2D" uid="uid://b4uje8g1isp6h" path="res://sprites/tilesets/labfloor.png" id="1_hqlnm"]
 [ext_resource type="Script" path="res://scripts/cryolab.gd" id="1_ku55i"]
 [ext_resource type="Texture2D" uid="uid://mioem0qh7iij" path="res://sprites/tilesets/cryowall.png" id="2_3tb5u"]
 [ext_resource type="Texture2D" uid="uid://b3jnmcsjvnnvq" path="res://sprites/tilesets/labfloortiles.png" id="2_sb6vy"]
-[ext_resource type="PackedScene" uid="uid://cfe5kocqihd2u" path="res://scenes/textbox.tscn" id="3_u77l0"]
 [ext_resource type="Texture2D" uid="uid://b22t5g1342hsh" path="res://sprites/tilesets/asphaltsprsheetdone_extraspace.png" id="3_ys1xg"]
 [ext_resource type="Texture2D" uid="uid://dcmpv2yw7qevx" path="res://sprites/stairsetv3.png" id="4_gol7x"]
 [ext_resource type="PackedScene" uid="uid://clr1ywgmmsxxt" path="res://scenes/collision_object.tscn" id="5_xroue"]
@@ -13,6 +12,8 @@
 [ext_resource type="Texture2D" uid="uid://bq647bqdubwir" path="res://sprites/arel.png" id="8_o4mku"]
 [ext_resource type="Texture2D" uid="uid://c5afugn4x2c3p" path="res://sprites/cryostasischamb.png" id="8_ucetl"]
 [ext_resource type="Script" path="res://scripts/scene_changer.gd" id="9_mh7tu"]
+[ext_resource type="Texture2D" uid="uid://datri6edacvcc" path="res://sprites/brokencryo.png" id="12_el2wn"]
+[ext_resource type="Texture2D" uid="uid://bh2cu4f0amky3" path="res://sprites/cryostasisbroke.png" id="13_55l44"]
 [ext_resource type="PackedScene" uid="uid://qp1fouvcqi2t" path="res://UI/ui.tscn" id="13_vgf16"]
 [ext_resource type="Texture2D" uid="uid://beaf7pc5s2yg" path="res://sprites/cryostasis_transparent.png" id="15_y6626"]
 
@@ -199,30 +200,97 @@ script = ExtResource("9_mh7tu")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="scene_changer"]
 shape = SubResource("RectangleShape2D_b201y")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(-18, -3)
+[node name="cryotubes" type="Node2D" parent="."]
+
+[node name="cryo_tube" type="Sprite2D" parent="cryotubes"]
+position = Vector2(-24, -3)
 texture = ExtResource("8_ucetl")
 
+[node name="cryo_tube2" type="Sprite2D" parent="cryotubes"]
+position = Vector2(-88, -3)
+texture = ExtResource("8_ucetl")
+
+[node name="cryo_tube3" type="Sprite2D" parent="cryotubes"]
+position = Vector2(-56, -3)
+texture = ExtResource("12_el2wn")
+
+[node name="cryo_tube4" type="Sprite2D" parent="cryotubes"]
+position = Vector2(8, -3)
+texture = ExtResource("13_55l44")
+
+[node name="cryo_tube5" type="Sprite2D" parent="cryotubes"]
+position = Vector2(40, -3)
+texture = ExtResource("12_el2wn")
+
+[node name="cryo_tube6" type="Sprite2D" parent="cryotubes"]
+position = Vector2(168, -3)
+texture = ExtResource("12_el2wn")
+
+[node name="cryo_tube7" type="Sprite2D" parent="cryotubes"]
+position = Vector2(84, 2)
+rotation = 1.57082
+texture = ExtResource("12_el2wn")
+
+[node name="cryo_tube8" type="Sprite2D" parent="cryotubes"]
+position = Vector2(136, -3)
+texture = ExtResource("13_55l44")
+
+[node name="cryo_tube9" type="Sprite2D" parent="cryotubes"]
+position = Vector2(112, -3)
+texture = ExtResource("13_55l44")
+
+[node name="cryo_tube10" type="Sprite2D" parent="cryotubes"]
+position = Vector2(-28, 50)
+rotation = -1.5708
+texture = ExtResource("12_el2wn")
+
+[node name="cryo_tube11" type="Sprite2D" parent="cryotubes"]
+position = Vector2(-88, 45)
+texture = ExtResource("13_55l44")
+
+[node name="cryo_tube12" type="Sprite2D" parent="cryotubes"]
+position = Vector2(-56, 45)
+texture = ExtResource("13_55l44")
+
+[node name="cryo_tube14" type="Sprite2D" parent="cryotubes"]
+position = Vector2(34, 49)
+texture = ExtResource("8_ucetl")
+
+[node name="cryo_tube15" type="Sprite2D" parent="cryotubes"]
+position = Vector2(168, 45)
+texture = ExtResource("12_el2wn")
+
+[node name="cryo_tube16" type="Sprite2D" parent="cryotubes"]
+position = Vector2(84, 50)
+texture = ExtResource("12_el2wn")
+
+[node name="cryo_tube17" type="Sprite2D" parent="cryotubes"]
+position = Vector2(136, 45)
+texture = ExtResource("12_el2wn")
+
+[node name="cryo_tube18" type="Sprite2D" parent="cryotubes"]
+position = Vector2(112, 45)
+texture = ExtResource("13_55l44")
+
 [node name="Player" parent="." instance=ExtResource("1_cnkv6")]
-position = Vector2(-18, -2)
+position = Vector2(-24, -2)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(0, -1)
 zoom = Vector2(3.2, 3.2)
 
-[node name="textbox" parent="Player/Camera2D" instance=ExtResource("3_u77l0")]
-z_index = 3
-offset_left = -120.0
-offset_top = 43.0
-offset_right = 122.0
-offset_bottom = 92.0
-autowrap_mode = 2
-metadata/_edit_use_anchors_ = true
+[node name="Player_stuck" parent="." instance=ExtResource("1_cnkv6")]
+position = Vector2(-24, -2)
+script = null
+
+[node name="Camera2D" type="Camera2D" parent="Player_stuck"]
+position = Vector2(0, -1)
+zoom = Vector2(3.2, 3.2)
 
 [node name="ui" parent="." instance=ExtResource("13_vgf16")]
 
 [node name="CryostasisTransparent" type="Sprite2D" parent="."]
-position = Vector2(-18, -3)
+position = Vector2(-24, -3)
 texture = ExtResource("15_y6626")
 
 [connection signal="body_entered" from="scene_changer" to="scene_changer" method="_on_body_entered"]

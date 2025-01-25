@@ -1,13 +1,8 @@
-res://scenes/sykul_g_floor.tscn
+res://scenes/game.tscn
 res://stamina25.dtl
 res://scenes/cryolab.tscn
-res://scripts/scene_changer.gd
-res://scenes/sykul_ground_floor.tscn
-res://scripts/go_out_of_sykul.gd
 res://scenes/sykul_g_floor_cutscene.tscn
-res://scenes/game.tscn
 res://scenes/drag_object_iron.tscn
 res://UI/crafting_ui.tscn
-res://scripts/sykulenterance.gd
-res://scripts/sykul_ground_floor.gd
-res://scripts/main.gd
+res://scenes/sykul_ground_floor.tscn
+res://scripts/cryolab.gd
