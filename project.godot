@@ -36,6 +36,7 @@ directories/dch_directory={
 }
 directories/dtl_directory={
 "caught": "res://dialogic/timelines/caught.dtl",
+"ouch_glass": "res://dialogic/timelines/ouch_glass.dtl",
 "shrimpFriedRice": "res://dialogic/timelines/shrimpFriedRice.dtl",
 "shrimpFriedRicePt2": "res://dialogic/timelines/shrimpFriedRicePt2.dtl",
 "stamina25": "res://stamina25.dtl",

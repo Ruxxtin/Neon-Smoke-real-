@@ -72,7 +72,8 @@ func _on_area_2d_area_entered(area):
 	if area.is_in_group("glitch_portal_to_internal"):
 		get_tree().change_scene_to_file("res://scenes/arcade_game_1_internal.tscn")
 	if area.is_in_group("glitch_portal_to_rl"):
-		await TransitionScreen.transition()
+		TransitionScreen.transition()
+		await TransitionScreen.on_transition_finished
 		Global.last_building = "game"
 		get_tree().change_scene_to_file("res://scenes/arcade_building.tscn")
 

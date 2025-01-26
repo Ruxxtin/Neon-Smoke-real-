@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=4 uid="uid://bh835hii73twv"]
+[gd_scene load_steps=30 format=4 uid="uid://bh835hii73twv"]
 
 [ext_resource type="Texture2D" uid="uid://4h3gow8562ga" path="res://sprites/tilesets/skyleset.png" id="1_wya14"]
 [ext_resource type="Texture2D" uid="uid://c4cyycc2t1i1x" path="res://sprites/tilesets/thick circuit board.png" id="2_fi2la"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://bsx7coh4krkpn" path="res://scenes/killzone.tscn" id="4_425lg"]
 [ext_resource type="Texture2D" uid="uid://di0q7ft6rdvj1" path="res://sprites/glitch_portal_to_rl_sprsheet.png" id="6_6rmlv"]
 [ext_resource type="PackedScene" uid="uid://mnuuih584hkh" path="res://scenes/elec_spike.tscn" id="8_iuvvh"]
+[ext_resource type="PackedScene" uid="uid://dwgacl7lmmqoq" path="res://scenes/wire_pickup.tscn" id="10_nxu6b"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_agv7t"]
 texture = ExtResource("1_wya14")
@@ -407,3 +408,6 @@ position = Vector2(2616, -120)
 
 [node name="elec_spike67" parent="elec_spikes" instance=ExtResource("8_iuvvh")]
 position = Vector2(2600, -120)
+
+[node name="wire_pickup" parent="." instance=ExtResource("10_nxu6b")]
+position = Vector2(2616, -152)

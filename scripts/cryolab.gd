@@ -37,6 +37,9 @@ func _physics_process(delta):
 				ice_punch_1.play(0.1)
 			if punches == 2:
 				ice_punch_2.play(0)
+				Dialogic.start("ouch_glass")
+				dialogue_over = false
+				can_punch = false
 			if punches == 3:
 				ice_punch_3.play(0)
 	if Input.is_action_pressed("space") and can_punch == true:
@@ -63,5 +66,8 @@ func _on_dialogue_timer_timeout():
 func DialogueSignal(arg: String):
 	if arg == "can_punch":
 		space_button.visible = true
+		dialogue_over = true
+		can_punch = true
+	if arg == "keep_punching":
 		dialogue_over = true
 		can_punch = true

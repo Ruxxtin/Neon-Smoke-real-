@@ -4,6 +4,8 @@ var touching_player = false
 
 func _physics_process(delta):
 	if Input.is_action_just_pressed("interact"):
+		TransitionScreen.transition()
+		await TransitionScreen.on_transition_finished
 		get_tree().change_scene_to_file("res://scenes/arcade_game_1.tscn")
 
 func _on_body_entered(body):

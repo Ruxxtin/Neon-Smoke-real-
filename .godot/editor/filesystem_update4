@@ -26,3 +26,7 @@ res://scenes/player_platformer.tscn
 res://scripts/player_platformer.gd
 res://scenes/arcade_game_1.tscn
 res://scenes/arcade_game_1_internal.tscn
+res://scripts/main.gd
+res://scripts/scene_changer_in_arcade.gd
+res://dialogic/timelines/ouch_glass.dtl
+res://scenes/dust_particle.tscn

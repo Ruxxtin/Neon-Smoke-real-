@@ -162,94 +162,96 @@ visible = false
 tile_map_data = PackedByteArray("AAAQABAAAAAEAAAAAAAPABAAAAAEAAAAAAAOABAAAAAEAAAAAAANABAAAAAEAAAAAAAMABAAAAAEAAAAAAALABAAAAAEAAAAAAAKABAAAAAEAAAAAAAJABAAAAAEAAAAAAAIABAAAAAEAAAAAAAHABAAAAAEAAAAAAAGAA8AAAAEAAAAAAAFAA4AAAAEAAAAAAAEAA0AAAAEAAAAAAADAAwAAAAEAAAAAAACAAsAAAAEAAAAAAABAAoAAAAEAAAAAAAAAAEAAAAEAAAAAAAAAAIAAAAEAAAAAAAAAAMAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAUAAAAEAAAAAAAAAAYAAAAEAAAAAAAAAAcAAAAEAAAAAAAAAAgAAAAEAAAAAAAAAAkAAAAEAAAAAAAAAP//AAAEAAAAAAAAAAAAAAAEAAAAAAABAP//AAAEAAAAAAACAP//AAAEAAAAAAADAP//AAAEAAAAAAAEAP//AAAEAAAAAAAFAP//AAAEAAAAAAAGAP//AAAEAAAAAAAHAP//AAAEAAAAAAAIAP//AAAEAAAAAAAJAP//AAAEAAAAAAAKAP//AAAEAAAAAAALAP//AAAEAAAAAAAMAP//AAAEAAAAAAANAP//AAAEAAAAAAAOAP//AAAEAAAAAAAPAP//AAAEAAAAAAAQAP//AAAEAAAAAAARAP//AAAEAAAAAAASAP//AAAEAAAAAAATAP//AAAEAAAAAAAUAP//AAAEAAAAAAAVAP//AAAEAAAAAAAWAP//AAAEAAAAAAAXAP//AAAEAAAAAAAYAP//AAAEAAAAAAAYAAAAAAAEAAAAAAAYAAEAAAAEAAAAAAAYAAIAAAAEAAAAAAAYAAMAAAAEAAAAAAAYAAQAAAAEAAAAAAAYAAUAAAAEAAAAAAAYAAYAAAAEAAAAAAAYAAcAAAAEAAAAAAAYAAgAAAAEAAAAAAAYAAkAAAAEAAAAAAAYAAoAAAAEAAAAAAAYAAsAAAAEAAAAAAAYAAwAAAAEAAAAAAAYAA0AAAAEAAAAAAAYAA4AAAAEAAAAAAAYAA8AAAAEAAAAAAAYABAAAAAEAAAAAAAUABAAAAAEAAAAAAAVABAAAAAEAAAAAAAWABAAAAAEAAAAAAAXABAAAAAEAAAAAAABAAAAAAAEAAAAAAABAAEAAAAEAAAAAAABAAIAAAAEAAAAAAACAAAAAAAEAAAAAAACAAEAAAAEAAAAAAACAAIAAAAEAAAAAAADAAAAAAAEAAAAAAADAAEAAAAEAAAAAAADAAIAAAAEAAAAAAAEAAAAAAAEAAAAAAAEAAEAAAAEAAAAAAAEAAIAAAAEAAAAAAAFAAAAAAAEAAAAAAAFAAEAAAAEAAAAAAAFAAIAAAAEAAAAAAAGAAAAAAAEAAAAAAAGAAEAAAAEAAAAAAAGAAIAAAAEAAAAAAAHAAAAAAAEAAAAAAAHAAEAAAAEAAAAAAAHAAIAAAAEAAAAAAAIAAAAAAAEAAAAAAAIAAEAAAAEAAAAAAAIAAIAAAAEAAAAAAAJAAAAAAAEAAAAAAAJAAEAAAAEAAAAAAAJAAIAAAAEAAAAAAAKAAAAAAAEAAAAAAAKAAEAAAAEAAAAAAAKAAIAAAAEAAAAAAALAAAAAAAEAAAAAAALAAEAAAAEAAAAAAALAAIAAAAEAAAAAAAMAAAAAAAEAAAAAAAMAAEAAAAEAAAAAAAMAAIAAAAEAAAAAAANAAAAAAAEAAAAAAANAAEAAAAEAAAAAAANAAIAAAAEAAAAAAAOAAAAAAAEAAAAAAAOAAEAAAAEAAAAAAAOAAIAAAAEAAAAAAAPAAAAAAAEAAAAAAAPAAEAAAAEAAAAAAAPAAIAAAAEAAAAAAAQAAAAAAAEAAAAAAAQAAEAAAAEAAAAAAAQAAIAAAAEAAAAAAARAAAAAAAEAAAAAAARAAEAAAAEAAAAAAARAAIAAAAEAAAAAAASAAAAAAAEAAAAAAASAAEAAAAEAAAAAAASAAIAAAAEAAAAAAATAAAAAAAEAAAAAAATAAEAAAAEAAAAAAATAAIAAAAEAAAAAAAUAAAAAAAEAAAAAAAUAAEAAAAEAAAAAAAUAAIAAAAEAAAAAAAVAAAAAAAEAAAAAAAVAAEAAAAEAAAAAAAVAAIAAAAEAAAAAAAWAAAAAAAEAAAAAAAWAAEAAAAEAAAAAAAWAAIAAAAEAAAAAAAXAAAAAAAEAAAAAAAXAAEAAAAEAAAAAAAXAAIAAAAEAAAAAAABAAMAAAAEAAAAAAACAAMAAAAEAAAAAAADAAMAAAAEAAAAAAAEAAMAAAAEAAAAAAAFAAMAAAAEAAAAAAAGAAMAAAAEAAAAAAAHAAMAAAAEAAAAAAAIAAMAAAAEAAAAAAAJAAMAAAAEAAAAAAAKAAMAAAAEAAAAAAALAAMAAAAEAAAAAAAMAAMAAAAEAAAAAAANAAMAAAAEAAAAAAAOAAMAAAAEAAAAAAAPAAMAAAAEAAAAAAAQAAMAAAAEAAAAAAARAAMAAAAEAAAAAAASAAMAAAAEAAAAAAATAAMAAAAEAAAAAAAUAAMAAAAEAAAAAAAVAAMAAAAEAAAAAAAWAAMAAAAEAAAAAAAXAAMAAAAEAAAAAAA=")
 tile_set = SubResource("TileSet_1shx1")
 
-[node name="arcade_real" type="Area2D" parent="."]
+[node name="arcade games" type="Node2D" parent="."]
+
+[node name="arcade_real" type="Area2D" parent="arcade games"]
 position = Vector2(108, 76)
 script = ExtResource("9_afse7")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="arcade_real"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="arcade games/arcade_real"]
 position = Vector2(10, -17)
 shape = SubResource("RectangleShape2D_qt6fs")
 
-[node name="Sprite2D" type="Sprite2D" parent="arcade_real"]
+[node name="Sprite2D" type="Sprite2D" parent="arcade games/arcade_real"]
 position = Vector2(10, -20)
 texture = ExtResource("10_nopj1")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="arcade_real"]
+[node name="StaticBody2D" type="StaticBody2D" parent="arcade games/arcade_real"]
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="arcade_real/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="arcade games/arcade_real/StaticBody2D"]
 position = Vector2(10, -20)
 shape = SubResource("RectangleShape2D_3qlhw")
 
-[node name="arcade_real3" type="Area2D" parent="."]
+[node name="arcade_real3" type="Area2D" parent="arcade games"]
 position = Vector2(180, 76)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="arcade_real3"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="arcade games/arcade_real3"]
 position = Vector2(10, -17)
 shape = SubResource("RectangleShape2D_qt6fs")
 
-[node name="Sprite2D" type="Sprite2D" parent="arcade_real3"]
+[node name="Sprite2D" type="Sprite2D" parent="arcade games/arcade_real3"]
 position = Vector2(10, -20)
 texture = ExtResource("11_b3e0p")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="arcade_real3"]
+[node name="StaticBody2D" type="StaticBody2D" parent="arcade games/arcade_real3"]
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="arcade_real3/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="arcade games/arcade_real3/StaticBody2D"]
 position = Vector2(10, -20)
 shape = SubResource("RectangleShape2D_3qlhw")
 
-[node name="arcade_real4" type="Area2D" parent="."]
+[node name="arcade_real4" type="Area2D" parent="arcade games"]
 position = Vector2(252, 76)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="arcade_real4"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="arcade games/arcade_real4"]
 position = Vector2(10, -17)
 shape = SubResource("RectangleShape2D_qt6fs")
 
-[node name="Sprite2D" type="Sprite2D" parent="arcade_real4"]
+[node name="Sprite2D" type="Sprite2D" parent="arcade games/arcade_real4"]
 position = Vector2(10, -20)
 texture = ExtResource("11_b3e0p")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="arcade_real4"]
+[node name="StaticBody2D" type="StaticBody2D" parent="arcade games/arcade_real4"]
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="arcade_real4/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="arcade games/arcade_real4/StaticBody2D"]
 position = Vector2(10, -20)
 shape = SubResource("RectangleShape2D_3qlhw")
 
-[node name="arcade_real5" type="Area2D" parent="."]
+[node name="arcade_real5" type="Area2D" parent="arcade games"]
 position = Vector2(324, 76)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="arcade_real5"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="arcade games/arcade_real5"]
 position = Vector2(10, -17)
 shape = SubResource("RectangleShape2D_qt6fs")
 
-[node name="Sprite2D" type="Sprite2D" parent="arcade_real5"]
+[node name="Sprite2D" type="Sprite2D" parent="arcade games/arcade_real5"]
 position = Vector2(10, -20)
 texture = ExtResource("11_b3e0p")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="arcade_real5"]
+[node name="StaticBody2D" type="StaticBody2D" parent="arcade games/arcade_real5"]
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="arcade_real5/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="arcade games/arcade_real5/StaticBody2D"]
 position = Vector2(10, -20)
 shape = SubResource("RectangleShape2D_3qlhw")
 
-[node name="arcade_real2" type="Area2D" parent="."]
+[node name="arcade_real2" type="Area2D" parent="arcade games"]
 position = Vector2(36, 76)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="arcade_real2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="arcade games/arcade_real2"]
 position = Vector2(10, -17)
 shape = SubResource("RectangleShape2D_qt6fs")
 
-[node name="Sprite2D" type="Sprite2D" parent="arcade_real2"]
+[node name="Sprite2D" type="Sprite2D" parent="arcade games/arcade_real2"]
 position = Vector2(10, -20)
 texture = ExtResource("11_b3e0p")
 
-[node name="StaticBody2D" type="StaticBody2D" parent="arcade_real2"]
+[node name="StaticBody2D" type="StaticBody2D" parent="arcade games/arcade_real2"]
 collision_mask = 2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="arcade_real2/StaticBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="arcade games/arcade_real2/StaticBody2D"]
 position = Vector2(10, -20)
 shape = SubResource("RectangleShape2D_3qlhw")
 
@@ -279,8 +281,6 @@ script = ExtResource("8_b2cgl")
 position = Vector2(-2, 12.5)
 shape = SubResource("RectangleShape2D_2mm3q")
 
-[node name="arcade games" type="Node2D" parent="."]
-
-[connection signal="body_entered" from="arcade_real" to="arcade_real" method="_on_body_entered"]
-[connection signal="body_exited" from="arcade_real" to="arcade_real" method="_on_body_exited"]
+[connection signal="body_entered" from="arcade games/arcade_real" to="arcade games/arcade_real" method="_on_body_entered"]
+[connection signal="body_exited" from="arcade games/arcade_real" to="arcade games/arcade_real" method="_on_body_exited"]
 [connection signal="body_entered" from="scene_changer" to="scene_changer" method="_on_body_entered"]
