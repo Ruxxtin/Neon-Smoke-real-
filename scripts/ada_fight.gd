@@ -35,7 +35,7 @@ func _physics_process(delta):
 	for body in bodies:
 		if body.name == target_node_name:
 			player = body
-		if body.name == neeko_fight:
+		if body.name == "neeko_fight":
 			neeko = body
 	
 	if player_chase == true:

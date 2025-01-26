@@ -1,6 +1,7 @@
-[gd_scene load_steps=20 format=4 uid="uid://m3ukksk0jflr"]
+[gd_scene load_steps=26 format=4 uid="uid://m3ukksk0jflr"]
 
 [ext_resource type="Texture2D" uid="uid://dsnp023fknmd4" path="res://sprites/tilesets/arcade_floor_tileset.png" id="1_6cfuq"]
+[ext_resource type="Script" path="res://scripts/scene_changer_inside_arcade.gd" id="1_7djm7"]
 [ext_resource type="Texture2D" uid="uid://d0roje0b4ivh7" path="res://sprites/tilesets/arcade_blackset.png" id="2_6b012"]
 [ext_resource type="Texture2D" uid="uid://78u5b4bnttup" path="res://sprites/tilesets/arcade_floor_tileset_with_hole.png" id="2_7makp"]
 [ext_resource type="Texture2D" uid="uid://13huw12fjn3m" path="res://sprites/tilesets/arcadewall.png" id="3_7exxu"]
@@ -8,6 +9,9 @@
 [ext_resource type="PackedScene" uid="uid://cfe5kocqihd2u" path="res://scenes/textbox.tscn" id="5_7g5y1"]
 [ext_resource type="Texture2D" uid="uid://b22t5g1342hsh" path="res://sprites/tilesets/asphaltsprsheetdone_extraspace.png" id="5_j41en"]
 [ext_resource type="Script" path="res://scripts/scene_changer_in_arcade.gd" id="8_b2cgl"]
+[ext_resource type="Script" path="res://scripts/arcade_real.gd" id="9_afse7"]
+[ext_resource type="Texture2D" uid="uid://ohpfrvr2s4j1" path="res://sprites/arcadegamebetter.png" id="10_nopj1"]
+[ext_resource type="Texture2D" uid="uid://dctl7pf385qxg" path="res://sprites/arcadewomp.png" id="11_b3e0p"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jf1o0"]
 texture = ExtResource("1_6cfuq")
@@ -123,10 +127,17 @@ physics_layer_0/collision_layer = 1
 physics_layer_0/collision_mask = 2
 sources/0 = SubResource("TileSetAtlasSource_b7nh2")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qt6fs"]
+size = Vector2(38, 48)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3qlhw"]
+size = Vector2(36, 42)
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2mm3q"]
 size = Vector2(38, 17)
 
 [node name="arcade_building" type="Node2D"]
+script = ExtResource("1_7djm7")
 
 [node name="Tilemap" type="Node2D" parent="."]
 
@@ -151,8 +162,99 @@ visible = false
 tile_map_data = PackedByteArray("AAAQABAAAAAEAAAAAAAPABAAAAAEAAAAAAAOABAAAAAEAAAAAAANABAAAAAEAAAAAAAMABAAAAAEAAAAAAALABAAAAAEAAAAAAAKABAAAAAEAAAAAAAJABAAAAAEAAAAAAAIABAAAAAEAAAAAAAHABAAAAAEAAAAAAAGAA8AAAAEAAAAAAAFAA4AAAAEAAAAAAAEAA0AAAAEAAAAAAADAAwAAAAEAAAAAAACAAsAAAAEAAAAAAABAAoAAAAEAAAAAAAAAAEAAAAEAAAAAAAAAAIAAAAEAAAAAAAAAAMAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAUAAAAEAAAAAAAAAAYAAAAEAAAAAAAAAAcAAAAEAAAAAAAAAAgAAAAEAAAAAAAAAAkAAAAEAAAAAAAAAP//AAAEAAAAAAAAAAAAAAAEAAAAAAABAP//AAAEAAAAAAACAP//AAAEAAAAAAADAP//AAAEAAAAAAAEAP//AAAEAAAAAAAFAP//AAAEAAAAAAAGAP//AAAEAAAAAAAHAP//AAAEAAAAAAAIAP//AAAEAAAAAAAJAP//AAAEAAAAAAAKAP//AAAEAAAAAAALAP//AAAEAAAAAAAMAP//AAAEAAAAAAANAP//AAAEAAAAAAAOAP//AAAEAAAAAAAPAP//AAAEAAAAAAAQAP//AAAEAAAAAAARAP//AAAEAAAAAAASAP//AAAEAAAAAAATAP//AAAEAAAAAAAUAP//AAAEAAAAAAAVAP//AAAEAAAAAAAWAP//AAAEAAAAAAAXAP//AAAEAAAAAAAYAP//AAAEAAAAAAAYAAAAAAAEAAAAAAAYAAEAAAAEAAAAAAAYAAIAAAAEAAAAAAAYAAMAAAAEAAAAAAAYAAQAAAAEAAAAAAAYAAUAAAAEAAAAAAAYAAYAAAAEAAAAAAAYAAcAAAAEAAAAAAAYAAgAAAAEAAAAAAAYAAkAAAAEAAAAAAAYAAoAAAAEAAAAAAAYAAsAAAAEAAAAAAAYAAwAAAAEAAAAAAAYAA0AAAAEAAAAAAAYAA4AAAAEAAAAAAAYAA8AAAAEAAAAAAAYABAAAAAEAAAAAAAUABAAAAAEAAAAAAAVABAAAAAEAAAAAAAWABAAAAAEAAAAAAAXABAAAAAEAAAAAAABAAAAAAAEAAAAAAABAAEAAAAEAAAAAAABAAIAAAAEAAAAAAACAAAAAAAEAAAAAAACAAEAAAAEAAAAAAACAAIAAAAEAAAAAAADAAAAAAAEAAAAAAADAAEAAAAEAAAAAAADAAIAAAAEAAAAAAAEAAAAAAAEAAAAAAAEAAEAAAAEAAAAAAAEAAIAAAAEAAAAAAAFAAAAAAAEAAAAAAAFAAEAAAAEAAAAAAAFAAIAAAAEAAAAAAAGAAAAAAAEAAAAAAAGAAEAAAAEAAAAAAAGAAIAAAAEAAAAAAAHAAAAAAAEAAAAAAAHAAEAAAAEAAAAAAAHAAIAAAAEAAAAAAAIAAAAAAAEAAAAAAAIAAEAAAAEAAAAAAAIAAIAAAAEAAAAAAAJAAAAAAAEAAAAAAAJAAEAAAAEAAAAAAAJAAIAAAAEAAAAAAAKAAAAAAAEAAAAAAAKAAEAAAAEAAAAAAAKAAIAAAAEAAAAAAALAAAAAAAEAAAAAAALAAEAAAAEAAAAAAALAAIAAAAEAAAAAAAMAAAAAAAEAAAAAAAMAAEAAAAEAAAAAAAMAAIAAAAEAAAAAAANAAAAAAAEAAAAAAANAAEAAAAEAAAAAAANAAIAAAAEAAAAAAAOAAAAAAAEAAAAAAAOAAEAAAAEAAAAAAAOAAIAAAAEAAAAAAAPAAAAAAAEAAAAAAAPAAEAAAAEAAAAAAAPAAIAAAAEAAAAAAAQAAAAAAAEAAAAAAAQAAEAAAAEAAAAAAAQAAIAAAAEAAAAAAARAAAAAAAEAAAAAAARAAEAAAAEAAAAAAARAAIAAAAEAAAAAAASAAAAAAAEAAAAAAASAAEAAAAEAAAAAAASAAIAAAAEAAAAAAATAAAAAAAEAAAAAAATAAEAAAAEAAAAAAATAAIAAAAEAAAAAAAUAAAAAAAEAAAAAAAUAAEAAAAEAAAAAAAUAAIAAAAEAAAAAAAVAAAAAAAEAAAAAAAVAAEAAAAEAAAAAAAVAAIAAAAEAAAAAAAWAAAAAAAEAAAAAAAWAAEAAAAEAAAAAAAWAAIAAAAEAAAAAAAXAAAAAAAEAAAAAAAXAAEAAAAEAAAAAAAXAAIAAAAEAAAAAAABAAMAAAAEAAAAAAACAAMAAAAEAAAAAAADAAMAAAAEAAAAAAAEAAMAAAAEAAAAAAAFAAMAAAAEAAAAAAAGAAMAAAAEAAAAAAAHAAMAAAAEAAAAAAAIAAMAAAAEAAAAAAAJAAMAAAAEAAAAAAAKAAMAAAAEAAAAAAALAAMAAAAEAAAAAAAMAAMAAAAEAAAAAAANAAMAAAAEAAAAAAAOAAMAAAAEAAAAAAAPAAMAAAAEAAAAAAAQAAMAAAAEAAAAAAARAAMAAAAEAAAAAAASAAMAAAAEAAAAAAATAAMAAAAEAAAAAAAUAAMAAAAEAAAAAAAVAAMAAAAEAAAAAAAWAAMAAAAEAAAAAAAXAAMAAAAEAAAAAAA=")
 tile_set = SubResource("TileSet_1shx1")
 
+[node name="arcade_real" type="Area2D" parent="."]
+position = Vector2(108, 76)
+script = ExtResource("9_afse7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="arcade_real"]
+position = Vector2(10, -17)
+shape = SubResource("RectangleShape2D_qt6fs")
+
+[node name="Sprite2D" type="Sprite2D" parent="arcade_real"]
+position = Vector2(10, -20)
+texture = ExtResource("10_nopj1")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="arcade_real"]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="arcade_real/StaticBody2D"]
+position = Vector2(10, -20)
+shape = SubResource("RectangleShape2D_3qlhw")
+
+[node name="arcade_real3" type="Area2D" parent="."]
+position = Vector2(180, 76)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="arcade_real3"]
+position = Vector2(10, -17)
+shape = SubResource("RectangleShape2D_qt6fs")
+
+[node name="Sprite2D" type="Sprite2D" parent="arcade_real3"]
+position = Vector2(10, -20)
+texture = ExtResource("11_b3e0p")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="arcade_real3"]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="arcade_real3/StaticBody2D"]
+position = Vector2(10, -20)
+shape = SubResource("RectangleShape2D_3qlhw")
+
+[node name="arcade_real4" type="Area2D" parent="."]
+position = Vector2(252, 76)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="arcade_real4"]
+position = Vector2(10, -17)
+shape = SubResource("RectangleShape2D_qt6fs")
+
+[node name="Sprite2D" type="Sprite2D" parent="arcade_real4"]
+position = Vector2(10, -20)
+texture = ExtResource("11_b3e0p")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="arcade_real4"]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="arcade_real4/StaticBody2D"]
+position = Vector2(10, -20)
+shape = SubResource("RectangleShape2D_3qlhw")
+
+[node name="arcade_real5" type="Area2D" parent="."]
+position = Vector2(324, 76)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="arcade_real5"]
+position = Vector2(10, -17)
+shape = SubResource("RectangleShape2D_qt6fs")
+
+[node name="Sprite2D" type="Sprite2D" parent="arcade_real5"]
+position = Vector2(10, -20)
+texture = ExtResource("11_b3e0p")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="arcade_real5"]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="arcade_real5/StaticBody2D"]
+position = Vector2(10, -20)
+shape = SubResource("RectangleShape2D_3qlhw")
+
+[node name="arcade_real2" type="Area2D" parent="."]
+position = Vector2(36, 76)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="arcade_real2"]
+position = Vector2(10, -17)
+shape = SubResource("RectangleShape2D_qt6fs")
+
+[node name="Sprite2D" type="Sprite2D" parent="arcade_real2"]
+position = Vector2(10, -20)
+texture = ExtResource("11_b3e0p")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="arcade_real2"]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="arcade_real2/StaticBody2D"]
+position = Vector2(10, -20)
+shape = SubResource("RectangleShape2D_3qlhw")
+
 [node name="Player" parent="." instance=ExtResource("4_gisxh")]
-position = Vector2(295, 232)
+position = Vector2(118, 76)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(0, -1)
@@ -177,4 +279,8 @@ script = ExtResource("8_b2cgl")
 position = Vector2(-2, 12.5)
 shape = SubResource("RectangleShape2D_2mm3q")
 
+[node name="arcade games" type="Node2D" parent="."]
+
+[connection signal="body_entered" from="arcade_real" to="arcade_real" method="_on_body_entered"]
+[connection signal="body_exited" from="arcade_real" to="arcade_real" method="_on_body_exited"]
 [connection signal="body_entered" from="scene_changer" to="scene_changer" method="_on_body_entered"]
