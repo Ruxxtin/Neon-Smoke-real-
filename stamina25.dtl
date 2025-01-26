@@ -1,5 +1,5 @@
 join Player left
-placeholder: What’ll it take for you to believe me? Who are you people– no, WHAT are you people? What is this place? The last thing I remember, I was in my dorm looking at inter– my dorm? Where do I even go to college? Oh my gosh, who AM I?
+Player: What’ll it take for you to believe me? Who are you people– no, WHAT are you people? What is this place? The last thing I remember, I was in my dorm looking at inter– my dorm? Where do I even go to college? Oh my gosh, who AM I?
 leave --All--
 [signal arg="stop_music"]
 join Ada right
@@ -13,7 +13,7 @@ Neeko: So, uh…
 Neeko: What’s your name?
 leave --All--
 join Player left
-placeholder: I don’t know… all I remember are various science facts and a few stray memories and that’s it.
+Player: I don’t know… all I remember are various science facts and a few stray memories and that’s it.
 leave --All--
 join Ada right
 Ada: Well, what’s a name you’ve always wanted to have?

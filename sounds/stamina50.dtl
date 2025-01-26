@@ -1,6 +1,6 @@
 join Player left
-placeholder: I’m not playing dumb, I AM dumb!
-placeholder: I have no clue where I am, how I got here, or really anything else!
+Player: I’m not playing dumb, I AM dumb!
+Player: I have no clue where I am, how I got here, or really anything else!
 leave --All--
 join Ada right
 Ada: Listen, kid. Cut. The. Dramatics.

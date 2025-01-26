@@ -4,6 +4,7 @@ var speed = 30
 var max_speed = 85
 var player_chase = false
 var player = null
+var neeko = null
 var target_node_name = "Player_fight"
 var can_speed_increase = true
 
@@ -34,6 +35,8 @@ func _physics_process(delta):
 	for body in bodies:
 		if body.name == target_node_name:
 			player = body
+		if body.name == neeko_fight:
+			neeko = body
 	
 	if player_chase == true:
 		position += (player.position - position).normalized() * speed * delta
@@ -62,3 +65,11 @@ func _on_stamina_decrease_timeout():
 			speed = 0
 			max_speed = 0
 		stamina_bar.value -= 1
+
+
+func _on_pickpocket_zone_body_entered(body):
+	if body == player:
+		Dialogic.start("caught")
+		player.can_move = false
+		player_chase = false
+		neeko.player_chase = false

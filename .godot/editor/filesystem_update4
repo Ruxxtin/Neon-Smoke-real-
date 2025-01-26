@@ -14,3 +14,8 @@ res://dialogic/timelines/caught.dtl
 res://sounds/stamina50.dtl
 res://dialogic/timelines/stamina75.dtl
 res://dialogic/characters/Player.dch
+res://dialogic/timelines/starting_fight.dtl
+res://scenes/neeko_fight.tscn
+res://scripts/neeko_fight.gd
+res://scripts/ada_fight.gd
+res://scenes/ada_fight.tscn

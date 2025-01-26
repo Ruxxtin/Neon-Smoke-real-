@@ -2,5 +2,117 @@ join Ada right
 Ada: Aha! We got you!
 leave --All-- 
 join Player left
+placeholder: No, you really don't understand–
+leave --All-- 
 join Neeko right
 Neeko: Wait what? Where's all your stuff?
+leave --All-- 
+join Player left
+placeholder: I keep telling you, I don't have anything!
+leave --All-- 
+join Ada right
+Ada: Huh. I guess they weren’t lying.
+leave --All-- 
+join Player left
+placeholder: Please, can someone tell me what's going on?
+placeholder: Who are you people– no, WHAT are you people? What is this place? The last thing I remember, I was in my dorm looking at inter– my dorm? Where do I even go to college? Oh my gosh, who AM I?
+leave --All--
+[signal arg="stop_music"]
+join Ada right
+Ada: ...
+Ada: Uh… let’s stop there, Neeko.
+leave --All--
+join Neeko right
+Neeko: Hey, kid…
+Neeko: I have to stop calling you that, you’re an adult.
+Neeko: So, uh…
+Neeko: What’s your name?
+leave --All--
+join Player left
+Player: I don’t know… all I remember are various science facts and a few stray memories and that’s it.
+leave --All--
+join Ada right
+Ada: Well, what’s a name you’ve always wanted to have?
+[text_input text="Choose Name:" var="playername"]
+leave --All--
+join Neeko right
+Neeko: Huh. “{playername}”.
+Neeko: Interesting choice…
+leave --All--
+join Ada right
+Ada: Not as “interesting” as “Neeko”.
+leave --All--
+join Neeko right
+Neeko: *scoff*
+leave --All--
+join Ada right
+Ada: Welcome to the team, {playername}.
+leave --All--
+join Player left
+placeholder: The... team?
+leave --All--
+join Neeko right
+Neeko: Wow, you’re REALLY out of the loop, aren’t you?
+leave --All--
+join Ada right
+Ada: Neeko, you suck at talking to people.
+Ada: What he means to say is “You’re not too used to the pawning game, huh?”
+leave --All--
+join Player left
+placeholder: So… you guys pawn stuff?
+leave --All--
+join Neeko right
+It’s our side gig, yeah. Professionally, I'm a private eye, and she’s, uh... what do you do again?
+leave --All--
+join Ada right
+Ada: I repair bots and cybermods.
+Ada: And, as a hobby, I develop random gadgets like these nuclear fusion blasters.
+Ada: Energy-efficient, and they don’t produce any nuclear waste.
+Ada: It is a pain to remove the iron from the barrels afterwards, though. But I can pawn it, so who cares?
+leave --All--
+join Player left
+placeholder: Oh, well I am– WAS working on my degree.
+leave --All--
+join Neeko right
+Neeko: Degree?
+leave --All--
+join Player left
+placeholder: Yeah, in some kind of scientific field but I don’t entirely remember–
+leave --All--
+join Neeko right
+Neeko: I’m sorry, what’s a degree?
+leave --All--
+join Ada right
+Ada: Neeko, you don’t know your history. A degree was something offered at these things called universities 50 or so years ago. Pretty sure your parents went there. Mine too.
+Ada: I guess {playername} has been going to one that still exists. Somewhere.
+leave --All--
+join Player left
+placeholder: I’m sorry, did you say 50 or so years ago?
+leave --All--
+join Ada right
+Ada: Yeah…? They died out in around 2070 or 2090 after brain chips became a thing.
+leave --All--
+join Neeko right
+Neeko: Oh.
+Neeko: So you’re a mod rejector, hm.
+Neeko: *snap* That's why you looked at me so weirdly before.
+Neeko: Relax, I got my biomods before they were illegal. I have the card to prove–
+leave --All--
+join Ada right
+Ada: Sorry, Neeko?
+Ada: I think they’ve, uh… tuned out.
+leave --All--
+join Player left
+placeholder: ...
+placeholder: ...
+placeholder: ...
+placeholder: ...what year is it?
+leave --All--
+join Neeko right
+Neeko: 2138. Why?
+leave --All--
+join Player left
+placeholder: ...
+placeholder: I think…
+placeholder: I think I need some fresh air.
+[signal arg="leave_tower"]

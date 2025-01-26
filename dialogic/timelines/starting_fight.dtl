@@ -9,5 +9,6 @@ Player: I think you guys have already chosen the hard way, haven’t you?
 leave --All--
 join Neeko right
 Neeko: Yeah, I guess. I mean, it’s usually the hard way with stuff like this.
-[voice path="res://sounds/player (mp3cut.net).mp3" volume="0.0" bus="SFX"]
+leave --All-- 
+Hold [shift] to sprint!
 [signal arg="start_fight"]
