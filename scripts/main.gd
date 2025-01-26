@@ -2,6 +2,7 @@ extends Node2D
 
 @onready var ui = $ui
 @onready var player = $Player
+@onready var dust_particle = $"dust particle"
 
 func _ready():
 	Global.start_cutscene_played = true

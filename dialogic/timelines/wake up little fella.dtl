@@ -4,7 +4,9 @@ leave --All--
 There seems to be a small display with a dead battery icon.
 leave --All--
 if ResourceManager.battery_amount >= 2:
+	set 
 	- Use batteries
+		[signal arg="minus_batteries"]
 		The batteries fit in perfectly.
 		join "lil fella" right
 		"lil fella": *BZZT* Hello, I am your personal robot companion. How may I assist you today?
@@ -14,6 +16,7 @@ if ResourceManager.battery_amount >= 2:
 		leave --All--
 		join "lil fella" right
 		"lil fella": Sorry, I have to say that every time. *BZZT* So, what's the occasion for waking me--
+		update "lil fella" (confused)
 		"lil fella": Wait, huh? What happened to this place?
 		"lil fella": It used to be one of the most populated cities in the province, and now everything is boarded up and crumbling apart!
 		leave --All--
@@ -22,8 +25,14 @@ if ResourceManager.battery_amount >= 2:
 		placeholder: But I am trying to get to the city, and I need to find some parts for a hover board. Do you know if there's any scraps nearby?
 		leave --All--
 		join "lil fella" right
+		update "lil fella" (happy)
 		"lil fella": Hmmm, scraps... scraps...
-		"lil fella": If I remember correctly, theres usually a lot of spare parts on the north side of town, and theres that arcade. Come on, follow me!
+		"lil fella": If I remember correctly, theres usually a lot of spare parts on the north side of town, and theres that arcade.
+		update "lil fella" (surprised)
+		"lil fella": Come on, let's go!
+		update "lil fella" (happy)
+		"lil fella": ...
+		"lil fella": Uhh, I think you might have to carry me. I don't exactly have legs.
 		leave --All--
 	- Don't use batteries
 		You were always the selfish one, weren't you?

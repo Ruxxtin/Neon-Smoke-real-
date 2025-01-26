@@ -26,3 +26,5 @@ func DialogueSignal(arg: String):
 	if arg == "end_of_convo":
 		player.can_move = true
 		dialogue_happening = false
+	if arg == "minus_batteries":
+		ResourceManager.battery_amount -= 2

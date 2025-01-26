@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dikqilxp11vxy"
-path="res://.godot/imported/dustcircle_sprshet.png-eea19fe80696e6cf33ec49a570ef64e4.ctex"
+uid="uid://bwx3mb3m1o5w7"
+path="res://.godot/imported/b13surprised.png-6aec817832d54de1e5ee4d570d20b9c1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/dustcircle_sprshet.png"
-dest_files=["res://.godot/imported/dustcircle_sprshet.png-eea19fe80696e6cf33ec49a570ef64e4.ctex"]
+source_file="res://sprites/characters/b13surprised.png"
+dest_files=["res://.godot/imported/b13surprised.png-6aec817832d54de1e5ee4d570d20b9c1.ctex"]
 
 [params]
 

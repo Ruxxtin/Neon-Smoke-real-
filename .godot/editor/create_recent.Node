@@ -1,3 +1,5 @@
+AudioStreamPlayer2D
+AudioStreamPlayer
 GPUParticles2D
 CPUParticles2D
 Node2D
@@ -7,8 +9,6 @@ StaticBody2D
 Sprite2D
 Area2D
 Label
-AudioStreamPlayer2D
 TileMapLayer
 Timer
 VSeparator
-HSeparator

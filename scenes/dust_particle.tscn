@@ -1,20 +1,27 @@
 [gd_scene load_steps=4 format=3 uid="uid://sg2s0h5f6mgf"]
 
-[ext_resource type="Texture2D" uid="uid://dikqilxp11vxy" path="res://sprites/dustcircle_sprshet.png" id="1_scb1v"]
+[ext_resource type="Texture2D" uid="uid://dc06c2r5j6557" path="res://sprites/dustcircle spin.png" id="1_ohmtl"]
 
-[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_bcwpr"]
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_1ygrn"]
 particles_animation = true
-particles_anim_h_frames = 1
-particles_anim_v_frames = 1
+particles_anim_h_frames = 3
+particles_anim_v_frames = 13
 particles_anim_loop = false
 
-[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_tmcrs"]
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_2jopa"]
 particle_flag_disable_z = true
-gravity = Vector3(0, 98, 0)
+emission_shape = 3
+emission_box_extents = Vector3(160, 70, 1)
+gravity = Vector3(0, 0, 0)
+scale_min = 0.1
+scale_max = 0.42
+hue_variation_min = -0.01
+hue_variation_max = 0.00999998
+anim_speed_min = 1.0
+anim_speed_max = 1.0
 
-[node name="dust particle" type="Node2D"]
-
-[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
-material = SubResource("CanvasItemMaterial_bcwpr")
-process_material = SubResource("ParticleProcessMaterial_tmcrs")
-texture = ExtResource("1_scb1v")
+[node name="dust particle" type="GPUParticles2D"]
+material = SubResource("CanvasItemMaterial_1ygrn")
+amount = 200
+process_material = SubResource("ParticleProcessMaterial_2jopa")
+texture = ExtResource("1_ohmtl")

@@ -10,20 +10,48 @@
 "style": "",
 "suffix": ""
 },
-"default_portrait": "normal",
+"default_portrait": "happy",
 "description": "",
 "display_name": "B-13",
 "mirror": false,
 "nicknames": ["lil fella"],
 "offset": Vector2(0, 0),
 "portraits": {
-"normal": {
+"confused": {
 "export_overrides": {
-"image": "\"res://sprites/bigguy.png\""
+"image": "\"res://sprites/characters/b13confused.png\""
 },
 "mirror": false,
 "offset": Vector2(0, -128),
-"scale": 0.3,
+"scale": 0.4,
+"scene": ""
+},
+"happy": {
+"export_overrides": {
+"image": "\"res://sprites/characters/b13happy.png\""
+},
+"ignore_char_scale": false,
+"mirror": false,
+"offset": Vector2(0, -128),
+"scale": 0.4,
+"scene": ""
+},
+"sad": {
+"export_overrides": {
+"image": "\"res://sprites/characters/b13sadge.png\""
+},
+"mirror": false,
+"offset": Vector2(0, -128),
+"scale": 0.4,
+"scene": ""
+},
+"surprised": {
+"export_overrides": {
+"image": "\"res://sprites/characters/b13surprised.png\""
+},
+"mirror": false,
+"offset": Vector2(0, -128),
+"scale": 0.4,
 "scene": ""
 }
 },
