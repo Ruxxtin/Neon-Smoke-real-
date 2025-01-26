@@ -1,9 +1,11 @@
+Label
+AudioStreamPlayer2D
+TileMapLayer
 CollisionShape2D
 StaticBody2D
 Node2D
 Sprite2D
 Timer
-TileMapLayer
 VSeparator
 HSeparator
 VScrollBar
@@ -11,4 +13,3 @@ HScrollBar
 VBoxContainer
 HBoxContainer
 Button
-TextureRect

@@ -2,19 +2,20 @@ join Neeko right
 Neeko: Won’t you just– give up? It’s very obvious you dont't know how to handle yourself.
 leave --All--
 join Player left
-Player: Can you just leave me alone?
+placeholder: Can't you just leave me alone?
 leave --All--
 join Ada right
 Ada: We will if you give us your haul.
 leave --All--
 join Player left
-Player: But I–
+placeholder: But I–
 leave --All--
 join Neeko right
 Neeko: “oH bUt I dIdN’t GeT aNyThInG~~~!”
 Neeko: Yeah, sure. You went into the abandoned, untouched-for-75-years, creepy science tower that probably has equipment that’s worth literal TERAbytes if you converted it at Dale’s Datacenter.
+leave --All-- 
 join Player left
-Player: Terabytes? Conversion–? I’m sorry, I don’t understand–
+placeholder: Terabytes? Conversion–? I’m sorry, I don’t understand–
 leave --All--
 join Ada right
 Don’t play dumb with us, it never works!

@@ -35,6 +35,7 @@ directories/dch_directory={
 "placeholder": "res://placeholder.dch"
 }
 directories/dtl_directory={
+"caught": "res://dialogic/timelines/caught.dtl",
 "shrimpFriedRice": "res://dialogic/timelines/shrimpFriedRice.dtl",
 "shrimpFriedRicePt2": "res://dialogic/timelines/shrimpFriedRicePt2.dtl",
 "stamina25": "res://stamina25.dtl",

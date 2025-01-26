@@ -66,4 +66,7 @@ Neeko: So it’s only logical that you’d bring something back out.
 leave --All--
 join Ada right
 Ada: Psst! Commence maneuver Battery Resuscitation!
+leave --All-- 
+join Neeko right
+Neeko: …And we’re gonna steal it from you.
 [signal arg="start_fight"]

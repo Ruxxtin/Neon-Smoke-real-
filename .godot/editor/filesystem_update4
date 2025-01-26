@@ -8,3 +8,9 @@ res://scenes/sykul_ground_floor.tscn
 res://scripts/cryolab.gd
 res://dialogic/timelines/what the.dtl
 res://dialogic/timelines/shrimpFriedRice.dtl
+res://scenes/neeko_and_ada_fight.tscn
+res://dialogic/timelines/shrimpFriedRicePt2.dtl
+res://dialogic/timelines/caught.dtl
+res://sounds/stamina50.dtl
+res://dialogic/timelines/stamina75.dtl
+res://dialogic/characters/Player.dch
