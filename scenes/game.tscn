@@ -1,4 +1,4 @@
-[gd_scene load_steps=51 format=4 uid="uid://cu3tbj3urmlgu"]
+[gd_scene load_steps=66 format=4 uid="uid://cu3tbj3urmlgu"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_3msjn"]
 [ext_resource type="PackedScene" uid="uid://f2ia5ue6cp3u" path="res://scenes/Player.tscn" id="1_rrelb"]
@@ -29,6 +29,7 @@
 [ext_resource type="Script" path="res://scripts/scene_changer_to_arcade.gd" id="23_ent50"]
 [ext_resource type="PackedScene" uid="uid://cvpp35xei37gy" path="res://scenes/carbonfiber_pickup.tscn" id="23_t7g6r"]
 [ext_resource type="Texture2D" uid="uid://dcn5yjxs5dfa8" path="res://sprites/buildings/building4 real.png" id="25_tcrpt"]
+[ext_resource type="Texture2D" uid="uid://68utjk7knyyu" path="res://sprites/G7vn7-modified.png" id="28_xuixl"]
 [ext_resource type="PackedScene" uid="uid://sg2s0h5f6mgf" path="res://scenes/dust_particle.tscn" id="30_8v5x1"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_yubo0"]
@@ -353,6 +354,44 @@ sources/1 = SubResource("TileSetAtlasSource_1hvlr")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8w3p3"]
 size = Vector2(34, 24)
 
+[sub_resource type="Gradient" id="Gradient_akhm4"]
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_8xh5a"]
+gradient = SubResource("Gradient_akhm4")
+
+[sub_resource type="Gradient" id="Gradient_m2kvc"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_qp6xo"]
+gradient = SubResource("Gradient_m2kvc")
+
+[sub_resource type="Gradient" id="Gradient_eow0p"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_bun6e"]
+gradient = SubResource("Gradient_eow0p")
+fill_to = Vector2(0, 1)
+
+[sub_resource type="Gradient" id="Gradient_m5q4l"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_ymgym"]
+gradient = SubResource("Gradient_m5q4l")
+
+[sub_resource type="Gradient" id="Gradient_h2u8i"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_oyk7k"]
+gradient = SubResource("Gradient_h2u8i")
+fill_from = Vector2(1, 0)
+fill_to = Vector2(1, 1)
+
+[sub_resource type="Gradient" id="Gradient_b13dy"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_27sof"]
+gradient = SubResource("Gradient_b13dy")
+
+[sub_resource type="Gradient" id="Gradient_uh2mg"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_ea078"]
+gradient = SubResource("Gradient_uh2mg")
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0iiog"]
 size = Vector2(35, 43)
 
@@ -410,9 +449,190 @@ script = ExtResource("14_7pytq")
 position = Vector2(0, -7)
 shape = SubResource("RectangleShape2D_8w3p3")
 
+[node name="PointLight2D9" type="PointLight2D" parent="Buildings/sykul_building"]
+position = Vector2(426, 3.57628e-06)
+rotation = -1.5708
+scale = Vector2(0.0898666, 2.3367)
+skew = -2.76566e-05
+energy = 3.04
+texture = SubResource("GradientTexture1D_8xh5a")
+texture_scale = 5.0
+
+[node name="PointLight2D10" type="PointLight2D" parent="Buildings/sykul_building"]
+position = Vector2(373.563, 10.0236)
+rotation = -1.5708
+scale = Vector2(0.0643178, 0.961701)
+skew = -2.76566e-05
+energy = 3.04
+texture = SubResource("GradientTexture1D_8xh5a")
+texture_scale = 5.0
+
+[node name="PointLight2D11" type="PointLight2D" parent="Buildings/sykul_building"]
+position = Vector2(314.563, 10.0236)
+rotation = -1.5708
+scale = Vector2(0.0643178, 0.961701)
+skew = -2.76566e-05
+energy = 3.04
+texture = SubResource("GradientTexture1D_8xh5a")
+texture_scale = 5.0
+
+[node name="PointLight2D12" type="PointLight2D" parent="Buildings/sykul_building"]
+position = Vector2(344.427, 64.1992)
+rotation = -1.5708
+scale = Vector2(0.0506152, 12.6159)
+skew = -2.76566e-05
+energy = 3.04
+texture = SubResource("GradientTexture1D_8xh5a")
+texture_scale = 5.0
+
+[node name="PointLight2D13" type="PointLight2D" parent="Buildings/sykul_building"]
+position = Vector2(380.405, 14.1079)
+rotation = -1.5708
+scale = Vector2(0.0148462, 2.03198)
+skew = -2.76566e-05
+energy = 3.04
+texture = SubResource("GradientTexture1D_8xh5a")
+texture_scale = 5.0
+
+[node name="PointLight2D7" type="PointLight2D" parent="Buildings/sykul_building"]
+position = Vector2(298.534, 101.002)
+rotation = 3.14156
+scale = Vector2(0.227641, 2.14846)
+skew = -0.00168788
+texture = SubResource("GradientTexture2D_qp6xo")
+
+[node name="PointLight2D6" type="PointLight2D" parent="Buildings/sykul_building"]
+position = Vector2(-78.4411, 169.459)
+rotation = -1.5708
+scale = Vector2(0.186257, 11.5349)
+skew = -2.76566e-05
+texture = SubResource("GradientTexture2D_qp6xo")
+
+[node name="PointLight2D" type="PointLight2D" parent="Buildings/sykul_building/PointLight2D6"]
+position = Vector2(104.014, 40.5685)
+scale = Vector2(19.7748, 0.018962)
+texture = SubResource("GradientTexture2D_bun6e")
+
+[node name="PointLight2D" type="PointLight2D" parent="Buildings/sykul_building"]
+position = Vector2(-26, 261.5)
+scale = Vector2(13.2187, 0.234375)
+texture = SubResource("GradientTexture2D_bun6e")
+
 [node name="free_buildindg" type="Sprite2D" parent="Buildings"]
 position = Vector2(-240, -128)
 texture = ExtResource("20_bn7mj")
+
+[node name="PointLight2D3" type="PointLight2D" parent="Buildings/free_buildindg"]
+position = Vector2(379.993, 66.3746)
+rotation = -1.5708
+scale = Vector2(0.140817, 3.05022)
+skew = -2.76566e-05
+energy = 3.04
+texture = SubResource("GradientTexture1D_8xh5a")
+texture_scale = 5.0
+
+[node name="PointLight2D2" type="PointLight2D" parent="Buildings/free_buildindg"]
+position = Vector2(132, 71.2466)
+rotation = -1.5708
+scale = Vector2(0.141879, 4.60204)
+energy = 3.04
+texture = SubResource("GradientTexture1D_8xh5a")
+texture_scale = 5.0
+
+[node name="PointLight2D" type="PointLight2D" parent="Buildings/free_buildindg"]
+position = Vector2(-125, 27)
+rotation = -1.5708
+scale = Vector2(0.246927, 4.29688)
+energy = 3.04
+texture = SubResource("GradientTexture1D_8xh5a")
+texture_scale = 5.0
+
+[node name="PointLight2D4" type="PointLight2D" parent="Buildings/free_buildindg"]
+position = Vector2(257.231, 56.7699)
+rotation = -1.65806
+scale = Vector2(0.882562, 2.05045)
+energy = 1.5
+texture = SubResource("GradientTexture2D_ymgym")
+
+[node name="PointLight2D6" type="PointLight2D" parent="Buildings/free_buildindg"]
+position = Vector2(64.5249, 34.9777)
+rotation = -1.5708
+scale = Vector2(0.796326, 1.41038)
+skew = -2.76566e-05
+texture = SubResource("GradientTexture2D_qp6xo")
+
+[node name="PointLight2D8" type="PointLight2D" parent="Buildings/free_buildindg"]
+position = Vector2(301.884, 85.2916)
+rotation = 3.14156
+scale = Vector2(0.599694, 0.305099)
+skew = -1.52588e-05
+texture = SubResource("GradientTexture2D_oyk7k")
+
+[node name="PointLight2D7" type="PointLight2D" parent="Buildings/free_buildindg"]
+position = Vector2(255.947, 135.835)
+rotation = -1.5708
+scale = Vector2(0.385, 0.531689)
+skew = -2.76566e-05
+texture = SubResource("GradientTexture2D_27sof")
+
+[node name="PointLight2D" type="PointLight2D" parent="Buildings/free_buildindg/PointLight2D7"]
+position = Vector2(85.9983, -669.909)
+rotation = 1.5708
+scale = Vector2(0.249772, 1.99545)
+texture = SubResource("GradientTexture2D_ea078")
+
+[node name="PointLight2D" type="PointLight2D" parent="Buildings/free_buildindg/PointLight2D7/PointLight2D"]
+position = Vector2(144.438, -34.4646)
+rotation = 1.5708
+scale = Vector2(0.198596, 4.11455)
+texture = SubResource("GradientTexture2D_ea078")
+
+[node name="PointLight2D2" type="PointLight2D" parent="Buildings/free_buildindg/PointLight2D7"]
+position = Vector2(85.309, -596.114)
+rotation = -1.5708
+scale = Vector2(0.249772, 1.99545)
+texture = SubResource("GradientTexture2D_ea078")
+
+[node name="PointLight2D2" type="PointLight2D" parent="Buildings/free_buildindg/PointLight2D7/PointLight2D2"]
+position = Vector2(85.3088, -596.114)
+rotation = -1.5708
+scale = Vector2(0.249772, 1.99545)
+texture = SubResource("GradientTexture2D_ea078")
+
+[node name="PointLight2D" type="PointLight2D" parent="Buildings/free_buildindg/PointLight2D7/PointLight2D2/PointLight2D2"]
+position = Vector2(1453.3, 317.613)
+rotation = 1.5708
+scale = Vector2(0.198596, 4.11455)
+texture = SubResource("GradientTexture2D_ea078")
+
+[node name="PointLight2D5" type="PointLight2D" parent="Buildings/free_buildindg/PointLight2D7/PointLight2D2/PointLight2D2/PointLight2D"]
+position = Vector2(-1483.29, 1017.33)
+rotation = -1.5708
+scale = Vector2(1.0975, 1.99972)
+skew = -1.10865e-05
+texture = SubResource("GradientTexture2D_oyk7k")
+
+[node name="PointLight2D" type="PointLight2D" parent="Buildings/free_buildindg/PointLight2D7/PointLight2D2"]
+position = Vector2(1453.3, 317.613)
+rotation = 1.5708
+scale = Vector2(0.198596, 4.11455)
+texture = SubResource("GradientTexture2D_ea078")
+
+[node name="PointLight2D5" type="PointLight2D" parent="Buildings/free_buildindg"]
+position = Vector2(72, 63.5352)
+rotation = -1.5708
+scale = Vector2(0.125626, 0.362524)
+skew = -2.76566e-05
+texture = SubResource("GradientTexture2D_oyk7k")
+
+[node name="PointLight2D9" type="PointLight2D" parent="Buildings/free_buildindg"]
+position = Vector2(518.216, 0.393169)
+rotation = -1.5708
+scale = Vector2(0.0898666, 2.3367)
+skew = -2.76566e-05
+energy = 3.04
+texture = SubResource("GradientTexture1D_8xh5a")
+texture_scale = 5.0
 
 [node name="Arcade" type="Sprite2D" parent="Buildings"]
 position = Vector2(304, -592)
@@ -449,6 +669,13 @@ shape = SubResource("RectangleShape2D_b3um1")
 
 [node name="crafting_table" parent="." instance=ExtResource("19_unqf0")]
 position = Vector2(315, 66)
+
+[node name="PointLight2D" type="PointLight2D" parent="crafting_table"]
+position = Vector2(-0.5625, -0.437515)
+scale = Vector2(0.326923, 0.339231)
+energy = 3.0
+texture = ExtResource("28_xuixl")
+texture_scale = 0.25
 
 [node name="pickups" type="Node2D" parent="."]
 
@@ -498,6 +725,11 @@ offset_bottom = 92.0
 autowrap_mode = 2
 metadata/_edit_use_anchors_ = true
 
+[node name="PointLight2D" type="PointLight2D" parent="Player"]
+energy = 3.0
+texture = ExtResource("28_xuixl")
+texture_scale = 0.25
+
 [node name="ui" parent="." instance=ExtResource("7_horbx")]
 
 [node name="Timer" type="Timer" parent="ui"]
@@ -511,6 +743,9 @@ visible = false
 [node name="dust particle" parent="." instance=ExtResource("30_8v5x1")]
 position = Vector2(-629, 83)
 emitting = false
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color(0.57, 0.57, 0.57, 1)
 
 [connection signal="body_entered" from="Buildings/sykul_building/Area2D" to="Buildings/sykul_building/Area2D" method="_on_body_entered"]
 [connection signal="body_entered" from="Buildings/Arcade/scene_changer" to="Buildings/Arcade/scene_changer" method="_on_body_entered"]

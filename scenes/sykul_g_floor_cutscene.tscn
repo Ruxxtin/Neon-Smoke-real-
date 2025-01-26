@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=4 uid="uid://jcxwi2jsvln6"]
+[gd_scene load_steps=34 format=4 uid="uid://jcxwi2jsvln6"]
 
 [ext_resource type="Texture2D" uid="uid://b4uje8g1isp6h" path="res://sprites/tilesets/labfloor.png" id="1_1sfxq"]
 [ext_resource type="Script" path="res://scripts/sykul_g_floor.gd" id="1_yriam"]
@@ -15,6 +15,7 @@
 [ext_resource type="PackedScene" uid="uid://b6xpavopktolo" path="res://scenes/neeko_cutscene.tscn" id="13_7mw1f"]
 [ext_resource type="Script" path="res://scripts/go_out_of_sykul.gd" id="14_jyde4"]
 [ext_resource type="PackedScene" uid="uid://f2ia5ue6cp3u" path="res://scenes/Player.tscn" id="15_n6111"]
+[ext_resource type="Texture2D" uid="uid://dxvstnbxnafs6" path="res://sprites/Adobe Express - file.png" id="16_nku67"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_qvxhq"]
 texture = ExtResource("1_1sfxq")
@@ -111,6 +112,13 @@ size = Vector2(31, 7)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_33ueh"]
 size = Vector2(80, 24)
+
+[sub_resource type="Gradient" id="Gradient_byagd"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_yly3t"]
+gradient = SubResource("Gradient_byagd")
+fill_from = Vector2(0.532407, 0.12037)
+fill_to = Vector2(0.513889, 1)
 
 [node name="sykul_g_floor_cutscene" type="Node2D"]
 script = ExtResource("1_yriam")
@@ -230,6 +238,31 @@ shape = SubResource("RectangleShape2D_33ueh")
 
 [node name="Player" parent="." instance=ExtResource("15_n6111")]
 position = Vector2(-846, 134)
+
+[node name="PointLight2D2" type="PointLight2D" parent="."]
+position = Vector2(152, 230)
+scale = Vector2(1.09375, 1.3125)
+energy = 0.7
+texture = SubResource("GradientTexture2D_yly3t")
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color(0.5, 0.5, 0.5, 1)
+
+[node name="PointLight2D" type="PointLight2D" parent="CanvasModulate"]
+position = Vector2(49, -17.9)
+scale = Vector2(1, 1.81836)
+energy = 0.2
+shadow_enabled = true
+texture = ExtResource("16_nku67")
+texture_scale = 0.2
+
+[node name="PointLight2D" type="PointLight2D" parent="CanvasModulate/PointLight2D"]
+position = Vector2(97, 1.63088)
+scale = Vector2(1, 0.97674)
+energy = 0.2
+shadow_enabled = true
+texture = ExtResource("16_nku67")
+texture_scale = 0.2
 
 [connection signal="body_entered" from="go_to_basement" to="go_to_basement" method="_on_body_entered"]
 [connection signal="timeout" from="cutscene_timer" to="." method="_on_cutscene_timer_timeout"]

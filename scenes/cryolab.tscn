@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=4 uid="uid://0f1ih8n10pth"]
+[gd_scene load_steps=45 format=4 uid="uid://0f1ih8n10pth"]
 
 [ext_resource type="PackedScene" uid="uid://f2ia5ue6cp3u" path="res://scenes/Player.tscn" id="1_cnkv6"]
 [ext_resource type="Texture2D" uid="uid://b4uje8g1isp6h" path="res://sprites/tilesets/labfloor.png" id="1_hqlnm"]
@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://c5afugn4x2c3p" path="res://sprites/cryostasischamb.png" id="8_ucetl"]
 [ext_resource type="Script" path="res://scripts/scene_changer.gd" id="9_mh7tu"]
 [ext_resource type="Texture2D" uid="uid://qbjtmvs3ddea" path="res://sprites/cryostasischamb_back.png" id="11_lixcr"]
+[ext_resource type="Texture2D" uid="uid://68utjk7knyyu" path="res://sprites/G7vn7-modified.png" id="12_42wl0"]
 [ext_resource type="Texture2D" uid="uid://datri6edacvcc" path="res://sprites/brokencryo.png" id="12_el2wn"]
 [ext_resource type="Texture2D" uid="uid://bh2cu4f0amky3" path="res://sprites/cryostasisbroke.png" id="13_55l44"]
 [ext_resource type="PackedScene" uid="uid://qp1fouvcqi2t" path="res://UI/ui.tscn" id="13_vgf16"]
@@ -21,6 +22,47 @@
 [ext_resource type="Script" path="res://scripts/screenshake_cam.gd" id="16_c6yfk"]
 [ext_resource type="AudioStream" uid="uid://pvbej7myuvhr" path="res://sounds/ice punch 1.mp3" id="19_nx0w5"]
 [ext_resource type="AudioStream" uid="uid://bon54ed2takve" path="res://sounds/ice punch 3.mp3" id="21_k4ujs"]
+[ext_resource type="Texture2D" uid="uid://dxvstnbxnafs6" path="res://sprites/Adobe Express - file.png" id="23_hvm2v"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_wyuo4"]
+lifetime_randomness = 1.0
+particle_flag_disable_z = true
+angle_min = -720.0
+angle_max = 720.0
+angular_velocity_min = 720.0
+angular_velocity_max = 720.0
+orbit_velocity_min = -0.4
+orbit_velocity_max = 0.4
+radial_velocity_min = 50.0
+radial_velocity_max = 50.0
+gravity = Vector3(0, 500, 0)
+linear_accel_min = -100.0
+linear_accel_max = 100.0
+radial_accel_min = -2.23517e-06
+radial_accel_max = -2.23517e-06
+tangential_accel_min = -2.23517e-06
+tangential_accel_max = -2.23517e-06
+scale_max = 3.0
+color = Color(0.45, 1, 0.954167, 0.533333)
+turbulence_enabled = true
+turbulence_noise_strength = 0.8
+turbulence_noise_scale = 0.0
+turbulence_noise_speed_random = 1.0
+collision_mode = 1
+collision_friction = 1.0
+collision_bounce = 1.0
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_5vjrr"]
+polygon = PackedVector2Array(192, 64, 240, 64, 240, 0, 192, 0)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_35qtn"]
+polygon = PackedVector2Array(64, 176, 64, 178, -16, 178, -16, 176)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_470up"]
+polygon = PackedVector2Array(-128, -80, -128, -78, -130, -79, -128, -82, -127, -80)
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_1t6rk"]
+polygon = PackedVector2Array(-128, -80, 192, -80, 192, 0, 240, 0, 240, -32, 480, -32, 480, -64, 512, -64, 512, 208, 240, 208, 240, 128, 193, 128, 192, 128, 192, 176, 128, 176, 112, 176, 112, 178, 128, 178, 128, 352, -15, 352, -16, 176, -127, 176, -128, -79, -230, 244, -39, 394, 479, 345, 630, 105, 606, -150, -86, -162)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_f7pd6"]
 texture = ExtResource("1_hqlnm")
@@ -148,6 +190,32 @@ data = PackedByteArray("SUQzAwAAAAABRFRYWFgAAAASAAAAbWFqb3JfYnJhbmQATTRBIABUWFhY
 
 [node name="cryolab" type="Node2D"]
 script = ExtResource("1_ku55i")
+
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+top_level = true
+z_index = 1
+position = Vector2(-24, -5)
+scale = Vector2(2, 2)
+emitting = false
+amount = 100
+process_material = SubResource("ParticleProcessMaterial_wyuo4")
+lifetime = 0.35
+one_shot = true
+explosiveness = 1.0
+randomness = 1.0
+trail_lifetime = 0.01
+
+[node name="LightOccluder2D4" type="LightOccluder2D" parent="."]
+occluder = SubResource("OccluderPolygon2D_5vjrr")
+
+[node name="LightOccluder2D3" type="LightOccluder2D" parent="."]
+occluder = SubResource("OccluderPolygon2D_35qtn")
+
+[node name="LightOccluder2D2" type="LightOccluder2D" parent="."]
+occluder = SubResource("OccluderPolygon2D_470up")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="."]
+occluder = SubResource("OccluderPolygon2D_1t6rk")
 
 [node name="TileMap_cryofloor" type="Node2D" parent="."]
 
@@ -351,9 +419,23 @@ shape = SubResource("RectangleShape2D_b201y")
 position = Vector2(-24, -3)
 texture = ExtResource("11_lixcr")
 
+[node name="PointLight2D" type="PointLight2D" parent="cryotubes/cryo_tube"]
+color = Color(0.96, 0.96, 0.96, 0.996078)
+energy = 1.5
+shadow_enabled = true
+texture = ExtResource("12_42wl0")
+texture_scale = 0.2
+
 [node name="cryo_tube2" type="Sprite2D" parent="cryotubes"]
 position = Vector2(-88, -3)
 texture = ExtResource("8_ucetl")
+
+[node name="PointLight2D" type="PointLight2D" parent="cryotubes/cryo_tube2"]
+color = Color(0.96, 0.96, 0.96, 0.996078)
+energy = 1.5
+shadow_enabled = true
+texture = ExtResource("12_42wl0")
+texture_scale = 0.2
 
 [node name="cryo_tube3" type="Sprite2D" parent="cryotubes"]
 position = Vector2(-56, -3)
@@ -401,6 +483,13 @@ texture = ExtResource("13_55l44")
 position = Vector2(34, 49)
 texture = ExtResource("8_ucetl")
 
+[node name="PointLight2D" type="PointLight2D" parent="cryotubes/cryo_tube14"]
+color = Color(0.96, 0.96, 0.96, 0.996078)
+energy = 3.8
+shadow_enabled = true
+texture = ExtResource("12_42wl0")
+texture_scale = 0.2
+
 [node name="cryo_tube15" type="Sprite2D" parent="cryotubes"]
 position = Vector2(168, 45)
 texture = ExtResource("12_el2wn")
@@ -418,8 +507,13 @@ position = Vector2(112, 45)
 texture = ExtResource("13_55l44")
 
 [node name="Player" parent="." instance=ExtResource("1_cnkv6")]
-visible = false
 position = Vector2(-648, -2)
+
+[node name="PointLight2D" type="PointLight2D" parent="Player"]
+energy = 1.8
+shadow_enabled = true
+texture = ExtResource("12_42wl0")
+texture_scale = 0.25
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 position = Vector2(0, -1)
@@ -439,6 +533,13 @@ visible = false
 position = Vector2(0, 75)
 texture = ExtResource("15_nh12n")
 
+[node name="PointLight2D" type="PointLight2D" parent="Player_stuck"]
+color = Color(0.96, 0.96, 0.96, 0.996078)
+energy = 1.5
+shadow_enabled = true
+texture = ExtResource("12_42wl0")
+texture_scale = 0.2
+
 [node name="ui" parent="." instance=ExtResource("13_vgf16")]
 
 [node name="CryostasisTransparent" type="Sprite2D" parent="."]
@@ -457,6 +558,26 @@ stream = SubResource("AudioStreamMP3_h313i")
 
 [node name="ice punch 3" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("21_k4ujs")
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+position = Vector2(213, 138)
+color = Color(0.39, 0.39, 0.39, 1)
+
+[node name="PointLight2D2" type="PointLight2D" parent="."]
+position = Vector2(394, 21.7875)
+scale = Vector2(1, 1.90991)
+energy = 0.2
+shadow_enabled = true
+texture = ExtResource("23_hvm2v")
+texture_scale = 0.2
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(289, 22.1)
+scale = Vector2(1, 1.81836)
+energy = 0.2
+shadow_enabled = true
+texture = ExtResource("23_hvm2v")
+texture_scale = 0.2
 
 [connection signal="body_entered" from="scene_changer" to="scene_changer" method="_on_body_entered"]
 [connection signal="timeout" from="dialogue_timer" to="." method="_on_dialogue_timer_timeout"]

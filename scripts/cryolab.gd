@@ -9,6 +9,7 @@ extends Node2D
 @onready var ice_punch_2 = $"ice punch 2"
 @onready var ice_punch_3 = $"ice punch 3"
 @onready var stuck_cam = $Player_stuck/Camera2D
+@onready var gpu_particles_2d = $GPUParticles2D
 var punches = 0
 var can_punch = false
 var dialogue_over = false
@@ -35,6 +36,7 @@ func _physics_process(delta):
 			stuck_cam.apply_shake()
 			punches += 1
 			button_can_change = true
+			gpu_particles_2d.emitting = true
 			if punches == 1:
 				ice_punch_1.play(0.1)
 			if punches == 2:

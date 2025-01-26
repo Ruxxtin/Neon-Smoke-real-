@@ -1,7 +1,11 @@
-[gd_scene load_steps=12 format=3 uid="uid://uxtorgqwjkd1"]
+[gd_scene load_steps=20 format=3 uid="uid://uxtorgqwjkd1"]
 
 [ext_resource type="Texture2D" uid="uid://bk3ou2msmmns4" path="res://sprites/titlescreen.png" id="1_4affc"]
 [ext_resource type="Script" path="res://scripts/start_menu.gd" id="1_5ae3w"]
+[ext_resource type="Texture2D" uid="uid://cshf74030wmty" path="res://sprites/croll_bars_v.png" id="2_efve3"]
+
+[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_878c4"]
+polygon = PackedVector2Array(949, 130, 951, 291, 944, 360, 696, 366, 678, 317, 676, 187)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vvmj4"]
 atlas = ExtResource("1_4affc")
@@ -67,8 +71,38 @@ animations = [{
 "speed": 7.0
 }]
 
+[sub_resource type="Gradient" id="Gradient_765bb"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_2dlgk"]
+gradient = SubResource("Gradient_765bb")
+fill_from = Vector2(0, 1)
+fill_to = Vector2(0, 0)
+
+[sub_resource type="Gradient" id="Gradient_r2k3o"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_ir06d"]
+gradient = SubResource("Gradient_r2k3o")
+
+[sub_resource type="Gradient" id="Gradient_i3ma6"]
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_biaer"]
+gradient = SubResource("Gradient_i3ma6")
+fill_from = Vector2(0, 1)
+fill_to = Vector2(0, 0)
+
 [node name="Start menu" type="Node2D"]
 script = ExtResource("1_5ae3w")
+
+[node name="PointLight2D4" type="PointLight2D" parent="."]
+position = Vector2(512.561, 203.445)
+rotation = -1.5708
+scale = Vector2(30.2277, 1.31864)
+energy = 0.6
+texture = ExtResource("2_efve3")
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="."]
+occluder = SubResource("OccluderPolygon2D_878c4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(576, 324)
@@ -84,5 +118,37 @@ offset_top = 151.0
 offset_right = 947.0
 offset_bottom = 316.0
 rotation = -0.0872665
+
+[node name="PointLight2D5" type="PointLight2D" parent="."]
+position = Vector2(275.793, 308.264)
+rotation = -0.122173
+scale = Vector2(1.8617, 0.947553)
+skew = -0.127956
+energy = 1.5
+shadow_enabled = true
+texture = SubResource("GradientTexture2D_2dlgk")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(822, 226)
+rotation = -0.191986
+scale = Vector2(4.9638, 3.54358)
+energy = 1.5
+shadow_enabled = true
+texture = SubResource("GradientTexture2D_2dlgk")
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color(0.56, 0.544, 0.64, 1)
+
+[node name="PointLight2D3" type="PointLight2D" parent="."]
+position = Vector2(975.591, 206.469)
+rotation = -1.5708
+scale = Vector2(2.68379, 0.833475)
+texture = SubResource("GradientTexture2D_ir06d")
+
+[node name="PointLight2D2" type="PointLight2D" parent="."]
+position = Vector2(827.363, 353.099)
+rotation = -3.22886
+scale = Vector2(4.04397, 1.55159)
+texture = SubResource("GradientTexture2D_biaer")
 
 [connection signal="pressed" from="start_button" to="." method="_on_start_button_pressed"]
