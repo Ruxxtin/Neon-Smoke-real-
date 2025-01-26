@@ -1,6 +1,20 @@
-[gd_scene format=3 uid="uid://bjqnhgicqs7nm"]
+[gd_scene load_steps=4 format=3 uid="uid://sg2s0h5f6mgf"]
+
+[ext_resource type="Texture2D" uid="uid://dikqilxp11vxy" path="res://sprites/dustcircle_sprshet.png" id="1_scb1v"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_bcwpr"]
+particles_animation = true
+particles_anim_h_frames = 1
+particles_anim_v_frames = 1
+particles_anim_loop = false
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_tmcrs"]
+particle_flag_disable_z = true
+gravity = Vector3(0, 98, 0)
 
 [node name="dust particle" type="Node2D"]
 
-[node name="CPUParticles2D" type="CPUParticles2D" parent="."]
-gravity = Vector2(0, 0)
+[node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+material = SubResource("CanvasItemMaterial_bcwpr")
+process_material = SubResource("ParticleProcessMaterial_tmcrs")
+texture = ExtResource("1_scb1v")

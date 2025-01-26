@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=4 uid="uid://0f1ih8n10pth"]
+[gd_scene load_steps=38 format=4 uid="uid://0f1ih8n10pth"]
 
 [ext_resource type="PackedScene" uid="uid://f2ia5ue6cp3u" path="res://scenes/Player.tscn" id="1_cnkv6"]
 [ext_resource type="Texture2D" uid="uid://b4uje8g1isp6h" path="res://sprites/tilesets/labfloor.png" id="1_hqlnm"]
@@ -18,6 +18,7 @@
 [ext_resource type="PackedScene" uid="uid://qp1fouvcqi2t" path="res://UI/ui.tscn" id="13_vgf16"]
 [ext_resource type="Texture2D" uid="uid://dghmpnoqgjxgh" path="res://sprites/press_space.png" id="15_nh12n"]
 [ext_resource type="Texture2D" uid="uid://beaf7pc5s2yg" path="res://sprites/cryostasis_transparent.png" id="15_y6626"]
+[ext_resource type="Script" path="res://scripts/screenshake_cam.gd" id="16_c6yfk"]
 [ext_resource type="AudioStream" uid="uid://pvbej7myuvhr" path="res://sounds/ice punch 1.mp3" id="19_nx0w5"]
 [ext_resource type="AudioStream" uid="uid://bon54ed2takve" path="res://sounds/ice punch 3.mp3" id="21_k4ujs"]
 
@@ -431,6 +432,7 @@ script = null
 [node name="Camera2D" type="Camera2D" parent="Player_stuck"]
 position = Vector2(0, -1)
 zoom = Vector2(3.2, 3.2)
+script = ExtResource("16_c6yfk")
 
 [node name="space_button" type="Sprite2D" parent="Player_stuck/Camera2D"]
 visible = false

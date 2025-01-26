@@ -30,3 +30,5 @@ res://scripts/main.gd
 res://scripts/scene_changer_in_arcade.gd
 res://dialogic/timelines/ouch_glass.dtl
 res://scenes/dust_particle.tscn
+res://scripts/screenshake_cam.gd
+res://scenes/boom particle.tscn
