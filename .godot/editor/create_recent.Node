@@ -1,5 +1,7 @@
-Label
+Button
+Node2D
 CanvasLayer
+Label
 CanvasGroup
 NinePatchRect
 PointLight2D
@@ -9,7 +11,5 @@ GPUParticles2D
 AudioStreamPlayer2D
 AudioStreamPlayer
 CPUParticles2D
-Node2D
 Node
 CollisionShape2D
-StaticBody2D

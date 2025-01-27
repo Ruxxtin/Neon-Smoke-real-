@@ -97,17 +97,18 @@ fill_to = Vector2(0, 0)
 script = ExtResource("1_5ae3w")
 
 [node name="PointLight2D4" type="PointLight2D" parent="."]
-position = Vector2(512.561, 203.445)
+position = Vector2(514.561, 186.445)
 rotation = -1.5708
 scale = Vector2(30.2277, 1.31864)
 energy = 0.6
 texture = ExtResource("2_efve3")
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="."]
+position = Vector2(13, 0)
 occluder = SubResource("OccluderPolygon2D_878c4")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(562, 324)
+position = Vector2(576, 324)
 scale = Vector2(3.6, 3.6)
 sprite_frames = SubResource("SpriteFrames_gsqjy")
 autoplay = "default"
@@ -115,23 +116,31 @@ autoplay = "default"
 [node name="start_button" type="Button" parent="."]
 modulate = Color(1, 1, 1, 0)
 self_modulate = Color(1, 1, 1, 0)
-offset_left = 683.0
+offset_left = 696.0
 offset_top = 151.0
-offset_right = 947.0
+offset_right = 960.0
 offset_bottom = 316.0
 rotation = -0.0872665
 
+[node name="options_button" type="Button" parent="."]
+modulate = Color(1, 1, 1, 0)
+self_modulate = Color(1, 1, 1, 0)
+offset_left = 486.0
+offset_top = 54.0
+offset_right = 543.0
+offset_bottom = 303.0
+
 [node name="PointLight2D5" type="PointLight2D" parent="."]
-position = Vector2(275.793, 308.264)
+position = Vector2(281.722, 309.132)
 rotation = -0.122173
-scale = Vector2(1.8617, 0.947553)
+scale = Vector2(1.63907, 0.947553)
 skew = -0.127956
 energy = 1.5
 shadow_enabled = true
 texture = SubResource("GradientTexture2D_2dlgk")
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
-position = Vector2(822, 226)
+position = Vector2(835, 226)
 rotation = -0.191986
 scale = Vector2(4.9638, 3.54358)
 energy = 1.5
@@ -139,21 +148,24 @@ shadow_enabled = true
 texture = SubResource("GradientTexture2D_2dlgk")
 
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
-color = Color(0.56, 0.544, 0.64, 1)
+position = Vector2(13, 0)
+color = Color(0.714953, 0.702707, 0.780104, 1)
 
 [node name="PointLight2D3" type="PointLight2D" parent="."]
-position = Vector2(975.591, 206.469)
+visible = false
+position = Vector2(976.591, 207.469)
 rotation = -1.5708
 scale = Vector2(2.68379, 0.833475)
 texture = SubResource("GradientTexture2D_ir06d")
 
 [node name="PointLight2D2" type="PointLight2D" parent="."]
-position = Vector2(827.363, 353.099)
+position = Vector2(840.363, 353.099)
 rotation = -3.22886
 scale = Vector2(4.04397, 1.55159)
 texture = SubResource("GradientTexture2D_biaer")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
+visible = false
 
 [node name="NinePatchRect" type="NinePatchRect" parent="CanvasLayer"]
 offset_left = 144.0
@@ -162,18 +174,19 @@ offset_right = 384.0
 offset_bottom = 215.0
 scale = Vector2(3.6, 3.6)
 texture = ExtResource("4_56sp3")
-patch_margin_left = 6
+patch_margin_left = 8
 patch_margin_top = 32
 patch_margin_right = 32
-patch_margin_bottom = 6
+patch_margin_bottom = 8
 
 [node name="Label" type="Label" parent="CanvasLayer/NinePatchRect"]
 layout_mode = 0
+offset_top = 4.0
 offset_right = 240.0
-offset_bottom = 34.0
+offset_bottom = 38.0
 theme_override_constants/line_spacing = -10
 theme_override_fonts/font = ExtResource("5_bvwvo")
-theme_override_font_sizes/font_size = 32
+theme_override_font_sizes/font_size = 30
 text = "How To Play
 ------------"
 horizontal_alignment = 1
@@ -186,9 +199,20 @@ offset_right = 234.0
 offset_bottom = 130.0
 theme_override_fonts/font = ExtResource("5_bvwvo")
 theme_override_font_sizes/font_size = 16
-text = "    Move:        Sprint:
-    WASD     	 ‎   
-      or           shift
- Arrow keys"
+text = "    Move:         Sprint:     Interact:
+    WASD     	 ‎                    E
+      or            Shift          or 
+ Arrow keys                   Space"
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+offset_left = 169.0
+offset_top = 104.0
+offset_right = 233.0
+offset_bottom = 156.0
+theme_override_fonts/font = ExtResource("5_bvwvo")
+theme_override_font_sizes/font_size = 64
+text = "X"
 
 [connection signal="pressed" from="start_button" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="options_button" to="." method="_on_options_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]

@@ -143,4 +143,3 @@ shape = SubResource("RectangleShape2D_ubqve")
 [connection signal="timeout" from="Timers/bg_timer" to="." method="_on_bg_timer_timeout"]
 [connection signal="timeout" from="Timers/player_spawn" to="." method="_on_player_spawn_timeout"]
 [connection signal="timeout" from="Timers/start_dialogue" to="." method="_on_start_dialogue_timeout"]
-[connection signal="finished" from="warmup" to="." method="_on_warmup_intro_finished"]

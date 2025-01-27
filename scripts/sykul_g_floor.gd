@@ -8,6 +8,9 @@ var player_scene = preload("res://scenes/player_cutscene.tscn")
 var started_fight = false
 var fight_scene = preload("res://scenes/neeko_and_ada_fight.tscn")
 var camera_go_down = false
+@onready var point_light_2d = $CanvasModulate/PointLight2D
+@onready var point_light_2d2 = $CanvasModulate/PointLight2D/PointLight2D
+@onready var canvas_modulate = $CanvasModulate
 
 func _ready():
 	
@@ -38,6 +41,10 @@ func DialogueSignal(arg: String):
 		started_fight = true
 	if arg == "leave_tower":
 		camera_go_down = true
+	if arg == "stop_music":
+		point_light_2d.enabled = true
+		point_light_2d2.enabled = true
+		canvas_modulate.visible = true
 
 
 func _on_cutscene_timer_timeout():
@@ -64,7 +71,9 @@ func start_fight(location: Vector2):
 	if fight_instance is Node2D:
 		fight_instance.position = location
 	
-	
 	# Add the fight instance to the current scene
 	get_tree().current_scene.add_child(fight_instance)
 	
+	point_light_2d.enabled = false
+	point_light_2d2.enabled = false
+	canvas_modulate.visible = false

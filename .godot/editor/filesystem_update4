@@ -1,10 +1,18 @@
-res://scenes/start_menu.tscn
+res://scenes/game.tscn
+res://dialogic/timelines/wake up little fella.dtl
 res://scenes/cryolab.tscn
 res://scenes/sykul_g_floor_cutscene.tscn
-res://scenes/game.tscn
 res://scenes/drag_object_iron.tscn
 res://UI/crafting_ui.tscn
 res://scenes/sykul_ground_floor.tscn
 res://scenes/dust_particle.tscn
 res://scenes/battery_pickup.tscn
 res://scenes/Player.tscn
+res://scenes/start_menu.tscn
+res://scenes/neeko_and_ada_fight.tscn
+res://scripts/neeko_and_ada_fight.gd
+res://scripts/player_platformer.gd
+res://scenes/arcade_game_1_internal.tscn
+res://scripts/start_menu.gd
+res://scripts/sykul_g_floor.gd
+res://stamina25.dtl
