@@ -9,6 +9,7 @@ extends CanvasLayer
 @onready var current_hoverboard = $"hoverboard ui/current_hoverboard"
 @onready var timer = $Timer
 
+var previous_scene_path = ""
 var current_scene = null
 
 func _physics_process(_delta):
@@ -29,8 +30,5 @@ func _physics_process(_delta):
 			_on_scene_changed(current_scene_path)
 
 func _on_scene_changed(scene_path):
-	if scene_path == 
-
-
-func _on_tree_entered(tree):
-	current_scene = tree
+	if scene_path == "res://scenes/sykul_g_floor_cutscene.tscn":
+		visible = false

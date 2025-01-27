@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=4 uid="uid://0f1ih8n10pth"]
+[gd_scene load_steps=47 format=4 uid="uid://0f1ih8n10pth"]
 
 [ext_resource type="PackedScene" uid="uid://f2ia5ue6cp3u" path="res://scenes/Player.tscn" id="1_cnkv6"]
 [ext_resource type="Texture2D" uid="uid://b4uje8g1isp6h" path="res://sprites/tilesets/labfloor.png" id="1_hqlnm"]
@@ -23,6 +23,8 @@
 [ext_resource type="AudioStream" uid="uid://bon54ed2takve" path="res://sounds/ice punch 3.mp3" id="21_k4ujs"]
 [ext_resource type="Texture2D" uid="uid://dxvstnbxnafs6" path="res://sprites/Adobe Express - file.png" id="23_hvm2v"]
 [ext_resource type="PackedScene" uid="uid://basmo12w274od" path="res://scenes/battery_pickup.tscn" id="24_0knmm"]
+[ext_resource type="PackedScene" uid="uid://cepfrjysgn1nn" path="res://scenes/crafting_table.tscn" id="24_b51nk"]
+[ext_resource type="PackedScene" uid="uid://c137m0mgdi1tj" path="res://UI/crafting_ui.tscn" id="25_clqpo"]
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_wyuo4"]
 lifetime_randomness = 1.0
@@ -506,6 +508,16 @@ texture = ExtResource("12_el2wn")
 position = Vector2(112, 45)
 texture = ExtResource("13_55l44")
 
+[node name="crafting_table" parent="." instance=ExtResource("24_b51nk")]
+position = Vector2(-93, 120)
+
+[node name="PointLight2D" type="PointLight2D" parent="crafting_table"]
+position = Vector2(-0.5625, -0.437515)
+scale = Vector2(0.326923, 0.339231)
+energy = 3.0
+texture = ExtResource("12_42wl0")
+texture_scale = 0.25
+
 [node name="Player" parent="." instance=ExtResource("1_cnkv6")]
 position = Vector2(-648, -2)
 
@@ -587,6 +599,9 @@ energy = 2.5
 shadow_enabled = true
 texture = ExtResource("12_42wl0")
 texture_scale = 0.25
+
+[node name="crafting_ui" parent="." instance=ExtResource("25_clqpo")]
+visible = false
 
 [connection signal="body_entered" from="scene_changer" to="scene_changer" method="_on_body_entered"]
 [connection signal="timeout" from="dialogue_timer" to="." method="_on_dialogue_timer_timeout"]

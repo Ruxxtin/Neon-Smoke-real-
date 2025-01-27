@@ -1,4 +1,4 @@
-[gd_scene load_steps=86 format=4 uid="uid://cu3tbj3urmlgu"]
+[gd_scene load_steps=84 format=4 uid="uid://cu3tbj3urmlgu"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_3msjn"]
 [ext_resource type="PackedScene" uid="uid://f2ia5ue6cp3u" path="res://scenes/Player.tscn" id="1_rrelb"]
@@ -18,9 +18,7 @@
 [ext_resource type="Script" path="res://scripts/sykulenterance.gd" id="14_7pytq"]
 [ext_resource type="PackedScene" uid="uid://basmo12w274od" path="res://scenes/battery_pickup.tscn" id="16_m7ys7"]
 [ext_resource type="Texture2D" uid="uid://dn2g0dcmodtv3" path="res://sprites/buildings/building3.png" id="17_n5jht"]
-[ext_resource type="PackedScene" uid="uid://cepfrjysgn1nn" path="res://scenes/crafting_table.tscn" id="19_unqf0"]
 [ext_resource type="Texture2D" uid="uid://b78t8ww03u44h" path="res://sprites/buildings/free_building.png" id="20_bn7mj"]
-[ext_resource type="PackedScene" uid="uid://c137m0mgdi1tj" path="res://UI/crafting_ui.tscn" id="20_pbppm"]
 [ext_resource type="Texture2D" uid="uid://f4f8210nnfpd" path="res://sprites/buildings/noentry.png" id="21_rj8su"]
 [ext_resource type="Texture2D" uid="uid://dm7cuugkkdfy7" path="res://sprites/buildings/noentry open sprsht.png" id="22_rns8q"]
 [ext_resource type="Texture2D" uid="uid://d3wsj1sk6ppbk" path="res://sprites/buildings/arcade.png" id="22_u8vop"]
@@ -868,16 +866,6 @@ script = ExtResource("23_rbevn")
 position = Vector2(0.5, 11)
 shape = SubResource("RectangleShape2D_yf4po")
 
-[node name="crafting_table" parent="." instance=ExtResource("19_unqf0")]
-position = Vector2(315, 66)
-
-[node name="PointLight2D" type="PointLight2D" parent="crafting_table"]
-position = Vector2(-0.5625, -0.437515)
-scale = Vector2(0.326923, 0.339231)
-energy = 3.0
-texture = ExtResource("28_xuixl")
-texture_scale = 0.25
-
 [node name="pickups" type="Node2D" parent="."]
 
 [node name="battery_pickup_park" parent="pickups" instance=ExtResource("16_m7ys7")]
@@ -913,9 +901,6 @@ metadata/_edit_use_anchors_ = true
 energy = 3.0
 texture = ExtResource("28_xuixl")
 texture_scale = 0.25
-
-[node name="crafting_ui" parent="." instance=ExtResource("20_pbppm")]
-visible = false
 
 [node name="dust particle" parent="." instance=ExtResource("30_8v5x1")]
 position = Vector2(-629, 83)
