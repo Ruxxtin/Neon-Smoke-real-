@@ -509,7 +509,7 @@ position = Vector2(112, 45)
 texture = ExtResource("13_55l44")
 
 [node name="crafting_table" parent="." instance=ExtResource("24_b51nk")]
-position = Vector2(-93, 120)
+position = Vector2(304, 160)
 
 [node name="PointLight2D" type="PointLight2D" parent="crafting_table"]
 position = Vector2(-0.5625, -0.437515)
