@@ -109,3 +109,5 @@ offset_bottom = 15.0
 theme_override_fonts/font = ExtResource("3_guukq")
 theme_override_font_sizes/font_size = 16
 text = "0"
+
+[connection signal="tree_entered" from="." to="." method="_on_tree_entered"]

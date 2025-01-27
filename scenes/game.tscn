@@ -1,4 +1,4 @@
-[gd_scene load_steps=87 format=4 uid="uid://cu3tbj3urmlgu"]
+[gd_scene load_steps=86 format=4 uid="uid://cu3tbj3urmlgu"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_3msjn"]
 [ext_resource type="PackedScene" uid="uid://f2ia5ue6cp3u" path="res://scenes/Player.tscn" id="1_rrelb"]
@@ -9,7 +9,6 @@
 [ext_resource type="PackedScene" uid="uid://cfe5kocqihd2u" path="res://scenes/textbox.tscn" id="4_hg43r"]
 [ext_resource type="Texture2D" uid="uid://c5jyy4qnepfya" path="res://sprites/tilesets/asphaltsprsheetdonecrosswalk.png" id="4_sylix"]
 [ext_resource type="Texture2D" uid="uid://de86s8cjnbf5v" path="res://sprites/tilesets/asphaltsprsheetdonecrosswalkwithforks.png" id="6_sdyxb"]
-[ext_resource type="PackedScene" uid="uid://qp1fouvcqi2t" path="res://UI/ui.tscn" id="7_horbx"]
 [ext_resource type="Texture2D" uid="uid://7qdj2ki13dqg" path="res://sprites/tilesets/cementsidedone.png" id="7_laa1d"]
 [ext_resource type="Texture2D" uid="uid://b55f4gcm3ohvn" path="res://sprites/tilesets/roadspritesheetdone.png" id="7_lkew4"]
 [ext_resource type="Texture2D" uid="uid://p3wlu0iuvpgt" path="res://sprites/tilesets/brige.png" id="7_n56cv"]
@@ -915,13 +914,6 @@ energy = 3.0
 texture = ExtResource("28_xuixl")
 texture_scale = 0.25
 
-[node name="ui" parent="." instance=ExtResource("7_horbx")]
-
-[node name="Timer" type="Timer" parent="ui"]
-wait_time = 0.1
-one_shot = true
-autostart = true
-
 [node name="crafting_ui" parent="." instance=ExtResource("20_pbppm")]
 visible = false
 
@@ -935,4 +927,3 @@ color = Color(0.57, 0.57, 0.57, 1)
 [connection signal="body_entered" from="Buildings/sykul_building/Area2D" to="Buildings/sykul_building/Area2D" method="_on_body_entered"]
 [connection signal="body_entered" from="Buildings/Arcade/scene_changer" to="Buildings/Arcade/scene_changer" method="_on_body_entered"]
 [connection signal="body_entered" from="Buildings/Sprite2D/Area2D" to="Buildings/Sprite2D/Area2D" method="_on_body_entered"]
-[connection signal="timeout" from="ui/Timer" to="ui" method="_on_timer_timeout"]

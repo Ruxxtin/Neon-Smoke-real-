@@ -9,3 +9,6 @@ res://scenes/Player.tscn
 res://scenes/start_menu.tscn
 res://scripts/battery_pickup.gd
 res://UI/ui.tscn
+res://UI/ui.gd
+res://scripts/go_out_of_sykul.gd
+res://scripts/resource_manager.gd

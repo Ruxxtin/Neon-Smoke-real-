@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=4 uid="uid://0f1ih8n10pth"]
+[gd_scene load_steps=45 format=4 uid="uid://0f1ih8n10pth"]
 
 [ext_resource type="PackedScene" uid="uid://f2ia5ue6cp3u" path="res://scenes/Player.tscn" id="1_cnkv6"]
 [ext_resource type="Texture2D" uid="uid://b4uje8g1isp6h" path="res://sprites/tilesets/labfloor.png" id="1_hqlnm"]
@@ -16,7 +16,6 @@
 [ext_resource type="Texture2D" uid="uid://68utjk7knyyu" path="res://sprites/G7vn7-modified.png" id="12_42wl0"]
 [ext_resource type="Texture2D" uid="uid://datri6edacvcc" path="res://sprites/brokencryo.png" id="12_el2wn"]
 [ext_resource type="Texture2D" uid="uid://bh2cu4f0amky3" path="res://sprites/cryostasisbroke.png" id="13_55l44"]
-[ext_resource type="PackedScene" uid="uid://qp1fouvcqi2t" path="res://UI/ui.tscn" id="13_vgf16"]
 [ext_resource type="Texture2D" uid="uid://beaf7pc5s2yg" path="res://sprites/cryostasis_transparent.png" id="15_y6626"]
 [ext_resource type="Script" path="res://scripts/screenshake_cam.gd" id="16_c6yfk"]
 [ext_resource type="Texture2D" uid="uid://30q1sr1n0pl7" path="res://sprites/press_space break out.png" id="18_1b6fo"]
@@ -540,9 +539,6 @@ energy = 1.5
 shadow_enabled = true
 texture = ExtResource("12_42wl0")
 texture_scale = 0.2
-
-[node name="ui" parent="." instance=ExtResource("13_vgf16")]
-visible = false
 
 [node name="CryostasisTransparent" type="Sprite2D" parent="."]
 position = Vector2(-24, -3)

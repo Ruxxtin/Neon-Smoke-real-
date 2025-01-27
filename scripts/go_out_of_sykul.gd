@@ -4,4 +4,5 @@ func _on_body_entered(body):
 	TransitionScreen.transition()
 	await TransitionScreen.on_transition_finished
 	Global.last_building = "sykul"  # Name of this building
+	UI.visible = true
 	get_tree().change_scene_to_file("res://scenes/game.tscn")
