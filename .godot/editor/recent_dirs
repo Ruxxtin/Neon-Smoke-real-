@@ -1,3 +1,4 @@
+res://UI
 res://scripts
 res://dialogic/timelines
 res://sprites/buildings
@@ -12,4 +13,3 @@ res://addons/dialogic/Modules/DefaultLayoutParts/Layer_SpeakerPortraitTextbox
 res://fonts
 res://dialogic/characters
 res://dialogue
-res://UI

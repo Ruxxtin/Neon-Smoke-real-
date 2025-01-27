@@ -17,9 +17,9 @@
 [ext_resource type="Texture2D" uid="uid://datri6edacvcc" path="res://sprites/brokencryo.png" id="12_el2wn"]
 [ext_resource type="Texture2D" uid="uid://bh2cu4f0amky3" path="res://sprites/cryostasisbroke.png" id="13_55l44"]
 [ext_resource type="PackedScene" uid="uid://qp1fouvcqi2t" path="res://UI/ui.tscn" id="13_vgf16"]
-[ext_resource type="Texture2D" uid="uid://dghmpnoqgjxgh" path="res://sprites/press_space.png" id="15_nh12n"]
 [ext_resource type="Texture2D" uid="uid://beaf7pc5s2yg" path="res://sprites/cryostasis_transparent.png" id="15_y6626"]
 [ext_resource type="Script" path="res://scripts/screenshake_cam.gd" id="16_c6yfk"]
+[ext_resource type="Texture2D" uid="uid://30q1sr1n0pl7" path="res://sprites/press_space break out.png" id="18_1b6fo"]
 [ext_resource type="AudioStream" uid="uid://pvbej7myuvhr" path="res://sounds/ice punch 1.mp3" id="19_nx0w5"]
 [ext_resource type="AudioStream" uid="uid://bon54ed2takve" path="res://sounds/ice punch 3.mp3" id="21_k4ujs"]
 [ext_resource type="Texture2D" uid="uid://dxvstnbxnafs6" path="res://sprites/Adobe Express - file.png" id="23_hvm2v"]
@@ -198,7 +198,7 @@ z_index = 1
 position = Vector2(-24, -5)
 scale = Vector2(2, 2)
 emitting = false
-amount = 100
+amount = 50
 process_material = SubResource("ParticleProcessMaterial_wyuo4")
 lifetime = 0.35
 one_shot = true
@@ -433,7 +433,7 @@ texture = ExtResource("8_ucetl")
 
 [node name="PointLight2D" type="PointLight2D" parent="cryotubes/cryo_tube2"]
 color = Color(0.96, 0.96, 0.96, 0.996078)
-energy = 1.5
+energy = 2.0
 shadow_enabled = true
 texture = ExtResource("12_42wl0")
 texture_scale = 0.2
@@ -486,7 +486,7 @@ texture = ExtResource("8_ucetl")
 
 [node name="PointLight2D" type="PointLight2D" parent="cryotubes/cryo_tube14"]
 color = Color(0.96, 0.96, 0.96, 0.996078)
-energy = 3.8
+energy = 2.0
 shadow_enabled = true
 texture = ExtResource("12_42wl0")
 texture_scale = 0.2
@@ -532,7 +532,7 @@ script = ExtResource("16_c6yfk")
 [node name="space_button" type="Sprite2D" parent="Player_stuck/Camera2D"]
 visible = false
 position = Vector2(0, 75)
-texture = ExtResource("15_nh12n")
+texture = ExtResource("18_1b6fo")
 
 [node name="PointLight2D" type="PointLight2D" parent="Player_stuck"]
 color = Color(0.96, 0.96, 0.96, 0.996078)
@@ -542,6 +542,7 @@ texture = ExtResource("12_42wl0")
 texture_scale = 0.2
 
 [node name="ui" parent="." instance=ExtResource("13_vgf16")]
+visible = false
 
 [node name="CryostasisTransparent" type="Sprite2D" parent="."]
 position = Vector2(-24, -3)

@@ -26,6 +26,7 @@ TransitionScreen="*res://scenes/transition_screen.tscn"
 GlobalCrafting="*res://global_crafting.gd"
 GlobalPickup="*res://global pickup sound.tscn"
 GlobalPickupManager="*res://scripts/global_pickup_manager.gd"
+UI="*res://UI/ui.tscn"
 
 [dialogic]
 

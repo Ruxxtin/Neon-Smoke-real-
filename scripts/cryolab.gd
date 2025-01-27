@@ -64,10 +64,10 @@ func _physics_process(delta):
 				ice_punch_3.play(0)
 	if Input.is_action_pressed("space") and can_punch == true:
 		if punches < 3 and button_can_change == true:
-			space_button.texture = load("res://sprites/press_space_down.png")
+			space_button.texture = load("res://sprites/press_space to break down.png")
 	else:
 		if punches < 3 and can_punch == true:
-			space_button.texture = load("res://sprites/press_space.png")
+			space_button.texture = load("res://sprites/press_space break out.png")
 	
 	if punches == 2:
 		cryostasis_transparent.texture = load("res://sprites/cryostasisbroke transparent.png")
