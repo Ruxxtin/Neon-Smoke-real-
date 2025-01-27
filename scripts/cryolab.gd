@@ -1,5 +1,6 @@
 extends Node2D
 
+#region references
 @onready var space_button = $Player_stuck/Camera2D/space_button
 @onready var cryostasis_transparent = $CryostasisTransparent
 @onready var player_stuck = $Player_stuck
@@ -10,26 +11,41 @@ extends Node2D
 @onready var ice_punch_3 = $"ice punch 3"
 @onready var stuck_cam = $Player_stuck/Camera2D
 @onready var gpu_particles_2d = $GPUParticles2D
+@onready var battery_pickup = $battery_pickup
+#endregion
+
+#region variables
 var punches = 0
 var can_punch = false
 var dialogue_over = false
 var button_can_change = false
+#endregion
 
 func _ready():
-	camera_2d.enabled = false
+	if Global.start_cutscene_played == true:
+		battery_pickup.visible = true
+		can_punch = false
+		cryostasis_transparent.texture = load("res://sprites/cryoshattered transparent.png")
+	else:
+		battery_pickup.visible = false
 	
-	Dialogic.signal_event.connect(DialogueSignal)
+	if Global.start_cutscene_played == false:
+		camera_2d.enabled = false
+	
+	if Global.start_cutscene_played == false:
+		Dialogic.signal_event.connect(DialogueSignal)
 	
 	var player = $Player  # Reference to your player node
 	match Global.last_building:
 		"stairs_to_cryolab":
 			player.position = Vector2(497, -20)  # Spawn location for Building A
+			player_stuck.queue_free()
 		#_:
 		#	player.position = Vector2(-24, -2)  # Default position
 
 func _physics_process(delta):
 	
-	if Input.is_action_just_pressed("space"):
+	if Input.is_action_just_pressed("space") and Global.start_cutscene_played == false:
 		if dialogue_over == true and can_punch == false:
 			can_punch = true
 		if can_punch == true:
@@ -50,7 +66,7 @@ func _physics_process(delta):
 		if punches < 3 and button_can_change == true:
 			space_button.texture = load("res://sprites/press_space_down.png")
 	else:
-		if punches < 3:
+		if punches < 3 and can_punch == true:
 			space_button.texture = load("res://sprites/press_space.png")
 	
 	if punches == 2:
@@ -65,7 +81,8 @@ func _physics_process(delta):
 		camera_2d.enabled = true
 
 func _on_dialogue_timer_timeout():
-	Dialogic.start("what the")
+	if Global.start_cutscene_played == false:
+		Dialogic.start("what the")
 
 func DialogueSignal(arg: String):
 	if arg == "can_punch":

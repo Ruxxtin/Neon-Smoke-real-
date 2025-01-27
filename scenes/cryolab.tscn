@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=4 uid="uid://0f1ih8n10pth"]
+[gd_scene load_steps=46 format=4 uid="uid://0f1ih8n10pth"]
 
 [ext_resource type="PackedScene" uid="uid://f2ia5ue6cp3u" path="res://scenes/Player.tscn" id="1_cnkv6"]
 [ext_resource type="Texture2D" uid="uid://b4uje8g1isp6h" path="res://sprites/tilesets/labfloor.png" id="1_hqlnm"]
@@ -23,6 +23,7 @@
 [ext_resource type="AudioStream" uid="uid://pvbej7myuvhr" path="res://sounds/ice punch 1.mp3" id="19_nx0w5"]
 [ext_resource type="AudioStream" uid="uid://bon54ed2takve" path="res://sounds/ice punch 3.mp3" id="21_k4ujs"]
 [ext_resource type="Texture2D" uid="uid://dxvstnbxnafs6" path="res://sprites/Adobe Express - file.png" id="23_hvm2v"]
+[ext_resource type="PackedScene" uid="uid://basmo12w274od" path="res://scenes/battery_pickup.tscn" id="24_0knmm"]
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_wyuo4"]
 lifetime_randomness = 1.0
@@ -578,6 +579,17 @@ energy = 0.2
 shadow_enabled = true
 texture = ExtResource("23_hvm2v")
 texture_scale = 0.2
+
+[node name="battery_pickup" parent="." instance=ExtResource("24_0knmm")]
+position = Vector2(8, 296)
+location = "Cellar"
+
+[node name="PointLight2D" type="PointLight2D" parent="battery_pickup"]
+scale = Vector2(0.3, 0.3)
+energy = 2.5
+shadow_enabled = true
+texture = ExtResource("12_42wl0")
+texture_scale = 0.25
 
 [connection signal="body_entered" from="scene_changer" to="scene_changer" method="_on_body_entered"]
 [connection signal="timeout" from="dialogue_timer" to="." method="_on_dialogue_timer_timeout"]

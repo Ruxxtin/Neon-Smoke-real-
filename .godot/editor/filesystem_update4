@@ -16,3 +16,12 @@ res://scenes/arcade_game_1_internal.tscn
 res://scripts/start_menu.gd
 res://scripts/sykul_g_floor.gd
 res://stamina25.dtl
+res://scripts/cryolab.gd
+res://dialogic/timelines/lil fella.dch
+res://scripts/b_13.gd
+res://global.gd
+res://scripts/resource_manager.gd
+res://scripts/door_opener.gd
+res://dialogic/timelines/open_big_door.dtl
+res://scripts/main.gd
+res://scripts/door_sprite.gd

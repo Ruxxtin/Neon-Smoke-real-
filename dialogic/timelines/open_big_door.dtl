@@ -1,0 +1,23 @@
+join Player left
+placeholder: Oh, hey, uh... little robot guy? Whats your name again?
+leave --All-- 
+join "lil fella" right
+"lil fella": Uhh, let me check here... *BZZT* Okay, it looks like my name is B-13.
+leave --All-- 
+join Player left
+placeholder: Okay great, B-13.
+placeholder: Um, we seem to have a bit of a problem. Theres a giant door in the way.
+leave --All-- 
+join "lil fella" right
+update "lil fella" (confused)
+"lil fella": Giant door? Lemme see.
+update "lil fella" (happy)
+"lil fella": Hmmm... yeah, I think I could hack this, it looks like its from before 2093 when they didn't have cryptotech bulwarks yet.
+"lil fella": Just give me a minute here...
+update "lil fella" (surprised)
+*BZZZZZZZZT*
+"lil fella": Whoops, forgot to capitalize that.
+update "lil fella" (happy)
+"lil fella": There we go, that should do it.
+[signal arg="open_door"]
+

@@ -366,9 +366,9 @@ offset_left = 8.0
 offset_top = 8.0
 offset_right = 136.0
 offset_bottom = 136.0
-tooltip_text = "CIRCUIT BOARD
-1 WIRE
-1 CARBON FIBER"
+tooltip_text = "HOVERBOARD
+1 ELECTROMAGNET
+1 CIRCUIT BOARD"
 theme = SubResource("Theme_q1k3l")
 theme_override_fonts/font = ExtResource("8_8h8fy")
 theme_override_font_sizes/font_size = 16

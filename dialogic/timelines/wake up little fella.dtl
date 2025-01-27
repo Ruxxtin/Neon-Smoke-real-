@@ -34,6 +34,15 @@ if ResourceManager.battery_amount >= 2:
 		"lil fella": ...
 		"lil fella": Uhh, I think you might have to carry me. I don't exactly have legs.
 		leave --All--
+		[signal arg="got_robot"]
 	- Don't use batteries
 		You were always the selfish one, weren't you?
+elif ResourceManager.battery_amount == 0:
+	join Player left
+	placeholder: Hmm, I thought I saw a battery on the way out.
+	leave all
+elif ResourceManager.battery_amount == 1:
+	join Player left
+	placeholder: Okay, looks like I still need another battery
+
 [signal arg="end_of_convo"]

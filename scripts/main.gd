@@ -5,6 +5,8 @@ extends Node2D
 @onready var dust_particle = $"dust particle"
 
 func _ready():
+	
+	
 	Global.start_cutscene_played = true
 	var player = $Player  # Reference to your player node
 	match Global.last_building:
