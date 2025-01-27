@@ -515,6 +515,44 @@ position = Vector2(-26, 261.5)
 scale = Vector2(13.2187, 0.234375)
 texture = SubResource("GradientTexture2D_bun6e")
 
+[node name="PointLight2D2" type="PointLight2D" parent="Buildings/sykul_building"]
+position = Vector2(162.75, -356.003)
+rotation = -1.5708
+scale = Vector2(0.0774259, 2.90204)
+energy = 3.04
+texture = SubResource("GradientTexture1D_8xh5a")
+texture_scale = 5.0
+
+[node name="PointLight2D3" type="PointLight2D" parent="Buildings/sykul_building"]
+position = Vector2(413.75, -356.003)
+rotation = -1.5708
+scale = Vector2(0.0774259, 2.90204)
+energy = 3.04
+texture = SubResource("GradientTexture1D_8xh5a")
+texture_scale = 5.0
+
+[node name="PointLight2D8" type="PointLight2D" parent="Buildings/sykul_building"]
+position = Vector2(289.525, -389.275)
+rotation = -1.5708
+scale = Vector2(0.476011, 3.91038)
+skew = -2.76566e-05
+texture = SubResource("GradientTexture2D_qp6xo")
+
+[node name="PointLight2D4" type="PointLight2D" parent="Buildings/sykul_building"]
+position = Vector2(373.75, -347.753)
+rotation = -1.5708
+scale = Vector2(0.0590665, 2.90204)
+energy = 3.04
+texture = SubResource("GradientTexture1D_8xh5a")
+texture_scale = 5.0
+
+[node name="PointLight2D5" type="PointLight2D" parent="Buildings/sykul_building"]
+position = Vector2(245.481, -434.105)
+rotation = -1.5708
+scale = Vector2(0.698969, 1.90201)
+energy = 1.5
+texture = SubResource("GradientTexture2D_ymgym")
+
 [node name="free_buildindg" type="Sprite2D" parent="Buildings"]
 position = Vector2(-240, -128)
 texture = ExtResource("20_bn7mj")
