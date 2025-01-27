@@ -1,4 +1,4 @@
-[gd_scene load_steps=66 format=4 uid="uid://cu3tbj3urmlgu"]
+[gd_scene load_steps=63 format=4 uid="uid://cu3tbj3urmlgu"]
 
 [ext_resource type="Script" path="res://scripts/main.gd" id="1_3msjn"]
 [ext_resource type="PackedScene" uid="uid://f2ia5ue6cp3u" path="res://scenes/Player.tscn" id="1_rrelb"]
@@ -17,17 +17,14 @@
 [ext_resource type="PackedScene" uid="uid://b75dkny0pgvqt" path="res://scenes/B-13.tscn" id="10_cs48n"]
 [ext_resource type="Texture2D" uid="uid://c53v7tx5rw876" path="res://sprites/buildings/sykulbuild4.png" id="11_t5phd"]
 [ext_resource type="Script" path="res://scripts/sykulenterance.gd" id="14_7pytq"]
-[ext_resource type="PackedScene" uid="uid://deoyow0olyabh" path="res://scenes/iron_pickup.tscn" id="15_gbg0q"]
 [ext_resource type="PackedScene" uid="uid://basmo12w274od" path="res://scenes/battery_pickup.tscn" id="16_m7ys7"]
 [ext_resource type="Texture2D" uid="uid://dn2g0dcmodtv3" path="res://sprites/buildings/building3.png" id="17_n5jht"]
 [ext_resource type="PackedScene" uid="uid://cepfrjysgn1nn" path="res://scenes/crafting_table.tscn" id="19_unqf0"]
 [ext_resource type="Texture2D" uid="uid://b78t8ww03u44h" path="res://sprites/buildings/free_building.png" id="20_bn7mj"]
 [ext_resource type="PackedScene" uid="uid://c137m0mgdi1tj" path="res://UI/crafting_ui.tscn" id="20_pbppm"]
 [ext_resource type="Texture2D" uid="uid://f4f8210nnfpd" path="res://sprites/buildings/noentry.png" id="21_rj8su"]
-[ext_resource type="PackedScene" uid="uid://dwgacl7lmmqoq" path="res://scenes/wire_pickup.tscn" id="22_8ayph"]
 [ext_resource type="Texture2D" uid="uid://d3wsj1sk6ppbk" path="res://sprites/buildings/arcade.png" id="22_u8vop"]
 [ext_resource type="Script" path="res://scripts/scene_changer_to_arcade.gd" id="23_ent50"]
-[ext_resource type="PackedScene" uid="uid://cvpp35xei37gy" path="res://scenes/carbonfiber_pickup.tscn" id="23_t7g6r"]
 [ext_resource type="Texture2D" uid="uid://dcn5yjxs5dfa8" path="res://sprites/buildings/building4 real.png" id="25_tcrpt"]
 [ext_resource type="Texture2D" uid="uid://68utjk7knyyu" path="res://sprites/G7vn7-modified.png" id="28_xuixl"]
 [ext_resource type="PackedScene" uid="uid://sg2s0h5f6mgf" path="res://scenes/dust_particle.tscn" id="30_8v5x1"]
@@ -679,33 +676,9 @@ texture_scale = 0.25
 
 [node name="pickups" type="Node2D" parent="."]
 
-[node name="iron_pickup" parent="pickups" instance=ExtResource("15_gbg0q")]
-position = Vector2(-202, 57)
-
 [node name="battery_pickup_park" parent="pickups" instance=ExtResource("16_m7ys7")]
-position = Vector2(15, 190)
+position = Vector2(340, 406)
 location = "Park"
-
-[node name="battery_pickup2" parent="pickups" instance=ExtResource("16_m7ys7")]
-position = Vector2(-95, 43)
-
-[node name="battery_pickup3" parent="pickups" instance=ExtResource("16_m7ys7")]
-position = Vector2(-197, 145)
-
-[node name="battery_pickup4" parent="pickups" instance=ExtResource("15_gbg0q")]
-position = Vector2(-34, 51)
-
-[node name="wire_pickup" parent="pickups" instance=ExtResource("22_8ayph")]
-position = Vector2(-32, 109)
-
-[node name="wire_pickup2" parent="pickups" instance=ExtResource("22_8ayph")]
-position = Vector2(-119, 96)
-
-[node name="carbonfiber_pickup" parent="pickups" instance=ExtResource("23_t7g6r")]
-position = Vector2(23, 101)
-
-[node name="carbonfiber_pickup2" parent="pickups" instance=ExtResource("23_t7g6r")]
-position = Vector2(-70, 79)
 
 [node name="Player" parent="." instance=ExtResource("1_rrelb")]
 position = Vector2(16, 15)
