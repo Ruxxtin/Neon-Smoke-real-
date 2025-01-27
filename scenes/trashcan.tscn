@@ -1,0 +1,38 @@
+[gd_scene load_steps=6 format=3 uid="uid://c6vvnxm01ludy"]
+
+[ext_resource type="Script" path="res://scripts/trashcan.gd" id="1_3jfpd"]
+[ext_resource type="Texture2D" uid="uid://dw3c4cm0gnm4w" path="res://sprites/trashcan.png" id="1_q34ot"]
+[ext_resource type="Texture2D" uid="uid://68utjk7knyyu" path="res://sprites/G7vn7-modified.png" id="3_d2d7c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4x6tk"]
+size = Vector2(20, 23)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0acya"]
+size = Vector2(14, 19)
+
+[node name="trashcan" type="Area2D"]
+collision_mask = 2
+script = ExtResource("1_3jfpd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 2.5)
+shape = SubResource("RectangleShape2D_4x6tk")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_q34ot")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, 2.5)
+shape = SubResource("RectangleShape2D_0acya")
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+scale = Vector2(0.3, 0.3)
+energy = 2.5
+shadow_enabled = true
+texture = ExtResource("3_d2d7c")
+texture_scale = 0.25
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

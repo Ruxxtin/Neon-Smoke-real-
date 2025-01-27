@@ -32,3 +32,5 @@ func _physics_process(_delta):
 func _on_scene_changed(scene_path):
 	if scene_path == "res://scenes/sykul_g_floor_cutscene.tscn":
 		visible = false
+	else:
+		visible = true

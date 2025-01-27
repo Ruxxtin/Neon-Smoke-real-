@@ -1,0 +1,9 @@
+Dig through trash?
+- Yes
+	You decide to be a nasty little gremlin and stick your hand in the trash can.
+	join Player left
+	placeholder: I think theres something down there...
+	[signal arg="done"]
+- No
+	One man's trash is another man's treasure...
+	[signal arg="no_dig"]

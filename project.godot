@@ -47,6 +47,7 @@ directories/dtl_directory={
 "stamina50": "res://sounds/stamina50.dtl",
 "stamina75": "res://dialogic/timelines/stamina75.dtl",
 "starting_fight": "res://dialogic/timelines/starting_fight.dtl",
+"trash_dig": "res://dialogic/timelines/trash_dig.dtl",
 "wake up little fella": "res://dialogic/timelines/wake up little fella.dtl",
 "what the": "res://dialogic/timelines/what the.dtl"
 }
@@ -73,8 +74,7 @@ choices/reveal_by_input=false
 save/autosave_delay=60.0
 save/encryption_on_exports_only=true
 text/autopauses={
-".?!": 0.2,
-":;,": 0.1
+".?!": 0.1
 }
 animations/join_default="Fade In Up"
 animations/leave_default="Fade Out Down"

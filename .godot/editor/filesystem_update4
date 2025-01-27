@@ -15,3 +15,9 @@ res://scripts/resource_manager.gd
 res://scenes/iron_pickup.tscn
 res://scripts/global_pickup_manager.gd
 res://scripts/iron_pickup.gd
+res://scenes/battery_pickup.tscn
+res://scenes/trashcan.tscn
+res://scripts/trashcan.gd
+res://dialogic/timelines/trash_dig.dtl
+res://dialogic/timelines/shrimpFriedRicePt2.dtl
+res://dialogic/timelines/shrimpFriedRice.dtl
