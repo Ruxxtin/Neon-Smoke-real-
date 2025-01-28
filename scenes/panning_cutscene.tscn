@@ -1,4 +1,4 @@
-[gd_scene load_steps=51 format=4 uid="uid://cto4dtqblguan"]
+[gd_scene load_steps=53 format=4 uid="uid://cto4dtqblguan"]
 
 [ext_resource type="Script" path="res://scripts/panning_cutscene.gd" id="1_6774c"]
 [ext_resource type="Texture2D" uid="uid://cswocxcmeejlg" path="res://sprites/buildings/pan_sprite_bg.png" id="2_fff82"]
@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://bi4fq8uixltjl" path="res://sprites/stable sprsht.png" id="9_7qhdq"]
 [ext_resource type="Texture2D" uid="uid://dfgj2glhdm1qh" path="res://sprites/nissan_moke_appear_sprsht.png" id="10_mgslv"]
 [ext_resource type="AudioStream" uid="uid://citcgq65ka4aq" path="res://sounds/Sirens..mp3" id="12_13sfp"]
+[ext_resource type="FontFile" uid="uid://ibnq1e5i467k" path="res://fonts/ByteBounce.ttf" id="14_377ip"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kltbj"]
 texture = ExtResource("2_qig68")
@@ -213,34 +214,6 @@ texture = ExtResource("8_db4xf")
 sources/0 = SubResource("TileSetAtlasSource_g1mvg")
 sources/1 = SubResource("TileSetAtlasSource_awxnr")
 
-[sub_resource type="Animation" id="Animation_amh5u"]
-resource_name = "pan_up"
-length = 6.0
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Camera2D:zoom")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1, 6),
-"transitions": PackedFloat32Array(1, 2, 1),
-"update": 0,
-"values": [Vector2(3, 3), Vector2(3, 3), Vector2(1.3, 1.3)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Camera2D:position")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 1, 6),
-"transitions": PackedFloat32Array(1, 2, 1),
-"update": 0,
-"values": [Vector2(446, 600), Vector2(446, 600), Vector2(446, -303)]
-}
-
 [sub_resource type="Animation" id="Animation_e6uec"]
 length = 0.001
 tracks/0/type = "value"
@@ -291,21 +264,53 @@ tracks/3/keys = {
 "update": 0,
 "values": [Vector2(450, 48)]
 }
-
-[sub_resource type="Animation" id="Animation_k6h35"]
-resource_name = "n_s"
-length = 0.25
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("AnimatedSprite2D:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.233333),
-"transitions": PackedFloat32Array(0.812252, 1),
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("Art:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
 "update": 0,
-"values": [Vector2(446, -618), Vector2(446, -458)]
+"values": [Vector2(1013, -356)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("Music&sound:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(916, -356)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Story and Dialogue:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(879, -356)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Programming:position")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(916, -356)]
 }
 
 [sub_resource type="Animation" id="Animation_73d0n"]
@@ -324,9 +329,106 @@ tracks/0/keys = {
 "values": [Vector2(450, 48), Vector2(-254, 48)]
 }
 
+[sub_resource type="Animation" id="Animation_k6h35"]
+resource_name = "n_s"
+length = 0.25
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.233333),
+"transitions": PackedFloat32Array(0.812252, 1),
+"update": 0,
+"values": [Vector2(446, -618), Vector2(446, -458)]
+}
+
+[sub_resource type="Animation" id="Animation_amh5u"]
+resource_name = "pan_up"
+length = 6.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Camera2D:zoom")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1, 6),
+"transitions": PackedFloat32Array(1, 2, 1),
+"update": 0,
+"values": [Vector2(3, 3), Vector2(3, 3), Vector2(1.3, 1.3)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Camera2D:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 1, 6),
+"transitions": PackedFloat32Array(1, 2, 1),
+"update": 0,
+"values": [Vector2(446, 600), Vector2(446, 600), Vector2(446, -303)]
+}
+
+[sub_resource type="Animation" id="Animation_5sfyv"]
+resource_name = "credits"
+length = 15.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Art:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 2.5, 3),
+"transitions": PackedFloat32Array(0.499999, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1013, -356), Vector2(325, -356), Vector2(325, -356), Vector2(-435, -356)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Music&sound:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(4, 4.5, 6.5, 7),
+"transitions": PackedFloat32Array(0.5, 1, 1, 1),
+"update": 0,
+"values": [Vector2(916, -356), Vector2(228, -356), Vector2(228, -356), Vector2(-435, -356)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Story and Dialogue:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(8, 8.5, 10.5, 11),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(879, -356), Vector2(191, -356), Vector2(191, -356), Vector2(-497, -356)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("Programming:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(12, 12.5, 14.5, 15),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(916, -356), Vector2(228, -356), Vector2(228, -356), Vector2(-380, -356)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_keunv"]
 _data = {
 "RESET": SubResource("Animation_e6uec"),
+"credits": SubResource("Animation_5sfyv"),
 "move_stuff": SubResource("Animation_73d0n"),
 "n_s": SubResource("Animation_k6h35"),
 "pan_up": SubResource("Animation_amh5u")
@@ -558,10 +660,98 @@ stream = ExtResource("12_13sfp")
 autoplay = true
 
 [node name="Art" type="Label" parent="."]
-offset_left = 318.0
+offset_left = 1013.0
 offset_top = -356.0
-offset_right = 574.0
-offset_bottom = -295.0
+offset_right = 1269.0
+offset_bottom = -292.0
+theme_override_constants/line_spacing = -24
+theme_override_fonts/font = ExtResource("14_377ip")
+theme_override_font_sizes/font_size = 64
+text = "Art
+---"
+horizontal_alignment = 1
+
+[node name="Art" type="Label" parent="Art"]
+offset_top = 56.0
+offset_right = 256.0
+offset_bottom = 128.0
+theme_override_fonts/font = ExtResource("14_377ip")
+theme_override_font_sizes/font_size = 32
+text = "Griffin Roy
+Tophattio
+James Glaser"
+horizontal_alignment = 1
+
+[node name="Music&sound" type="Label" parent="."]
+offset_left = 916.0
+offset_top = -356.0
+offset_right = 1366.0
+offset_bottom = -292.0
+theme_override_constants/line_spacing = -24
+theme_override_fonts/font = ExtResource("14_377ip")
+theme_override_font_sizes/font_size = 64
+text = "Music and sound
+---------------"
+horizontal_alignment = 1
+
+[node name="Art" type="Label" parent="Music&sound"]
+offset_top = 56.0
+offset_right = 450.0
+offset_bottom = 128.0
+theme_override_fonts/font = ExtResource("14_377ip")
+theme_override_font_sizes/font_size = 32
+text = "Griffin Roy
+James Glaser"
+horizontal_alignment = 1
+
+[node name="Story and Dialogue" type="Label" parent="."]
+offset_left = 879.0
+offset_top = -356.0
+offset_right = 1403.0
+offset_bottom = -292.0
+theme_override_constants/line_spacing = -24
+theme_override_fonts/font = ExtResource("14_377ip")
+theme_override_font_sizes/font_size = 64
+text = "Story and dialogue
+-----------------"
+horizontal_alignment = 1
+
+[node name="Art" type="Label" parent="Story and Dialogue"]
+offset_top = 56.0
+offset_right = 524.0
+offset_bottom = 128.0
+theme_override_fonts/font = ExtResource("14_377ip")
+theme_override_font_sizes/font_size = 32
+text = "Tophattio
+Griffin Roy
+James Glaser"
+horizontal_alignment = 1
+
+[node name="Programming" type="Label" parent="."]
+offset_left = 916.0
+offset_top = -356.0
+offset_right = 1366.0
+offset_bottom = -292.0
+theme_override_constants/line_spacing = -24
+theme_override_fonts/font = ExtResource("14_377ip")
+theme_override_font_sizes/font_size = 64
+text = "Programming
+-----------"
+horizontal_alignment = 1
+
+[node name="Art" type="Label" parent="Programming"]
+offset_top = 56.0
+offset_right = 450.0
+offset_bottom = 128.0
+theme_override_fonts/font = ExtResource("14_377ip")
+theme_override_font_sizes/font_size = 32
+text = "James Glaser"
+horizontal_alignment = 1
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 1.5
+one_shot = true
 
 [connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
 [connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

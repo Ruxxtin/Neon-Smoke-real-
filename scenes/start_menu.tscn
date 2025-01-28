@@ -1,10 +1,11 @@
-[gd_scene load_steps=22 format=3 uid="uid://uxtorgqwjkd1"]
+[gd_scene load_steps=23 format=3 uid="uid://uxtorgqwjkd1"]
 
 [ext_resource type="Texture2D" uid="uid://bk3ou2msmmns4" path="res://sprites/titlescreen.png" id="1_4affc"]
 [ext_resource type="Script" path="res://scripts/start_menu.gd" id="1_5ae3w"]
 [ext_resource type="Texture2D" uid="uid://cshf74030wmty" path="res://sprites/croll_bars_v.png" id="2_efve3"]
 [ext_resource type="Texture2D" uid="uid://b3v6syvcpp4rf" path="res://sprites/dialogue_box_ns.png" id="4_56sp3"]
 [ext_resource type="FontFile" uid="uid://ibnq1e5i467k" path="res://fonts/ByteBounce.ttf" id="5_bvwvo"]
+[ext_resource type="AudioStream" uid="uid://dh5xam31crcup" path="res://sounds/Sirens for title screen.mp3" id="6_dp8px"]
 
 [sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_878c4"]
 polygon = PackedVector2Array(949, 130, 951, 291, 944, 360, 696, 366, 678, 317, 676, 187)
@@ -212,6 +213,10 @@ offset_bottom = 156.0
 theme_override_fonts/font = ExtResource("5_bvwvo")
 theme_override_font_sizes/font_size = 64
 text = "X"
+
+[node name="sirens_title" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("6_dp8px")
+autoplay = true
 
 [connection signal="pressed" from="start_button" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="options_button" to="." method="_on_options_button_pressed"]

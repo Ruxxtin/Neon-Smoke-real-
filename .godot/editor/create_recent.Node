@@ -1,3 +1,4 @@
+Timer
 Label
 AudioStreamPlayer2D
 AnimatedSprite2D
@@ -7,7 +8,6 @@ CollisionShape2D
 StaticBody2D
 Sprite2D
 Area2D
-Timer
 Button
 Node2D
 CanvasLayer

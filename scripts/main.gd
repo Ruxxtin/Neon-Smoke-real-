@@ -1,6 +1,5 @@
 extends Node2D
 
-@onready var ui = $ui
 @onready var player = $Player
 @onready var dust_particle = $"dust particle"
 
