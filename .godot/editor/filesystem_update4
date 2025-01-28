@@ -15,3 +15,5 @@ res://scripts/go_out_of_sykul.gd
 res://scenes/bridge_cutscene.tscn
 res://scripts/bridge_cutscene.gd
 res://scripts/main.gd
+res://scenes/player_cutscene_bridge.tscn
+res://scripts/player_cutscene_bridge.gd
