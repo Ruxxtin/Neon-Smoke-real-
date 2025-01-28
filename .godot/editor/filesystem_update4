@@ -23,3 +23,4 @@ res://dialogic/timelines/shrimpFriedRicePt2.dtl
 res://dialogic/timelines/shrimpFriedRice.dtl
 res://scenes/panning_cutscene.tscn
 res://scripts/pan_cam.gd
+res://scripts/panning_cutscene.gd

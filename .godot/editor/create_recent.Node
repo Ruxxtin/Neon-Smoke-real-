@@ -1,3 +1,5 @@
+Label
+AudioStreamPlayer2D
 AnimatedSprite2D
 AnimationPlayer
 Camera2D
@@ -9,6 +11,4 @@ Timer
 Button
 Node2D
 CanvasLayer
-Label
 CanvasGroup
-NinePatchRect
