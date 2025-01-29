@@ -1,13 +1,13 @@
+AudioStreamPlayer2D
+Sprite2D
+CollisionShape2D
+Area2D
 Timer
 Label
-AudioStreamPlayer2D
 AnimatedSprite2D
 AnimationPlayer
 Camera2D
-CollisionShape2D
 StaticBody2D
-Sprite2D
-Area2D
 Button
 Node2D
 CanvasLayer

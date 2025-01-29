@@ -1,0 +1,52 @@
+join Player left
+placeholder: WAAAAUGH-- Oh, man!
+leave --All-- 
+join Ada right
+Ada: That was close!
+leave --All-- 
+join Neeko right
+Neeko: It appears that the atomic construction of the soles of your shoes from one hundred years ago affected the stability--
+leave --All-- 
+join Ada right
+Ada: I think it's just old, Neeko.
+leave --All-- 
+join Neeko right
+Neeko: (flustered) ...
+leave --All-- 
+join Player left
+placeholder: I'm so, so, so, so sorry!
+leave --All-- 
+join Neeko right
+Neeko: It was bound to happen one of these days, honestly.
+leave --All-- 
+join Ada right
+Ada: Well, I guess were stuck now. What are we gonna do?
+leave --All-- 
+join Neeko right
+Neeko: Hey {playername}, you're smart, right? Do you think you could figure out something?
+leave --All-- 
+join Ada right
+Ada: Yeah, I bet you could do something with that science internship brain of yours.
+leave --All-- 
+join Player left
+placeholder: Hmmm... you know, I might actually be able to make some kind of hover device if I use the magnetic field of the ion drive thats conneted to the capacitators... *starts yapping about science stuff*
+placeholder: If only I had some parts, maybe.
+leave --All-- 
+join Ada right
+Ada: Well, look around. You're in an abandoned city, there's bound to be something you can use around here.
+leave --All-- 
+join Player left
+placeholder: Yeah, that's true. I also think I saw a crafting station on my way up from the basement.
+leave --All-- 
+join Neeko right
+Neeko: Okay, awesome! You go make your science-y hoverboard thing, and me and Ada will be over doing, uh...
+leave --All-- 
+join Ada right
+Ada: Having a very important meeting, planning what the fastest route to, uh, the city, yeah!
+leave --All-- 
+join Player left
+placeholder: Yeah, ok, sure. I'll go find those parts then, and meet you back here.
+leave --All-- 
+join Neeko right
+Neeko: Sounds good!
+[signal arg="cutscene_over"]

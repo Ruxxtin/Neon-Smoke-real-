@@ -1,5 +1,6 @@
-[gd_scene load_steps=30 format=4 uid="uid://bh835hii73twv"]
+[gd_scene load_steps=31 format=4 uid="uid://bh835hii73twv"]
 
+[ext_resource type="Script" path="res://scripts/arcade_game_1.gd" id="1_i3d2r"]
 [ext_resource type="Texture2D" uid="uid://4h3gow8562ga" path="res://sprites/tilesets/skyleset.png" id="1_wya14"]
 [ext_resource type="Texture2D" uid="uid://c4cyycc2t1i1x" path="res://sprites/tilesets/thick circuit board.png" id="2_fi2la"]
 [ext_resource type="Texture2D" uid="uid://b1x870dee84j6" path="res://sprites/tilesets/skyleset darker.png" id="2_gnd5o"]
@@ -143,6 +144,7 @@ radius = 23.0217
 size = Vector2(2928, 21)
 
 [node name="arcade_game_1_internal" type="Node2D"]
+script = ExtResource("1_i3d2r")
 
 [node name="tilemaps" type="Node2D" parent="."]
 

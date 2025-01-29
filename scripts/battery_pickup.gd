@@ -1,6 +1,6 @@
 extends Area2D
 
-@export_enum("Park", "Cellar") var location: String
+@export_enum("Park", "Cellar", "Arcade") var location: String
 
 func _on_body_entered(body): 
 	if location == "Park":
@@ -8,6 +8,11 @@ func _on_body_entered(body):
 			GlobalPickup.play(0)
 			ResourceManager.add_battery()
 			GlobalPickupManager.park_battery_got = true
+	if location == "Arcade":
+		if GlobalPickupManager.arcade_battery_got == false:
+			GlobalPickup.play(0)
+			ResourceManager.add_battery()
+			GlobalPickupManager.arcade_battery_got = true
 	if location == "Cellar":
 		if Global.start_cutscene_played == true:
 			if GlobalPickupManager.cellar_battery_got == false:
@@ -23,4 +28,7 @@ func _physics_process(delta):
 				queue_free()
 		"Cellar":
 			if GlobalPickupManager.cellar_battery_got == true:
+				queue_free()
+		"Arcade":
+			if GlobalPickupManager.arcade_battery_got == true:
 				queue_free()

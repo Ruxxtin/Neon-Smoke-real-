@@ -6,13 +6,13 @@ func _on_body_entered(body):
 	if location == "Park":
 		if GlobalPickupManager.park_iron_got == false:
 			GlobalPickup.play(0)
-			ResourceManager.add_battery()
+			ResourceManager.add_iron()
 			GlobalPickupManager.park_iron_got = true
 	if location == "Street":
 		if GlobalPickupManager.street_iron_got == false:
 			GlobalPickupManager.street_iron_got = true
 			GlobalPickup.play(0)
-			ResourceManager.battery_amount += 1
+			ResourceManager.add_iron()
 			GlobalPickupManager.street_iron_got = true
 
 func _physics_process(delta):

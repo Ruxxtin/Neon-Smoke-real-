@@ -30,7 +30,7 @@ func _physics_process(_delta):
 			_on_scene_changed(current_scene_path)
 
 func _on_scene_changed(scene_path):
-	if scene_path == "res://scenes/sykul_g_floor_cutscene.tscn" or scene_path == "res://scenes/panning_cutscene.tscn" or scene_path == "res://scenes/start_menu.tscn":
+	if scene_path == "res://scenes/sykul_g_floor_cutscene.tscn" or scene_path == "res://scenes/panning_cutscene.tscn" or scene_path == "res://scenes/start_menu.tscn" or scene_path == "res://scenes/bridge_cutscene.tscn" or scene_path == "res://scenes/arcade_game_1.tscn"  or scene_path == "res://scenes/arcade_game_1_internal.tscn":
 		visible = false
 	else:
 		visible = true

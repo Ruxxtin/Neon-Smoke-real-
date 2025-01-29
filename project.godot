@@ -27,6 +27,7 @@ GlobalCrafting="*res://global_crafting.gd"
 GlobalPickup="*res://global pickup sound.tscn"
 GlobalPickupManager="*res://scripts/global_pickup_manager.gd"
 UI="*res://UI/ui.tscn"
+Sirens="*res://scenes/sirens.tscn"
 
 [dialogic]
 
@@ -38,6 +39,9 @@ directories/dch_directory={
 "placeholder": "res://placeholder.dch"
 }
 directories/dtl_directory={
+"bridge_talk_1": "res://dialogic/timelines/bridge_talk_1.dtl",
+"bridge_talk_2": "res://dialogic/timelines/bridge_talk_2.dtl",
+"bridge_talk_3": "res://dialogic/timelines/bridge_talk_3.dtl",
 "caught": "res://dialogic/timelines/caught.dtl",
 "open_big_door": "res://dialogic/timelines/open_big_door.dtl",
 "ouch_glass": "res://dialogic/timelines/ouch_glass.dtl",

@@ -2,10 +2,10 @@ extends Node
 
 
 #declares iron_amount as int
-var iron_amount := 3
-var battery_amount := 2
-var carbonfiber_amount := 1
-var wire_amount := 2
+var iron_amount := 0
+var battery_amount := 0
+var carbonfiber_amount := 0
+var wire_amount := 0
 var electormagnet_amount := 0
 var circuitboard_amount := 0
 var hoverboard_amount := 0

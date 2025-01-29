@@ -1,0 +1,12 @@
+join Neeko right
+Neeko: We're almost there. It's just past this bridge.
+leave --All-- 
+join Ada right
+Ada: It might not be one of the utopias you're used to but, hey. It's all we've got, so don't judge.
+leave --All-- 
+join Player left
+placeholder: Why would I--
+leave --All--
+join Ada right
+Ada: Who knows? Come on, let's go.
+[signal arg="step_on_bridge"]

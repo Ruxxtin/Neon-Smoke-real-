@@ -1,0 +1,25 @@
+join Player left
+placeholder: I-- what--?
+placeholder: ...I can't believe it.
+leave --All-- 
+join Ada right
+Ada: Hey, we can't either.
+leave --All-- 
+join Player left
+placeholder: What... what am I even supposed to do? I'm just... stuck here?
+leave --All-- 
+join Neeko right
+Neeko: I don't know.
+leave --All-- 
+join Ada right
+Ada: Hey, Neeko, the least we could do is get {playername} back to the city.
+leave --All-- 
+join Neeko right
+Neeko: I guess it'd be a nice change of scenery for them, yeah.
+leave --All-- 
+join Player left
+placeholder: The city?
+leave --All-- 
+join Ada right
+Ada: Yeah, come on, we can take the bus we drove to get here. It's just over this direction
+[signal arg="walk_left"]

@@ -5,11 +5,6 @@ extends Node2D
 @onready var timer = $Timer
 @onready var sirens = $sirens
 
-var sirens_down = false
-
-func _process(delta):
-	if sirens_down == true:
-		sirens.volume_db -= 0.5
 
 func _on_animation_player_animation_finished(anim_name):
 	if anim_name == "pan_up":
@@ -19,11 +14,10 @@ func _on_animation_player_animation_finished(anim_name):
 	if anim_name == "move_stuff":
 		animation_player.play("credits")
 	if anim_name == "credits":
-		sirens_down = true
 		TransitionScreen.transition()
 		await TransitionScreen.on_transition_finished
 		Global.last_building = "sykul"
-		get_tree().change_scene_to_file("res://scenes/game.tscn")
+		get_tree().change_scene_to_file("res://scenes/bridge_cutscene.tscn")
 
 func _on_animated_sprite_2d_animation_finished():
 	animated_sprite_2d.play("staying")
