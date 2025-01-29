@@ -32,3 +32,12 @@ res://dialogic/timelines/bridge_talk_3.dtl
 res://scripts/panning_cutscene.gd
 res://scenes/sirens.tscn
 res://scripts/sirens.gd
+res://scenes/ada_stand_still.tscn
+res://scenes/neeko_stand_still.tscn
+res://dialogic/timelines/hoverboard.dtl
+res://scripts/hoverboarder.gd
+res://scripts/main.gd
+res://scripts/go_out_of_sykul.gd
+res://scripts/door_opener.gd
+res://global.gd
+res://scripts/b_13.gd

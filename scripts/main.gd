@@ -13,6 +13,8 @@ func _ready():
 			player.position = Vector2(16, 7)  # Spawn location for Building A
 		"arcade":
 			player.position = Vector2(410, -448)  # Spawn location for Building B
+		"bridge":
+			player.position = Vector2(-409, 106)
 		_:
 			player.position = Vector2(0, 0)  # Default position
 			

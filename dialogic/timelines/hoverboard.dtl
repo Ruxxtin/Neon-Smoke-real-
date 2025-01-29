@@ -1,0 +1,26 @@
+join Player left
+placeholder: I made the hoverboard!
+leave --All-- 
+join Neeko right
+Neeko: Took you long enough.
+leave --All-- 
+join Ada right
+Ada: Like you could make one!
+Ada: Anyways, great job making the hoverboard.
+leave --All-- 
+join Player left
+placeholder: Thanks. Now here, I'll set it down right here and then we can get on.
+leave --All-- 
+join Ada right
+Ada: Wait! We can't do that yet!
+leave --All-- 
+join Player left
+placeholder: Huh? Why not?
+leave --All-- 
+join Neeko right
+Neeko: Because this is only the demo, and it ends here.
+leave --All-- 
+join Player left
+placeholder: Ohh, true, true.
+placeholder: Well, thanks for playing! The full game will probably be released in about four years. I hope its sooner though, because I don't know how long we'll survive with our limited food supply.
+placeholder: Anyways, bye! See you next time!

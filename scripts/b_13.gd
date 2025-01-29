@@ -12,6 +12,8 @@ func _physics_process(delta):
 		Dialogic.start("wake up little fella")
 		player.can_move = false
 		dialogue_happening = true
+	if Global.has_lil_guy == true:
+		queue_free()
 
 
 func _on_body_entered(body):

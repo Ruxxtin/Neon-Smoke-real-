@@ -8,6 +8,7 @@ var fight_instance = null
 var start_cutscene_played = false
 var fight_over = false
 var has_lil_guy = false
+var opened_door = false
 
 signal player_enter_cutscene()
 

@@ -68,6 +68,7 @@ func DialogicSignal(arg: String):
 	if arg == "cutscene_over":
 		TransitionScreen.transition()
 		await TransitionScreen.on_transition_finished
+		Global.last_building = "bridge"
 		get_tree().change_scene_to_file("res://scenes/game.tscn")
 
 func _on_start_dialogue_timeout():
