@@ -28,8 +28,8 @@ func DialogueSignal(arg: String):
 	if arg == "end_of_convo":
 		player.can_move = true
 		dialogue_happening = false
-		Global.has_lil_guy = true
 	if arg == "minus_batteries":
 		ResourceManager.battery_amount -= 2
 	if arg == "got_robot":
+		Global.has_lil_guy = true
 		queue_free()

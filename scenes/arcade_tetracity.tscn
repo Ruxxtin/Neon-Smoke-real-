@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://k51eh3bpi87u"]
 
-[ext_resource type="AudioStream" uid="uid://cdvcevq1gal3h" path="res://sounds/TetracityArcadeTime.mp3" id="1_wlxpb"]
+[ext_resource type="AudioStream" uid="uid://cdvcevq1gal3h" path="res://sounds/music/TetracityArcadeTime.mp3" id="1_wlxpb"]
 [ext_resource type="Script" path="res://scripts/arcade_tetracity.gd" id="2_gm403"]
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D"]

@@ -1,0 +1,12 @@
+join "lil fella" center
+"lil fella": Ok, so if you want to make a hoverboard, you're gonna have to know how to use a crafting station.
+update "lil fella" leftmost
+"lil fella": At the top here, we have the amount of each resource you have. Don't try to drag them, because it won't work.
+update "lil fella" rightmost
+"lil fella": Now over here is the recipes, just click on one and it'll appear in the crafting slot if you have enough resource
+update "lil fella" left
+"lil fella": Then just click on whatever is in that slot, and it'll craft it and appear at the top.
+update "lil fella" right 
+"lil fella": If you want to know what a specific item is or what resources you need to craft something, just hover over it and it will tell you.
+"lil fella": Now have fun crafting!
+[signal arg="craftorial_over"]

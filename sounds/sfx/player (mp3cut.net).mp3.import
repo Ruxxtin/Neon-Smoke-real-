@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dee2dpyvgls6n"
+path="res://.godot/imported/player (mp3cut.net).mp3-6ace4d877b3cb2f7c841961efaaf9791.mp3str"
+
+[deps]
+
+source_file="res://sounds/sfx/player (mp3cut.net).mp3"
+dest_files=["res://.godot/imported/player (mp3cut.net).mp3-6ace4d877b3cb2f7c841961efaaf9791.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

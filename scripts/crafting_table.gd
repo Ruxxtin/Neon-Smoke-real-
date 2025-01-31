@@ -2,9 +2,10 @@ extends Area2D
 
 var touching_player = false
 var ui_is_open = false
+var tutorial_open = false
 
 @onready var player = $"../Player"
-
+@onready var crafting_tutorial = $"../crafting_tutorial"
 
 
 func _on_body_entered(body: CharacterBody2D):
@@ -16,10 +17,15 @@ func _on_body_exited(body: CharacterBody2D):
 func _physics_process(delta):
 	if touching_player == true:
 		if Input.is_action_just_pressed("interact"):
-			if ui_is_open == false:
-				ui_is_open = true
-				player.can_move = false
-			elif ui_is_open == true:
-				ui_is_open = false
-				player.can_move = true
+			if Global.start_cutscene_played == true and Global.opened_crafting == true:
+				if ui_is_open == false:
+					ui_is_open = true
+					player.can_move = false
+				elif ui_is_open == true:
+					ui_is_open = false
+					player.can_move = true
+			if Global.start_cutscene_played == true and Global.opened_crafting == false and tutorial_open == false:
+				tutorial_open = true
+				var dialog = Dialogic.start("craft_tutorial")
+				crafting_tutorial.add_child(dialog)
 	

@@ -674,7 +674,6 @@ offset_bottom = 128.0
 theme_override_fonts/font = ExtResource("14_377ip")
 theme_override_font_sizes/font_size = 32
 text = "Griffin Roy
-Tophattio
 James Glaser"
 horizontal_alignment = 1
 
@@ -720,8 +719,7 @@ offset_right = 524.0
 offset_bottom = 128.0
 theme_override_fonts/font = ExtResource("14_377ip")
 theme_override_font_sizes/font_size = 32
-text = "Tophattio
-Griffin Roy
+text = "Griffin Roy
 James Glaser"
 horizontal_alignment = 1
 

@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=4 uid="uid://b6cfnwtfqaixu"]
+[gd_scene load_steps=58 format=4 uid="uid://b6cfnwtfqaixu"]
 
 [ext_resource type="Script" path="res://scripts/bridge_cutscene.gd" id="1_qhb2j"]
 [ext_resource type="Texture2D" uid="uid://mgryjee0nrh5" path="res://sprites/tilesets/asphaltspritedoneee.png" id="2_jngmc"]
@@ -23,6 +23,7 @@
 [ext_resource type="PackedScene" uid="uid://dkhhmlv1bo5xp" path="res://scenes/neeko_bridge.tscn" id="23_ejwtk"]
 [ext_resource type="PackedScene" uid="uid://b5a6y4m4njs1g" path="res://scenes/ada_bridge.tscn" id="24_nipxb"]
 [ext_resource type="Texture2D" uid="uid://bonkw41rmd8mx" path="res://sprites/buildings/free_building_graftiii.png" id="25_61grs"]
+[ext_resource type="AudioStream" uid="uid://dn2smgjhithqd" path="res://sounds/sfx/bridge_boom.mp3" id="26_6jku4"]
 [ext_resource type="PackedScene" uid="uid://bcd1soyurbumd" path="res://scenes/player_cutscene_bridge.tscn" id="26_n878t"]
 [ext_resource type="PackedScene" uid="uid://sg2s0h5f6mgf" path="res://scenes/dust_particle.tscn" id="31_irdx5"]
 
@@ -736,6 +737,9 @@ position = Vector2(-464, 88)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
 shape = SubResource("RectangleShape2D_rdv5h")
+
+[node name="bridge_boom" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("26_6jku4")
 
 [connection signal="body_entered" from="Buildings/Arcade/scene_changer" to="Buildings/Arcade/scene_changer" method="_on_body_entered"]
 [connection signal="timeout" from="spawn_player" to="." method="_on_spawn_player_timeout"]

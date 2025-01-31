@@ -1,7 +1,8 @@
 [gd_scene load_steps=2 format=3 uid="uid://cencyupcnw7w3"]
 
-[ext_resource type="AudioStream" uid="uid://bn6qh0epi13b5" path="res://sounds/better pickup sound.mp3" id="1_g3s3q"]
+[ext_resource type="AudioStream" uid="uid://bn6qh0epi13b5" path="res://sounds/sfx/better pickup sound.mp3" id="1_g3s3q"]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer2D"]
 stream = ExtResource("1_g3s3q")
+volume_db = 8.0
 bus = &"SFX"
