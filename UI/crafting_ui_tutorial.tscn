@@ -65,6 +65,7 @@ TooltipLabel/font_sizes/font_size = 32
 TooltipLabel/fonts/font = ExtResource("5_yo1pt")
 
 [node name="crafting_tutorial" type="CanvasLayer"]
+visible = false
 script = ExtResource("1_b7qdq")
 
 [node name="bg_sprite" type="Sprite2D" parent="."]

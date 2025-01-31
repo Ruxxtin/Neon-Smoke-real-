@@ -1,6 +1,6 @@
 extends CanvasLayer
 
-@onready var crafting_table = $"../crafting_table"
+@onready var crafting_table = $"../../../crafting_table"
 @onready var item = $output_slot/item
 
 var resources = {
@@ -11,6 +11,12 @@ var resources = {
 
 func _ready():
 	Dialogic.signal_event.connect(DialogueSignal)
+
+func _physics_process(delta):
+	if crafting_table.tutorial_open == true:
+		visible = true
+	else:
+		visible = false
 
 func put_in_output(resource_type):
 	if resource_type == "electromagnet":
