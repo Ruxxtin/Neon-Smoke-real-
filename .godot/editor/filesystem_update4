@@ -1,9 +1,1 @@
-res://scenes/cryolab.tscn
 res://scenes/game.tscn
-res://UI/crafting_ui.tscn
-res://scenes/panning_cutscene.tscn
-res://UI/crafting_ui_tutorial.tscn
-res://scenes/crafting_table.tscn
-res://UI/crafting_ui_tutorial.gd
-res://UI/ummcraftingui.gd
-res://scripts/crafting_table.gd

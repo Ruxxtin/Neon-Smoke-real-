@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://scripts/neeko_and_ada_fight.gd" id="1_6y2qj"]
 [ext_resource type="Texture2D" uid="uid://c27jo62u8rhwt" path="res://sprites/fight_box_appear.png" id="2_ag1q1"]
-[ext_resource type="AudioStream" uid="uid://5ivohmyi4vql" path="res://sounds/music/warm ig.mp3" id="3_877jv"]
+[ext_resource type="AudioStream" uid="uid://5ivohmyi4vql" path="res://sounds/warm ig.mp3" id="3_877jv"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_wefnj"]
 atlas = ExtResource("2_ag1q1")

@@ -13,7 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://ohpfrvr2s4j1" path="res://sprites/arcadegamebetter.png" id="10_nopj1"]
 [ext_resource type="Texture2D" uid="uid://dctl7pf385qxg" path="res://sprites/arcadewomp.png" id="11_b3e0p"]
 [ext_resource type="PackedScene" uid="uid://basmo12w274od" path="res://scenes/battery_pickup.tscn" id="13_oxb6n"]
-[ext_resource type="AudioStream" uid="uid://buinso8tybdjf" path="res://sounds/music/Tetracity shortend.mp3" id="14_rwwkd"]
+[ext_resource type="AudioStream" uid="uid://buinso8tybdjf" path="res://sounds/Tetracity shortend.mp3" id="14_rwwkd"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_jf1o0"]
 texture = ExtResource("1_6cfuq")

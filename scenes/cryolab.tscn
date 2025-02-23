@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=4 uid="uid://0f1ih8n10pth"]
+[gd_scene load_steps=47 format=4 uid="uid://0f1ih8n10pth"]
 
 [ext_resource type="PackedScene" uid="uid://f2ia5ue6cp3u" path="res://scenes/Player.tscn" id="1_cnkv6"]
 [ext_resource type="Texture2D" uid="uid://b4uje8g1isp6h" path="res://sprites/tilesets/labfloor.png" id="1_hqlnm"]
@@ -19,13 +19,12 @@
 [ext_resource type="Texture2D" uid="uid://beaf7pc5s2yg" path="res://sprites/cryostasis_transparent.png" id="15_y6626"]
 [ext_resource type="Script" path="res://scripts/screenshake_cam.gd" id="16_c6yfk"]
 [ext_resource type="Texture2D" uid="uid://30q1sr1n0pl7" path="res://sprites/press_space break out.png" id="18_1b6fo"]
-[ext_resource type="AudioStream" uid="uid://pvbej7myuvhr" path="res://sounds/sfx/ice punch 1.mp3" id="19_nx0w5"]
-[ext_resource type="AudioStream" uid="uid://bon54ed2takve" path="res://sounds/sfx/ice punch 3.mp3" id="21_k4ujs"]
+[ext_resource type="AudioStream" uid="uid://pvbej7myuvhr" path="res://sounds/ice punch 1.mp3" id="19_nx0w5"]
+[ext_resource type="AudioStream" uid="uid://bon54ed2takve" path="res://sounds/ice punch 3.mp3" id="21_k4ujs"]
 [ext_resource type="Texture2D" uid="uid://dxvstnbxnafs6" path="res://sprites/Adobe Express - file.png" id="23_hvm2v"]
 [ext_resource type="PackedScene" uid="uid://basmo12w274od" path="res://scenes/battery_pickup.tscn" id="24_0knmm"]
 [ext_resource type="PackedScene" uid="uid://cepfrjysgn1nn" path="res://scenes/crafting_table.tscn" id="24_b51nk"]
 [ext_resource type="PackedScene" uid="uid://c137m0mgdi1tj" path="res://UI/crafting_ui.tscn" id="25_clqpo"]
-[ext_resource type="PackedScene" uid="uid://dldbri78ecq5b" path="res://UI/crafting_ui_tutorial.tscn" id="26_ddcwq"]
 
 [sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_wyuo4"]
 lifetime_randomness = 1.0
@@ -45,8 +44,7 @@ radial_accel_min = -2.23517e-06
 radial_accel_max = -2.23517e-06
 tangential_accel_min = -2.23517e-06
 tangential_accel_max = -2.23517e-06
-scale_min = 1.5
-scale_max = 3.5
+scale_max = 3.0
 color = Color(0.45, 1, 0.954167, 0.533333)
 turbulence_enabled = true
 turbulence_noise_strength = 0.8
@@ -201,7 +199,7 @@ z_index = 1
 position = Vector2(-24, -5)
 scale = Vector2(2, 2)
 emitting = false
-amount = 20
+amount = 50
 process_material = SubResource("ParticleProcessMaterial_wyuo4")
 lifetime = 0.35
 one_shot = true
@@ -533,8 +531,6 @@ texture_scale = 0.25
 position = Vector2(0, -1)
 zoom = Vector2(3.2, 3.2)
 
-[node name="crafting_tutorial" parent="Player/Camera2D" instance=ExtResource("26_ddcwq")]
-
 [node name="Player_stuck" parent="." instance=ExtResource("1_cnkv6")]
 position = Vector2(-24, -2)
 script = null
@@ -606,8 +602,6 @@ texture_scale = 0.25
 
 [node name="crafting_ui" parent="." instance=ExtResource("25_clqpo")]
 visible = false
-
-[node name="crafting_tutorial" parent="." instance=ExtResource("26_ddcwq")]
 
 [connection signal="body_entered" from="scene_changer" to="scene_changer" method="_on_body_entered"]
 [connection signal="timeout" from="dialogue_timer" to="." method="_on_dialogue_timer_timeout"]

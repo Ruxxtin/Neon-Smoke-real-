@@ -13,7 +13,7 @@ config_version=5
 config/name="Neon Smoke"
 run/main_scene="res://scenes/start_menu.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
-config/icon="res://sprites/ns_logo_circle.png"
+config/icon="res://sprites/arcadegamebetter.png"
 
 [autoload]
 
@@ -43,7 +43,6 @@ directories/dtl_directory={
 "bridge_talk_2": "res://dialogic/timelines/bridge_talk_2.dtl",
 "bridge_talk_3": "res://dialogic/timelines/bridge_talk_3.dtl",
 "caught": "res://dialogic/timelines/caught.dtl",
-"craft_tutorial": "res://dialogic/timelines/craft_tutorial.dtl",
 "hoverboard": "res://dialogic/timelines/hoverboard.dtl",
 "open_big_door": "res://dialogic/timelines/open_big_door.dtl",
 "ouch_glass": "res://dialogic/timelines/ouch_glass.dtl",

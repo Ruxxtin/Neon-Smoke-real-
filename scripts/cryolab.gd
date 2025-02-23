@@ -52,7 +52,7 @@ func _physics_process(delta):
 			stuck_cam.apply_shake()
 			punches += 1
 			button_can_change = true
-			#gpu_particles_2d.emitting = true
+			gpu_particles_2d.emitting = true
 			if punches == 1:
 				ice_punch_1.play(0.1)
 			if punches == 2:

@@ -10,7 +10,6 @@ extends Node2D
 @onready var dust_particle = $"dust particle"
 @onready var layer_bridge = $TileMap/Layer_bridge
 @onready var bg_song = $bg_song
-@onready var bridge_boom = $bridge_boom
 
 var exited_building = false
 
@@ -90,10 +89,8 @@ func _on_area_2d_2_body_entered(body):
 		ada.can_move = false
 		dust_particle.emitting = true
 		Sirens.stream_paused = true
-		bridge_boom.playing = true
-		await get_tree().create_timer(2.5).timeout
+		await get_tree().create_timer(2).timeout
 		dust_particle.emitting = false
 		layer_bridge.visible = false
-		await get_tree().create_timer(0.3).timeout
+		await get_tree().create_timer(0.1).timeout
 		Dialogic.start("bridge_talk_3")
-		bridge_boom.playing = false
